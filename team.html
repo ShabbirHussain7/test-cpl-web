@@ -1,0 +1,106 @@
+---
+layout: internal
+title: Team
+permalink: /team
+---
+
+<!-- Top Header Section -->
+<div class="container-fluid background-teal">
+  <div class="container py-3">
+    <h1 class="text-slate">Team</h1>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="container pt-4 pb-2">
+    <p class="mb-0 text-18">Our research community is a vibrant and growing subfield that exists at the intersection of networking, security and privacy, Internet measurement, and social and political science. Its research problems are often broad and complex, with a
+      potential to impact large populations of vulnerable users, and practitioners draw on (and advance) techniques from across these disciplines to address them.
+      Censored Planet is founded and directed by Prof. Roya Ensafi.</p>
+  </div>
+</div>
+
+<!-- Members Section -->
+<div class="container-fluid">
+  <div class="container pb-2">
+    <h2 class="text-slate pt-3">Core Team</h2>
+    <div class="row py-2">
+      {% for member in site.data.members %}
+      <div class="col-6 col-md-2 gallery-item text-center">
+        <a href="{{ member.link }}"><img class="w-100 grayscale" style="border-radius: 25px;" src="assets/{{ member.avatar }}" alt="{{ member.name }}"></a>
+        <p class="size-18 text-slate pt-2 mb-0 weight-700"><a class="text-slate underline" href="{{ member.link }}">{{ member.name }}</a></p>
+        <p class="mb-0">{{ member.position }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="container pb-2">
+      <h2 class="text-slate pt-3">Alumni</h2>
+      <div class="row py-2">
+        {% for member in site.data.alumni %}
+        <div class="col-6 col-md-2 gallery-item text-center">
+        <a href="{{ member.link }}"><img class="w-100 grayscale" style="border-radius: 25px;" src="assets/{{ member.avatar }}" alt="{{ member.name }}"></a>
+        <p class="size-18 text-slate pt-2 mb-0 weight-700"><a class="text-slate underline" href="{{ member.link }}">{{ member.name }}</a></p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Supporters Section -->
+<div class="container-fluid background-slate">
+  <div class="container">
+    <div class="py-4">
+      <div class="mb-lg-3">
+        <h2 class="text-slate">Supporters</h2>
+      </div>
+      <div class="row pt-1 justify-content-between align-items-center text-center hidemobile">
+        <div class="px-1 mt-0"><img src="assets/umich-grey.svg" /></div>
+        <div class="px-1 mt-3"><img src="assets/otf.svg" /></div>
+        <div class="px-1 mt-3"><img src="assets/google-color.svg" /></div>
+      </div>
+      <div class="row pt-3 justify-content-between align-items-center text-center d-md-none d-sm-block">
+        <div class="col-12 mt-4 text-left"><img src="assets/umich-grey.svg" /></div>
+        <div class="col-12 mt-4 text-left"><img src="assets/otf.svg" /></div>
+        <div class="col-12 mt-4 text-left"><img src="assets/google-color.svg" /></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="container-fluid">
+  <div class="container py-4">
+    <h2 class="text-slate">Contact</h2>
+    <div class="row justify-content-between py-3 text-slate">
+      <div class="col-12 col-md-4 col-lg-4">
+        <div class="mb-lg-4">
+          <p class="text-slate">Questions? Don’t hesitate to reach out!</p>
+          <p class="mb-0 text-slate"><strong>Email</strong>: <a href="mailto:censoredplanet@umich.edu">censoredplanet@umich.edu</a></p>
+          <p class="text-slate"><strong>Twitter</strong>: <a href="https://twitter.com/CensoredPlanet" target="_blank" rel="noopener">@CensoredPlanet</a></p>
+          <p class="mb-0 text-slate"><strong>Mail</strong>:</p>
+          <p class="mb-4 text-slate">4908 Bob and Betty Beyster Building<br>2260 Hayward St.,<br>Ann Arbor, MI 48109</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-8 col-lg-8">
+        {% raw %}<%= simple_form_for @contact, :html => {:class => 'mb-3' } do |f| %>{% endraw %}
+        <div class="form-group">
+        {% raw %}<%= f.text_field :name, autocomplete: "name", placeholder: "Name", class: "form-control form-control-lg", label: false%>{% endraw %}
+        </div>
+        <div class="form-group">
+          {% raw %}<%= f.email_field :email, autocomplete: "email", placeholder: "Email", class: "form-control form-control-lg", label: false%>{% endraw %}
+        </div>
+        <div class="form-group">
+          {% raw %}<%= f.text_area :message, autocomplete: "message", :required => true , placeholder: "Message", class: "form-control form-control-lg", label: false, :as => :text %>{% endraw %}
+        </div>
+        <div class="hidden">
+          {% raw %}<%= f.input :nickname, :hint => 'Leave this field blank!' %>{% endraw %}
+        </div>
+        <div class="form-group">
+          {% raw %}<%= f.button :submit, 'Send message',  class: "button-main btn-block"%>{% endraw %}
+        </div>
+        {% raw %}<% end %>{% endraw %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+- notification:
+  display: "yes"
+  text: "Throttling of Twitter in Russia"
+  button-text: "Read Report"
+  button-url: "/throttling"

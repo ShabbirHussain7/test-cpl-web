@@ -1,0 +1,100 @@
+---
+layout: internal
+title: Reports
+permalink: /reports
+---
+
+<!-- Top Header Section -->
+<div class="container-fluid background-teal">
+    <div class="container py-3">
+        <h1 class="text-slate">Reports</h1>
+        <p class="size-24 text-slate">Our research publications are often technical and complex, here we aim to communicate our research to a broader audience.</p>
+    </div>
+</div>
+
+<!-- Report Cards Desktop Section -->
+<div class="container-fluid d-none d-md-block d-sm-none">
+    <div class="container py-5">
+        <div class="row">
+            {% for report in site.reports reversed%}
+            <div class="col-12 col-md-4 mx-2 mb-2 mb-sm-2 report-card">
+                <span class="details">{{ report.date | date_to_long_string }}</span>
+                <h3 class="pt-2 text-slate weight-700">{{ report.title }}</h3>
+                <p class="mb-5">{{ report.excerpt | truncatewords: 20 }}</p>
+                <a href="{{ report.url }}" class="button-main">Read Report</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Report Cards Mobile Section -->
+<div class="container-fluid d-block d-md-none d-sm-block">
+    <div class="container py-5">
+        <div class="row">
+            {% for report in site.reports reversed%}
+            <div class="col-12 mb-2 mb-sm-2 report-card">
+                <span class="details">{{ report.date | date_to_long_string }}</span>
+                <h3 class="pt-2 text-slate weight-700">{{ report.title }}</h3>
+                <p class="mb-5">{{ report.excerpt | truncatewords: 20 }}</p>
+                <a href="{{ report.url }}" class="button-main">Read Report</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- External Report Cards Section -->
+<div class="container-fluid background-slate">
+    <div class="container py-4">
+        <h2 class="text-slate">External Reports</h2>
+        <div class="row">
+            {% for external in site.external reversed %}
+            <div class="report-card px-3 py-1 my-1 col-lg-12 col-sm-12">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-9 col-sm-12 pt-2 pb-1">
+                        <span class="details">{{ external.date | date_to_long_string }}</span>
+                        <h3 class="pt-2 mb-1 text-slate weight-700">{{ external.title }}</h3>
+                        <p class="mb-1">{{ external.excerpt | truncate: 180 }}</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 align-self-center pt-2">
+                        <a href="{{ external.link }}" class="button-main-sm  float-right mb-2">Read Report</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Media Section -->
+<div class="container-fluid background-slate">
+    <div class="container">
+        <div class="pt-4 pb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-7 text-center mb-lg-4">
+                    <h2 class="text-slate">In the Media</h2>
+                    <p class="size-20 text-slate">Censored Planet projects and research reports have appeared in various news outlets and tech publications.</p>
+                </div>
+            </div>
+            <div class="row pt-3 justify-content-center align-items-center text-center">
+                <div class="px-3 mt-3 mt-md-0"><a href="https://www.bbc.com/news/technology-49421729" target="_blank" rel="noopener"><img src="assets/bbc.svg" /></a></div>
+                <div class="px-3 mt-3 mt-md-0"><a href="https://apnews.com/2cee9a8f8b234f5a86987eec835f3c55" target="_blank" rel="noopener"><img src="assets/ap.svg" /></a></div>
+                <div class="px-3 mt-3 mt-md-0"><a href="https://www.forbes.com/sites/emmawoollacott/2019/08/21/apple-google-and-mozilla-block-kazakh-government-surveillance/" target="_blank" rel="noopener"><img src="assets/forbes.svg" /></a></div>
+                <div class="px-3 mt-3 mt-md-0"><a href="https://www.azattyq.org/a/kazakhstan-the-biggest-score-declines-took-place-freedom-on-the-net-2019/30253611.html" target="_blank" rel="noopener"><img src="assets/radiofreeeurope.svg" /></a></div>
+                <div class="px-3 mt-3 mt-md-0"><a href="https://www.businessinsider.com/apple-google-mozilla-block-kazakhstan-governments-browser-spying-tool-2019-8" target="_blank" rel="noopener"><img src="assets/businessinsider.svg" /></a></div>
+            </div>
+      <div class="row pt-3 pb-4 justify-content-center align-items-center text-center">
+        <div class="pl-2 pr-3 mt-3 mt-md-0"><a href="https://blog.mozilla.org/blog/2019/08/21/mozilla-takes-action-to-protect-users-in-kazakhstan/" target="_blank" rel="noopener"><img src="assets/mozilla.svg" /></a></div>
+        <div class="px-3 mt-3 mt-md-0"><a href="https://security.googleblog.com/2019/08/protecting-chrome-users-in-kazakhstan.html" target="_blank" rel="noopener"><img src="assets/google.svg" /></a></div>
+        <div class="px-3 mt-3 mt-md-0"><a href="https://www.eff.org/deeplinks/2019/08/browsers-take-stand-against-kazakhstans-invasive-internet-surveillance" target="_blank" rel="noopener"><img src="assets/eff.svg" /></a></div>
+        <div class="px-3 mt-3 mt-md-0"><a href="https://thenextweb.com/security/2019/08/21/google-apple-and-mozilla-wont-budge-on-kazakhstans-sneaky-plot-to-spy-on-citizens/" target="_blank" rel="noopener"><img src="assets/tnw.svg" /></a></div>
+        <div class="px-3 mt-3 mt-md-0"><a href="https://cpj.org/blog/2019/11/russia-internet-censorship-censored-planet.php" target="_blank" rel="noopener"><img src="assets/cpj.svg" /></a></div>
+      </div>
+      <div class="row justify-content-center align-items-center text-center">
+        <a href="/media" class="button-slate">Media Coverage</a>
+      </div>
+    </div>
+        </div>
+    </div>
+</div>

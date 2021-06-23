@@ -1,0 +1,32 @@
+- name: Roya Ensafi
+  position: Assistant Professor
+  avatar: roya.png
+  link: "https://ensa.fi/"
+- name: Ram Sundara Raman
+  position: PhD Candidate
+  avatar: ram.jpg
+  link: "https://ramakrishnansr.com/"
+- name: Reethika Ramesh
+  position: PhD Candidate
+  avatar: reethika.png
+  link: "https://reethika.info/"
+- name: Elisa Tsai
+  position: PhD Student
+  avatar: elisa.jpg
+  link: "https://github.com/eltsai"
+- name: Nick Ceccio
+  position: Undergraduate Student
+  avatar: NickC.jpg
+  link: "https://github.com/ceccion"
+- name: Apurva Virkud
+  position: Researcher
+  avatar: apurva.png
+  link: "https://www.linkedin.com/in/apurva-virkud"
+- name: Leonid Evdokimov
+  position: Researcher
+  avatar: leonid.png
+  link: "https://darkk.net.ru/"
+- name: Anjali Vyas
+  position: Undergraduate Student
+  avatar: AnjaliVyas.png
+  link: "https://www.linkedin.com/in/anjali-vyas/"

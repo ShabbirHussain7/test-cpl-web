@@ -1,0 +1,20 @@
+# Site settings
+title: Censored Planet
+email: censoredplanet@umich.edu
+description: >
+  An Internet-wide, Longitudinal Censorship Observatory.
+baseurl: ""
+url: ""
+twitter_username: CensoredPlanet
+
+# Build settings
+markdown: kramdown
+
+#Collections for reports
+collections:
+  reports:
+    output: true
+  publications:
+    output: false
+  external:
+    output: false

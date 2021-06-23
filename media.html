@@ -1,0 +1,31 @@
+---
+layout: internal
+title: Media Coverage
+permalink: /media
+---
+
+<!-- Top Header Section -->
+<div class="container-fluid background-teal">
+  <div class="container py-3">
+    <h1 class="text-slate">Media</h1>
+    <p class="size-24 text-slate">Press mentions of Censored Planet and our projects in media and press.</p>
+  </div>
+</div>
+
+<!-- Media Coverage Section -->
+<div class="container-fluid">
+  <div class="container pb-5">
+
+    {% assign month = site.data.media %}
+    {% for month in month %}
+    <h2 class="text-slate pt-3">{{ month.month }}</h2>
+    {% for posts in month.posts %}
+    <p class="mb-1"><span class="font-italic">{{ posts.publisher }}</span><span><a class="ml-2 weight-700 text-slate-60" href="{{ posts.link }}" target="_blank" rel="noopener">{{ posts.text }}</a></span></p>
+    {% endfor %}
+    {% endfor %}
+
+    <div class="pt-4">
+    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTMahNkeB61oaf8QPloF0ztryxF8MPt7TMVBJtD5UCk0hYv8RC9wuxsYqu0faenUwSY44FPEieWO4lw/pubhtml" target="_blank" rel="noopener" class="button-main">See Complete List</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+- month: October 2020
+  posts:
+    - published: Financial Times
+      text: "US blocks Hong Kong users from some government websites"
+      link: "https://www.ft.com/content/05a05cb9-b0e2-4c4a-85ed-3126c83d5f9b"
+- month: February 2020
+  posts:
+    - published: Univerity of Michigan
+      text: "Real-time monitor tracks the growing use of network filters for censorship"
+      link: "https://cse.engin.umich.edu/stories/real-time-monitor-tracks-the-growing-use-of-network-filters-for-censorship"
+- month: November 2019
+  posts:
+    - publisher: Associated Press
+      text: "Study: Russia’s web-censoring tool sets pace for imitators"
+      link: "https://apnews.com/2cee9a8f8b234f5a86987eec835f3c55"
+    - publisher: CPJ
+      text: "Laws, cheap web filters arm Russia to block news, says Censored Planet"
+      link: "https://cpj.org/blog/2019/11/russia-internet-censorship-censored-planet.php"
+    - publisher: Seattle Times
+      text: "Study: Russia’s web-censoring tool sets pace for imitators"
+      link: "https://www.seattletimes.com/business/study-russias-web-censoring-tool-sets-pace-for-imitators/"
+    - publisher: University of Michigan
+      text: "How Russia’s online censorship could jeopardize internet freedom worldwide"
+      link: "https://news.umich.edu/how-russias-online-censorship-could-jeopardize-internet-freedom-worldwide/"
+    - publisher: Voice of America
+      text: "Study: Russia's Web-censoring Tool Sets Pace for Imitators"
+      link: "https://www.voanews.com/silicon-valley-technology/study-russias-web-censoring-tool-sets-pace-imitators"
+- month: August 2019
+  posts:
+    - publisher: Google
+      text: "Protecting Chrome users in Kazakhstan"
+      link: "https://security.googleblog.com/2019/08/protecting-chrome-users-in-kazakhstan.html"
+    - publisher: Mozilla
+      text: "Mozilla takes action to protect users in Kazakhstan"
+      link: "https://blog.mozilla.org/blog/2019/08/21/mozilla-takes-action-to-protect-users-in-kazakhstan/"
+    - publisher: BBC
+      text: "Google and Mozilla move to stop Kazakhstan 'snooping'"
+      link: "https://www.bbc.com/news/technology-49421729"
+    - publisher: Forbes
+      text: "Apple, Google And Mozilla Block Kazakh Government Surveillance"
+      link: "https://www.forbes.com/sites/emmawoollacott/2019/08/21/apple-google-and-mozilla-block-kazakh-government-surveillance/"
+    - publisher: Business Insider
+      text: "Apple, Google, and Mozilla are blocking the Kazakhstan government’s wild attempts at spying on people"
+      link: "https://www.businessinsider.com/apple-google-mozilla-block-kazakhstan-governments-browser-spying-tool-2019-8"
+    - publisher: The Next Web
+      text: "Google, Apple, and Mozilla won’t budge on Kazakhstan’s sneaky plot to spy on citizens"
+      link: "https://thenextweb.com/security/2019/08/21/google-apple-and-mozilla-wont-budge-on-kazakhstans-sneaky-plot-to-spy-on-citizens/"
+- month: February 2019
+  posts:
+    - publisher: NPR Michigan
+      text: "Research team investigating Internet censorship with tracking system"
+      link: "https://www.michiganradio.org/post/research-team-investigating-internet-censorship-tracking-system"
+- month: November 2018
+  posts:
+    - publisher: MIT Technology Review
+      text: "Online censorship in Saudi Arabia soared after Jamal Khashoggi’s murder"
+      link: "https://www.technologyreview.com/s/612448/online-censorship-saudi-arabia-khashoggi/"

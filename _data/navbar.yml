@@ -1,0 +1,18 @@
+- link:
+  title: Team
+  url: /team
+- link:
+  title: Projects
+  url: /projects
+- link:
+  title: Reports
+  url: /reports
+- link:
+  title: Publications
+  url: /publications
+- link:
+  title: Data
+  url: /data/raw
+- link:
+  title: Visualizations
+  url: /data/visualizations
