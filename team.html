@@ -83,23 +83,6 @@ permalink: /team
         </div>
       </div>
       <div class="col-12 col-md-8 col-lg-8">
-        {% raw %}<%= simple_form_for @contact, :html => {:class => 'mb-3' } do |f| %>{% endraw %}
-        <div class="form-group">
-        {% raw %}<%= f.text_field :name, autocomplete: "name", placeholder: "Name", class: "form-control form-control-lg", label: false%>{% endraw %}
-        </div>
-        <div class="form-group">
-          {% raw %}<%= f.email_field :email, autocomplete: "email", placeholder: "Email", class: "form-control form-control-lg", label: false%>{% endraw %}
-        </div>
-        <div class="form-group">
-          {% raw %}<%= f.text_area :message, autocomplete: "message", :required => true , placeholder: "Message", class: "form-control form-control-lg", label: false, :as => :text %>{% endraw %}
-        </div>
-        <div class="hidden">
-          {% raw %}<%= f.input :nickname, :hint => 'Leave this field blank!' %>{% endraw %}
-        </div>
-        <div class="form-group">
-          {% raw %}<%= f.button :submit, 'Send message',  class: "button-main btn-block"%>{% endraw %}
-        </div>
-        {% raw %}<% end %>{% endraw %}
       </div>
     </div>
   </div>
