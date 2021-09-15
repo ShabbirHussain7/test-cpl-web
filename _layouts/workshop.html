@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+{% include head-internal.html %}
+
+<body class="fade-in">
+  {% include nav-report.html %}
+  <div class="container-fluid d-none d-sm-none d-md-block">
+    <div class="container py-3">
+      <div class="row no-gutters justify-content-center">
+        <div class="col-lg-9 background-teal px-4 py-3">
+          <div class="post">
+            <header class="post-header">
+              <p class="size-18 text-uppercase text-slate mb-0 weight-700">Workshop</p>
+              <h1 class="text-slate">{{ page.title }}</h1>
+              <p class="my-2"><span class="text-uppercase weight-700 text-slate my-2">Date:</span><span class="text-slate ml-2">{{ page.date | date: "%B %e, %Y" }}</span></p>
+              {% if page.border %}
+              <hr class="my-3 hr-slate">
+              {% else %}
+              {% endif %}
+              {% if page.appearing %}
+              <p class="my-1"><span class="text-slate weight-700">{{ page.appearing }}</span></p>
+              {% else %}
+              {% endif %}
+              {% if page.note %}
+              <p class="my-1" style="font-size: 0.80em;"><span class="text-slate weight-200">{{ page.note }}</span></p>
+              {% else %}
+              {% endif %}
+              {% if page.button and page.link %}
+              <p class="my-1 pt-2"><a href="{{ page.link }}" class="button-main weight-500">{{ page.button }}</a></p>
+              {% else %}
+              {% endif %}
+              {% if page.video %}
+              <iframe class="container-fluid" height=330 src="{{ page.video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              {% else %}
+              {% endif %}
+            </header>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid background-teal d-block d-sm-block d-md-none">
+    <div class="container py-3">
+      <div class="row no-gutters justify-content-center">
+        <div class="col-lg-9">
+          <div class="post">
+            <header class="post-header">
+              <p class="size-18 text-uppercase text-slate mb-0 weight-700">Workshop</p>
+              <h1 class="text-slate">{{ page.title }}</h1>
+              <p class="my-2"><span class="text-uppercase weight-700 text-slate my-2">Date:</span><span class="text-slate ml-2">{{ page.date | date: "%B %e, %Y" }}</span></p>
+              {% if page.border %}
+              <hr class="my-3 hr-slate">
+              {% else %}
+              {% endif %}
+              {% if page.writers %}
+              <p class="my-1"><span class="text-slate font-italic">{{ page.writers }}</span></p>
+              {% else %}
+              {% endif %}
+              {% if page.appearing %}
+              <p class="my-1"><span class="text-slate weight-700">{{ page.appearing }}</span></p>
+              {% else %}
+              {% endif %}
+              {% if page.button and page.link %}
+              <p class="my-1 pt-2"><a href="{{ page.link }}" class="button-main weight-500">{{ page.button }}</a></p>
+              {% else %}
+              {% endif %}
+            </header>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="container py-3">
+      <div class="row no-gutters justify-content-center">
+        <div class="col-lg-8">
+          <article class="post-content">
+            {{ content }}
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include footer-dark.html %}
+</body>
+
+</html>
