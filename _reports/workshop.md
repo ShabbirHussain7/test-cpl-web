@@ -1,9 +1,8 @@
 ---
-layout: workshop
-date: "20 September 2021"
+layout: webinar
+date: "20 September 2021T10:00:00"
 title: "Announcing the Censored Planet Webinar"
-permalink: /workshop
-affiliations: Censored Planet at the University of Michigan
+permalink: /webinar2021
 border: yes
 
 ---
@@ -18,8 +17,16 @@ border: yes
 **`Join us for the online Censored Planet Webinar, happening on Zoom!`**  
 
 **When: `September 29, 2021 at 10:00 AM EST`**  
-**Where: [https://us2.zoom.com/iusjh52a4df2a4](https://us2.zoom.com/iusjh52a4df2a4)**
 
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSe_i-PwPQbBYdWUBYWJzyKXerRfEmT7lDhlpNqEdjfKD_DRtw/formResponse" method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="emailAddress">
+    <small id="emailHelp" class="form-text text-muted">You will receive an Google Invitation Link</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+<br>
 
 
 ### Schedule

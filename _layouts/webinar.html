@@ -10,13 +10,9 @@
         <div class="col-lg-9 background-teal px-4 py-3">
           <div class="post">
             <header class="post-header">
-              <p class="size-18 text-uppercase text-slate mb-0 weight-700">Workshop</p>
+              <p class="size-18 text-uppercase text-slate mb-0 weight-700">Webinar</p>
               <h1 class="text-slate">{{ page.title }}</h1>
-              <p class="my-2"><span class="text-uppercase weight-700 text-slate mr-2">Affiliations:</span>
-              {% for affiliation in page.affiliations %}
-              <span class="text-slate">{{ affiliation }}{% unless forloop.last %},{% endunless %}</span>
-              {% endfor %}
-              <p class="my-2"><span class="text-uppercase weight-700 text-slate my-2">Date:</span><span class="text-slate ml-2">{{ page.date | date: "%B %e, %Y" }}</span></p>
+              <p class="my-2"><span class="text-uppercase weight-700 text-slate my-2">Date:</span><span class="text-slate ml-2">{{ page.date | date: "%B %e, %Y, %R" }}</span></p>
               {% if page.border %}
               <hr class="my-3 hr-slate">
               {% else %}
@@ -49,7 +45,7 @@
         <div class="col-lg-9">
           <div class="post">
             <header class="post-header">
-              <p class="size-18 text-uppercase text-slate mb-0 weight-700">Workshop</p>
+              <p class="size-18 text-uppercase text-slate mb-0 weight-700">Webinar</p>
               <h1 class="text-slate">{{ page.title }}</h1>
               <p class="my-2"><span class="text-uppercase weight-700 text-slate my-2">Date:</span><span class="text-slate ml-2">{{ page.date | date: "%B %e, %Y" }}</span></p>
               {% if page.border %}
