@@ -3,9 +3,6 @@ layout: workshop
 date: "20 September 2021"
 title: "Announcing the Censored Planet Webinar"
 permalink: /workshop
-excerpt: "To be announced"
-authors:
-  - Censored Planet
 affiliations: Censored Planet at the University of Michigan
 border: yes
 
