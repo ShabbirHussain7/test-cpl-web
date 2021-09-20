@@ -1,7 +1,7 @@
 ---
 layout: workshop
-date: "15 September 2021"
-title: "Announcing the Censored Planet workshop"
+date: "20 September 2021"
+title: "Announcing the Censored Planet Webinar"
 permalink: /workshop
 excerpt: "To be announced"
 authors:
@@ -11,11 +11,19 @@ border: yes
 
 ---
 
-<img src="../assets/workshop-placeholder.png" alt="Censored Planet workshop flyer" title="Censored Planet workshop flyer" width="100%">
-**Figure 1.** _Censored Planet workshop flyer_
+<img src="../assets/webinar.png" alt="Censored Planet Webinar flyer" title="Censored Planet Webinar flyer" width="100%">
+**Figure 1.** _Censored Planet Webinar flyer_
 {: .center }
 
-We are excited to bring the first Censored Planet workshop to you.
+##### Interested in learning about Censored Planet and how we detect and measure network interference around the world?  
+##### Eager to learn about the cool research ideas and capabilities Censored Planet has been working on recently?  
+
+**`Join us for the online Censored Planet Webinar, happening on Zoom!`**  
+
+**When: `September 29, 2021 at 10:00 AM EST`**  
+**Where: [https://us2.zoom.com/iusjh52a4df2a4](https://us2.zoom.com/iusjh52a4df2a4)**
+
+
 
 ### Schedule
 
@@ -30,38 +38,38 @@ We are excited to bring the first Censored Planet workshop to you.
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Introducing our lab</td>
-      <td>Roya Ensafi</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
       <td>Introducing Censored Planet</td>
       <td>Roya Ensafi</td>
     </tr>
     <tr>
+      <th scope="row">2</th>
+      <td>Censored Planet measurements and Data</td>
+      <td>Ramakrishnan Sundara Raman</td>
+    </tr>
+    <tr>
       <th scope="row">3</th>
-      <td>Measurement techniques and their progrssion</td>
+      <td>Censored Planet data analysis pipeline</td>
       <td>Ramakrishnan Sundara Raman</td>
     </tr>
     <tr>
       <th scope="row">4</th>
-      <td>Raw data and its limitations</td>
-      <td>Ramakrishnan Sundara Raman</td>
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td>The Censored Planet pipeline</td>
-      <td>Ramakrishnan Sundara Raman</td>
+      <td>Introducing the Censored Planet dashboard</td>
+      <td>Apurva Virkud</td>
     </tr>  
     <tr>
-      <th scope="row">6</th>
-      <td>Introducing the dashboard</td>
-      <td>Apurva Virkud</td>
-    </tr>    
-    <tr>
-      <th scope="row">7</th>
+      <th scope="row">5</th>
       <td>Censored Planet's Machine Learning approach</td>
       <td>Elisa Tsai</td>
-    </tr>        
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Q&A</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Discussion on advancements in censorship <br>measurement and circumvention</td>
+      <td>-</td>
+    </tr>                
   </tbody>
 </table>
