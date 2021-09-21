@@ -7,12 +7,15 @@ layout: default
   <div class="container py-3">
     <h2 class="text-slate mb-3">News</h2>
     <div class="row">
-      {% for news in site.data.news limit:3 %}
-      <div class="col-12 col-lg-4 mb-3 mb-sm-3">
-        <p class="mb-0 text-slate weight-700">{{ news.date }}</p>
-        <a href="{{ news.url }}" class="weight-500 underline text-slate-70">{{ news.title }}</a>
+      <div class="col-12 col-lg-6 mb-3 mb-sm-3">
+        {% for news in site.data.news limit:3 %}
+        <br><p class="mb-0 text-slate weight-700">{{ news.date }}</p>
+        <a href="{{ news.url }}" class="weight-500 underline text-slate-70">{{ news.title }}</a><br>
+        {% endfor %}
       </div>
-      {% endfor %}
+      <div class="col-12 col-lg-6 mb-3 mb-sm-3">
+        <a class="twitter-timeline" data-height="250" data-theme="light" data-chrome="noheader%20noborders%20transparent%20nofooter" href="https://twitter.com/CensoredPlanet?ref_src=twsrc%5Etfw">Tweets by CensoredPlanet</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
     </div>
   </div>
 </div>
@@ -94,7 +97,7 @@ layout: default
         </div>
 
         <h2 class="text-slate mb-0">Data</h2>
-        <p class="mb-0 size-18">All the data collected from the Observatory is publicly available, including metadata.</p>
+        <p class="mb-0 size-18">All the data collected from the Observatory is publicly available</p>
         <div class="row justify-content-between pt-4">
             <div class="col mx-3 gallery-item project-card">
                 <a class="text-dark" href="/data/raw">
@@ -103,6 +106,13 @@ layout: default
                     <p>Compressed files containing JSON data (1 file per scan per technique).</p>
                 </a>
             </div>
+            <div class="col mx-3 gallery-item project-card">
+              <a class="text-dark" href="/data/visualizations">
+                  <i class="fas fa-adjust size-36 text-teal mb-3"></i>
+                  <h3 class="text-slate weight-700">Documentation</h3>
+                  <p>Documentation about Censored Planet and data formats.</p>
+              </a>
+          </div>
             <div class="col mx-3 gallery-item project-card">
                 <a class="text-dark" href="/data/visualizations">
                     <i class="fas fa-adjust size-36 text-teal mb-3"></i>
