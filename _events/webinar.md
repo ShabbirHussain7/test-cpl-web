@@ -7,7 +7,7 @@ eventype: "Webinar"
 permalink: /webinar2021
 border: yes
 registration: yes
-registrationform: https://docs.google.com/forms/d/e/1FAIpQLSe_i-PwPQbBYdWUBYWJzyKXerRfEmT7lDhlpNqEdjfKD_DRtw/formResponse
+registrationform: https://docs.google.com/forms/d/e/1FAIpQLSd6sHFsmfRdRrCJ2yjK5spMzvJu1Scz259_WlWiG8MIGGpyeg/formResponse
 ---
 
 Interested in learning about Censored Planet and how we detect and measure network interference around the world? Eager to learn about the cool research ideas and capabilities Censored Planet has been working on recently?  
