@@ -18,3 +18,5 @@ collections:
     output: false
   external:
     output: false
+  events:
+    output: true
