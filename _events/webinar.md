@@ -1,6 +1,7 @@
 ---
 layout: events
-date: "20 September 2021T10:00:00"
+date: "4 October 2021T10:00:00"
+duration: "1.5 hours"
 where: "Zoom (Register below to get link)"
 title: "Announcing the Censored Planet Webinar"
 eventype: "Webinar"
@@ -14,15 +15,11 @@ Interested in learning about Censored Planet and how we detect and measure netwo
 
 ##### Join us for the online Censored Planet Webinar, happening on Zoom!
 
-**When: `September 29, 2021 at 10:00 AM EST`**  
+**When: `October 4, 2021 from 10:00 - 11:30 AM EST`**  
 **Where: Zoom ([Register above](#register) to get link delivered your Email)**  
 
 <img src="../assets/webinar.png" alt="Censored Planet Webinar flyer" title="Censored Planet Webinar flyer" width="100%">
 {: .center }
-
-
-
-
 
 ### Schedule
 
