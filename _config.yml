@@ -6,6 +6,7 @@ description: >
 baseurl: ""
 url: ""
 twitter_username: CensoredPlanet
+future: true
 
 # Build settings
 markdown: kramdown
@@ -14,9 +15,9 @@ markdown: kramdown
 collections:
   reports:
     output: true
+  events:
+    output: true
   publications:
     output: false
   external:
     output: false
-  events:
-    output: true
