@@ -1,11 +1,6 @@
 - link:
-  title: About
+  title: Team
   url: /team
-  dropdown:
-    - name: Team
-      url: /team
-    - name: Media
-      url: /media
 - link:
   title: Projects
   url: /projects
@@ -16,15 +11,8 @@
   title: Publications
   url: /publications
 - link:
-  title: Events
-  url: /events
-- link:
   title: Data
   url: /data/raw
-  dropdown:
-    - name: Raw Data
-      url: /data/raw
-    - name: Documentation
-      url: https://docs.censoredplanet.org
-    - name: Visualizations
-      url: /data/visualizations
+- link:
+  title: Visualizations
+  url: /data/visualizations

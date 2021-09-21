@@ -1,5 +1,5 @@
 - notification:
   display: "yes"
-  text: "Announcing the Censored Planet Webinar"
-  button-text: "Read More"
-  button-url: "/webinar2021"
+  text: "Throttling of Twitter in Russia"
+  button-text: "Read Report"
+  button-url: "/throttling"
