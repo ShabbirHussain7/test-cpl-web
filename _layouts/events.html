@@ -10,12 +10,23 @@
         <div class="col-lg-9 background-teal px-4 py-3">
           <div class="post">
             <header class="post-header">
-              <p class="size-18 text-uppercase text-slate mb-0 weight-700">Webinar</p>
+              <p class="size-18 text-uppercase text-slate mb-0 weight-700">{{ page.eventype }}</p>
               <h1 class="text-slate">{{ page.title }}</h1>
-              <p class="my-2"><span class="text-uppercase weight-700 text-slate my-2">Date:</span><span class="text-slate ml-2">{{ page.date | date: "%B %e, %Y, %R" }}</span></p>
+              <p class="my-2"><span class="text-uppercase weight-700 text-slate my-2">Date:</span><span class="text-slate ml-2">{{ page.date | date: "%B %e, %Y, %R Eastern Time" }}</span></p>
+              <p class="my-2"><span class="text-uppercase weight-700 text-slate my-2">Where:</span><span class="text-slate ml-2">{{ page.where }}</span></p>
               {% if page.border %}
               <hr class="my-3 hr-slate">
               {% else %}
+              {% endif %}
+              {% if page.registration %}
+              <h3 class="text-slate" id="register"><b>Enter your email to register for this event</b></h3>
+              <form action="{{ page.registrationform }}" method="post" >
+                <div class="form-group">
+                  <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email" name="emailAddress" style="background-color: white;">
+                  <small id="emailHelp" class="form-text text-muted">You will receive a Google Invitation Link once you register</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+              </form>
               {% endif %}
               {% if page.appearing %}
               <p class="my-1"><span class="text-slate weight-700">{{ page.appearing }}</span></p>
