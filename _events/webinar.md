@@ -15,7 +15,7 @@ Interested in learning about Censored Planet and how we detect and measure netwo
 
 ##### Join us for the online Censored Planet Webinar, happening on Zoom!
 
-**When: `October 4, 2021 from 10:00 - 11:30 AM EST`**  
+**When: `October 4, 2021 from 10:00 - 11:30 AM Eastern Time`**  
 **Where: Zoom ([Register above](#register) to get link delivered your Email)**  
 
 <img src="../assets/webinar.png" alt="Censored Planet Webinar flyer" title="Censored Planet Webinar flyer" width="100%">
