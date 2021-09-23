@@ -16,6 +16,8 @@ permalink: /projects/hyperquack
 <div class="container-fluid">
   <div class="container pt-4 pb-2">
     <h2 class="text-slate">Overview</h2>
+    <p class="size-18 text-slate">Quack uses <a class="underline" href="https://tools.ietf.org/html/rfc862" target="_blank" rel="noopener">echo servers</a> to detect DPI blocking of traffic based on request headers. The advantage of using echo servers is that identifying responses that have been interfered with is trivial and arbitrary TCP based protocols (in addition to HTTP) can be tested. By making use of echo's sibling <a class="underline" href="https://tools.ietf.org/html/rfc863"
+      target="_blank" rel="noopener">discard protocol</a>, we are able to determine the directionality of interference.</p>
     <p class="size-18 text-slate">Hyperquack is a powerful extension to Quack that measures keyword blocking at the application layer using infrastructural web servers as vantage points. Hyperuack detects DPI interference with HTTP and HTTPS traffic by making use of publicly accessible web-servers with consistent behavior. We send requests with the HTTP "Host" header or TLS SNI extension set to a domain we are interested in. If there is a DPI blocking the domain on the path between our measurement machine and the public web-server, we will receive a TCP reset or block page that does not match the web-server's typically response. By making retries and control measurements, we are able to distinguish between mismatches caused by normal network/server flakiness versus DPI interference.</p>
     <p class="size-18 text-slate">To ensure the safety of our technique, we limit ourselves to ~30,000 infrastructural web-servers. These servers are owned by ISPs or governments rather than an individuals. Even with stringent standards for web-server selection, we still maintain broad coverage with ~103 countries having ≥15 vantage points.</p>
   </div>
@@ -49,7 +51,60 @@ permalink: /projects/hyperquack
 <div class="container-fluid">
   <div id="topics" class="container py-2">
     <h2 class="text-slate mb-0">Publications</h2>
-    <p class="mb-0 size-18">Hyperquack will be presented at NDSS 2020.</p>
+    <p class="mb-0 size-18">Quack was presented at the 2018 USENIX Security Symposium.</p>
+    <div class="row pt-1">
+      <div class="col-12">
+        {% for publication in site.publications reversed %}
+              {% assign tags = publication.tags %}
+              {% for tag in tags %}
+              {% if tag == "quack" %}
+              <div class="report-card px-3 py-1 my-2">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-lg-12 col-sm-12">
+                    <p class="my-1">
+                      <span class="details-pub">{{ publication.date | date: "%B %Y" }}</span>
+                      <span class="ml-1 publisher">{{ publication.publisher }}</span>
+                    </p>
+                    <h3 class="pt-1 mb-0 text-slate weight-700">{{ publication.name }}</h3>
+                    {% assign collaborators = publication.collaborators %}
+                    {% for collaborator in collaborators %}
+                    <span class="collaborator">{{ collaborator }}</span>
+                    {% endfor %}
+                     {% if publication.press %}
+                      <p class="mb-1"></p>
+                      <span class="collaborator mt-1">Press:
+                      {% for publisher in publication.press %}
+                      <span><a class="underline weight-500 text-slate-60 ml-1" href="{{ publisher.link }}" target="_blank" rel="noopener">{{ publisher.publisher }}</a></span></span>
+                      {% endfor %}
+                      {% endif %}
+                    <p class="my-1">
+                      {% if publication.bibtex == "" or publication.bibtex == "#" or publication.bibtex == null %}
+                      {% else %}
+                      <button class="download btn-bib">BibTex</button>
+                      {% endif %}
+                      {% if publication.pdf == "" or publication.pdf == "#" or publication.pdf == null %}
+                      {% else %}
+                      <a href="../{{ publication.pdf }}" class="ml-2 underline text-slate-70 weight-500">PDF</a>
+                      {% endif %}
+                      {% if publication.talk == "" or publication.talk == "#" or publication.talk == null %}
+                      {% else %}
+                      <a href="{{ publication.talk }}" class="border-left-slate ml-2 pl-2 underline text-slate-70 weight-500">Talk</a>
+                      {% endif %}
+                      {% if publication.slides == "" or publication.slides == "#" or publication.slides == null %}
+                      {% else %}
+                      <a href="{{ publication.slides }}" class="border-left-slate ml-2 pl-2 underline text-slate-70 weight-500">Slides</a>
+                      {% endif %}
+                    </p>
+                    <p class="bibtex mt-1">{{ publication.bibtex }}</p>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+              {% endfor %}
+              {% endfor %}
+      </div>
+    </div>
+    <p class="mb-0 size-18">Hyperquack was presented at NDSS 2020.</p>
     <div class="row pt-1">
       <div class="col-12">
         {% for publication in site.publications reversed %}
@@ -109,8 +164,7 @@ permalink: /projects/hyperquack
 <div class="container-fluid">
   <div class="container pt-3 pb-5">
     <h2 class="text-slate mb-0">Contact</h2>
-    <p class="size-18 text-slate">Quack for Censored Planet is developed and maintained by <a class="underline" href="https://ramakrishnansr.com/" target="_blank" rel="noopener">Ram Sundara Raman</a>, <a class="underline" href="https://github.com/ceccion" target="_blank" rel="noopener">Nick Ceccio</a>  and <a class="underline" href="https://ensa.fi/" target="_blank" rel="noopener">Roya
-        Ensafi</a>.</p>
+    <p class="size-18 text-slate">Quack for Censored Planet is developed and maintained by <a class="underline" href="https://ramakrishnansr.com/" target="_blank" rel="noopener">Ram Sundara Raman</a>  and <a class="underline" href="https://ensa.fi/" target="_blank" rel="noopener">Roya Ensafi</a>.</p>
   </div>
 </div>
 
