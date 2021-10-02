@@ -1,11 +1,39 @@
+- month: June 2021
+  posts:
+    - publisher: Newsweek
+      text: "Trump Says More Countries Should Ban Twitter: 'Perhaps I Should Have Done It While I Was President'"
+      link: https://www.newsweek.com/trump-says-more-countries-should-ban-twitter-perhaps-i-should-have-done-it-while-i-was-president-1598788
+- month: April 2021
+  posts:
+    - publisher: Ars Technica
+      text: "Russia’s Twitter throttling may give censors never-before-seen capabilities"
+      link: https://arstechnica.com/gadgets/2021/04/russias-twitter-throttling-may-give-censors-never-before-seen-capabilities/
+    - publisher: Foreign Policy
+      text: "Russia Can’t Afford to Block Twitter—Yet"
+      link: https://foreignpolicy.com/2021/04/30/russia-block-twitter-telegram-online-censorship/
+- month: February 2021
+  posts:
+    - publisher: APNIC Blog
+      text: "An analysis of a large-scale HTTPS interception"
+      link: https://blog.apnic.net/2021/02/15/an-analysis-of-a-large-scale-https-interception/
+- month: January 2021
+  posts:
+    - publisher: Tech Monitor
+      text: "Man in the middle: How Kazakhstan forced browser makers to fight state censorship"
+      link: https://techmonitor.ai/cybersecurity/kazakhstan-censorship
+- month: November 2020
+  posts:
+    - publisher: University of Michigan
+      text: "‘Extremely aggressive’ internet censorship spreads in the world’s democracies"
+      link: https://news.umich.edu/extremely-aggressive-internet-censorship-spreads-in-the-worlds-democracies/
 - month: October 2020
   posts:
-    - published: Financial Times
+    - publisher: Financial Times
       text: "US blocks Hong Kong users from some government websites"
       link: "https://www.ft.com/content/05a05cb9-b0e2-4c4a-85ed-3126c83d5f9b"
 - month: February 2020
   posts:
-    - published: Univerity of Michigan
+    - publisher: Univerity of Michigan
       text: "Real-time monitor tracks the growing use of network filters for censorship"
       link: "https://cse.engin.umich.edu/stories/real-time-monitor-tracks-the-growing-use-of-network-filters-for-censorship"
 - month: November 2019
