@@ -21,3 +21,5 @@ collections:
     output: false
   external:
     output: false
+  studies:
+    output: true
