@@ -2,21 +2,52 @@
 layout: events
 date: "4 October 2021T10:00:00"
 duration: "1.5 hours"
-where: "Zoom (Register below to get link)"
-title: "Announcing the Censored Planet Webinar"
+where: "Zoom"
+title: "Censored Planet Community Webinar 2021"
 eventype: "Webinar"
 permalink: /webinar2021
-border: yes
-registration: yes
-registrationform: https://docs.google.com/forms/d/e/1FAIpQLSd6sHFsmfRdRrCJ2yjK5spMzvJu1Scz259_WlWiG8MIGGpyeg/formResponse
 ---
+
+### Update
+Thank you for attending the Censored Planet Community Webinar 2021. We hope you all enjoyed the event, and we hope to collaborate with you to work on important issues surrounding Internet censorship. 
+
+Please find some relevant links shared during the webinar below.
+
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr> 
+     <th scope="col">Resource</th>
+      <th scope="col">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Censored Planet Raw Data</td>
+      <td><a href="https://data.censoredplanet.org/raw">https://data.censoredplanet.org/raw</a></td>
+    </tr>
+    <tr>
+      <td>Censored Planet Documentation</td>
+      <td><a href="https://docs.censoredplanet.org">https://docs.censoredplanet.org</a></td>
+    </tr>
+    <tr>
+      <td>Censored Planet Data Analysis Pipeline</td>
+      <td><a href="https://github.com/censoredplanet/censoredplanet-analysis">https://github.com/censoredplanet/censoredplanet-analysis</a></td>
+    </tr>
+    <tr>
+      <td>Censored Planet Github</td>
+      <td><a href="https://github.com/censoredplanet/censoredplanet">https://github.com/censoredplanet/censoredplanet</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### Event Details
 
 Interested in learning about Censored Planet and how we detect and measure network interference around the world? Eager to learn about the cool research ideas and capabilities Censored Planet has been working on recently?  
 
 ##### Join us for the online Censored Planet Webinar, happening on Zoom!
 
 **When: `October 4, 2021 from 10:00 - 11:30 AM Eastern Time`**  
-**Where: Zoom ([Register above](#register) to get link delivered your Email)**  
+**Where: Zoom**  
 
 <img src="../assets/webinar.png" alt="Censored Planet Webinar flyer" title="Censored Planet Webinar flyer" width="100%">
 {: .center }
