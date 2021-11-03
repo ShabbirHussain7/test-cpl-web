@@ -16,7 +16,7 @@ collaborators:
   - Simone Basso
   - Roya Ensafi
 pdf: "assets/throttling-imc-paper.pdf"
-talk: ""
+talk: "https://www.youtube.com/watch?v=GenCBx5jWxo"
 slides: "assets/throttling-imc-slides.pdf"
 press:
   - publisher: Censored Planet
