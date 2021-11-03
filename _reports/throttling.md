@@ -19,6 +19,7 @@ border: yes
 
 note: "If you are in the region (Russia) and are interested to collaborate or want to provide more information/feedback please reach out to us at: censoredplanet-rapid-focus@umich.edu."
 ---
+This post highlights findings also discussed in our [IMC 2021](https://conferences.sigcomm.org/imc/2021/) paper [“Throttling Twitter: An Emerging Censorship Technique in Russia”](https://dl.acm.org/doi/10.1145/3487552.3487858).
 
 <img src="../assets/throttling-timeline.png" alt="Timeline of Twitter throttling in Russia" title="Timeline of Twitter throttling in Russia" width="100%">
 **Figure 1.** _Timeline of Twitter throttling in Russia_
