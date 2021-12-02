@@ -6,6 +6,7 @@ where: "Zoom"
 title: "Censored Planet Community Webinar 2021"
 eventype: "Webinar"
 permalink: /webinar2021
+video: "https://www.youtube-nocookie.com/embed/v5G_nUUzVv8"
 ---
 
 ### Update
