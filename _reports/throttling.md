@@ -23,7 +23,7 @@ research: "Throttling Twitter: An Emerging Censorship Technique in Russia"
 link: "assets/throttling-imc-paper.pdf"
 writers: "Diwen Xue, Reethika Ramesh, ValdikSS, Leonid Evdokimov, Andrey Viktorov, Arham Jain, Eric Wustrow, Simone Basso, and Roya Ensafi"
 appearing: "ACM Internet Measurement Conference (IMC) 2021"
-video: "https://www.youtube.com/watch?v=GenCBx5jWxo"
+video: "https://www.youtube-nocookie.com/embed/GenCBx5jWxo"
 ---
 This post highlights findings also discussed in our [IMC 2021](https://conferences.sigcomm.org/imc/2021/) paper [“Throttling Twitter: An Emerging Censorship Technique in Russia”](https://dl.acm.org/doi/10.1145/3487552.3487858).
 
