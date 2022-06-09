@@ -26,5 +26,5 @@
       url: /data/raw
     - name: Documentation
       url: https://docs.censoredplanet.org
-    - name: Visualizations
-      url: /data/visualizations
+    - name: Dashboard
+      url: https://dashboard.censoredplanet.org/access
