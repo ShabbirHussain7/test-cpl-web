@@ -1,3 +1,26 @@
+- month: July 2022
+  posts:
+    - publisher: Engadget
+      text: "US Congress calls for the FTC to regulate how VPN companies operate"
+      link: https://www.engadget.com/us-congress-wants-the-ftc-to-regulate-the-vpn-industry-074102207.html
+    - publisher: PC Gamer
+      text: "VPNs aren't as protective as you think they are, says US Congress"
+      link: https://www.pcgamer.com/vpns-arent-as-protective-as-they-think-you-are-says-us-congress/
+    - publisher: TechTimes
+      text: "VPNs to See Massive Changes Soon, Lawmakers Take Case to FTC for Misleading Experience"
+      link: https://www.techtimes.com/articles/278133/20220717/vpns-see-massive-changes-soon-lawmakers-take-case-ftc-misleading.htm
+    - publisher: The Record
+      text: "Lawmakers call for FTC crackdown on deceptive VPN practices amid abortion bans"
+      link: https://therecord.media/lawmakers-call-for-ftc-crackdown-on-deceptive-vpn-practices-amid-abortion-bans/
+    - publisher: The Verge
+      text: "Lawmakers push FTC to clean up the VPN industry"
+      link: https://www.theverge.com/2022/7/17/23264384/lawmakers-ftc-eshoo-wyden-vpn-industry-roe-v-wade-abortion-privacy
+    - publisher: The Washington Post
+      text: "Your VPN may be snake oil. These three are trustworthy."
+      link: https://www.washingtonpost.com/technology/2022/07/15/most-secure-vpn/
+    - publisher: Torrent Freak
+      text: "US Lawmakers Want FTC to Crack Down on Overpromising and Dishonest VPNs"
+      link: https://torrentfreak.com/us-lawmakers-want-ftc-to-crack-down-on-overpromising-and-dishonest-vpns-220718/
 - month: June 2021
   posts:
     - publisher: Newsweek
