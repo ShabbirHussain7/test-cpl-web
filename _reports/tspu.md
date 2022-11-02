@@ -29,6 +29,7 @@ This post highlights findings also discussed in our [IMC 2022](https://conferenc
 In March 2022, just days after the onset of Russia’s invasion of Ukraine, the federal government of Russia started to block social media and news websites on a national scale. The escalation of blocking quickly transformed Russia’s Internet into a propaganda bubble that’s hostile to Russian citizens’ ability to communicate and understand about the war. But how such information control is done in Russia?
 
 <img src="../assets/tspu-war.png" width="60%" alt="Information Control in Russia during the Ukraine war" title="Information Control in Russia during the Ukraine war">
+{: .center }
 
 **Figure 1.** _Information Control in Russia during the Ukraine war_
 {: .center }
@@ -64,6 +65,7 @@ Ten years ago, in 2012, the infamous [“blocklist law”](https://wilmap.stanfo
 For years after the law was signed, censorship in Russia followed a model called “decentralized control” (refer to our [previous report](https://censoredplanet.org/russia) on this). Specifically, Roskomnadzor controls the contents of the singular blocklist, determining which domains are “harmful”, but ISPs were at discretion to implement the technical means to enforce the blocking. As a result, ISPs used different blocking mechanisms with different levels of efficacy and different amounts of blocking targets. Under that model, it was difficult for the federal government to enforce censorship policies in real time and uniformly across the country. 
 
 <img src="../assets/tspu-leak.png" width="50%" alt="Leaked installation guide for TSPU" title="Leaked installation guide for TSPU">
+{: .center }
 
 **Figure 3.** _Leaked installation guide for TSPU_
 {: .center }
@@ -71,6 +73,7 @@ For years after the law was signed, censorship in Russia followed a model called
 As a result, the [RuNet Law](https://edition.cnn.com/2019/05/01/europe/vladimir-putin-russian-independent-internet-intl/index.html) was signed in 2019, which appoints Roskomnadzor to implement special-purpose DPIs to counter "threats" to the ["stability, security, and integrity"](https://dgap.org/en/research/publications/deciphering-russias-sovereign-internet-law) of Russia’s Internet. Importantly, this law provides the legal basis for requiring ISPs to install government-supplied devices inside their networks. These devices were then shipped out to ISPs, along with instructions on where to put them (Figure 3 shows one example of installation guide leaded from ISP).
 
 <img src="../assets/tspu-ooni.png" width="65%" alt="OONI Measurement suggests uniform censorship behaviors" title="OONI Measurement suggests uniform censorship behaviors">
+{: .center }
 
 **Figure 4.** _OONI Measurement suggests uniform censorship behaviors_
 {: .center }
@@ -82,7 +85,8 @@ We highlight that these events after 2019 marked a significant departure from Ru
 
 ### In-depth Analysis
 
-<img src="../assets/tspu-setup.png" width="70%" alt="Measurement Setup" title="Measurement Setup">
+<img src="../assets/tspu-setup.png" width="50%" alt="Measurement Setup" title="Measurement Setup">
+{: .center }
 
 **Figure 5.** _Measurement Setup_
 {: .center }
@@ -106,6 +110,7 @@ Using this methodology, we identified six unique blocking behaviors that we reli
 **Characterize TSPU state management:**
 
 <img src="../assets/tspu-state.png" width="65%" alt="TSPU Triggering Sequences" title="TSPU Triggering Sequences">
+{: .center }
 
 **Figure 7.** _TSPU Triggering Sequences_
 {: .center }
@@ -123,6 +128,7 @@ We also found that TSPU handles IP fragmentation in a quite unique way: TSPU dev
 We curated lists of domains for testing, including samples from the blocking registry, top domain list, and censorship testing list from Citizen Lab. We then tested each domain for both ISP and TSPU blocking. Overall, we found that ISPs fall behind the TSPU in terms of blocking coverage: ISPs do not block “out-registry” domains at all and some of them do not even block domains from the blocking registry effectively. For example, our vantage points in Rostelecom and OBIT only block 1,302 and 3,943 domains from the registry samples, while TSPU blocks the same list of 9,655 domains across ISPs. 
 
 <img src="../assets/tspu-target.png" width="70%" alt="Domains blocked by ISPs and the TSPU" title="Domains blocked by ISPs and the TSPU">
+{: .center }
 
 **Figure 9.** _Domains blocked by ISPs and the TSPU_
 {: .center }

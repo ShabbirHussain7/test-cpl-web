@@ -90,6 +90,7 @@ OpenVPN engages in a TLS-style handshake with its peer over the control channel.
 We find that the presence of such ACK packets, which are uniform in size and only seen in some parts of a session, provides another fingerprintable feature. Specifically, we group packets into 10-packet bins, and we derive the ACK fingerprint for each flow by counting the number of packets in each bin that have the same size as the identified ACK packet. For OpenVPN flows, we expect to observe a high number of ACK packets in early bins and an absence of them in later bins. 
 
 <img src="../assets/openvpn-ack.png" alt="ACK fingerprint Decision Tree from the training datasets" title="ACK fingerprint Decision Tree from the training datasets" width="70%">
+{: .center }
 
 **Figure 3.** _ACK fingerprint Decision Tree from the training datasets_
 {: .center }
