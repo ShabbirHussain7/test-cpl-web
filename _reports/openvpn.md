@@ -104,6 +104,7 @@ We explore the feasibility of identifying an OpenVPN server through active probi
 However, we find that with carefully designed probes, we are still able to distinguish between OpenVPN and non-OpenVPN servers with high accuracy, even if the server remains “silent” throughout the probing cycle. The key concept is that although the application may not respond to probing, an attacker may still be able to fingerprint application-specific thresholds at the TCP level, such as timeouts or RST thresholds, as demonstrated by [Frolov et al](https://www.ndss-symposium.org/ndss-paper/detecting-probe-resistant-proxies/).
 
 <img src="../assets/openvpn-probe.png" alt="Summary of Probes and the expected behaviors from an OpenVPN server" title="Summary of Probes and the expected behaviors from an OpenVPN server" width="70%">
+{: .center }
 
 **Figure 4.** _Summary of Probes and the expected behaviors from an OpenVPN server_
 {: .center }
