@@ -62,7 +62,7 @@ __Obfuscated VPN:__ In response to the growing popularity of VPNs, numerous ISPs
 
 > “...keeps you out of trouble, even in China” —-- [BolehVPN](https://www.vpnmentor.com/blog/bolehvpn-traffic-obfuscation-keeps-you-out-of-trouble/)
 
-> "...even your internet provider can’t tell that you’re using a VPN." --- [SurfShark](https://surfshark.com/features) \\
+> "...even your internet provider can’t tell that you’re using a VPN." --- [SurfShark](https://surfshark.com/features) 
 
 Common obfuscation strategies adopted by commercial VPNs include employing [XOR-based scramblers](https://tunnelblick.net/cOpenvpn_xorpatch.html), wrapping OpenVPN inside [encrypted tunnels](https://www.vpnanswers.com/openvpn-over-ssh-tunnelling-tutorial-step-by-step/), or using proprietary protocols. __But do these measures defeat VPN detection in practice?__
 
@@ -90,6 +90,7 @@ OpenVPN engages in a TLS-style handshake with its peer over the control channel.
 We find that the presence of such ACK packets, which are uniform in size and only seen in some parts of a session, provides another fingerprintable feature. Specifically, we group packets into 10-packet bins, and we derive the ACK fingerprint for each flow by counting the number of packets in each bin that have the same size as the identified ACK packet. For OpenVPN flows, we expect to observe a high number of ACK packets in early bins and an absence of them in later bins. 
 
 <img src="../assets/openvpn-ack.png" alt="ACK fingerprint Decision Tree from the training datasets" title="ACK fingerprint Decision Tree from the training datasets" width="70%">
+
 **Figure 3.** _ACK fingerprint Decision Tree from the training datasets_
 {: .center }
 
@@ -103,6 +104,7 @@ We explore the feasibility of identifying an OpenVPN server through active probi
 However, we find that with carefully designed probes, we are still able to distinguish between OpenVPN and non-OpenVPN servers with high accuracy, even if the server remains “silent” throughout the probing cycle. The key concept is that although the application may not respond to probing, an attacker may still be able to fingerprint application-specific thresholds at the TCP level, such as timeouts or RST thresholds, as demonstrated by [Frolov et al](https://www.ndss-symposium.org/ndss-paper/detecting-probe-resistant-proxies/).
 
 <img src="../assets/openvpn-probe.png" alt="Summary of Probes and the expected behaviors from an OpenVPN server" title="Summary of Probes and the expected behaviors from an OpenVPN server" width="70%">
+
 **Figure 4.** _Summary of Probes and the expected behaviors from an OpenVPN server_
 {: .center }
 
