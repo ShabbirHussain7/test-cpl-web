@@ -89,9 +89,9 @@ OpenVPN engages in a TLS-style handshake with its peer over the control channel.
 
 We find that the presence of such ACK packets, which are uniform in size and only seen in some parts of a session, provides another fingerprintable feature. Specifically, we group packets into 10-packet bins, and we derive the ACK fingerprint for each flow by counting the number of packets in each bin that have the same size as the identified ACK packet. For OpenVPN flows, we expect to observe a high number of ACK packets in early bins and an absence of them in later bins. 
 
-![ACK fingerprint Decision Tree from the training datasets](../assets/openvpn-ack.png "ACK fingerprint Decision Tree from the training datasets")
+<img src="../assets/openvpn-ack.png" alt="ACK fingerprint Decision Tree from the training datasets" title="ACK fingerprint Decision Tree from the training datasets" width="70%">
 **Figure 3.** _ACK fingerprint Decision Tree from the training datasets_
-{: .center}
+{: .center }
 
 We collect a training dataset with pre-recorded OpenVPN connections, and we build a classification decision tree based on the dataset, as shown in Figure 3. The exact ACK fingerprint is a sequence of thresholds based on the derived decision tree.
 
@@ -102,9 +102,9 @@ We explore the feasibility of identifying an OpenVPN server through active probi
 
 However, we find that with carefully designed probes, we are still able to distinguish between OpenVPN and non-OpenVPN servers with high accuracy, even if the server remains “silent” throughout the probing cycle. The key concept is that although the application may not respond to probing, an attacker may still be able to fingerprint application-specific thresholds at the TCP level, such as timeouts or RST thresholds, as demonstrated by [Frolov et al](https://www.ndss-symposium.org/ndss-paper/detecting-probe-resistant-proxies/).
 
-![Summary of Probes and the expected behaviors from an OpenVPN server](../assets/openvpn-probe.png "Summary of Probes and the expected behaviors from an OpenVPN server")
+<img src="../assets/openvpn-probe.png" alt="Summary of Probes and the expected behaviors from an OpenVPN server" title="Summary of Probes and the expected behaviors from an OpenVPN server" width="70%">
 **Figure 4.** _Summary of Probes and the expected behaviors from an OpenVPN server_
-{: .center}
+{: .center }
 
 Here is the list all probes we used in our study and the expected behaviors from an OpenVPN server. As an example, the first two probes are designed to exploit a behavior associated with how OpenVPN packetize TCP streams. When OpenVPN operates over TCP, it needs to split the continuous stream into discrete OpenVPN packets. On a high level, this process involves allocating a buffer in memory to reassemble fragments of OpenVPN packets encapsulated in TCP streams. An important detail is that after the length N for the next OpenVPN packet is determined, the reassembly routine will keep reading N additional bytes before a reassembled packet can be returned to the caller and get processed. 
 

@@ -26,11 +26,11 @@ appearing: "Internet Measurement Conference 2022 (IMC'22)"
 
 This post highlights findings also discussed in our [IMC 2022](https://conferences.sigcomm.org/imc/2022/) paper [TSPU: Russia’s Decentralized Censorship System](https://diwenx.com/assets/files/tspu-imc22.pdf). 
 
-<img src="../assets/tspu-war.png" alt="Information Control in Russia during the Ukraine war" title="Information Control in Russia during the Ukraine war" width="100%">
+In March 2022, just days after the onset of Russia’s invasion of Ukraine, the federal government of Russia started to block social media and news websites on a national scale. The escalation of blocking quickly transformed Russia’s Internet into a propaganda bubble that’s hostile to Russian citizens’ ability to communicate and understand about the war. But how such information control is done in Russia?
+
+<img src="../assets/tspu-war.png" width="60%" alt="Information Control in Russia during the Ukraine war" title="Information Control in Russia during the Ukraine war">
 **Figure 1.** _Information Control in Russia during the Ukraine war_
 {: .center }
-
-In March 2022, just days after the onset of Russia’s invasion of Ukraine, the federal government of Russia started to block social media and news websites on a national scale. The escalation of blocking quickly transformed Russia’s Internet into a propaganda bubble that’s hostile to Russian citizens’ ability to communicate and understand about the war. But how such information control is done in Russia?
 
 In this paper, we analyze the latest development of the Internet censorship in Russia, enabled by a newly deployed system colloquially known as “TSPU” whose existence has been only hinted at in previous literature. With in-country and remote measurements, our team at Censored Planet confirm the existence of such a system and find evidence of pervasive deployment of TSPU devices on Russia’s Internet. We also characterized the How, What and Where of TSPU’s interference with users’ Internet traffic. By being in-path, centrally controlled, and close to end users, TSPU empowers the Russian government to unilaterally roll out censorship measures and potentially other attacks over thousands of privately-owned ISPs.
 
@@ -62,15 +62,15 @@ Ten years ago, in 2012, the infamous [“blocklist law”](https://wilmap.stanfo
 
 For years after the law was signed, censorship in Russia followed a model called “decentralized control” (refer to our [previous report](https://censoredplanet.org/russia) on this). Specifically, Roskomnadzor controls the contents of the singular blocklist, determining which domains are “harmful”, but ISPs were at discretion to implement the technical means to enforce the blocking. As a result, ISPs used different blocking mechanisms with different levels of efficacy and different amounts of blocking targets. Under that model, it was difficult for the federal government to enforce censorship policies in real time and uniformly across the country. 
 
-![Leaked installation guide for TSPU](../assets/tspu-leak.png "Leaked installation guide for TSPU")
+<img src="../assets/tspu-leak.png" width="50%" alt="Leaked installation guide for TSPU" title="Leaked installation guide for TSPU">
 **Figure 3.** _Leaked installation guide for TSPU_
-{: .center}
+{: .center }
 
 As a result, the [RuNet Law](https://edition.cnn.com/2019/05/01/europe/vladimir-putin-russian-independent-internet-intl/index.html) was signed in 2019, which appoints Roskomnadzor to implement special-purpose DPIs to counter "threats" to the ["stability, security, and integrity"](https://dgap.org/en/research/publications/deciphering-russias-sovereign-internet-law) of Russia’s Internet. Importantly, this law provides the legal basis for requiring ISPs to install government-supplied devices inside their networks. These devices were then shipped out to ISPs, along with instructions on where to put them (Figure 3 shows one example of installation guide leaded from ISP).
 
-![OONI Measurement suggests uniform censorship behaviors](../assets/tspu-ooni.png "OONI Measurement suggests uniform censorship behaviors")
+<img src="../assets/tspu-ooni.png" width="65%" alt="OONI Measurement suggests uniform censorship behaviors" title="OONI Measurement suggests uniform censorship behaviors">
 **Figure 4.** _OONI Measurement suggests uniform censorship behaviors_
-{: .center}
+{: .center }
 
 About a year later, Russian users started to notice blocking of domains which were not found inside the blocking registry, which defied our understanding of how censorship had been traditionally practiced until then. We called it “out-registry” blocking. One of such events is the [Twitter throttling incident](https://censoredplanet.org/throttling) back in March 2021. For all such incidents, measurements on censorship behaviors showed temporal and geographical uniformity, suggesting that the censorship devices are [likely centrally managed](https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/). 
 
@@ -79,47 +79,48 @@ We highlight that these events after 2019 marked a significant departure from Ru
 
 ### In-depth Analysis
 
+<img src="../assets/tspu-setup.png" width="70%" alt="Measurement Setup" title="Measurement Setup">
+**Figure 5.** _Measurement Setup_
+{: .center }
+
 There are a few key challenges of performing measurements on TSPU. First, we need to acquire appropriate vantage points inside Russia for in-country measurements. The fact that only residential networks are targeted while data centers are often exempted from the TSPU law further complicates the issue. Moreover, distinguishing TSPU from other DPIs is not trivial, because Russian ISPs still keep their own commercial filters in place, which censor many of the same resources. Finally, we found that TSPU censorship policies are NOT symmetric with respect to inside and outside Russia, which makes existing remote measurement platforms unfit for detecting TSPUs, and therefore requiring ad-hoc solutions.
 
 Working with local activists and researchers, we set up a measurement testbed including vantage points in residential ISPs, data centers, as well as controls outside Russia, as shown in Figure 5. Using this setup, we send different types of network traffic with different censorship triggers present, such as blocklisted IP addresses, targeted SNIs, or fingerprints belonging to a disallowed protocol. For example, to study IP-based blocking, we used a retired Tor entry node in France whose IP has been “out-registry blocked” by TSPU.
 
-![Measurement Setup](../assets/tspu-setup.png "Measurement Setup")
-**Figure 5.** _Measurement Setup_
-{: .center}
-
 **Identify TSPU blocking:**
-
-We attribute an observed blocking instance, including the trigger and the corresponding blocking behavior, to the TSPU based on the following three assumptions, based on the fact that TSPU devices are ordered, distributed, and controlled by Roskomnadzor: 
-
-> TSPU blocking should show a high degree of uniformity in blocking behaviors across ISPs. \\ In addition, uniformity is also expected for the blocking targets. \\ Finally, we expect that different blocking mechanisms that are attributed to the TSPU are co-located.
-
-Using this methodology, we identified six unique blocking behaviors that we reliably attribute to TSPU, which are implemented to target SNI, IP, or the QUIC protocol. We note that each of the six blocking behaviors requires the TSPU to modify or drop packets in order to sever a violating connection. Such capability suggests that TSPU devices have [in-path](https://citizenlab.ca/2018/03/bad-traffic-sandvines-packetlogic-devices-deploy-government-spyware-turkey-syria/) components. We highlight that this means the TSPU has more means to interfere with users’ traffic than known on-path censorship systems, such as the GFW.
 
 <img src="../assets/tspu-behavior.png" alt="Six blocking behaviors attributed to TSPU" title="Six blocking behaviors attributed to TSPU" width="100%">
 **Figure 6.** _Six blocking behaviors attributed to TSPU_
 {: .center }
 
+We attribute an observed blocking instance, including the trigger and the corresponding blocking behavior, to the TSPU based on the following three assumptions, based on the fact that TSPU devices are ordered, distributed, and controlled by Roskomnadzor: 
+
+> TSPU blocking should show a high degree of uniformity in blocking behaviors across ISPs. In addition, uniformity is also expected for the blocking targets. Finally, we expect that different blocking mechanisms that are attributed to the TSPU are co-located.
+
+Using this methodology, we identified six unique blocking behaviors that we reliably attribute to TSPU, which are implemented to target SNI, IP, or the QUIC protocol. We note that each of the six blocking behaviors requires the TSPU to modify or drop packets in order to sever a violating connection. Such capability suggests that TSPU devices have [in-path](https://citizenlab.ca/2018/03/bad-traffic-sandvines-packetlogic-devices-deploy-government-spyware-turkey-syria/) components. We highlight that this means the TSPU has more means to interfere with users’ traffic than known on-path censorship systems, such as the GFW.
+
 **Characterize TSPU state management:**
 
-We explore the degree of statefulness when TSPU makes access control decisions. First, we send different TCP sequences between the local and remote machines, alternating source, destination, and TCP flags. We found that different sequences can lead to different blocking behaviors. For example, none of the sequences starting with a packet sent by the remote peer triggers blocking, confirming that censorship is likely not symmetric with respect to inside and outside Russia. Such behavior makes remote measurement extremely challenging. We also note that sequences that contain a remote-sent SYN packet can “un-block” a connection despite the presence of a blocking trigger. We make use of this observation when making recommendations on how clients and servers can circumvent TSPU censorship.
-
-![TSPU Triggering Sequences](../assets/tspu-state.png "TSPU Triggering Sequences")
+<img src="../assets/tspu-state.png" width="65%" alt="TSPU Triggering Sequences" title="TSPU Triggering Sequences">
 **Figure 7.** _TSPU Triggering Sequences_
-{: .center}
+{: .center }
 
-We also found that TSPU handles IP fragmentation in a quite unique way: TSPU devices buffer incomplete fragments, but does not defragment them before forwarding to the next hop. In addition, when fragments are forwarded to the next hop, the Time-to-live (TTL) field of the first fragment (identified by zero offset) is used for subsequent fragments. Moreover, the fragmentation cache on TSPU devices has a limit of 45 as the maximum number of fragments permitted in a single IP packet. These behaviors are fairly unique, and they ultimately enable us to detect TSPU from the remote side.
+We explore the degree of statefulness when TSPU makes access control decisions. First, we send different TCP sequences between the local and remote machines, alternating source, destination, and TCP flags. We found that different sequences can lead to different blocking behaviors. For example, none of the sequences starting with a packet sent by the remote peer triggers blocking, confirming that censorship is likely not symmetric with respect to inside and outside Russia. Such behavior makes remote measurement extremely challenging. We also note that sequences that contain a remote-sent SYN packet can “un-block” a connection despite the presence of a blocking trigger. We make use of this observation when making recommendations on how clients and servers can circumvent TSPU censorship.
 
 ![TSPU handling of IP fragmentation](../assets/tspu-frag.png "TSPU handling of IP fragmentation")
 **Figure 8.** _TSPU handling of IP fragmentation_
 {: .center}
 
+We also found that TSPU handles IP fragmentation in a quite unique way: TSPU devices buffer incomplete fragments, but does not defragment them before forwarding to the next hop. In addition, when fragments are forwarded to the next hop, the Time-to-live (TTL) field of the first fragment (identified by zero offset) is used for subsequent fragments. Moreover, the fragmentation cache on TSPU devices has a limit of 45 as the maximum number of fragments permitted in a single IP packet. These behaviors are fairly unique, and they ultimately enable us to detect TSPU from the remote side.
+
 **Understand what resources are targeted:**
 
 We curated lists of domains for testing, including samples from the blocking registry, top domain list, and censorship testing list from Citizen Lab. We then tested each domain for both ISP and TSPU blocking. Overall, we found that ISPs fall behind the TSPU in terms of blocking coverage: ISPs do not block “out-registry” domains at all and some of them do not even block domains from the blocking registry effectively. For example, our vantage points in Rostelecom and OBIT only block 1,302 and 3,943 domains from the registry samples, while TSPU blocks the same list of 9,655 domains across ISPs. 
 
-![Domains blocked by ISPs and the TSPU](../assets/tspu-target.png "Domains blocked by ISPs and the TSPU")
+<img src="../assets/tspu-target.png" width="70%" alt="Domains blocked by ISPs and the TSPU" title="Domains blocked by ISPs and the TSPU">
 **Figure 9.** _Domains blocked by ISPs and the TSPU_
-{: .center}
+{: .center }
+
 
 We note that the majority of domains targeted by TSPU seem to be "in-registry" domains, which means that ISPs are already obligated block them under the "blocklist law". We are concerned that this may suggest that the previous censorship model, which relies on ISP complaince, has been superseded by a more centralized approach, with TSPU being the technical stack of it.
 
