@@ -1,5 +1,5 @@
 - notification:
   display: "yes"
-  text: "Join Censored Planet as a 2022 ICFP Fellow"
-  button-text: "Read More"
-  button-url: "/icfp22"
+  text: "Our Measurement on Russia's Centralized National Firewall"
+  button-text: "Read Report"
+  button-url: "/tspu"
