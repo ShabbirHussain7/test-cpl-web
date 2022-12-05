@@ -1,5 +1,5 @@
 - notification:
   display: "yes"
-  text: "Our Measurement on Russia's Centralized National Firewall"
+  text: "New Methods to Study Censorship Devices"
   button-text: "Read Report"
-  button-url: "/tspu"
+  button-url: "/censorship-devices"
