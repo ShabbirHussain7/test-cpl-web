@@ -1,6 +1,6 @@
 ---
 layout: events
-date: "13 March 2022T23:59:00GMT"
+date: "13 March 2023T23:59:00GMT"
 duration: Three, six, nine, or twelve month fellowships available
 where: "Censored Planet Lab at the University of Michigan"
 title: "Join Censored Planet as a 2023 ICFP Fellow"
