@@ -2,7 +2,7 @@
 layout: events
 date: "20 February 2023T23:59:00GMT"
 duration: Three, six, nine, or twelve month fellowships available
-where: "Censored Planet Lab at the University of Michigan"
+where: "University of Michigan"
 title: "Join Censored Planet as a 2023 ICFP Fellow"
 eventype: "Fellowship"
 permalink: /icfp23
@@ -15,7 +15,7 @@ note: "<b>Apply by February 20 23:59 GMT via the OTF <a href=https://www.opentec
 
 The fellowship can be three, six, nine or twelve months. It is usually offered to postdoctoral, doctoral students, and experienced researchers with demonstrated ability and expertise, with a monthly stipend of $7,000 USD and a travel and equipment stipend.
 
-**Apply to join Censored Planet Lab at University of Michigan** through the OTF [website](https://www.opentech.fund/funds/icfp/). If you have any questions about working under ICFP at Censored Planet Lab, please contact us at [censoredplanet@umich.edu](mailto:censoredplanet@umich.edu).
+**Apply to join us at University of Michigan** through the OTF [website](https://www.opentech.fund/funds/icfp/). If you have any questions about working with us, please reach out to [censoredplanet@umich.edu](mailto:censoredplanet@umich.edu).
 
 <img src="../assets/icfp23.png" alt="ICFP '23 at Censored Planet flyer" title="ICFP '23 at Censored Planet flyer" width="100%">
 {: .center }

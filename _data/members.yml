@@ -8,17 +8,19 @@
   link: "https://ramakrishnansr.com/"
 - name: Reethika Ramesh
   position: PhD Candidate
-  avatar: reethika.png
+  avatar: reethika.jpeg
   link: "https://reethika.info/"
-- name: Elisa Tsai
-  position: PhD Student
-  avatar: elisa.jpg
-  link: "https://github.com/eltsai"
-- name: Apurva Virkud
-  position: Researcher
-  avatar: apurva.png
-  link: "https://www.linkedin.com/in/apurva-virkud"
 - name: Armin Huremagic
   position: Researcher
   avatar: armin.png
   link: "https://www.linkedin.com/in/armin-huremagic/"
+- name: Anna Ablove
+  position: Graduate
+  avatar: anna.jpg
+  link: "https://www.ablove.dev" 
+- name: Yusei Uehara
+  position: Undergraduate
+  avatar: yusei.jpeg  
+- name: Nadav Oren
+  position: Undergraduate
+  avatar: nadav.png
