@@ -20,10 +20,10 @@ The fellowship can be three, six, nine or twelve months. It is usually offered t
 <img src="../assets/icfp23.png" alt="ICFP '23 at Censored Planet flyer" title="ICFP '23 at Censored Planet flyer" width="100%">
 {: .center }
 
-### Background on ICFP and Censored Planet Lab
+### Background on ICFP and Censored Planet
 [The Information Controls Fellowship Program](https://www.opentech.fund/funds/icfp/) (ICFP) cultivates research, outputs, and creative collaboration on topics related to repressive Internet censorship and surveillance. The program supports examination into how governments in countries, regions, or areas of OTF’s core focus are restricting the free flow of information, cutting access to the open Internet, and implementing censorship mechanisms, thereby threatening the ability of global citizens to exercise basic human rights and democracy; work focused on mitigation of such threats is also supported.
 
-[Censored Planet Lab](https://censoredplanet.org/) research lies at the intersection of network security, censorship, and Internet measurement. We build scalable techniques and systems to protect users’ Internet experiences from disruption, surveillance, and digital inequity. We welcome research proposals from fellowship candidates for research projects related to our areas of focus as described below:
+[Censored Planet](https://censoredplanet.org/) research lies at the intersection of network security, censorship, and Internet measurement. We build scalable techniques and systems to protect users’ Internet experiences from disruption, surveillance, and digital inequity. We welcome research proposals from fellowship candidates for research projects related to our areas of focus as described below:
 
 **Censored Planet Observatory:** Censored Planet is a platform that provides continuous, global data about Internet censorship practices in countries around the world. It builds on our long line of work developing remote censorship measurement techniques. Our group operates several of these systems, curates the data, and publishes continuous datasets about the reachability of thousands of sensitive websites from more than 221 countries. In partnership with Google Jigsaw, we recently launched a cloud-based data analysis pipeline and a visualization dashboard, facilitating use of our data by more than 100 organizations spanning research and human rights advocacy. Read more about this project at [https://censoredplanet.org](https://censoredplanet.org).
 
