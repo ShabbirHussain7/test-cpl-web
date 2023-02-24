@@ -23,7 +23,9 @@ pdf: "assets/russia-ukraine-invasion.pdf"
 bibtex: "@inproceedings{ramesh2023network,<br>
 title = {{Network Responses to Russia's Invasion of Ukraine in 2022: A Cautionary Tale for Internet Freedom}},<br>
 author = {Ramesh, Reethika and Sundara Raman, Ram and Virkud, Apurva and Dirksen, Alexandra and Huremagic, Armin and Fifield, David and Rodenburg, Dirk and Hynes, Rod and Madory, Doug and Ensafi, Roya},<br>
-booktitle={USENIX Security Symposium},<br>
-year={2023}<br>
+booktitle = {32nd USENIX Security Symposium (USENIX Security 23)},
+year = {2023},
+address = {Anaheim, CA},
+publisher = {USENIX Association}
 }"
 ---
