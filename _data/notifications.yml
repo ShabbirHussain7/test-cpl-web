@@ -1,5 +1,5 @@
 - notification:
   display: "yes"
-  text: "Join Censored Planet as a 2023 ICFP Fellow"
-  button-text: "Read More"
-  button-url: "/icfp23"
+  text: "Read our latest paper on Russia's network changes"
+  button-text: "Paper"
+  button-url: "/assets/russia-ukraine-invasion.pdf"
