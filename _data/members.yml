@@ -17,7 +17,11 @@
 - name: Anna Ablove
   position: Graduate
   avatar: anna.jpg
-  link: "https://www.ablove.dev" 
+  link: "https://www.ablove.dev"
+- name: Alexandra Dirksen
+  position: Researcher
+  avatar: alexandra.png
+  link: "https://www.opentech.fund/about/people/alexandra-dirksen/" 
 - name: Yusei Uehara
   position: Undergraduate
   avatar: yusei.jpeg  
