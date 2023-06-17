@@ -19,5 +19,6 @@ research: "Lost in Transmission: Investigating Filtering of COVID-19 Websites"
 link: "/assets/covid.pdf"
 writers: "A. Vyas, R. Sundara Raman, N. Ceccio, P.M. Lutscher, and R. Ensafi"
 appearing: "Financial Cryptography and Data Security (FC), 2021"
-video: "https://www.youtube-nocookie.com/embed/6_gzdp7zSaw"
 ---
+
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/6_gzdp7zSaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
