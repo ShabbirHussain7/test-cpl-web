@@ -23,8 +23,9 @@ writers: "Diwen Xue, Benjamin Mixon-Baca, ValdikSS, Anna Ablove, Beau Kujath, Je
 appearing: "Internet Measurement Conference 2022 (IMC'22)"
 ---
 
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/LWoBhWwAY8A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
-This post highlights findings also discussed in our [IMC 2022](https://conferences.sigcomm.org/imc/2022/) paper [TSPU: Russia’s Decentralized Censorship System](https://diwenx.com/assets/files/tspu-imc22.pdf). 
+This post highlights findings also discussed in our [IMC 2022](https://conferences.sigcomm.org/imc/2022/) paper [TSPU: Russia’s Decentralized Censorship System](../assets/tspu-imc22.pdf). 
 
 In March 2022, just days after the onset of Russia’s invasion of Ukraine, the federal government of Russia started to block social media and news websites on a national scale. The escalation of blocking quickly transformed Russia’s Internet into a propaganda bubble that’s hostile to Russian citizens’ ability to communicate and understand about the war. But how such information control is done in Russia?
 
@@ -39,7 +40,7 @@ In this paper, we analyze the latest development of the Internet censorship in R
 
 ### High-level Takeaways
 
-*  TSPU, технические средства противодействия угрозам (“Technical Measures to Combat Threats”), refers to the homegrown DPIs that are developed, distributed, and controlled directly by [Roskomnadzor](https://eng.rkn.gov.ru/about/), Russian government’s agency on media and communications. While previous literature [hinted](https://diwenx.com/assets/files/throttling-imc21.pdf) at the existence of such a system, this is the very first study dedicated to the analysis of TSPU including discovering: How the TSPU blocks a connection, What resources it blocks, and Where it is installed with respect to Russian users. 
+*  TSPU, технические средства противодействия угрозам (“Technical Measures to Combat Threats”), refers to the homegrown DPIs that are developed, distributed, and controlled directly by [Roskomnadzor](https://eng.rkn.gov.ru/about/), Russian government’s agency on media and communications. While previous literature [hinted](../assets/throttling-imc-paper.pdf) at the existence of such a system, this is the very first study dedicated to the analysis of TSPU including discovering: How the TSPU blocks a connection, What resources it blocks, and Where it is installed with respect to Russian users. 
 
 * We acquire in-country vantage points in both residential networks and data centers with the help of Russia activists and researchers. From these vantage points, in-country measurements suggest the TSPUs are [in-path](https://citizenlab.ca/2018/03/bad-traffic-sandvines-packetlogic-devices-deploy-government-spyware-turkey-syria/) devices, applying censorship policies only on connections originating from within Russia, and exhibit a degree of statefulness.
 
