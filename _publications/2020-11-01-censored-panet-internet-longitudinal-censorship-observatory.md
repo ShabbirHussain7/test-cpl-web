@@ -16,7 +16,7 @@ talk: "https://youtu.be/8dwZdNkJ508"
 slides: "assets/censoredplanet-slides.pdf"
 press:
   - publisher: Censored Planet
-    link: "https://censoredplanet.org/censoredplanet-findings"
+    link: "https://censoredplanet.org/censoredplanet"
   - publisher: Michigan News
     link: "https://news.umich.edu/extremely-aggressive-internet-censorship-spreads-in-the-worlds-democracies/"
   - publisher: CACM
