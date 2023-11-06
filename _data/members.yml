@@ -6,27 +6,34 @@
   position: PhD Candidate
   avatar: ram.jpg
   link: "https://ramakrishnansr.com/"
-- name: Reethika Ramesh
-  position: PhD Candidate
-  avatar: reethika.jpeg
-  link: "https://reethika.info/"
 - name: Armin Huremagic
-  position: Researcher
+  position: Lead Engineer & Researcher
   avatar: armin.png
   link: "https://www.linkedin.com/in/armin-huremagic/"
-- name: Anna Ablove
+- name: Diwen Xue
   position: PhD Candidate
+  avatar: diwen-new.jpg
+  link: "https://diwenx.com"
+- name: Anna Ablove
+  position: PhD Student
   avatar: anna.jpg
   link: "https://www.ablove.dev"
+- name: Wayne Wang
+  position: PhD Student
+  avatar: wayne.jpg
+  link: "https://waynewang.me"
+- name: Aaron Ortwein
+  position: PhD Student
+  avatar: aaron.png
+- name: Piyush Kumar
+  position: Postdoctoral Researcher
+  avatar: piyush.jpg
+  link: "https://piyushs.in"
+- name: Hieu Le
+  position: Postdoctoral Researcher  
+  avatar: hieu.jpg
+  link: "levanhieu.com"
 - name: Alexandra Dirksen
-  position: Researcher
+  position: Visiting Researcher
   avatar: alexandra.png
   link: "https://www.opentech.fund/about/people/alexandra-dirksen/" 
-- name: Yusei Uehara
-  position: Undergraduate
-  avatar: yusei.jpeg  
-  link: "https://ericuehara.github.io/personal-site/"
-- name: Nadav Oren
-  position: Undergraduate
-  avatar: nadav.png
-  link: "https://www.linkedin.com/mwlite/in/nadav-oren-2a75311a9"
