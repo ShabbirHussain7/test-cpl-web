@@ -17,6 +17,9 @@ permalink: /reports
     <div class="container py-5">
         <div class="row">
             {% for report in site.reports reversed%}
+                {% if report.title == "CERTainty: Detecting DNS Manipulation at Scale using TLS Certificates" %}
+                    {% continue %}
+                {% endif %}
             <div class="col-12 col-md-4 mx-2 mb-2 mb-sm-2 report-card">
                 <span class="details">{{ report.date | date_to_long_string }}</span>
                 <h3 class="pt-2 text-slate weight-700">{{ report.title }}</h3>
@@ -33,6 +36,9 @@ permalink: /reports
     <div class="container py-5">
         <div class="row">
             {% for report in site.reports reversed%}
+                {% if report.title == "CERTainty: Detecting DNS Manipulation at Scale using TLS Certificates" %}
+                    {% continue %}
+                {% endif %}
             <div class="col-12 mb-2 mb-sm-2 report-card">
                 <span class="details">{{ report.date | date_to_long_string }}</span>
                 <h3 class="pt-2 text-slate weight-700">{{ report.title }}</h3>
@@ -50,6 +56,9 @@ permalink: /reports
         <h2 class="text-slate">External Reports</h2>
         <div class="row">
             {% for external in site.external reversed %}
+                {% if report.title == "CERTainty: Detecting DNS Manipulation at Scale using TLS Certificates" %}
+                    {% continue %}
+                {% endif %}
             <div class="report-card px-3 py-1 my-1 col-lg-12 col-sm-12">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-9 col-sm-12 pt-2 pb-1">
