@@ -1,5 +1,5 @@
 - notification:
   display: "yes"
-  text: "Read our latest paper on Russia's network changes"
+  text: "Read our new paper on detecting obfuscated proxies"
   button-text: "Paper"
-  button-url: "/assets/russia-ukraine-invasion.pdf"
+  button-url: "/assets/tls_in_tls.pdf"
