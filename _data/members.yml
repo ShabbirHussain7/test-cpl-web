@@ -2,10 +2,6 @@
   position: Assistant Professor
   avatar: roya.png
   link: "https://ensa.fi/"
-- name: Ram Sundara Raman
-  position: PhD Candidate
-  avatar: ram.jpg
-  link: "https://ramakrishnansr.com/"
 - name: Armin Huremagic
   position: Lead Engineer & Researcher
   avatar: armin.png
@@ -30,11 +26,3 @@
   position: Postdoctoral Researcher
   avatar: piyush.jpg
   link: "https://piyushs.in"
-- name: Hieu Le
-  position: Postdoctoral Researcher  
-  avatar: hieu.jpg
-  link: "https://levanhieu.com"
-- name: Alexandra Dirksen
-  position: Visiting Researcher
-  avatar: alexandra.png
-  link: "https://www.opentech.fund/about/people/alexandra-dirksen/" 
