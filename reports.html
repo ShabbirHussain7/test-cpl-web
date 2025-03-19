@@ -17,7 +17,7 @@ permalink: /reports
     <div class="container py-5">
         <div class="row">
             {% for report in site.reports reversed%}
-                {% if report.title == "CERTainty: Detecting DNS Manipulation at Scale using TLS Certificates" %}
+                {% if report.title == "CERTainty: Detecting DNS Manipulation at Scale using TLS Certificates" or report.title == "The TLS Inside TLS Problem: How Censors Can Detect Obfuscated Proxies" %}
                     {% continue %}
                 {% endif %}
             <div class="col-12 col-md-4 mx-2 mb-2 mb-sm-2 report-card">
