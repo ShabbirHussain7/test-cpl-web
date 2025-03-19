@@ -21,7 +21,6 @@ appearing: "Proceedings of the 33rd USENIX Security Symposium, August 14–16, 2
 
 ---
 
-_This post highlights findings discussed in our [CoNEXT 2022](https://conferences2.sigcomm.org/co-next/2022/#!/home) paper [Network measurement methods for locating and examining censorship devices](https://dl.acm.org/doi/10.1145/3555050.3569133)._
 _This post highlights findings discussed in the [USENIX Security 2024](https://www.usenix.org/conference/usenixsecurity24) paper [Fingerprinting Obfuscated Proxy Traffic with Encapsulated TLS Handshakes](https://www.usenix.org/conference/usenixsecurity24/presentation/xue-fingerprinting)._
 
 As Internet censorship escalates globally, users increasingly rely on obfuscated proxies to circumvent restrictions. This has led to an ongoing arms race between censors and circumvention tool developers. While previous research has focused on protocol-specific vulnerabilities in proxy tools, this work demonstrates a protocol-agnostic approach to detecting proxy traffic by exploiting a fundamental characteristic shared by all proxying techniques: nested protocol stacks.
@@ -43,12 +42,10 @@ As Internet censorship escalates globally, users increasingly rely on obfuscated
 5. Stream multiplexing shows promise as a mitigation technique, reducing detection rates by over 70%, but is limited in scenarios with a single application stream.
 
 
-## Understanding Encapsulated TLS Handshakes
+## Encapsulated TLS Handshakes
 
 Fundamental to all proxying and tunneling is the concept of nested protocol stacks, where one protocol is encapsulated within another. For example, when using a TLS-based proxy, a user's HTTPS connection (which already uses TLS) gets encapsulated within another TLS connection between the user and the proxy server, creating a distinctive "TLS-over-TLS" pattern.
 
-
-IMAGE HERE
 
 While the content of encrypted proxy traffic is not visible to network observers, the distinctive patterns of encapsulated TLS handshakes remain detectable through side-channel information like packet size, timing, and direction. These patterns serve as reliable fingerprints for identifying proxy traffic, as they indicate redundant protocol stacking not typically found in legitimate connections.
 
