@@ -20,6 +20,7 @@ writers: "D. Xue, M. Kallitsis, A. Houmansadr, and R. Ensafi"
 appearing: "Proceedings of the 33rd USENIX Security Symposium, August 14–16, 2024"
 
 ---
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/8GO_9HKTvb0?si=-oKT_YT7sRocar-m" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 _This post highlights findings discussed in the [USENIX Security 2024](https://www.usenix.org/conference/usenixsecurity24) paper [Fingerprinting Obfuscated Proxy Traffic with Encapsulated TLS Handshakes](https://www.usenix.org/conference/usenixsecurity24/presentation/xue-fingerprinting)._
 
