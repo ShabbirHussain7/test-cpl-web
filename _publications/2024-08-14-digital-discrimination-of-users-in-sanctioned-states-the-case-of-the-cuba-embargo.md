@@ -14,4 +14,17 @@ collaborators:
   - Reethika Ramesh
   - Harry Oppenheimer
   - Roya Ensafi
+pdf: "assets/usenixsecurity24-ablove"
+bibtex: "@inproceedings {299808,
+author = {Anna Ablove and Shreyas Chandrashekaran and Hieu Le and Ram Sundara Raman and Reethika Ramesh and Harry Oppenheimer and Roya Ensafi},
+title = {Digital Discrimination of Users in Sanctioned States: The Case of the Cuba Embargo},
+booktitle = {33rd USENIX Security Symposium (USENIX Security 24)},
+year = {2024},
+isbn = {978-1-939133-44-1},
+address = {Philadelphia, PA},
+pages = {3909--3926},
+url = {https://www.usenix.org/conference/usenixsecurity24/presentation/ablove},
+publisher = {USENIX Association},
+month = aug
+}"
 ---

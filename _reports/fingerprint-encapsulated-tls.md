@@ -5,14 +5,8 @@ title: "The TLS Inside TLS Problem: How Censors Can Detect Obfuscated Proxies"
 permalink: /fingerprint-encapsulated-tls
 excerpt: "We demonstrate how encapsulated TLS handshakes create detectable fingerprints in all obfuscated proxy traffic, regardless of the specific protocol used"
 authors:
-  - Diwen Xue^1
-  - Michalis Kallitsis^2
-  - Amir Houmansadr^3
-  - Roya Ensafi^1
-affiliations: 
-  - (1) University of Michigan
-  - (2) Merit Network, Inc.
-  - (3) University of Massachusetts Amherst
+  - Armin Huremagic
+
 border: yes
 research: "Fingerprinting Obfuscated Proxy Traffic with Encapsulated TLS Handshakes"
 link: "/assets/tls_in_tls.pdf"
