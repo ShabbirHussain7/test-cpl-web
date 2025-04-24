@@ -5,8 +5,8 @@ title: "CERTainty: Detecting DNS Manipulation at Scale using TLS Certificates"
 permalink: /certainty
 excerpt: "We developed a novel technique, *CERTainty*, to detect DNS manipulation by utilizing a widely adopted trusted infrastructure: TLS certificates."
 authors:
-  - TBA
-affiliations: Censored Planet at the University of Michigan, Stanford University
+  - Armin Huremagic
+affiliations: Censored Planet at the University of Michigan
 border: yes
 
 research: "CERTainty: Detecting DNS Manipulation at Scale using TLS Certificates"
