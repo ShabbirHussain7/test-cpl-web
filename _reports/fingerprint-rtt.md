@@ -7,14 +7,14 @@ excerpt: "Our new timing fingerprint exploits a fundamental property of all tunn
 authors:
   - Robert Stanley
   - Wayne Wang
+affiliations: Censored Planet at the University of Michigan
 border: yes
+
 research: "The Discriminative Power of Cross-layer RTTs in Fingerprinting Proxy Traffic"
 link: "assets/timing-ndss.pdf"
 writers: "D. Xue, R. Stanley, P. Kumar, and R. Ensafi"
-"Proceedings of the Network and Distributed System Security (NDSS) Symposium 2025, February 24-28."
-
+appearing: "Proceedings of the Network and Distributed System Security (NDSS) Symposium 2025, February 24-28."
 ---
-
 _This post highlights findings discussed in the [NDSS 2025](https://www.ndss-symposium.org/ndss2025) paper [The Discriminative Power of Cross-layer RTTs in Fingerprinting Proxy Traffic](https://www.ndss-symposium.org/ndss-paper/the-discriminative-power-of-cross-layer-rtts-in-fingerprinting-proxy-traffic/)._
 
 Users' Internet traffic has seen more and more interference from firewalls and middleboxes along the network path. This includes censorship, filtering, and throttling of user traffic. The dominant way to get around these restrictions and interferences is to send your traffic through an encrypted tunnel. A user behind a firewall encapsulates their traffic inside a tunnel, which carries the traffic to a proxy server outside the censor's control and then forwards the traffic to its final destination. The tunnel encrypts the traffic within, so that even if the user is trying to access a blocked website, the firewall will not see this, and will not be triggered.
@@ -24,7 +24,7 @@ Users' Internet traffic has seen more and more interference from firewalls and m
 **Figure 1:** _Circumvention using an encrypted tunnel. This diagram illustrates how users bypass censorship using encrypted tunnels. When direct access to block.com is prohibited by a firewall, users establish an encrypted tunnel to a proxy server outside the censored region. The proxy then accesses the blocked website on the user's behalf, allowing the data to flow through the encrypted tunnel without the firewall being able to inspect the contents or determine the actual destination._
 
 
-Because tunnels make it difficult to inspect the traffic contents inside, in many cases, restrictions like censorship and filtering often come with blocking the tunneling protocols themselves. This leads to an ongoing arms race building and detecting tunneling protocols. On one side, you have proxy systems using different obfuscations to hide the presence of tunnels, like shadowsocks, trojan, or v2ray. On the other side, censors and firewalls keep trying to see through these obfuscations to stop circumvention.
+Because tunnels make it difficult to inspect the traffic contents inside, in many cases, restrictions like censorship and filtering often come **with blocking the tunneling protocols themselves.** This leads to an **ongoing arms race** building and detecting tunneling protocols. On one side, you have proxy systems using different obfuscations to hide the presence of tunnels, like shadowsocks, trojan, or v2ray. On the other side, censors and firewalls keep trying to see through these obfuscations to stop circumvention.
 
 In this work, we further this arms race. So far, most fingerprinting efforts, whether actually deployed or just proposed, target specific flaws of an individual obfuscation protocol. Proxy developers then patch these flaws and come up with new obfuscations, often assuming a resource-limited censor cannot keep up with all the variants.
 
@@ -74,7 +74,7 @@ We set up clients and proxies across different continents, and we visited top do
 | SOCKS over obfs4            | Obfuscated (fully encrypted)   | Yes            |
 
 
-Detection is quite effective, given a collection of user traffic. We evaluated detection per transport layer flow and per website visited, where each website visit may generate dozens of flows. Detection at the per-flow level is only moderately effective. We found that almost all misses were third-party requests to CDNs, which we measured to be served within only 5 milliseconds of our proxy locations, therefore resulting in very small RTT differences. But when we aggregate by websites, detection rates are over 70%. In other words, the firewall can almost guarantee to flag the tunnel, just after two or three visits to different domains.
+**Detection is quite effective**, given a collection of user traffic. We evaluated detection per transport layer flow and per website visited, where each website visit may generate dozens of flows. Detection at the per-flow level is only moderately effective. We found that almost all misses were third-party requests to CDNs, which we measured to be served within only 5 milliseconds of our proxy locations, therefore resulting in very small RTT differences. But when we aggregate by websites, detection rates are over 70%. In other words, the firewall can almost guarantee to flag the tunnel, just after two or three visits to different domains.
 In the paper we also looked at several factors that can influence the sensitivity of the fingerprint, like DNS resolution or routing configuration, which can further amplify the RTT discrepancies across layers. To evaluate collateral damage if the fingerprint were deployed, we worked with a regional ISP, and applied our fingerprint to real-user traffic that is mirrored from their backbone routers. We estimate a false positive rate about 0.6%, which is on par with what real-world censors have reportedly achieved.
 
 
