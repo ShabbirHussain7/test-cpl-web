@@ -14,7 +14,7 @@ collaborators:
   - Reethika Ramesh
   - Harry Oppenheimer
   - Roya Ensafi
-pdf: "assets/usenixsecurity24-ablove"
+pdf: "assets/usenixsecurity24-ablove.pdf"
 bibtex: "@inproceedings {299808,
 author = {Anna Ablove and Shreyas Chandrashekaran and Hieu Le and Ram Sundara Raman and Reethika Ramesh and Harry Oppenheimer and Roya Ensafi},
 title = {Digital Discrimination of Users in Sanctioned States: The Case of the Cuba Embargo},
