@@ -6,7 +6,7 @@ permalink: /fingerprint-encapsulated-tls
 excerpt: "We demonstrate how encapsulated TLS handshakes create detectable fingerprints in all obfuscated proxy traffic, regardless of the specific protocol used"
 authors:
   - Armin Huremagic
-
+affiliations: Censored Planet at the University of Michigan
 border: yes
 research: "Fingerprinting Obfuscated Proxy Traffic with Encapsulated TLS Handshakes"
 link: "/assets/tls_in_tls.pdf"
