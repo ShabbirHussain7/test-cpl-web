@@ -6,7 +6,7 @@ permalink: /fingerprint-rtt
 excerpt: "Our new timing fingerprint exploits a fundamental property of all tunneling tools: the misalignment of sessions across network layers creates detectable RTT discrepancies that can reveal proxy usage with over 70% accuracy."
 authors:
   - Robert Stanley
-  - Wayne Wang
+  - Diwen Xue
 affiliations: Censored Planet at the University of Michigan
 border: yes
 
