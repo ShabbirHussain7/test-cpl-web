@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /$          # let crawlers fetch the root URL (/ or /index.html)
+Allow: /index.html # (extra clarity for crawlers that request it explicitly)
+Disallow: /        # block every other path under this site
