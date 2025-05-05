@@ -1,0 +1,151 @@
+{
+  "Director": {
+    "name": "Roya Ensafi",
+    "position": "Assistant Professor",
+    "avatar": "roya-ppl-pg.jpg",
+    "link": "https://ensa.fi/"
+  },
+  "Team": [  
+    {
+      "name": "Armin Huremagic",
+      "position": "Lead Engineer & Researcher",
+      "avatar": "armin.png",
+      "active": true,
+      "link": "https://www.linkedin.com/in/armin-huremagic/"
+    },
+    {
+      "name": "Diwen Xue",
+      "position": "PhD Candidate",
+      "avatar": "diwen-new.jpg",
+      "active": true,
+      "link": "https://diwenx.com"
+    },
+    {
+      "name": "Anna Ablove",
+      "position": "PhD Student",
+      "avatar": "anna.jpg",
+      "active": true,
+      "link": "https://www.ablove.dev"
+    },
+    {
+      "name": "Wayne Wang",
+      "position": "PhD Student",
+      "avatar": "wayne.jpg",
+      "active": true,
+      "link": "https://waynewang.me"
+    },
+    {
+      "name": "Aaron Ortwein",
+      "position": "PhD Student",
+      "avatar": "aaron.png",
+      "active": true,
+      "link": "https://aaron-ortwein.github.io"
+    },
+    {
+      "name": "Piyush Kumar",
+      "position": "Postdoctoral Researcher",
+      "avatar": "piyush.jpg",
+      "active": true,
+      "link": "https://piyushs.in"
+    },
+    {
+      "name": "Ram Sundara Raman",
+      "position": "PhD Candidate",
+      "avatar": "ram.jpg",
+      "active": false,
+      "now at": "Tenure-track Assistant professor, UC Santa Cruz",
+      "link": "https://ramakrishnansr.com/"
+    },
+    {
+      "name": "Hieu Le",
+      "position": "Postdoctoral Researcher",
+      "avatar": "hieu.jpg",
+      "active": false,
+      "now at": "Senior Researcher at Federal Trade Commission (FTC)",
+      "link": "https://levanhieu.com"
+    },
+    {
+      "name": "Alexandra Dirksen",
+      "position": "Visiting Researcher",
+      "avatar": "alexandra.png",
+      "active": false,
+      "now at": "PhD Student, TU Braunschweig",
+      "link": "https://www.opentech.fund/fellows/alexandra-dirksen/"
+    },
+    {
+      "name": "Reethika Ramesh",
+      "avatar": "reethika.jpeg",
+      "active": false,
+      "now at": "Senior Staff Researcher at Palo Alto Networks",
+      "link": "https://reethika.info/"
+    },
+    {
+      "name": "Adrian Stoll",
+      "avatar": "adrian.png",
+      "active": false,
+      "now at": "Google",
+      "link": "https://adrianstoll.com/"
+    },
+    {
+      "name": "Victor Ongkowijaya",
+      "avatar": "victor.png",
+      "active": false,
+      "now at": "M.S. Student at Princeton",
+      "link": "https://victorwj.github.io/"
+    },
+    {
+      "name": "Elio Qoshi",
+      "avatar": "elio.png",
+      "active": false,
+      "link": "https://elioqoshi.me/"
+    },
+    {
+      "name": "Prerana Shenoy",
+      "avatar": "prerana.jpg",
+      "active": false,
+      "link": "https://github.com/pbshenoy"
+    },
+    {
+      "name": "Leonid Evdokimov",
+      "avatar": "leonid.png",
+      "active": false,
+      "link": "https://darkk.net.ru/"
+    },
+    {
+      "name": "Anjali Vyas",
+      "avatar": "AnjaliVyas.png",
+      "active": false,
+      "now at": "M.S. Student at Cornell Tech",
+      "link": "https://www.linkedin.com/in/anjali-vyas/"
+    },
+    {
+      "name": "Nick Ceccio",
+      "avatar": "NickC.jpg",
+      "link": "https://github.com/ceccion"
+    },
+    {
+      "name": "Apurva Virkud",
+      "avatar": "apurva.png",
+      "active": false,
+      "now at": "PhD Student, UIUC",
+      "link": "https://www.linkedin.com/in/apurva-virkud"
+    },
+    {
+      "name": "Elisa Tsai",
+      "avatar": "elisa.jpg",
+      "active": false,
+      "link": "https://github.com/eltsai"
+    },
+    {
+      "name": "Ben Mixon-Baca",
+      "avatar": "ben.png",
+      "active": false
+    },
+    {
+      "name": "Hammas Bin Tanveer",
+      "avatar": "hammas.jpg",
+      "active": false,
+      "link": "https://hammas9.github.io/"
+    }
+  ]
+}

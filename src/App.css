@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Barlow", "sans-serif"; 
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  @apply bg-gray-50 text-gray-900 font-sans;
+}
+.page-container {
+  @apply max-w-screen-xl mx-auto px-8 sm:px-16;
+}
+.heading-primary {
+  @apply text-3xl font-semibold mb-6 relative after:content-[''] after:block after:w-24 after:border-b-2 after:border-gray-600 after:mt-2;
+}
+
+.paragraph {
+  @apply text-gray-700 text-lg w-full text-justify;
+}
+
+.heading-secondary {
+  @apply text-2xl font-semibold mb-2 relative ;
+}
+
+
+.heading-nav {
+  @apply text-2xl font-semibold mb-4 relative after:content-[''] after:block after:w-20 after:border-b-4 after:border-[#CC4E24] after:mt-2;
+}
+
