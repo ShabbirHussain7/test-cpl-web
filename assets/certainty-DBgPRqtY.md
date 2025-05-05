@@ -19,7 +19,7 @@ This post highlights the findings discussed in the Proceedings on [Privacy Enhan
 
 DNS manipulation is an increasingly common technique used by censors and other network adversaries to prevent users from accessing restricted Internet resources and hijacking their connections. State-of-the-art detection heuristics introduced by previous work are error-prone given advancements in Internet infrastructure such as CDNs. We develop a novel technique, *CERTainty*, to detect DNS manipulation by utilizing a widely adopted trusted infrastructure: TLS certificates.
 
-<img src="/assets/certainty_1.png" width="60%" alt="The DNS manipulation detection, noise removal, and annotation pipeline of CERTainty. Blue indicates data retrieved from Censored Planet." title="The DNS manipulation detection pipeline of CERTainty">
+<img src="./assets/certainty_1.png" width="60%" alt="The DNS manipulation detection, noise removal, and annotation pipeline of CERTainty. Blue indicates data retrieved from Censored Planet." title="The DNS manipulation detection pipeline of CERTainty">
 {: .center }
 
 **Figure 1.** _The DNS manipulation detection pipeline of CERTainty_
@@ -49,7 +49,7 @@ Conceptually, identifying DNS manipulation is straightforward and entails verify
 2. ***Verifiable Signals.*** An alternate approach to detecting DNS manipulation is to use independent signals that can indicate whether the IP address returned during DNS resolution provides legitimate content. For instance, if injected or poisoned IPs redirect traffic to a blockpage citing the reason for blocking, we view it as a very strong signal of DNS manipulation. Previous work has used a range of clustering techniques to identify blockpages, but human identification remains the primary mechanism to identify the unique parts of blockpages of various domains.
 
 
-<img src="/assets/certainty_2.png" width="50%" alt="Censorship measurement platforms and their implemented DNS manipulation detection heuristics" title="Censorship measurement platforms and their implemented DNS manipulation detection heuristics">
+<img src="./assets/certainty_2.png" width="50%" alt="Censorship measurement platforms and their implemented DNS manipulation detection heuristics" title="Censorship measurement platforms and their implemented DNS manipulation detection heuristics">
 {: .center }
 
 **Figure 2.** _Censorship measurement platforms and their implemented DNS manipulation detection heuristics_
@@ -82,9 +82,9 @@ The presence of a valid certificate is a strong signal that the application-laye
 
 
 <figure>
-  <img src="/assets/certainty_3.png" alt="Figure of untrusted certificate with matched hostname" title="Untrusted certificate with matched hostname" width="30%">
-  <img src="/assets/certainty_4.png" alt="Figure of trusted certificate with matched hostname" title="Trusted certificate with matched hostname" width="30%">
-  <img src="/assets/certainty_5.png" alt="Figure of untrusted certificate with mismatched hostname" title="Figure of untrusted certificate with mismatched hostname" width="30%">
+  <img src="./assets/certainty_3.png" alt="Figure of untrusted certificate with matched hostname" title="Untrusted certificate with matched hostname" width="30%">
+  <img src="./assets/certainty_4.png" alt="Figure of trusted certificate with matched hostname" title="Trusted certificate with matched hostname" width="30%">
+  <img src="./assets/certainty_5.png" alt="Figure of untrusted certificate with mismatched hostname" title="Figure of untrusted certificate with mismatched hostname" width="30%">
   <figcaption><b>Figure 3.</b> Blockpage fingerprint matching and control certificate matching for HTTPS responses with invalid certificates.</figcaption>
 </figure>
 
@@ -118,7 +118,7 @@ To assess the effectiveness of *CERTainty* for identifying DNS manipulation, we 
 
 **Investigating cases where test resolvers fail for both HTTP and HTTPS requests produces not only indicators of misconfigured resolvers but also indicators of resolvers configured for specific domain blocking.** For example, we discover 83 Russian resolvers that assign between 20 and 114 domains to the IP 62.33.207.197. The domains assigned to this IP by the resolver include bbc.com, bridges.torproject.org, and psiphon.ca. Upon investigation, we discover that the only open port is port 444, which returns a Russian blockpage (Figure 4).
 
-<img src="/assets/certainty_6.png" width="50%" alt="Russian ISP blockpage hosted on IP 62.33.207.197, port 444" title=" Russian ISP blockpage hosted on IP 62.33.207.197, port 444">
+<img src="./assets/certainty_6.png" width="50%" alt="Russian ISP blockpage hosted on IP 62.33.207.197, port 444" title=" Russian ISP blockpage hosted on IP 62.33.207.197, port 444">
 {: .center }
 
 **Figure 4.** _ Russian ISP blockpage hosted on IP 62.33.207.197, port 444._

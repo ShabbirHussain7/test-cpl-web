@@ -27,7 +27,7 @@ video: "https://www.youtube-nocookie.com/embed/GenCBx5jWxo"
 ---
 This post highlights findings also discussed in our [IMC 2021](https://conferences.sigcomm.org/imc/2021/) paper [“Throttling Twitter: An Emerging Censorship Technique in Russia”](https://dl.acm.org/doi/10.1145/3487552.3487858).
 
-<img src="/assets/throttling-timeline.png" alt="Timeline of Twitter throttling in Russia" title="Timeline of Twitter throttling in Russia" width="100%">
+<img src="./assets/throttling-timeline.png" alt="Timeline of Twitter throttling in Russia" title="Timeline of Twitter throttling in Russia" width="100%">
 **Figure 1.** _Timeline of Twitter throttling in Russia_
 {: .center }
 
@@ -68,7 +68,7 @@ In all 7 vantage points, connections with Twitter-related SNI are throttled, whe
 
 After establishing that throttling is indeed occurring, we did more in-depth measurements to understand the nuances of the throttling and the technology behind it.
 
-<img src="/assets/twitter-measurement.png" alt="Measurement setup" title="Measurement setup"/>
+<img src="./assets/twitter-measurement.png" alt="Measurement setup" title="Measurement setup"/>
 **Figure 2.** _Record and Replay Measurement Setup_
 {: .center }
 
@@ -105,7 +105,7 @@ This is a sample packet capture from a throttled Russian vantage point connectin
 
 In addition, we repeated above experiments (for both downstream and upstream sessions) but kept the sending rate below the throttled rate. We do not observe any abnormal batch packet loss in this  case. We therefore believe that the **throttling of Twitter is implemented by traffic policing** and that packets transferred in either direction will be dropped once the rate limit is reached (Figure 7). For example, if we transfer 16 KB (128 Kbit) of data in 100ms, all packets are dropped for the next 900ms, leaving “gaps” in PCAP trace.
 
-<img src="/assets/traffic-policing.png" style="margin-left:auto;margin-right:auto;display:block;" alt="Traffic policing" title="Traffic policing" width="50%">
+<img src="./assets/traffic-policing.png" style="margin-left:auto;margin-right:auto;display:block;" alt="Traffic policing" title="Traffic policing" width="50%">
 **Figure 7.** _A normal session (left) and a session under traffic policing (right)._
 {: .center }
 
@@ -127,7 +127,7 @@ This suggests that **precise attribution of traffic throttling can be challengin
 
 To identify where in the network path throttling occurs, we use a common TTL-based technique. The IP TTL (Time-To-Live) field controls how many network hops a packet is allowed to traverse. We have each throttled vantage point establish a TCP connection with our UMich server. Next, using _nfqueue_, we insert a clienthello packet containing a Twitter-related SNI with increasing TTL values and subsequently attempt some data transfer. If we identify some TTL value N where we don’t observe throttling but N+1 results in throttling, then we know that the throttler operates between the N and N+1 hop.
 
-<img src="/assets/throttling-ttl.png" width="50%" style="float:right;margin-left:2%" alt="Identifying the location of the throttler with TTL" title="Identifying the location of the throttler with TTL"/>
+<img src="./assets/throttling-ttl.png" width="50%" style="float:right;margin-left:2%" alt="Identifying the location of the throttler with TTL" title="Identifying the location of the throttler with TTL"/>
 
 The diagram on the right illustrates this experiment. We performed this experiment on four mobile vantage points and two landline vantage points. Overall, **we found the throttling device is placed close to end-users**. For all six vantage points, our test shows that the throttler operates within the first five hops. This result is consistent with previous reports on Russia’s DPI installation: in [a letter sent out by Roskomnadzor to ISPs](https://habr.com/ru/post/459894/), it mentions that the TSPU boxes should ideally be installed before carrier-grade NAT devices (away from the backbone network). Moreover, [an example installation guide](https://hsto.org/webt/wk/tk/ud/wktkudgaf5uslgn-gzuj58p-xae.png) shows TSPU boxes (painted as red ovals) are placed close to end users.
 
@@ -141,7 +141,7 @@ We customized our [remote measurement tool Quack Echo](https://censoredplanet.or
 
 To investigate whether _TCP direction plays a role in throttling_, we performed the following experiment. We used the same replay setup with the replay server at UMich (running on port 443) and the replay client in Russia (same as original replay). However, this time we let the replay server initiate the TCP connection.
 
-<img src="/assets/throttling-replay.png" width="50%" style="float:right;margin-left:2%" alt="TCP direction and throttling" title="TCP direction and throttling"/>
+<img src="./assets/throttling-replay.png" width="50%" style="float:right;margin-left:2%" alt="TCP direction and throttling" title="TCP direction and throttling"/>
 
 We illustrate the difference between this setup and the original replay setup with the diagram on the right. Notice the only difference between the two experiments is which endpoint initiates the TCP connection. We do not see any throttling from the experiments in which the UMich server initiates the TCP connection. Furthermore, throughout our investigation, we have not seen any TCP session initiated by a client  outside Russia being throttled. Based on these experiments, we believe that **Russia’s Twitter throttling is not symmetric and can only be triggered by connections initiated locally (within Russia). This asymmetric nature of the throttling makes it challenging for researchers to study it from outside the country using remote measurement tools**.
 
