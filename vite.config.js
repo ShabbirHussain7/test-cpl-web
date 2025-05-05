@@ -5,7 +5,7 @@ import { nodePolyfills } from 'vite-plugin-node-polyfills'
 import svgr from "vite-plugin-svgr";
 
 export default defineConfig(({ mode }) => ({
-  base: '/test-cpl-website/',
+  base: '/test-cpl-web/',
   assetsInclude: ['**/*.md'],
   plugins: [
     nodePolyfills(),
