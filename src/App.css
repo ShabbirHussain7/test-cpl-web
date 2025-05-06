@@ -25,8 +25,12 @@ section:nth-of-type(even) {
   @apply text-3xl font-semibold mb-6 relative after:content-[''] after:block after:w-24 after:border-b-2 after:border-gray-600 after:mt-2;
 }
 
+.heading-section {
+  @apply text-2xl font-semibold mb-6 relative after:content-[''] after:block after:w-24 after:border-b-2 after:border-gray-600 after:mt-2;
+}
+
 .paragraph {
-  @apply text-gray-700 text-lg w-full text-justify;
+  @apply text-gray-700 w-full text-justify;
 }
 
 .heading-secondary {
@@ -40,7 +44,6 @@ section:nth-of-type(even) {
 
 
 input:focus {
-  /* use bright blue color for outline */
-  outline: 1px solid #3B82F6; /* Replace with your desired color */
-  border: none; /* Replace with your desired color */
+  outline: 1px solid #3B82F6; 
+  border: none;
 }

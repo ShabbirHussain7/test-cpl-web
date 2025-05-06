@@ -13,8 +13,6 @@ export default function Research() {
     const [frontMatter, setFrontMatter] = useState({});
     const [loading, setLoading] = useState(true);
     const [sections, setSections] = useState([]);
-    const [activeSection, setActiveSection] = useState('');
-    const isDesktop = useMediaQuery({ minWidth: 768 }); // Detect if the screen is desktop size
 
     useEffect(() => {
         async function fetchMarkdown() {
@@ -41,7 +39,6 @@ export default function Research() {
                 });
                 if (current) sectionList.push(current);
                 setSections(sectionList);
-                setActiveSection(sectionList[0]?.title || '');
 
             } catch (err) {
                 console.error(err);
@@ -60,80 +57,32 @@ export default function Research() {
         return <div className="page-container py-24 text-center">Area not found.</div>;
     }
 
-
     return (
         <main className="pt-24">
             <section className="page-container pb-5">
                 <h1 className="heading-primary">{frontMatter.title}</h1>
-                <section className="grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-4">
-                    {/* Navigation */}
-                    {isDesktop && (
-                        <div className="w-full flex justify-center md:justify-end rounded hidden md:block bg-gray-200/75 p-4">
-                            <div className="rounded flex flex-col w-full">
-                                <h2 className="heading-nav">Navigation</h2>
-                                <div className="text-gray-700">
-                                    {sections.map((sec, idx) => (
-                                        <button
-                                            key={idx}
-                                            onClick={() => setActiveSection(sec.title)}
-                                            className={`block w-full text-left py-2 px-4 rounded hover:bg-gray-300 ${activeSection === sec.title ? 'font-bold text-[#2D4D63]' : ''
-                                                }`}
-                                        >
-                                            {sec.title}
-                                        </button>
-                                    ))}
-                                </div>
-                            </div>
+                <section>
+                    {sections.map((sec, idx) => (
+                        <div key={idx} className="mb-4">
+                            <h2 className="heading-secondary">{sec.title}</h2>
+                            <ReactMarkdown
+                                remarkPlugins={[remarkGfm]}
+                                rehypePlugins={[rehypeRaw]}
+                                skipHtml={false}
+                                components={{
+                                    h1: (props) => <h1 className="text-3xl font-bold my-4" {...props} />,
+                                    h2: (props) => <h2 className="text-2xl font-bold my-4" {...props} />,
+                                    h3: (props) => <h3 className="text-xl font-semibold my-3" {...props} />,
+                                    h4: (props) => <h4 className="text-lg font-semibold my-2" {...props} />,
+                                    p: (props) => <p className="paragraph" {...props} />,
+                                    li: (props) => <li className="list-disc pl-4 ml-4 my-2 paragraph" {...props} />,
+                                    a: (props) => <a className="text-blue-500 underline" {...props} />,
+                                }}
+                            >
+                                {sec.content}
+                            </ReactMarkdown>
                         </div>
-                    )}
-
-                    {/* Content */}
-                    <div>
-                        
-                        {isDesktop ? (
-                            <>
-                                <h2 className="heading-secondary">{activeSection}</h2>
-                                <ReactMarkdown
-                                    remarkPlugins={[remarkGfm]}
-                                    rehypePlugins={[rehypeRaw]}
-                                    skipHtml={false}
-                                    components={{
-                                        h1: (props) => <h1 className="text-3xl font-bold my-4" {...props} />,
-                                        h2: (props) => <h2 className="text-2xl font-bold my-4" {...props} />,
-                                        h3: (props) => <h3 className="text-xl font-semibold my-3" {...props} />,
-                                        h4: (props) => <h4 className="text-lg font-semibold my-2" {...props} />,
-                                        p: (props) => <p className="paragraph" {...props} />,
-                                        li: (props) => <li className="list-disc pl-4 ml-4 my-2 paragraph" {...props} />,
-                                        a: (props) => <a className="text-blue-500 underline" {...props} />,
-                                    }}
-                                >
-                                    {sections.find((sec) => sec.title === activeSection)?.content || ''}
-                                </ReactMarkdown>
-                            </>
-                        ) : (
-                            sections.map((sec, idx) => (
-                                <div key={idx} className="mb-8">
-                                    <h2 className="heading-secondary">{sec.title}</h2>
-                                    <ReactMarkdown
-                                        remarkPlugins={[remarkGfm]}
-                                        rehypePlugins={[rehypeRaw]}
-                                        skipHtml={false}
-                                        components={{
-                                            h1: (props) => <h1 className="text-3xl font-bold my-4" {...props} />,
-                                            h2: (props) => <h2 className="text-2xl font-bold my-4" {...props} />,
-                                            h3: (props) => <h3 className="text-xl font-semibold my-3" {...props} />,
-                                            h4: (props) => <h4 className="text-lg font-semibold my-2" {...props} />,
-                                            p: (props) => <p className="paragraph" {...props} />,
-                                            li: (props) => <li className="list-disc pl-4 ml-4 my-2 paragraph" {...props} />,
-                                            a: (props) => <a className="text-blue-500 underline" {...props} />,
-                                        }}
-                                    >
-                                        {sec.content}
-                                    </ReactMarkdown>
-                                </div>
-                            ))
-                        )}
-                    </div>
+                    ))}
                 </section>
             </section>
         </main>

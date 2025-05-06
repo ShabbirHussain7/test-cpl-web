@@ -25,15 +25,3 @@ Circumvention proxies using custom congestion control algorithms (e.g., Hysteria
 <li> Encapsulated TLS handshakes inside encrypted tunnels reveal unique packet-size and timing patterns. These patterns allow accurate detection of obfuscation protocols like Shadowsocks, VMess, Trojan, and VLESS—even with padding or multiple layers. <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/tls-in-tls" target="_blank" rel="noopener noreferrer">USENIX Security ’24 (TLS-in-TLS)</a></li>
 
 </ul>
-
-<!--  -->
-
-## Tools & Datasets
-
-* 🔗 [CalcuLatency Tool](https://github.com/censoredplanet/calculatency) — Open-source RTT-based VPN/proxy detector.
-* 📊 [TLS-in-TLS Packet Dataset](https://censoredplanet.org/data/tls-tls) — Measurements and packet patterns used for detection.
-* 📁 [VPN Fingerprinting Testbed](https://censoredplanet.org/data/vpn-fingerprinting) — Evaluation dataset from USENIX Security ’22.
-
-## Projects
-
-## Relevant Publications

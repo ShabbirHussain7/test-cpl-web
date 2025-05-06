@@ -110,7 +110,7 @@ export default function Home() {
             <div className='page-container pt-6 pb-8 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-12'>
               {/* About Us */}
               <div>
-                <h2 className="heading-primary">
+                <h2 className="heading-section">
                   What We Do
                 </h2>
                 <div className="paragraph">
@@ -136,7 +136,7 @@ export default function Home() {
                   <h2 className="heading-secondary">
                     Latest at the Lab
                   </h2>
-                  <div className="relative h-[285px]">
+                  <div className="relative h-[225px]">
                     <div className="text-gray-700 text-sm overflow-y-auto h-full pr-1 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
                       {homeData.lab_updates.slice(0, 5).map((update, idx, arr) => (
                         <div key={idx}>
@@ -177,7 +177,7 @@ export default function Home() {
             <div className='page-container pt-6 pb-10'>
               {/* Research Themes Subsection */}
 
-              <h2 className="heading-primary">Research Areas</h2>
+              <h2 className="heading-section">Research Areas</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-8 ">
                 {/* map each research area to researcharea component */}
                 {homeData.research.map((area, idx) => (
@@ -191,7 +191,7 @@ export default function Home() {
 
           <section id="selected-publications">
             <div className='page-container pt-6 pb-10' >
-              <h2 className="heading-primary">Selected Publications</h2>
+              <h2 className="heading-section">Selected Publications</h2>
               <div className="space-y-4">
                 {Object.entries(selected_publications).sort((a, b) => b[0] - a[0]).map(([year, pubs]) => (
                   <ul>
@@ -207,7 +207,7 @@ export default function Home() {
 
           <section id="open-source ">
             <div className="page-container pt-6 pb-10 ">
-              <h2 className="heading-primary">Open-Source Projects</h2>
+              <h2 className="heading-section">Open-Source Projects</h2>
               <div
                 className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8`}
               >
@@ -227,14 +227,12 @@ export default function Home() {
 
           <section id="talks">
             <div className="page-container pt-6 pb-10">
-              <h2 className="heading-primary">Recent Talks</h2>
+              <h2 className="heading-section">Recent Talks</h2>
               <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-x-6 mb-4">
                 {homeData.talks
                   .filter(talk => talk.link)
                   .slice(0, 3)
                   .map((talk, idx) => {
-
-
                     return (
                       <VideoCard video={talk} />
                     );

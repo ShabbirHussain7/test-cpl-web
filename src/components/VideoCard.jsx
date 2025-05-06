@@ -21,7 +21,7 @@ export default function VideoCard({ video }) {
                             {video.date} | {video.presented_at}
                         </div>
                         <div className="pt-2">
-                            <p className="text-lg w-full">{video.title.slice(0, 65)}...</p>
+                            <p className="">{video.title.slice(0, 65)}...</p>
                         </div>
                     </div>
                 </div>
