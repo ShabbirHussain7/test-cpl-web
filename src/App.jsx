@@ -13,6 +13,7 @@ import Terms from './pages/Terms';
 import Updates from './pages/Updates';
 import News from './pages/News';
 import Talks from './pages/Talks';
+import { Navigate } from 'react-router-dom';
 import './App.css';
 
 import { useEffect } from 'react';
@@ -32,10 +33,11 @@ export default function App() {
 
   return (
     <div className='App'>
-    <BrowserRouter>
+    <BrowserRouter basename="/test-cpl-web">
     <ScrollToTop />
       <Header />
       <Routes>
+      <Route path="/test-cpl-web" element={<Navigate replace to="/test-cpl-web/" />} />
         <Route path="/" element={<Home />} />
         <Route path="/publications" element={<Publications />} />
         <Route path="/talks" element={<Talks />} />

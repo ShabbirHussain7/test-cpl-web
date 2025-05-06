@@ -2,15 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import LabLogo from '../../public/censoredplanetBlack.svg';
 
 export default function ReportCard({ report, idx }) {
   return (
-    <Link key={idx} to={`/reports/${report.permalink}`} className="flex flex-col bg-white rounded-4xl border border-[#CBD5E1] shadow transition transform hover:scale-[1.02] hover:shadow-md p-6 h-[300px] overflow-hidden">
+    <Link key={idx} to={`/reports/${report.permalink}`} className="relative flex flex-col bg-white rounded-sm border border-[#CBD5E1] shadow transition transform hover:scale-[1.02] hover:shadow-md p-5  overflow-hidden">
+            <img
+              src={LabLogo}
+              alt="Lab Logo"
+              className="absolute top-0 left-0  m-5 w-35 pointer-events-none"
+            />
       {/* Top Section */}
-      <div className="flex flex-col flex-grow overflow-hidden">
+      <div className="relative z-10 flex flex-col flex-grow overflow-hidden">
         <div className="mb-2 ">
-          <div className="bg-[#D6E2EB]  text-[#2D4D63] text-xs font-semibold px-3 py-1 rounded-full mb-4 inline-block">
+        <div className="flex justify-end">
+          <div className="bg-[#D6E2EB]  text-[#2D4D63] text-xs rounded-sm font-semibold px-3 py-1 mb-4 inline-block">
             {report.date}
+          </div>
           </div>
           <h2 className="text-lg font-bold mb-2 overflow-hidden text-ellipsis line-clamp-2">
             {report.title}
@@ -32,16 +40,6 @@ export default function ReportCard({ report, idx }) {
             {report.excerpt}
           </ReactMarkdown>
         </div>
-      </div>
-
-      {/* Bottom Section */}
-      <div className="pt-2">
-        {report.project && (
-          <p className="text-sm font-semibold text-orange-700">{report.project}</p>
-        )}
-        {report.affiliations && (
-          <div className="text-gray-400 text-xs">{report.affiliations}</div>
-        )}
       </div>
     </Link>
   );

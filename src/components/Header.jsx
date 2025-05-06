@@ -40,7 +40,7 @@ const Header = () => {
                   ${isScrolled ? 'py-2' : 'py-4'} bg-[#2D4D63]`}>
       <nav className="container mx-auto flex justify-between max-w-screen-xl px-6 md:px-16 items-center">
         <Link to="/">
-          <img src="/censoredplanet.svg" alt="Censored Planet Logo" className="h-10 md:h-12" />
+          <img src="./censoredplanet.svg" alt="Censored Planet Logo" className="h-10 md:h-12" />
         </Link>
 
           {/*  Desktop menu  */}

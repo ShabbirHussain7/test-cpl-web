@@ -28,7 +28,7 @@ This post highlights findings also discussed in our [USENIX Security 2022](https
 
 In this paper, we investigate the potential for VPN blocking by developing mechanisms for accurately fingerprinting connections using [OpenVPN](https://openvpn.net/), the most popular protocol for commercial VPN services. We identify three fingerprints based on protocol features such as byte pattern, packet size, and server response, and we deploy a detection system based on these features inside a real ISP’s network. Our evaluation shows that we are able to identify over 85% of OpenVPN flows with only negligible false positives, suggesting that OpenVPN-based services can be effectively blocked with little collateral damage. Alarmingly, we are also able to identify the majority of the so-called “obfuscated VPNs” due to their ineffective obfuscation techniques. We discuss the implications of the VPN fingerprintability for different threat models and propose short-term defenses. In the longer term, we hope our report can bring more transparency to obfuscated VPN services and facilitate the adoption of more principled detection countermeasures.
 
-<img src="/assets/openvpn-setup.png" alt="Framework Deployment inside Merit Network" title="Framework Deployment inside Merit Network" width="100%">
+<img src="./assets/openvpn-setup.png" alt="Framework Deployment inside Merit Network" title="Framework Deployment inside Merit Network" width="100%">
 **Figure 1.** _Framework Deployment inside Merit Network_
 {: .center }
 
@@ -49,7 +49,7 @@ Over the last decade, the demand for commercial VPNs has been increasing steadil
 
 VPN protocols create encrypted tunnels over the networks. They were first introduced as an enterprise security tool, but recently, they have been increasingly used by regular Internet users to safeguard them from surveillance, geoblocking, and censorship. 
 
-<img src="/assets/openvpn-handshake.png" style="margin-left:auto;margin-right:auto;display:block;" alt="Openvpn Handshake" title="Openvpn Handshake" width="50%">
+<img src="./assets/openvpn-handshake.png" style="margin-left:auto;margin-right:auto;display:block;" alt="Openvpn Handshake" title="Openvpn Handshake" width="50%">
 **Figure 2.** _OpenVPN Session Establishment (TLS mode)._
 {: .center }
 
@@ -89,7 +89,7 @@ OpenVPN engages in a TLS-style handshake with its peer over the control channel.
 
 We find that the presence of such ACK packets, which are uniform in size and only seen in some parts of a session, provides another fingerprintable feature. Specifically, we group packets into 10-packet bins, and we derive the ACK fingerprint for each flow by counting the number of packets in each bin that have the same size as the identified ACK packet. For OpenVPN flows, we expect to observe a high number of ACK packets in early bins and an absence of them in later bins. 
 
-<img src="/assets/openvpn-ack.png" alt="ACK fingerprint Decision Tree from the training datasets" title="ACK fingerprint Decision Tree from the training datasets" width="70%">
+<img src="./assets/openvpn-ack.png" alt="ACK fingerprint Decision Tree from the training datasets" title="ACK fingerprint Decision Tree from the training datasets" width="70%">
 {: .center }
 
 **Figure 3.** _ACK fingerprint Decision Tree from the training datasets_
@@ -104,7 +104,7 @@ We explore the feasibility of identifying an OpenVPN server through active probi
 
 However, we find that with carefully designed probes, we are still able to distinguish between OpenVPN and non-OpenVPN servers with high accuracy, even if the server remains “silent” throughout the probing cycle. The key concept is that although the application may not respond to probing, an attacker may still be able to fingerprint application-specific thresholds at the TCP level, such as timeouts or RST thresholds, as demonstrated by [Frolov et al](https://www.ndss-symposium.org/ndss-paper/detecting-probe-resistant-proxies/).
 
-<img src="/assets/openvpn-probe.png" alt="Summary of Probes and the expected behaviors from an OpenVPN server" title="Summary of Probes and the expected behaviors from an OpenVPN server" width="70%">
+<img src="./assets/openvpn-probe.png" alt="Summary of Probes and the expected behaviors from an OpenVPN server" title="Summary of Probes and the expected behaviors from an OpenVPN server" width="70%">
 {: .center }
 
 **Figure 4.** _Summary of Probes and the expected behaviors from an OpenVPN server_
@@ -125,7 +125,7 @@ __Wrapping OpenVPN inside encrypted tunnels is a popular obfuscation strategy, y
 
 __UDP and obfuscated servers often share infrastructure with vanilla TCP servers, leaving them “guilty by association”:__ While our probing technique works only against vanilla TCP servers, we find that the majority of UDP and obfuscated OpenVPN services are co-located with vanilla TCP servers, presumably due to lower hosting and maintenance cost. We find that for 34 out of 41 obfuscated services, at least one vanilla OpenVPN TCP server can be found within the server’s /29 subnet.
 
-<img src="/assets/openvpn-eval.png" alt="Merit evaluation results over days" title="Merit evaluation results over days" width="100%">
+<img src="./assets/openvpn-eval.png" alt="Merit evaluation results over days" title="Merit evaluation results over days" width="100%">
 **Figure 5.** _Merit evaluation results over days_
 {: .center }
 

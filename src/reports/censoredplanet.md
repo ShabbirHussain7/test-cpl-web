@@ -41,17 +41,17 @@ A recent line of measurement techniques, called **remote measurements**, have pa
 
 ### The Censored Planet Observatory
 
-<img src="/assets/header.png" width="48%" style="float:left; margin-top: 10%" alt="Remote Measurements from the University of Michigan to vantage points across the world." />
+<img src="./assets/header.png" width="48%" style="float:left; margin-top: 10%" alt="Remote Measurements from the University of Michigan to vantage points across the world." />
 
-<img src="/assets/cp-design.png" width="48%" style="margin-left:2%" alt="Censored Planet’s modular design" />
+<img src="./assets/cp-design.png" width="48%" style="margin-left:2%" alt="Censored Planet’s modular design" />
 
 **Figure 1.** _(Left) Remote Measurements from the University of Michigan to vantage points across the world. (Right) Censored Planet’s modular design._
 
 The Censored Planet observatory is a global and longitudinal censorship measurement platform that collects censorship data using multiple remote measurement techniques and analyzes the data to create a more complete view of global censorship. The Censored Planet Observatory operates from the [University of Michigan](https://umich.edu/), sending measurements to more than **95,000 vantage point machines** across the world on 6 Internet protocols (Figure 1 (left)). Each week, the observatory tests reachability to more than **2,000 websites**. Censored Planet adopts a modular design (Figure 1 (right)) that allows it to efficiently measure Internet censorship evolution using continuous repeated measurements, as well as dynamically measure certain censorship events in depth, an ability we call **Rapid Focus**. Censored Planet also includes methods to remove false positives from data, obtain a representative metric for censorship in each country, and time series analysis methods to detect anomalous censorship events and trends. **Censored Planet [releases all of the data collected publicly](https://censoredplanet.org/data/raw) so that the community can use the data to track Internet censorship.**
 
-<img src="/assets/cp-vp-map.png" width="48%" style="float:left" alt="Censored Planet’s vantage points in March 2020" />
+<img src="./assets/cp-vp-map.png" width="48%" style="float:left" alt="Censored Planet’s vantage points in March 2020" />
 
-<img src="/assets/cp-long-vp.png" width="48%" style="margin-left:2%" alt="Censored Planet’s vantage points in March 2020" />
+<img src="./assets/cp-long-vp.png" width="48%" style="margin-left:2%" alt="Censored Planet’s vantage points in March 2020" />
 
 **Figure 2.** _(Left) Censored Planet’s vantage points in March 2020. (Right) Selection of vantage points over time (Error bar shows continuity of selection)._
 

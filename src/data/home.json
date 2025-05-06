@@ -8,32 +8,40 @@
     {
         "url": "censorship-detection",
         "name": "Monitoring Censorship at Global Scale",
-        "description": "We monitor network interference and disruptions globally to identify and understand censorship trends across countries."
+        "description": "We monitor network interference and disruptions globally to identify and understand censorship trends across countries.",
+        "color": "#14B8A6"
     },
     {
         "url": "rapid-response",
         "name": "Exposing Emerging Censorship Threats",
-        "description": "We investigate new and evolving techniques used to suppress access to information and restrict online freedom."
+        "description": "We investigate new and evolving techniques used to suppress access to information and restrict online freedom.",
+        "color": "#FB7185"
+    
     },
     {
         "url": "splintering-net",
         "name": "Characterizing Internet Splintering",
-        "description": "We study the fragmentation of the global Internet and how nation-level policies impact access and connectivity."
+        "description": "We study the fragmentation of the global Internet and how nation-level policies impact access and connectivity.",
+        "color": "#9A042B"
+    
     },
     {
         "url": "dpis",
         "name": "Evaluating Network Middlebox Deployments",
-        "description": "We study the deployment and behavior of network middleboxes to assess their role in censorship and surveillance."
+        "description": "We study the deployment and behavior of network middleboxes to assess their role in censorship and surveillance.",
+        "color": "#64748B"
     },
     {
         "url": "obfuscation",
         "name": "Advancing Traffic Obfuscation Against Novel Fingerprinting Attacks",
-        "description": "We develop novel obfuscation methods to evade censorship and ensure secure, anonymous communication online."
+        "description": "We develop novel obfuscation methods to evade censorship and ensure secure, anonymous communication online.",
+        "color": "#3B82F6"
     },
     {
         "url": "securing-pets",
         "name": "Securing VPN and Circumvention Tool Ecosystem",
-        "description": "We assess VPNs and circumvention tools for reliability and security, and help improve their resistance to blocking."
+        "description": "We assess VPNs and circumvention tools for reliability and security, and help improve their resistance to blocking.",
+        "color": "#4D4DD1"
     }
   ],
   
@@ -104,7 +112,7 @@
       "tagline": "Set of scripts for actively probing and collecting data about particular network devices, including those that perform censorship."
     },
     {
-      "repo": "geoin­spector",
+      "repo": "geoinspector",
       "name": "GeoInspector",
       "tagline": "Measurement tool for detecting geoblocking and server-side blocking across DNS, TCP, TLS, and HTTP protocols."
     },

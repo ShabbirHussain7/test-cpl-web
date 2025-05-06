@@ -10,6 +10,14 @@
   flex-direction: column;
   @apply bg-gray-50 text-gray-900 font-sans;
 }
+
+section:nth-of-type(odd) {
+  @apply bg-gray-50; /* bg-gray-50 */
+}
+
+section:nth-of-type(even) {
+  @apply bg-gray-200/60; /* bg-white */
+}
 .page-container {
   @apply max-w-screen-xl mx-auto px-8 sm:px-16;
 }
@@ -30,3 +38,9 @@
   @apply text-2xl font-semibold mb-4 relative after:content-[''] after:block after:w-20 after:border-b-4 after:border-[#CC4E24] after:mt-2;
 }
 
+
+input:focus {
+  /* use bright blue color for outline */
+  outline: 1px solid #3B82F6; /* Replace with your desired color */
+  border: none; /* Replace with your desired color */
+}

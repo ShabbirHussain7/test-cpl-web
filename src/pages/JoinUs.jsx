@@ -18,9 +18,7 @@ export default function JoinUs() {
             title="For Collaborators"
             titleColor="text-orange-800"
             borderColor="border-orange-700"
-            link="#contact"
-            linkText="Get in touch to discuss collaborations"
-            linkColor="text-orange-700"
+          
           >
             <p>
               We collaborate with academics, NGOs, and industry on measurement, analysis, and policy. If you have a project idea, we’d love to hear from you.
@@ -31,10 +29,6 @@ export default function JoinUs() {
             title="For Students"
             titleColor="text-blue-800"
             borderColor="border-blue-700"
-            link="#contact"
-            linkText="Email us about joining"
-            linkColor="text-blue-700"
-            className=""
           >
             <p>
               Please make sure to read the following before you reach out.

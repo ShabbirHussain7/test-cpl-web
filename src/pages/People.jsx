@@ -6,10 +6,11 @@ import PersonCard from '../components/PersonCard';
 export default function People() {
   return (
     <main className="pt-24 ">
-      <section className="page-container pb-4">
+      <div>
 
 
         <section className="">
+          <div className='page-container'> 
           <h1 className="heading-primary"> Our Team </h1>
           <div className='grid grid-cols-1 md:grid-cols-[2fr_1fr] mb-4 '>
 
@@ -42,10 +43,12 @@ export default function People() {
 
 
           </div>
+          </div>
 
         </section>
 
-        <section className="mb-12">
+        <section>
+        <div className='page-container py-4'> 
           <h2 className="heading-secondary">Lab Members</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-stretch">
@@ -55,12 +58,13 @@ export default function People() {
             ))}
 
           </div>
+          </div>
 
 
         </section>
 
 
-      </section>
+      </div>
     </main>
   );
 }

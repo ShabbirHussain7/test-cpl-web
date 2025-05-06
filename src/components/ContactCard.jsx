@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ContactCard({ icon: Icon, title, titleColor, borderColor, children, link, linkText, linkColor }) {
+export default function ContactCard({ icon: Icon, title, titleColor, borderColor, children }) {
   return (
     <div className={`bg-white rounded-lg p-6 shadow border-l-4 ${borderColor}`}>
       <div className="flex items-center gap-3 mb-4">
