@@ -1,4 +1,5 @@
 ---
+area: Evaluating Network Middlebox Deployments
 date: 2022-10-25
 publisher: ACM Internet Measurement Conference (IMC)
 name: "TSPU: Russia’s Decentralized Censorship System"
@@ -20,11 +21,11 @@ press:
   - publisher: Censored Planet
     link: "https://censoredplanet.org/tspu"
 bibtex: "@inproceedings{Xue2022TSPU,<br>
-title = {{TSPU: Russia’s Decentralized Censorship System}},<br>
-author = {Diwen Xue and Benjamin Mixon-Baca and ValdikSS and Anna Ablove and Beau Kujath and Jedidiah R. Crandall and Roya Ensafi},<br>
-booktitle = {Proceedings of the 22nd ACM Internet Measurement Conference},<br>
-year = {2022},<br>
-address = {Nice, France},<br>
-publisher = {Association for Computing Machinery}<br>
-}"
+  title = {{TSPU: Russia’s Decentralized Censorship System}},<br>
+  author = {Diwen Xue and Benjamin Mixon-Baca and ValdikSS and Anna Ablove and Beau Kujath and Jedidiah R. Crandall and Roya Ensafi},<br>
+  booktitle = {Proceedings of the 22nd ACM Internet Measurement Conference},<br>
+  year = {2022},<br>
+  address = {Nice, France},<br>
+  publisher = {Association for Computing Machinery}<br>
+  }"
 ---

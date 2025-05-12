@@ -30,7 +30,7 @@ section:nth-of-type(even) {
 }
 
 .paragraph {
-  @apply text-gray-700 w-full text-justify;
+  @apply text-lg text-gray-700 w-full text-justify;
 }
 
 .heading-secondary {
@@ -44,6 +44,7 @@ section:nth-of-type(even) {
 
 
 input:focus {
-  outline: 1px solid #3B82F6; 
-  border: none;
+  /* use bright blue color for outline */
+  outline: 1px solid #3B82F6; /* Replace with your desired color */
+  border: none; /* Replace with your desired color */
 }

@@ -1,4 +1,5 @@
 ---
+area: Exposing Emerging Censorship Threats
 date: 2020-10-27
 publisher: ACM Internet Measurement Conference (IMC)
 name: "Investigating Large Scale HTTPS Interception in Kazakhstan"
@@ -41,9 +42,11 @@ press:
   - publisher: Voice of America
     link: "https://www.voanews.com/silicon-valley-technology/study-russias-web-censoring-tool-sets-pace-imitators"
 bibtex: "@inproceedings{sundararaman2020investigating,<br>
-title={{Investigating Large Scale HTTPS Interception in Kazakhstan}},<br>
-author={R. Sundara Raman, L. Evdokimov, E. Wustrow, A. Halderman, and R. Ensafi},<br>
-booktitle={In ACM Internet Measurement Conference (IMC)},<br>
-year={2020}<br>
-}"
+  title={{Investigating Large Scale HTTPS Interception in Kazakhstan}},<br>
+  author={R. Sundara Raman, L. Evdokimov, E. Wustrow, A. Halderman, and R. Ensafi},<br>
+  booktitle={In ACM Internet Measurement Conference (IMC)},<br>
+  year={2020}<br>
+  }"
+abstract:
+  "Increased adoption of HTTPS has created a largely encrypted web, but these security gains are on a collision course with governments that desire visibility into and control over user communications. Last year, the government of Kazakhstan conducted an unprecedented large-scale HTTPS interception attack by forcing users to trust a custom root certificate. We were able to detect the interception and monitor its scale and evolution using measurements from in-country vantage points and remote measurement techniques. We find that the attack targeted connections to 37 unique domains, with a focus on social media and communication services, suggesting a surveillance motive, and that it affected a large fraction of connections passing through the country's largest ISP, Kazakhtelecom. Our continuous real-time measurements indicated that the interception system was shut down after being intermittently active for 21 days. Subsequently, supported by our findings, two major browsers (Mozilla Firefox and Google Chrome) completely blocked the use of Kazakhstan's custom root. However, the incident sets a dangerous precedent, not only for Kazakhstan but for other countries that may seek to circumvent encryption online."
 ---

@@ -16,19 +16,19 @@ export default function JoinUs() {
         <ContactCard
             icon={Handshake}
             title="For Collaborators"
-            titleColor="text-orange-800"
-            borderColor="border-orange-700"
+            titleColor="text-[#CC4E24]"
+            borderColor="border-[#CC4E24]"
           
           >
             <p>
-              We collaborate with academics, NGOs, and industry on measurement, analysis, and policy. If you have a project idea, we’d love to hear from you.
+              We collaborate with academics, NGOs, and industry on measurement, analysis, and policy. If you are interested in working with us, drop us an email!
             </p>
           </ContactCard>
           <ContactCard
             icon={GraduationCap}
             title="For Students"
-            titleColor="text-blue-800"
-            borderColor="border-blue-700"
+            titleColor="text-[#2D4D63]"
+            borderColor="border-[#2D4D63]"
           >
             <p>
               Please make sure to read the following before you reach out.

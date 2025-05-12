@@ -18,8 +18,6 @@ export default function Report() {
         const response = await fetch(mdModule.default);
         let rawText = await response.text();
 
-        // Strip any Kramdown attribute lists like "{:.center}"
-        rawText = rawText.replace(/\{\:\s*[^}]+\}/g, '');
         const { data, content } = matter(rawText);
         setFrontMatter(data);
         setMarkdownContent(content);

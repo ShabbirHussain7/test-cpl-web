@@ -1,7 +1,8 @@
 ---
+area: ""
 date: 2017-03-01
 publisher: "ACM Internet Measurement Conference (IMC)"
-name: "A Look at Infrastructure Geolocation in Public and Commercial Databases"
+name: "A Look at Router Geolocation in Public and Commercial Databases"
 tags:
  - measurement
 collaborators:
@@ -13,11 +14,13 @@ collaborators:
  - Christos Papadopoulos
 pdf: "assets/Ensafi2017a.pdf"
 bibtex: "@inproceedings{Manaf2017A,<br>
-title={A Look at Infrastructure Geolocation in Public and Commercial Databases},<br>
-author={Manaf Gharaibeh and Anant Shah and Bradley Huffaker and Han Zhang and Roya Ensafi and Christos Papadopoulos},<br>
-booktitle={ACM Internet Measurement Conference},<br>
-year={2017}<br>
-}"
+    title={A Look at Router Geolocation in Public and Commercial Databases},<br>
+    author={Manaf Gharaibeh and Anant Shah and Bradley Huffaker and Han Zhang and Roya Ensafi and Christos Papadopoulos},<br>
+    booktitle={ACM Internet Measurement Conference},<br>
+    year={2017}<br>
+    }"
 talk: ""
 slides: ""
+abstract:
+    "Internet measurement research frequently needs to map infrastructure components, such as routers, to their physical locations. Although public and commercial geolocation services are often used for this purpose, their accuracy when applied to network infrastructure has not been sufficiently assessed. Prior work focused on evaluating the overall accuracy of geolocation databases, which is dominated by their performance on end-user IP addresses. In this work, we evaluate the reliability of router geolocation in databases. We use a dataset of about 1.64M router interface IP addresses extracted from the CAIDA Ark dataset to examine the country- and city-level coverage and consistency of popular public and commercial geolocation databases. We also create and provide a ground-truth dataset of 16,586 router interface IP addresses and their city-level locations, and use it to evaluate the databases' accuracy with a regional breakdown analysis. Our results show that the databases are not reliable for geolocating routers and that there is room to improve their country- and city-level accuracy. Based on our results, we present a set of recommendations to researchers concerning the use of geolocation databases to geolocate routers."
 ---

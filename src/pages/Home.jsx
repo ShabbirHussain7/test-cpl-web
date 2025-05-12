@@ -6,7 +6,7 @@ import ResearchArea from '../components/ResearchArea';
 import VideoCard from '../components/VideoCard';
 import ToolCard from '../components/ToolCard';
 import homeData from "../data/home.json";
-import newsData from "../data/news.json";
+import newsData from "../data/press_mentions.json";
 
 export default function Home() {
   // Dynamically import all markdown files in publications
@@ -43,15 +43,19 @@ export default function Home() {
                   <div className="flex flex-col sm:flex-row justify-center gap-4">
                     <Link
                       to="/join"
-                      className="bg-[#2D4D63] font-semibold text-white px-4 py-2 rounded-lg hover:bg-[#223B4C] transition-shadow shadow-md hover:shadow-lg"
+                      className=" bg-white text-[#2D4D63] font-semibold  px-4 py-2 rounded hover:bg-gray-200  transition-shadow shadow-md hover:shadow-lg"
                     >
                       Join Us
                     </Link>
                     <Link
-                      to="/research"
-                      className="bg-white font-semibold text-[#2D4D63] px-4 py-2 rounded-lg hover:bg-gray-200 transition-shadow shadow-md hover:shadow-lg"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      to="dashboard.censoreplanet.org"
+                      className="bg-[#2D4D63] text-white  font-semibold  px-4 py-2 rounded hover:bg-[#223B4C] transition-shadow shadow-md hover:shadow-lg flex items-center space-x-2"
                     >
-                      Explore our Work
+                      <img src="./CPO.svg" alt="Censored Planet" className="h-6 w-6 filter contrast-200" />
+                      <span>Observatory</span>
+
                     </Link>
                   </div>
                 </div>
@@ -86,7 +90,7 @@ export default function Home() {
                   target="_blank"
                   rel="noopener"
                 >
-                  <span className="font-semibold">{latestNews.date}:</span> {latestNews.title}, <em>{latestNews.website} </em>
+                  <span className="font-semibold">{latestNews.date}:</span> {latestNews.title}, <em>{latestNews.source} </em>
                 </a>
 
               </div>
@@ -110,7 +114,7 @@ export default function Home() {
             <div className='page-container pt-6 pb-8 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-12'>
               {/* About Us */}
               <div>
-                <h2 className="heading-section">
+                <h2 className="heading-primary">
                   What We Do
                 </h2>
                 <div className="paragraph">
@@ -118,16 +122,7 @@ export default function Home() {
                     Our research lies at the intersection of networking, security and privacy, and Internet measurement. We take a data-driven approach to detecting and defending against powerful network intermediaries, government threat actors, and technologies and practices that impact users’ freedom of expression online. Our work has won honors like the <strong>Internet Defense Prize</strong> and multiple <strong>IRTF research awards</strong>, has been featured in <strong>130+ news articles</strong>, resulted in <strong>60+ security disclosures</strong>, and has been cited by <strong>Congressional reports</strong> calling for regulatory action. Since 2018, Censored Planet Observatory has conducted <strong>68 billion measurements</strong> across over 220 countries, aiding <strong>100+ advocacy organizations</strong>.
                   </p>
                 </div>
-                <div className="mt-2">
-                  <Link
-                    to="https://dashboard.censoredplanet.org/"
-                    className="inline-block px-4 py-1 bg-[#A8EDE9] font-display text-[#2D4D63] text-sm font-semibold px-3 py-1 rounded hover:bg-[#a0dede] rounded-md shadow-sm transition"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    Censored Planet Observatory
-                  </Link>
-                </div>
+                
               </div>
 
               {/* Latest at the Lab */}
@@ -136,7 +131,7 @@ export default function Home() {
                   <h2 className="heading-secondary">
                     Latest at the Lab
                   </h2>
-                  <div className="relative h-[225px]">
+                  <div className="relative h-[250px]">
                     <div className="text-gray-700 text-sm overflow-y-auto h-full pr-1 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
                       {homeData.lab_updates.slice(0, 5).map((update, idx, arr) => (
                         <div key={idx}>
@@ -177,7 +172,7 @@ export default function Home() {
             <div className='page-container pt-6 pb-10'>
               {/* Research Themes Subsection */}
 
-              <h2 className="heading-section">Research Areas</h2>
+              <h2 className="heading-primary">Research Areas</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-8 ">
                 {/* map each research area to researcharea component */}
                 {homeData.research.map((area, idx) => (
@@ -191,7 +186,7 @@ export default function Home() {
 
           <section id="selected-publications">
             <div className='page-container pt-6 pb-10' >
-              <h2 className="heading-section">Selected Publications</h2>
+              <h2 className="heading-primary">Selected Publications</h2>
               <div className="space-y-4">
                 {Object.entries(selected_publications).sort((a, b) => b[0] - a[0]).map(([year, pubs]) => (
                   <ul>
@@ -207,7 +202,7 @@ export default function Home() {
 
           <section id="open-source ">
             <div className="page-container pt-6 pb-10 ">
-              <h2 className="heading-section">Open-Source Projects</h2>
+              <h2 className="heading-primary">Open-Source Projects</h2>
               <div
                 className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8`}
               >
@@ -227,8 +222,8 @@ export default function Home() {
 
           <section id="talks">
             <div className="page-container pt-6 pb-10">
-              <h2 className="heading-section">Recent Talks</h2>
-              <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-x-6 mb-4">
+              <h2 className="heading-primary">Recent Talks</h2>
+              <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6 mb-4">
                 {homeData.talks
                   .filter(talk => talk.link)
                   .slice(0, 3)

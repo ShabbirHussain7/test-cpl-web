@@ -1,0 +1,206 @@
+{
+  "obfuscation": {
+    "title": "Advancing Traffic Obfuscation",
+    "image": "obfuscation.jpeg",
+    "backgroundColor": "#fdf6e3",
+    "imgBorderColor": " #9a7400",
+    "overview": "Targeted network interference—such as censorship, bandwidth throttling, and selective traffic blocking—fundamentally depends on an adversary’s ability to accurately identify and classify specific types of traffic, a process known as <u><em>traffic fingerprinting</em></u>. To counteract fingerprinting techniques, <u><em>traffic obfuscation</em></u> protocols aim to disguise sensitive traffic, making it indistinguishable from benign, everyday network flows.",
+    "research": "Our research rigorously evaluates state-of-the-art obfuscation protocols by empirically analyzing their resilience against realistic fingerprinting attacks. By exposing vulnerabilities within widely deployed obfuscation methods, we reveal critical gaps that adversaries can exploit—such as nested protocol structures, timing discrepancies, and anomalous congestion control behaviors. Our goal is to guide the design of next-generation obfuscation protocols, ensuring that future solutions provide robust and lasting defenses against traffic fingerprinting.",
+    "findings": [
+      {
+        "title": "The Discriminative Power of Cross-layer RTTs in Fingerprinting Proxy Traffic <a href= 'https://ensa.fi/papers/rtt-fingerprinting.pdf'>(<u>NDSS'25</u>)</a>",
+        "description": "We discover that proxy traffic inherently creates detectable timing discrepancies between application-layer and transport-layer round-trip times (RTTs). Exploiting these subtle yet consistent timing differences, our method reliably fingerprints a wide range of popular obfuscated proxy protocols—even in realistic network conditions—with low false positives."
+      },
+      {
+        "title": "Is Custom Congestion Control a Bad Idea for Circumvention Tools? <a href= 'https://ensa.fi/papers/congestion.pdf'>(<u>FOCI'25</u>)</a>",
+        "description": "We demonstrate that circumvention proxies using custom congestion control algorithms (CCAs)—such as Hysteria and TCP-Brutal—exhibit uniquely aggressive traffic behaviors that deviate significantly from standard protocols like TCP Cubic or BBR. These deviations make proxy traffic trivially fingerprintable, undermining their primary goal of evading censorship. Our findings strongly recommend that circumvention tools adhere to standard congestion control to preserve indistinguishability."
+      },
+      {
+        "title": "CalcuLatency: Leveraging Cross-Layer Network Latency Measurements to Detect Proxy-Enabled Abuse <a href= 'https://ensa.fi/papers/calculatency.pdf'>(<u>USENIX'24</u>)</a>",
+        "description": "We show that proxy and VPN usage can be effectively inferred through simple latency-based measurements, leveraging the inherent difference between network-layer and application-layer RTTs. Our open-source system, CalcuLatency, accurately detects remote VPN/proxy use with high precision (false positive rate < 1%) and recall (~ 97%) when users are located reasonably away (more than 650 miles) from the proxy server."
+      },
+      {
+        "title": "Fingerprinting Obfuscated Proxy Traffic with Encapsulated TLS Handshakes <a href= 'https://ensa.fi/papers/sec24-xue.pdf'>(<u>USENIX'24</u>)</a>",
+        "description": "We find that encapsulated TLS handshakes—nested within encrypted proxy tunnels—produce distinctive packet-size and timing patterns, making proxy traffic reliably fingerprintable by passive observers. Our protocol-agnostic method detects major obfuscation protocols, including Shadowsocks, VMess, Trojan, and VLESS, at high accuracy, even when random padding or multiple encapsulation layers are used."
+      },
+      {
+        "title": "OpenVPN is Open to VPN Fingerprinting <a href= 'https://ensa.fi/papers/openvpn-fingerprinting.pdf'>(<u>USENIX'22</u>)</a>",
+        "description": "We demonstrate that popular VPN protocols, including widely-used “obfuscated” variants of OpenVPN, exhibit distinctive traffic patterns—such as predictable handshake sequences and consistent packet-size distributions—that make them easily detectable at ISP-scale. Our two-phase fingerprinting method combines passive traffic inspection and active probing to achieve over 85% recall with extremely low false positives, even against commercial VPN providers claiming robust obfuscation. These findings highlight critical vulnerabilities in current obfuscation techniques and emphasize the urgent need for more principled and secure obfuscation designs."
+      }
+    ]
+  },
+  "censorship-detection": {
+    "title": "Remote Censorship Measurement Dashboard",
+    "overview": "Internet censorship is pervasive and evolving, yet our ability to detect and understand it remains limited. Traditional measurement approaches often depend on in-country volunteers or ad hoc infrastructure, which raises ethical concerns and lacks coverage and continuity. This makes it difficult to monitor censorship at scale, respond to policy changes, or understand long-term trends. As censorship tactics grow more sophisticated, the need for scalable, resilient, and ethical measurement frameworks becomes increasingly urgent.",
+    "image": "censorship.gif",
+    "backgroundColor": "#e0fbf8",
+    "imgBorderColor": "#17827B",
+    "research": "Our research develops scalable, remote techniques for measuring Internet censorship without relying on in-country infrastructure or human volunteers. Using methods such as application-layer scanning, DNS manipulation detection, TCP/IP side channels, and idle scans, we uncover how censorship is deployed across networks, countries, and time. Our goal is to enable continuous, ethically sound monitoring of global information controls at scale.",
+    "findings": [
+      {
+        "title": "CERTainty: Detecting DNS Manipulation using TLS Certificates <a href=\"papers/certainty.pdf\">(<u>PETS'23</u>)</a>",
+        "description": "CERTainty introduces a TLS certificate-based method to detect DNS manipulation with high accuracy, overcoming false positives from prior heuristics and revealing 17 commercial DNS filtering products and 55 ISP-level manipulators across 52 countries."
+      },
+      {
+        "title": "Advancing the Art of Censorship Data Analysis <a href=\"papers/censorship-data-analysis.pdf\">(<u>FOCI'23</u>)</a>",
+        "description": "We highlight the complex and error-prone nature of analyzing Internet censorship data and introduce a standardized, open-source pipeline that accurately processes large-scale datasets to reduce false positives and uncover previously hidden censorship phenomena."
+      },
+      {
+        "title": "Lost in Transmission: Investigating Filtering of COVID-19 Websites <a href=\"papers/covid.pdf\">(<u>FC'21</u>)</a>",
+        "description": "We present the first global study on censorship of COVID-19 information, revealing low but non-trivial levels of DNS and application-layer blocking—including in 'free' countries like Switzerland and Canada—often due to overzealous or misclassified security filters."
+      },
+      {
+        "title": "Censored Planet: An Internet-wide, Longitudinal Censorship Observatory <a href=\"papers/CCS20censoredplanet.pdf\">(<u>CCS'20</u>)</a>",
+        "description": "By analyzing over 21.8 billion longitudinal measurements across 95,000 vantage points in 221 countries, we uncovered rising trends in censorship—even in countries considered free—especially targeting DNS, HTTPS, and content categories like news media and human rights."
+      },
+      {
+        "title": "Quack: Scalable Remote Measurement of Application-Layer Censorship <a href=\"papers/quack_sec18.pdf\">(<u>USENIX'18</u>)</a>",
+        "description": "Quack introduces a scalable, remote method for detecting application-layer censorship using the Echo protocol, revealing national blocklists across 40 countries and showing that censorship frequently targets circumvention tools, pornography, and gambling, with considerable policy variation between countries."
+      },
+      {
+        "title": "Augur: Internet-Wide Detection of Connectivity Disruptions <a href=\"papers/Augur-Oakland17.pdf\">(<u>S&amp;P'17</u>)</a>",
+        "description": "Augur uses TCP/IP side channels to infer network-level censorship from off-path locations, enabling continuous, global detection of connectivity disruptions and uncovering widespread censorship behavior across 179 countries without endangering end-users."
+      },
+      {
+        "title": "Global Measurement of DNS Manipulation <a href=\"papers/sec17-dns.pdf\">(<u>USENIX'17</u>)</a>",
+        "description": "Iris is a scalable and ethical system for detecting DNS manipulation worldwide, showing that DNS interference varies greatly across resolvers and countries, and highlighting how this method fills key gaps in understanding Internet censorship."
+      },
+      {
+        "title": "IEEE Magazine ’18 (Towards Continual Measurement of Global Network-Level Censorship)",
+        "description": "We outline the rationale and design of Augur, which enables safe, large-scale, and continuous censorship monitoring by measuring TCP/IP disruptions via side channels—overcoming the geographic and temporal limitations of traditional volunteer-based methods."
+      },
+      {
+        "title": "PAM’14 (Spooky Scan)",
+        "description": "Detecting Intentional Packet Drops on the Internet via TCP/IP Side Channels: We introduce a noise-resilient, hybrid idle scanning method to remotely detect and characterize directional packet drops (e.g., censorship) between two hosts without controlling either, validating the method through global measurements showing China as the primary censor of Tor directory access."
+      },
+      {
+        "title": "USENIX’14",
+        "description": "Global Censorship Detection over the RIPE Atlas Network: We demonstrate how the RIPE Atlas platform can be repurposed for censorship detection, revealing nuanced interference events in Turkey and Russia, including coordinated DNS tampering, IP blocking, and rerouting, through ethically cautious, cost-effective global measurements."
+      },
+      {
+        "title": "USENIX’10",
+        "description": "Idle Port Scanning and Non-interference Analysis of Network Protocol Stacks Using Model Checking: Using formal model checking, we uncover two novel idle scan techniques that bypass firewalls by exploiting TCP RST rate limiting and SYN cache behavior, and propose architectural mitigations via resource separation and non-interference enforcement in protocol stack design."
+      }
+    ]
+  },
+  "rapid-response": {
+    "title": "Exposing Emerging Censorship Threats",
+    "image": "rapid-response.png",
+    "backgroundColor": "#edfaff",
+    "imgBorderColor": "#0083c5",
+    "overview": "The technologies and practices for disrupting, tampering, and monitoring users' activities online are increasingly advanced and commoditized, lowering the barrier for companies, ISPs, and governments to enact Internet censorship. This necessitates timely intervention to prevent a total outpacing of the tools and frameworks designed to detect or resist it. However, performing such research, especially in heavily-censored states, is challenging and presents many ethical and functional challenges, from limited vantage points and poor network conditions to short-lived censorship events requiring immediate attention.",
+    "research": "Our research confronts this threat by investigating the evolving mechanics of digital censorship across multiple contexts. We study both country-specific campaigns—such as certificate-based HTTPS interception, infrastructure-level throttling, and offensive DDoS systems—as well as broader techniques like active probing and routing manipulation. Our goal is to expose emerging censorship strategies, inform technical and policy countermeasures, and support a freer and more resilient global Internet.",
+    "findings": [
+      {
+        "title": "Network Responses to Russia's Invasion of Ukraine in 2022: A Cautionary Tale for Internet Freedom <a href=\"papers/russia_usenix_22.pdf\">(<u>USENIX'23</u>)</a>",
+        "description": "Following Russia’s invasion of Ukraine in February 2022, we measured a chaotic combination of network responses furthering isolation of Russian users from the global Internet. We found geofencing by 45% of tested Russian government domains, as well as geoblocking of users in Russia and Kazakhstan by 444 foreign websites, including news and educational domains. We also identified major increases in Russian censorship, along with the withdrawal of BGP routes, development of a new domestic certificate authority, and blocking of circumvention tools including Psiphon and Tor."
+      },
+      {
+        "title": "Throttling Twitter: An Emerging Censorship Technique in Russia <a href=\"papers/throttling-imc-paper.pdf\">(<u>IMC'21</u>)</a>",
+        "description": "We identified and reverse-engineered the throttling of Twitter by the Russian government to rates between 130–150 kbps, and we determined that the throttling devices are both consistent across ISPs while proximal to end users. This work marks the first acknowledged use of targeted throttling as a means to put pressure on social media sites."
+      },
+      {
+        "title": "Investigating Large Scale HTTPS Interception in Kazakhstan <a href=\"papers/HTTPSKaz.pdf\">(<u>IMC'20</u>)</a>",
+        "description": "We detected, monitored, and analyzed an unprecedented large-scale HTTPS attack conducted by the government of Kazakhstan, which forced users to trust a custom root certificate. Supported by our findings, Mozilla Firefox and Google Chrome publicly condemned this action and completely blocked the use of Kazakhstan’s custom root. This work was highlighted by more than 50 media organizations worldwide, such as BBC, EFF, Forbes, and Ars Technica."
+      },
+      {
+        "title": "Decentralized Control: A Case Study of Russia <a href=\"papers/russia.pdf\">(<u>NDSS'20</u>)</a>",
+        "description": "We identified the implementation of large-scale decentralized censorship in Russia via the utilization of inexpensive commodity equipment. We found critical differences in blocking behavior between data centers and residential ISPs, with the latter experiencing much higher levels of censorship."
+      },
+      {
+        "title": "An Analysis of China’s Great Cannon <a href=\"papers/foci15-paper-great-cannon.pdf\">(<u>FOCI'15</u>)</a>",
+        "description": "We identified and characterized an offensive censorship system in China, separate from the Great Firewall, we termed the “Great Cannon.” This system leverages bystander systems outside of China to create massive DDOS attacks on choice services like GreatFire.org."
+      },
+      {
+        "title": "Examining How the Great Firewall Discovers Hidden Circumvention Servers  <a href='https://ensa.fi/papers/Ensafi2015b.pdf'>(<u>IMC'15</u>)</a>",
+        "description": "We characterized the use of active probing by the Great Firewall to detect and block servers associated with circumvention services like Tor."
+      },
+      {
+        "title": "Analyzing the Great Firewall of China Over Space and Time  <a href='https://ensa.fi/papers/Ensafi2015a.pdf'>(<u>PETS'15</u>)</a>",
+        "description": "We characterized the mechanism that the Great Firewall uses to block the Tor network using a hybrid system that can measure connectivity from the perspective of many clients all over China. We also presented a novel SYN backlog attack that can infer if packet loss is taking place without causing denial of service."
+      }
+    ]
+  },
+  "dpis": {
+    "title": "Evaluating Network Middlebox Deployments",
+    "image": "dpis.png",
+    "backgroundColor": "#F2F0EB",
+    "imgBorderColor": "#5A4E3C",
+    "overview": "The past two decades have seen a rapid proliferation of network middleboxes capable of large-scale traffic inspection, filtering, and manipulation, often through Deep Packet Inspection (DPI). These middleboxes serve diverse purposes, from security management to censorship enforcement. However, systematically characterizing these devices remains challenging due to measurement complexities, the wide variety of devices, and limited transparency from vendors and operators.",
+    "research": "Our research develops scalable measurement techniques designed to map out middleboxes on the global Internet, ranging from clustering blockages to deriving behavioral fingerprints. Applying these techniques at scale, we have characterized middlebox deployments across more than 100 countries. Our efforts seek to bring more transparency to how widespread these intermediaries have become on the global Internet and illuminate the security and privacy implications from such deployments.",
+    "findings": [
+      {
+        "title": "Measuring the Deployment of Network Censorship Filters at Global Scale <a href=\"papers/filtermap.pdf\">(<u>NDSS'20</u>)</a>",
+        "description": "We identified filter deployments associated with 90 vendors—including well-known commercial firewall manufacturers such as Palo Alto Networks, Cisco, and Fortinet—responsible for filtering in 103 countries. The unrestricted transfer of content filtering technologies have led to high availability, low cost, and highly effective filtering techniques becoming easier to deploy and harder to circumvent."
+      },
+      {
+        "title": "TSPU: Russia’s Decentralized Censorship System <a href=\"papers/tspu-imc22.pdf\">(<u>IMC'22</u>)</a>",
+        "description": "We identified over 6,000 TSPU devices deployed across 650 Russian networks and found that 70% of them are within two hops from end users. The advent of the TSPU marks a departure from traditional censorship infrastructure as the first decentralized architecture able to enforce uniform, centrally coordinated censorship policies at national scale."
+      },
+      {
+        "title": "Network Measurement Methods for Locating and Examining Censorship Devices <a href='https://ensa.fi/papers/censorship_devices_network_measurement.pdf'>(<u>CoNEXT'22</u>)</a>",
+        "description": "We identified 23 commercial censorship deployments in Azerbaijan, Belarus, Kazakhstan, and Russia, primarily located within ISPs upstream of end users. Many of these devices can be evaded with fuzzing strategies that modify HTTP requests to appear invalid to a censor while remaining acceptable to the destination server. Such evasion strategies can provide a way to fingerprint devices all manufactured by the same vendor."
+      }
+    ]
+  },
+  "securing-pets": {
+    "title": "Securing VPN and Circumvention Tool Ecosystem",
+    "image": "securing-pets.jpeg",
+    "backgroundColor": "#e8ecff",
+    "imgBorderColor": "#4D4DD1",
+    "overview": "Users are increasingly turning to VPNs and other circumvention tools not only to evade censorship, but also to bypass geoblocking and to protect their privacy from untrusted networks, their ISP, and commercial services. Given the widespread reliance on these tools, it is crucial that they fulfill their promises of enhanced security and privacy.",
+    "research": "Our research investigates the security of the VPN and circumvention tool ecosystem through a combination of empirical system evaluations and user-centered studies. By analyzing technical implementations along with stakeholder perspectives, we uncover critical gaps between how these tools perform in practice and how users understand and depend on them. Our goal is to inform both technical enhancements and regulatory efforts that better align tool design with the expectations and needs of users.",
+    "findings": [
+      {
+        "title": "\"All of them claim to be the best\": Multi-perspective study of VPN users and VPN providers <a href='https://ensa.fi/papers/bridging-barriers.pdf'>(<u>USENIX'23</u>)</a>",
+        "description": "We reveal alarming misalignments between the perspectives of VPN users and providers, including users’ reliance on profit-driven VPN review sites and flawed mental models about VPNs’ security guarantees and data collection practices. While effective user education remains a key challenge, VPN providers point to dark patterns in the industry—such as exploiting users' lack of knowledge and overselling services—as a major concern."
+      },
+      {
+        "title": "Bridging Barriers: A Survey of Challenges and Priorities in the Censorship Circumvention Landscape <a href='https://ensa.fi/papers/bridging-barriers.pdf'>(<u>USENIX'24</u>)</a>",
+        "description": "In the first multi-perspective survey of circumvention tool (CT) providers and users, we highlight disruptions from censors, funding constraints, CT discoverability, misconceptions about the threats that CTs can mitigate, and distrust of CT providers as key issues plaguing the circumvention tool ecosystem. Our findings suggest that improving user education, strengthening local and regional engagement, and enabling short-term funding for rapid response could help address these persistent issues."
+      },
+      {
+        "title": "CenPush: Blocking-Resistant Communication Using Push Notifications <a href=\"papers/congestion.pdf\">(<u>PETS'25</u>)</a>",
+        "description": "We demonstrate the utility of push notification services as an efficient and sustainable control channel for circumvention tool maintainers to automatically update client configurations during periods of increased censorship without the need for clients to initiate a query themselves. Further, we develop a general-purpose design for integrating push notifications as a signaling channel in circumvention tools."
+      },
+      {
+        "title": "Attacking Connection Tracking Frameworks as used by Virtual Private Networks <a href=\"papers/pets24-ben.pdf\">(<u>PETS'24</u>)</a>",
+        "description": "In collaboration with the ASU team, we present a novel exploit called the port shadow, which arises from shared, limited resources within the connection tracking frameworks of popular operating systems. The port shadow enables severe attacks against VPNs, including intercepting and redirecting encrypted traffic, as well as de-anonymizing or port scanning peers. We show that enforcing per-process isolation of networking resources effectively mitigates port shadow-based attacks."
+      },
+      {
+        "title": "The Use of Push Notification in Censorship Circumvention <a href=\"papers/foci23-push.pdf\">(<u>FOCI'23</u>)</a>",
+        "description": "We find that push notifications are a promising candidate for tunneling mid-bandwidth circumvention traffic. Push notifications offer blocking resistance because they do not require direct connection between a client and application server, and they carry high collateral as a widely integrated feature in both mobile and desktop applications."
+      },
+      {
+        "title": "VPNalyzer: Systematic Investigation of the VPN Ecosystem <a href=\"papers/vpnalyzer.pdf\">(<u>NDSS'22</u>)</a>",
+        "description": "Our public VPN investigation tool, VPNalyzer, highlights several implementation shortcomings in popular desktop VPNs, including DNS and traffic leaks during tunnel failure, lack of IPv6 support leading to IPv6 traffic leaks, colocated VPN server infrastructure, and use of third-party DNS services, among others. More broadly, we demonstrate the importance of empowering users with actionable insights about their security choices, as Consumer Reports used VPNalyzer to create data-driven VPN rankings and policy recommendations through the CSAW ‘22 VPNalyzer challenge."
+      }
+    ]
+  },
+  "splintering-net": {
+    "title": "Characterizing Internet Splintering",
+    "image": "splintering-net.png",
+    "backgroundColor": "#eee7e9",
+    "imgBorderColor": "#9A042B",
+    "overview": "Internet splintering is a major threat to digital access, particularly in sanctioned or marginalized states, where users are increasingly excluded from the Internet not just by their own governments, but also by foreign companies, embargo sanctions, and other discriminatory factors. Compared to traditional network censorship, it is a compounding threat enacted by an abundance of service providers, with no oversight of any central authority, which makes it especially difficult to detect, measure, and analyze.",
+    "research": "Our research studies Internet splintering through both global and targeted lenses, with works focusing on CDNs and cloud providers, app stores, and country-level case studies. We also consider causal factors, collaborating with experts in public policy to synthesize technical findings with relevant legislation and recommendations. Our goal is to develop a more comprehensive understanding of the scope, implementation, and effects of Internet splintering.",
+    "findings": [
+      {
+        "title": "How Geoblocking Limits Digital Access in Sanctioned States <a href='https://www.lawfaremedia.org/article/how-geoblocking-limits-digital-access-in-sanctioned-states'>(<u>Lawfare'24</u>)</a>",
+        "description": "We synthesized the findings of our Cuba work and reframed it for a policy audience, expanding on our recommendations to policymakers and service providers, including: reforming and clarifying the Cuban Assets Control Regulations, increasing transparency of geoblocking, and halting U.S. governmental interference to development of Cuban Internet infrastructure."
+      },
+      {
+        "title": "Digital Discrimination of Users in Sanctioned States: The Case of the Cuba Embargo <a href=\"papers/cuba.pdf\">(<u>USENIX'24</u>)</a>",
+        "description": "We characterized geoblocking of Cuban users by U.S. service providers as a result of embargo sanctions. We found 546 domains geoblocked, with 88% of these domains not serving informative notice why they are blocked; also, we found a lack of measurement-level transparency, with 32 blockpages served with 200 OK status codes."
+      },
+      {
+        "title": "A Large-scale Investigation into Geodifferences in Mobile Apps <a href=\"papers/geodiff-apps.pdf\">(<u>USENIX'22</u>)</a>",
+        "description": "We present the first large-scale measurement study of geodifferences in the mobile app ecosystem. We find high amounts of geoblocking with 3,672 apps geoblocked in at least one tested country. Additionally, we identify blocking by developers is significantly higher than government requested takedowns in all tested countries."
+      },
+      {
+        "title": "403 Forbidden: A Global View of CDN Geoblocking <a href=\"papers/403forbidden_imc18.pdf\">(<u>IMC'18</u>)</a>",
+        "description": "We analyzed geoblocking enacted through large CDNs and cloud providers and found occurrences across a broad set of countries and sites. We found the highest rates observed in Iran, Syria, Sudan, Cuba, and Russia."
+      }
+    ]
+  }
+}

@@ -1,4 +1,5 @@
 ---
+area: Monitoring Censorship at Global Scale
 date: 2018-02-01
 publisher: "IEEE Security & Privacy (S&P)"
 name: Towards Continual Measurement of Global Network-Level Censorship
@@ -12,13 +13,15 @@ collaborators:
   - Vern Paxson
 pdf: "assets/Pearce2018a.pdf"
 bibtex: "@article{Paul2018Towards,<br>
-author={Paul Pearce and Roya Ensafi and Frank Li and Nick Feamster and Vern Paxson},<br>
-title={Towards Continual Measurement of Global Network-Level Censorship},<br>
-journal={IEEE Security & Privacy},<br>
-volume={16},<br>
-number={1},<br>
-year={2018}<br>
-}"
+  author={Paul Pearce and Roya Ensafi and Frank Li and Nick Feamster and Vern Paxson},<br>
+  title={Towards Continual Measurement of Global Network-Level Censorship},<br>
+  journal={IEEE Security & Privacy},<br>
+  volume={16},<br>
+  number={1},<br>
+  year={2018}<br>
+  }"
 talk: ""
 slides: ""
+abstract:
+  "Many accounts of censorship begin—and end—with anecdotes or short-term studies from a handful of vantage points. To enable continuous measurement of network-level censorship on an Internet-wide basis, Augur leverages TCP/IP side channels to measure reachability between two Internet locations from off-path third-party vantage points."
 ---
