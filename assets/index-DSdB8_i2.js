@@ -288,7 +288,7 @@ collaborators:
   - Jong Chun Park
   - Deepak Kapur
   - Jedidiah R Crandall
-pdf: "/assets/Ensafi2010a.pdf"
+pdf: papers/Ensafi2010a.pdf
 bibtex: "@inproceedings{Roya2010Idle,<br>
   title={Idle Port Scanning & Non-interference Analysis of Network Protocol Stacks Using Model Checking},<br>
   author={Roya Ensafi and Jong Chun Park and Deepak Kapur and Jedidiah R. Crandall},<br>
@@ -337,7 +337,7 @@ collaborators:
   - Jeffrey Knockel
   - Geoffrey Alexander
   - Jedidiah R Crandall
-pdf: "/assets/Ensafi2014a.pdf"
+pdf: papers/Ensafi2014a.pdf
 bibtex: "@inproceedings{Roya2014Detecting,<br>
   title={Detecting intentional packet drops on the Internet via TCP/IP side channels},<br>
   author={Roya Ensafi, Jeffrey Knockel, Geoffrey Alexander, Jedidiah R Crandall},<br>
