@@ -18,9 +18,9 @@ collaborators:
   - Eric Wustrow
   - Simone Basso
   - Roya Ensafi
-pdf: "assets/throttling-imc-paper.pdf"
+pdf: "papers/throttling-imc-paper.pdf"
 talk: "https://www.youtube.com/watch?v=GenCBx5jWxo"
-slides: "assets/throttling-imc-slides.pdf"
+slides: "slides/Throttling-IMC-slides.pdf"
 press:
   - publisher: Censored Planet
     link: "https://censoredplanet.org/throttling"

@@ -1,5 +1,5 @@
 ---
-area: Monitoring Censorship at Global Scale
+area: Evaluating Network Middlebox Deployments
 date: 2022-12-06
 publisher: Conference on emerging Networking EXperiments and Technologies (CoNEXT 2022)
 name: "Network measurement methods for locating and examining censorship devices"
@@ -16,8 +16,9 @@ collaborators:
   - Jakub Dalek
   - Jonathan Mayer
   - Roya Ensafi
-pdf: "assets/censorship-devices.pdf"
-slides: "assets/censorship-devices-slides.pdf"
+pdf: "papers/censorship_devices_network_measurement.pdf"
+slides: "slides/censorship_devices_slides.pdf"
+talk: https://www.youtube.com/live/4O1NsdOeXgU?si=2aQkGLP8jfjQpZNu&t=4470
 press:
   - publisher: Censored Planet
     link: "https://censoredplanet.org/censorship-devices"

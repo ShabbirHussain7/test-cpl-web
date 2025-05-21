@@ -50,7 +50,7 @@ export default function Home() {
                     <Link
                       target="_blank"
                       rel="noopener noreferrer"
-                      to="dashboard.censoreplanet.org"
+                      to="https://dashboard.censoredplanet.org"
                       className="bg-[#2D4D63] text-white  font-semibold  px-4 py-2 rounded hover:bg-[#223B4C] transition-shadow shadow-md hover:shadow-lg flex items-center space-x-2"
                     >
                       <img src="./CPO.svg" alt="Censored Planet" className="h-6 w-6 filter contrast-200" />
@@ -240,10 +240,6 @@ export default function Home() {
           </section>
         </div>
       </main>
-
-
-
-
     </div>
   );
 }

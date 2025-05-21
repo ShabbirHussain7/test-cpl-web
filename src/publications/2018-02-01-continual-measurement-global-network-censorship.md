@@ -11,7 +11,7 @@ collaborators:
   - Frank Li
   - Nick Feamster
   - Vern Paxson
-pdf: "assets/Pearce2018a.pdf"
+pdf: "papers/Pearce2018a.pdf"
 bibtex: "@article{Paul2018Towards,<br>
   author={Paul Pearce and Roya Ensafi and Frank Li and Nick Feamster and Vern Paxson},<br>
   title={Towards Continual Measurement of Global Network-Level Censorship},<br>

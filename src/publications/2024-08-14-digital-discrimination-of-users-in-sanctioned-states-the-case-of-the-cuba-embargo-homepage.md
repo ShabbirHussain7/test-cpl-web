@@ -5,10 +5,7 @@ publisher: USENIX Security
 name: "Digital Discrimination of Users in Sanctioned States: The Case of the Cuba Embargo"
 awards:
   - Distinguished paper award
-tags:
-  - censorship
-  - circumvention
-  - survey
+pdf: papers/cuba.pdf
 collaborators:
   - Anna Ablove
   - Shreyas Chandrashekaran

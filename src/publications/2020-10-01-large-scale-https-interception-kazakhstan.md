@@ -15,9 +15,9 @@ collaborators:
   - Eric Wustrow
   - J. Alex Halderman
   - Roya Ensafi
-pdf: "assets/Kazakhstan.pdf"
+pdf: "papers/Kazakhstan.pdf"
 talk: "https://youtu.be/RoYWsfNOCr4"
-slides: "assets/kazakhstan_long_slides.pdf"
+slides: "slides/kazakhstan_long_slides.pdf"
 press:
   - publisher: Google
     link: "https://security.googleblog.com/2019/08/protecting-chrome-users-in-kazakhstan.html"

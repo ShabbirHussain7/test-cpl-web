@@ -3,12 +3,6 @@ area: Exposing Emerging Censorship Threats
 date: 2023-08-09
 publisher: Usenix Security Symposium 2023
 name: "Network Responses to Russia's Invasion of Ukraine in 2022: A Cautionary Tale for Internet Freedom"
-tags:
-  - censorship
-  - observatory
-  - measurement
-  - analysis
-  - geoblocking
 collaborators:
   - Reethika Ramesh
   - Ram Sundara Raman
@@ -20,7 +14,9 @@ collaborators:
   - Rod Hynes
   - Doug Madory
   - Roya Ensafi
-pdf: "assets/russia-ukraine-invasion.pdf"
+slides: slides/sec23_slides_ramesh-reethika_0.pdf
+pdf: papers/russia_usenix_22.pdf
+talk: https://www.youtube.com/watch?v=kBK3N3dYZq4
 bibtex: "@inproceedings{ramesh2023network,<br>
   title = {{Network Responses to Russia's Invasion of Ukraine in 2022: A Cautionary Tale for Internet Freedom}},<br>
   author = {Ramesh, Reethika and Sundara Raman, Ram and Virkud, Apurva and Dirksen, Alexandra and Huremagic, Armin and Fifield, David and Rodenburg, Dirk and Hynes, Rod and Madory, Doug and Ensafi, Roya},<br>

@@ -17,7 +17,8 @@ collaborators:
   - Gavin Li
   - Yael Eiger
   - Roya Ensafi
-pdf: "assets/certainty.pdf"
+pdf: "papers/certainty.pdf"
+slides: slides/certainty-slides.pdf
 bibtex: "@inproceedings{tsai2023detecting,
   title = {CERTainty: Detecting DNS Manipulation using TLS Certificates},
   author = {Tsai, Elisa and Kumar, Deepak and Sundara Raman, Ram and Li, Gavin and Eiger, Yael and Ensafi, Roya},

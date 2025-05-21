@@ -12,7 +12,7 @@ collaborators:
  - Nick Feamster
  - Nicholas Weaver
  - Vern Paxson
-pdf: "assets/Ensafi2015b.pdf"
+pdf: "papers/Ensafi2015b.pdf"
 bibtex: "@inproceedings{Roya2015Examining,<br>
     title={Examining How the Great Firewall Discovers Hidden Circumvention Servers},<br>
     author={Roya Ensafi and David Fifield and Philipp Winter and Nick Feamster and Nicholas Weaver and Vern Paxson},<br>

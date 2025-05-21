@@ -1,6 +1,6 @@
 ---
 area: Securing VPN and Circumvention Tool Ecosystem
-date: 2022-04-1                            # ⚠️ needs date
+date: 2022-04-01                            # ⚠️ needs date
 publisher: NDSS 2022
 name: "VPNalyzer: Systematic Investigation of the VPN Ecosystem"
 awards:
@@ -10,8 +10,9 @@ collaborators:
   - Leonid Evdokimov
   - Diwen Xue
   - Roya Ensafi
-pdf: "assets/vpnalyzer.pdf"
-slides: "assets/ndss-vpnalyzer-slides.pdf"
+pdf: "papers/vpnalyzer.pdf"
+slides: "slides/ndss-vpnalyzer-slides.pdf"
+talk: https://www.youtube.com/watch?v=R_pJMTGN3Kg
 bibtex: "@inproceedings{Ramesh2022VPNalyzer,<br>
   author = {R. Ramesh and L. Evdokimov and D. Xue and R. Ensafi},<br>
   title = {VPNalyzer: Systematic Investigation of the VPN Ecosystem},<br>

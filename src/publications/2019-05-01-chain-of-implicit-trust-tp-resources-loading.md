@@ -11,7 +11,7 @@ collaborators:
   - Mohamed Ali Kaafar
   - Noha Loizon
   - Roya Ensafi
-pdf: "assets/ImplicitTrust_www19.pdf"
+pdf: "papers/ImplicitTrust_www19.pdf"
 slides: ""
 bibtex: "@misc{ikram2019chainimplicittrustanalysis,<br>
   author = {M. Ikram et al.},<br>

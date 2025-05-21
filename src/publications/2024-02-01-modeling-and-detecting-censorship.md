@@ -8,8 +8,9 @@ collaborators:
   - Ram Sundara Raman
   - Atul Prakash
   - Roya Ensafi
-pdf: "assets/ndss24-tsai.pdf"
+pdf: "papers/ndss24-tsai.pdf"
 slides: ""
+talk: https://www.youtube.com/watch?v=uGBxcb2w1ZE
 bibtex: "@inproceedings{tsai2024modeling,<br>
   author = {E. Tsai and R. Sundara Raman and A. Prakash and R. Ensafi},<br>
   title = {Modeling and Detecting Internet Censorship Events},<br>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const abbreviateAuthors = (authorStr) => {
@@ -49,9 +50,8 @@ const PublicationItem = ({ pub, isAlternate }) => {
       {/* ───────── Left column ───────── */}
       <div className="">
         {/* Title */}
-        <a href={pub.pdf} className="hover:underline">
-          <p className="text-base font-semibold">{pub.name}</p>
-        </a>
+       <p className="text-base font-semibold">{pub.name}</p>
+       
 
         {/* Authors + venue */}
         <p className="text-sm text-gray-700">
@@ -60,31 +60,44 @@ const PublicationItem = ({ pub, isAlternate }) => {
         </p>
 
         {/* Media row (Talk / Slides / Press) */}
-        {hasMedia && (
+        {(
           <div className="flex flex-wrap items-center gap-1 text-sm">
+            {pub.pdf && (
+              <>
+              <Link
+                to={`/${pub.pdf}`}
+                className="text-blue-700 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PDF
+              </Link>
+              {pub.talk || pub.slides || pub.press ? <span>|</span> : null}
+              </>
+            )}
             {pub.talk && (
               <>
-                <a
-                  href={pub.talk}
+                <Link
+                  to={pub.talk}
                   className="text-blue-700 underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Talk
-                </a>
-                <span>|</span>
+                </Link>
+                {pub.slides && (<span>|</span>)}
               </>
             )}
             {pub.slides && (
               <>
-                <a
-                  href={pub.slides}
+                <Link
+                  to={`/${pub.slides}`}
                   className="text-blue-700 underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Slides
-                </a>
+                </Link>
               </>
             )}
             {pub.press && pub.press.length > 0 && (
@@ -93,17 +106,18 @@ const PublicationItem = ({ pub, isAlternate }) => {
                 <span className="font-semibold underline">Press:</span>
                 {(showAllPress ? pub.press : pub.press.slice(0, MAX_VISIBLE_PRESS)).map(
                   (press_item, index) => (
-                    <a
+                    <Link
                       key={index}
-                      href={press_item.link}
+                      to={press_item.link}
                       className="px-2 py-0.5 bg-gray-200 text-xs text-black rounded hover:bg-gray-300"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       {press_item.publisher}
-                    </a>
+                    </Link>
                   )
                 )}
+       
                 {pub.press.length > MAX_VISIBLE_PRESS && !showAllPress && (
                   <button
                     className="ml-2 text-sm text-blue-700 underline"

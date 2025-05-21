@@ -3,13 +3,11 @@ area: Securing VPN and Circumvention Tool Ecosystem
 date: 2023-07-15
 publisher: Free and Open Communications on the Internet
 name: "The Use of Push Notification in Censorship Circumvention"
-tags:
-  - censorship
-  - circumvention
+slides: slides/push-foci23-slides.pdf
 collaborators:
   - Diwen Xue
   - Roya Ensafi
-pdf: "assets/push-foci23.pdf"
+pdf: papers/foci23-push.pdf
 bibtex: "@inproceedings{Xue2023PUSH,
   author = {Diwen Xue and Roya Ensafi},
   title = {{The Use of Push Notification in Censorship Circumvention}},

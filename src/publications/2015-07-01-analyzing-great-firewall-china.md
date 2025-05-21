@@ -10,7 +10,7 @@ collaborators:
  - Philipp Winter
  - Abdullah Mueen
  - Jedidiah R. Crandall
-pdf: "assets/Ensafi2015a.pdf"
+pdf: "papers/Ensafi2015a.pdf"
 bibtex: "@inproceedings{Roya2015Analyzing,<br>
 title={Analyzing the Great Firewall of China Over Space and Time},<br>
 author={Roya Ensafi and Philipp Winter and Abdullah Mueen and Jedidiah R. Crandall},<br>

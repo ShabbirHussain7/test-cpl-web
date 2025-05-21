@@ -8,8 +8,9 @@ collaborators:
   - Robert Stanley
   - Piyush Kumar
   - Roya Ensafi
-pdf: "assets/rtt-fingerprinting.pdf"
+pdf: "papers/rtt-fingerprinting.pdf"
 slides: ""
+talk: https://www.youtube.com/watch?v=i_yBhIYsMBw
 bibtex: "@inproceedings{Xue2025Timing,<br>
   author = {D. Xue and R. Stanley and P. Kumar and R. Ensafi},<br>
   title = {The Discriminative Power of Cross-layer RTTs in Fingerprinting Proxy Traffic},<br>

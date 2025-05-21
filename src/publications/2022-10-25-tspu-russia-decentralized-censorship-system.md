@@ -15,8 +15,9 @@ collaborators:
   - Beau Kujath
   - Jedidiah R. Crandall
   - Roya Ensafi
-pdf: "assets/tspu-imc22.pdf"
-slides: "assets/tspu-imc22-slides.pdf"
+pdf: "papers/tspu-imc22.pdf"
+slides: "slides/TSPU_IMC-slides.pdf"
+talk: https://www.youtube.com/watch?v=LWoBhWwAY8A
 press:
   - publisher: Censored Planet
     link: "https://censoredplanet.org/tspu"

@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import { Search } from 'lucide-react';
 import matter from 'gray-matter';
 import ReportCard from '../components/ReportCard';
+import externalReports from '../data/external_reports.json';
 
 // Dynamically import all markdown files
 const markdownFiles = import.meta.glob('../reports/*.md', { query: '?raw', import: 'default', eager: true });
 
 // Parse frontmatter and sort by date (earliest to oldest)
-const reports = Object.values(markdownFiles)
+const mdReports = Object.values(markdownFiles)
   .map((raw) => {
     const { data } = matter(raw);
     if (data.permalink && data.permalink.startsWith('/')) {
@@ -17,6 +18,10 @@ const reports = Object.values(markdownFiles)
     return data;
   })
   .sort((b, a) => new Date(a.date) - new Date(b.date)); // Sort by date in ascending order
+
+const combinedReports = [...mdReports, ...externalReports].sort(
+  (a, b) => new Date(b.date) - new Date(a.date)
+);
 
 export default function AllReports() {
   const [search, setSearch] = useState('');
@@ -45,7 +50,7 @@ export default function AllReports() {
         </div>
 
         <div className=" grid grid-cols-1 md:grid-cols-3 gap-8 pb-6">
-          {reports
+          {combinedReports
             .filter((s) => s.title.toLowerCase().includes(search.toLowerCase()))
             .map((report, idx) => (
               <ReportCard key={idx} report={report} idx={idx} />

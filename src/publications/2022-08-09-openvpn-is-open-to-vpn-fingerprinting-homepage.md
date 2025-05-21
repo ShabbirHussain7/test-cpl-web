@@ -19,9 +19,9 @@ collaborators:
   - J. Alex Halderman
   - Jedidiah R. Crandall
   - Roya Ensafi
-pdf: "assets/openvpn-usenix22.pdf"
+pdf: "papers/openvpn-fingerprinting.pdf"
 talk: "https://www.youtube.com/watch?v=ZNVff1rH-vA"
-slides: "assets/openvpn-usenix22-slides.pdf"
+slides: "slides/sec22_slides-xue_diwen.pdf"
 press:
   - publisher: Censored Planet
     link: "https://censoredplanet.org/openvpn"

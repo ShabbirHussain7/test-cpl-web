@@ -1,0 +1,737 @@
+
+<!DOCTYPE HTML>
+<html>
+<!--Anna: FIXME <html manifest="sigcomm.appcache"> -->
+<head>
+  <meta charset="iso-8859-1">
+  <meta property="og:title" content="ACM SIGCOMM 2016 - ACM SIGCOMM 2016" />
+  <meta property="og:image" content="http://conferences.sigcomm.org/sigcomm/2016/images/logo.png" />
+  <meta property="og:description" content="The organizing committee is delighted to invite you to ACM SIGCOMM 2016, to be held in Florian&oacute;polis, Brazil, August 22-26 2016. SIGCOMM is the flagship annual conference of the ACM Special Interest Group on Data Communication (SIGCOMM) on the applications, technologies, architectures, and protocols for computer communication." />
+  <meta property="og:url" content="http://conferences.sigcomm.org/sigcomm/2016/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="copyright" content="The ACM SIGCOMM 2016 Website is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. Based on the ACM SIGCOMM 2012 web site available at https://github.com/ryanrhymes/SIGCOMM2012" />
+  
+  <title>ACM SIGCOMM 2016 - ACM SIGCOMM 2016</title>
+  
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  
+
+  <!-- Favicon alternatives: https://css-tricks.com/favicon-quiz/ -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">        
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+
+  <link rel="shortcut icon" type='image/ico' href="images/favicon.ico">
+
+  <link rel="manifest" href="images/manifest.json">
+  <meta name="msapplication-TileColor" content="#00a300">
+  <meta name="msapplication-TileImage" content="images/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+
+  <!-- send file timestamp to prevent caching issues -->
+  <link rel="stylesheet" href="css/style.css?cache_ts=1470584854" />
+
+  <!-- make the CSS work with older IE -->
+  <script src="js/css3-mediaqueries.js"></script>
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+
+  <!-- Grab CDN jquerymobile, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script>$.mobile || document.write('<script src="js/jquery.mobile-1.4.5.min.js"><\/script>')</script>
+
+  <script src="js/jqm-docs.js"></script>
+  
+  <!-- send file timestamp to prevent caching issues -->
+  <script src="js/script.js?cache_ts=1470584843" type='text/javascript'></script>
+
+</head>
+
+<body>
+
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+	 chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7 ]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+<div data-role="page" data-theme="a" class="main-page">
+
+  <div class="header" data-role="header" data-theme="a" data-position="inline">
+    <div>
+    <a href="index.php"><img src="images/logo.png" alt="ACM SIGCOMM 2016, Florian&oacute;polis, Brazil"></a>
+    </div>
+    <a href="#" onclick="$.mobile.silentScroll($.mobile.activePage.find('.leftnav').position().top)" class="ui-btn-right" data-corners="true" data-icon="grid">MENU</a>
+  </div>
+  
+  <div data-role="content" class="ui-content">
+    <div class="content-primary">
+
+<h1>Welcome to Florian&oacute;polis</h1>
+
+<p>The organizing committee is delighted to invite you to ACM SIGCOMM 2016, to be held in Florian&oacute;polis, Brazil, August 22-26 2016.</p>
+
+<p>SIGCOMM is the flagship annual conference of the ACM Special Interest Group on Data Communication (SIGCOMM) on the applications, technologies, architectures, and protocols for computer communication.</p>
+
+<p align="center"><br/><a href="statement-ec.php">Statement by the SIGCOMM Executive Committee</a> and</br><a href="message.php">Message from the General Chairs</a> on the relocation to Florian&oacute;polis</p>
+
+<h2>News</h2>
+
+<ul data-role="listview" data-inset="true" data-theme="a" data-content-theme="a" class="datetbl">
+
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>August 11, 2016</h2></div>
+      <div class="ui-block-b"><p>SIGCOMM&#39;16 is experimenting a new format for the N2Women event, which will be held over a dinner at Canto do Mar Ingleses Restaurant. Check out the <a data-ajax="false" href="socialevents.php#n2women_dinner">Social Events</a> page for further information, and please <a href="https://docs.google.com/a/netflix.com/forms/d/1B3_N45ODVy5uI7y_h6XySm8iVHf_LuQaq0QLciXN9FY/viewform?edit_requested=true#start=invite">RSVP</a> if you plan to attend the dinner.</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>August 3, 2016</h2></div>
+      <div class="ui-block-b"><p>The <a href="http://dl.acm.org/citation.cfm?id=2934872">ACM SIGCOMM 2016 conference proceedings</a> are now available in the ACM Digital Library! We also included links to papers in the main conference program, posters, and demos.</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>July 25, 2016</h2></div>
+      <div class="ui-block-b"><p>We are delighted to announce that <b>Jim Kurose</b> (University of Massachusetts, Amherst) is the 2016 SIGCOMM Lifetime Achievement Award winner! Jim will be giving the SIGCOMM <a href="program.php">opening keynote speech</a> on Tuesday, 23rd. More details will be online soon!</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>July 21, 2016</h2></div>
+      <div class="ui-block-b"><p>The progam for <a href="maintrackposterprogram.php">Posters and Demos from Main Track Papers</a> online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>July 19, 2016</h2></div>
+      <div class="ui-block-b"><p>&#34;Best of CCR&#34; session included to the <a href="program.php">SIGCOMM program</a>, the conference closing session postponed to 5:50pm on Thursday</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>July 18, 2016</h2></div>
+      <div class="ui-block-b"><p>The <a href="industrialdemoprogram.php">Industrial Demos</a> program online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>July 15, 2016</h2></div>
+      <div class="ui-block-b"><p>The <a href="posterprogram.php">Poster</a> and <a href="demoprogram.php">Demo</a> sessions programs online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>July 13, 2016</h2></div>
+      <div class="ui-block-b"><p>The preliminary <a href="program.php">SIGCOMM program</a> is online (with daily schedule)</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>July 12, 2016</h2></div>
+      <div class="ui-block-b"><p>Early bird <a href="https://www.regonline.com/acmsigcomm2016" rel="external">registration</a> deadline approaching (July 14th)!</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>July 6, 2016</h2></div>
+      <div class="ui-block-b"><p><a href="n2women-award.php">N2Women Travel Grant</a> deadline extended to July 12th</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>July 5, 2016</h2></div>
+      <div class="ui-block-b"><p>The SIGCOMM 2016 <a data-ajax="false" href="socialevents.php#student_dinner">Student Dinner</a> will take place at Ataliba Churrascarias Florian&oacute;polis on Wednesday, 24th. There will be a special selection of grilled and roasted beef (&quot;rod&iacute;zio&quot; style &mdash; all you can eat, round-robin steak serving), plus vegetarian dishes, seafood, sushi, salads, and desserts!</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>June 29, 2016</h2></div>
+      <div class="ui-block-b"><p>The preliminary program of <a href="netpl.php">NetPL</a> workshop is online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>June 27, 2016</h2></div>
+      <div class="ui-block-b"><p>HotMiddlebox workshop <a href="hotmiddlebox.php">technical program</a> online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>June 24, 2016</h2></div>
+      <div class="ui-block-b"><p><a href="lancomm.php">LANCOMM</a> and <a href="qoe.php">Internet-QoE</a> workshops technical programs online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>June 23, 2016</h2></div>
+      <div class="ui-block-b"><p>Information about <a href="n2women-award.php">N2Women Travel Grants</a> online. Deadline is July 8th.</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>June 18, 2016</h2></div>
+      <div class="ui-block-b"><p>GAIA workshop <a href="gaia.php">technical program</a> online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>June 14, 2016</h2></div>
+      <div class="ui-block-b"><p>The deadline for <a href="hotel.php">booking a hotel room</a> at discounted rates was extended to July 20th!</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>June 14, 2016</h2></div>
+      <div class="ui-block-b"><p>Please check the special menu selection of foods and drinks for the SIGCOMM 2016 <a data-ajax="false" href="socialevents.php#conf_banquet">Conference Banquet</a> on Tuesday, 23rd</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>June 8, 2016</h2></div>
+      <div class="ui-block-b"><p>The <a href="travelgrants.php">Travel Grants</a> application deadline was extended to June 13! Please also notice important updates on the eligibility and selection criteria for SIGCOMM&#39;s GeoDiversity Grant applicantions.</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>May 24, 2016</h2></div>
+      <div class="ui-block-b"><p>The SIGCOMM 2016 <a href="https://www.regonline.com/acmsigcomm2016" rel="external">registration site</a> is now live! Early bird registration deadline is July 14th!</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>May 24, 2016</h2></div>
+      <div class="ui-block-b"><p>Would like to arrange for shared lodging and/or transportation with other attendees? Then consider subscribing to the <a href="roomshare.php">sigcomm-roomshare-l</a> discussion list!</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>May 18, 2016</h2></div>
+      <div class="ui-block-b"><p>The submission site for <a href="travelgrants.php">ACM SIGCOMM Travel Grants</a> is now online and accepting grant applications! The deadline is June 8!</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>May 18, 2016</h2></div>
+      <div class="ui-block-b"><p>The submission deadline for <a href="industrialdemos.php">industrial demos</a> was extended to May 27</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>May 17, 2016</h2></div>
+      <div class="ui-block-b"><p>A list of nearby <a href="hotel.php">hotel options</a> (including those with special rates for our attendees) is online. Please note that depending on the hotel option, special rates are valid until either late May or early June!</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>May 13, 2016</h2></div>
+      <div class="ui-block-b"><p>Detailed <a href="visa.php">visa information</a> is available!</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>May 5, 2016</h2></div>
+      <div class="ui-block-b"><p>More information about the <a href="travelgrants.php">ACM SIGCOMM Travel Grants</a> online. Submission site will open soon!</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>May 2, 2016</h2></div>
+      <div class="ui-block-b"><p>The preliminary <a href="files/schedule.pdf" rel="external">ACM SIGCOMM 2016 schedule</a> (including tutorial and topic preview dates) is available!</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>April 30, 2016</h2></div>
+      <div class="ui-block-b"><p>ACM SIGCOMM 2016 <a href="papers.php">accepted papers</a> announced</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>April 29, 2016</h2></div>
+      <div class="ui-block-b"><p>Preliminary <a href="registration.php">registration information</a> (prices and categories) are available. Stay tuned: registration will open soon!</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>April 28, 2016</h2></div>
+      <div class="ui-block-b"><p>We are happy to inform that the tutorial pages are now available!</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>April 24, 2016</h2></div>
+      <div class="ui-block-b"><p>Attention graduate students: Call for ACM SIGCOMM 2016 &quot;<a href="mentoring.php">mentoring moments</a>&quot; is online! Please visit the page for further details and how to apply</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>April 22, 2016</h2></div>
+      <div class="ui-block-b"><p>Call for <a href="n2women.php">N2Women Young Researcher Fellowship</a> online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>April 13, 2016</h2></div>
+      <div class="ui-block-b"><p>&#34;Oceania Convention Center&#34; selected as the conference venue. Please visit the <a href="local.php">venue</a> and <a href="travel.php">hotels and travel</a> pages for updated information (including directions from the airport to the conference venue)</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>April 11, 2016</h2></div>
+      <div class="ui-block-b"><p>Posters &amp; Demos <a href="postersdemos.php">program committee</a> announced</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>March 29, 2016</h2></div>
+      <div class="ui-block-b"><p>The list of <a href="tutorials.php">accepted tutorials</a> is online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>March 29, 2016</h2></div>
+      <div class="ui-block-b"><p><a href="industrialdemos.php">Call for Industrial Demos</a> is online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>March 23, 2016</h2></div>
+      <div class="ui-block-b"><p>Updated <a href="advisory.php">Advice for Travellers</a> information is available</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>March 18, 2016</h2></div>
+      <div class="ui-block-b"><p><a href="hotmiddlebox.php">HotMiddlebox</a>, <a href="qoe.php">Internet-QoE</a> and <a href="lancomm.php">LANCOMM</a> workshops paper registration and submission deadlines extended</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>March 14, 2016</h2></div>
+      <div class="ui-block-b"><p>Relocation to Florian&oacute;polis announced</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>March 10, 2016</h2></div>
+      <div class="ui-block-b"><p>GAIA workshop <a href="gaia.php">paper registration and submission deadlines</a> extended</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>February 25, 2016</h2></div>
+      <div class="ui-block-b"><p>NetPL workshop <a href="netpl.php">call for participation and presentations</a> online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>February 12, 2016</h2></div>
+      <div class="ui-block-b"><p><a href="advisory.php">Advice for Travellers</a> to SIGCOMM'16 is online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>February 8, 2016</h2></div>
+      <div class="ui-block-b"><p>This year SIGCOMM had a total of 228 paper submissions!</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>January 23, 2016</h2></div>
+      <div class="ui-block-b"><p>The  <a href="postersdemos.php">Call for Posters &amp; Demos</a> is online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>January 5, 2016</h2></div>
+      <div class="ui-block-b"><p>SIGCOMM 2016 <a href="submission.php">paper submission instructions</a> are online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>January 5, 2016</h2></div>
+      <div class="ui-block-b"><p>Workshop dates announced</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>December 22, 2015</h2></div>
+      <div class="ui-block-b"><p>SIGCOMM 2016 <a href="pc.php">Program Committee</a> announced</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>December 22, 2015</h2></div>
+      <div class="ui-block-b"><p>HotMiddlebox <a href="hotmiddlebox.php">call for papers</a> online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>December 17, 2015</h2></div>
+      <div class="ui-block-b"><p>The call for papers for <a href="lancomm.php">LANCOMM</a> and <a href="qoe.php">Internet-QoE</a> workshops are online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>December 15, 2015</h2></div>
+      <div class="ui-block-b"><p>GAIA workshop <a href="gaia.php">call for papers</a> online</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>December 9, 2015</h2></div>
+      <div class="ui-block-b"><p>List of <a href="workshops.php">accepted workshop proposals</a> announced</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>September 1, 2015</h2></div>
+      <div class="ui-block-b"><p><a href="cfwp.php">Call for workshop proposals online</a></p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>August 17, 2015</h2></div>
+      <div class="ui-block-b"><p><a href="cfp.php">Call for papers online</a></p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>June 24, 2015</h2></div>
+      <div class="ui-block-b"><p><a href="http://cseweb.ucsd.edu/~vahdat/" target="_blank">Amin Vahdat</a> and <a href="http://stanford.edu/~skatti/" target="_blank">Sachin Katti</a> are the TPC co-chairs of SIGCOMM 2016</p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>June 16, 2015</h2></div>
+      <div class="ui-block-b"><p><a href="cft.php">Call for tutorials online</a></p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>June 3, 2015</h2></div>
+      <div class="ui-block-b"><p><s>&#34;Bahia Othon Palace&#34; selected as the conference venue</s></p></div>
+    </div>
+  </li>
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>March 31, 2015</h2></div>
+      <div class="ui-block-b"><p>Web site online</p></div>
+    </div>
+  </li>
+
+  <li class="newslibtn ui-btn ui-li" data-theme="a" onclick="showall();"><div><a>Older News</a><span class="ui-icon ui-btn-icon-right ui-icon-plus ui-icon-shadow">&nbsp;</span></div></li>
+</ul>
+
+<h2>Conference Schedule</h2>
+
+<a href="files/schedule-2016-08-10.pdf" rel="external"><img src="files/schedule-2016-08-10.png" alt="ACM SIGCOMM 2016 - Detailed Conference Schedule" style="width: 100%;"></a>
+
+<h2>Calendar</h2>
+
+<iframe src="https://calendar.google.com/calendar/embed?title=ACM%20SIGCOMM%20Agenda&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;hl=en&amp;bgcolor=%23ffffff&amp;src=fgkdoih822v80dfk304pt56fjo%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FSao_Paulo" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+
+<h2>Important Dates</h2>
+
+<ul data-role="listview" data-inset="true" data-theme="a" data-content-theme="a" class="datetbl">
+    <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2><s>November 23, 2015</s></h2></div>
+      <div class="ui-block-b"><p><s>Workshop proposals due</s></p></div>
+    </div>
+  </li>
+    <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2><s>January 22, 2016</s></h2></div>
+      <div class="ui-block-b"><p><s>Main conference paper titles and abstracts due</s></p></div>
+    </div>
+  </li>
+    <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2><s>January 29, 2016</s></h2></div>
+      <div class="ui-block-b"><p><s>Main conference complete paper submissions due</s></p></div>
+    </div>
+  </li>
+    <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2><s>February 22, 2016</s></h2></div>
+      <div class="ui-block-b"><p><s>Tutorial proposals due</s></p></div>
+    </div>
+  </li>
+    <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2><s>May 9, 2016</s></h2></div>
+      <div class="ui-block-b"><p><s>Posters &amp; Demos submissions due</s></p></div>
+    </div>
+  </li>
+    <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><h2>August 22-26, 2016</h2></div>
+      <div class="ui-block-b"><p>SIGCOMM 2016 Main Technical Program</p></div>
+    </div>
+  </li>
+</ul>
+
+<h2>Sponsors</h2>
+
+<div class="sponsors">
+	<a href="//www.acm.org/"><img src="images/acm.png" alt="Association for Computing Machinery" /></a>
+	<a href="//www.sigcomm.org/"><img src="images/sig.png" alt="ACM SIGCOMM" /></a>
+</div>
+
+  </div> <!-- content-primary -->
+  <div class="leftnav" role="panel" data-position="left" data-display="overlay" data-theme="a">
+    <a href="index.php"><img src="images/logo.png" alt="ACM SIGCOMM 2016, August 2016, Florian&oacute;polis, Brazil" /></a>
+  
+  <ul data-role="listview" data-inset="true" data-theme="a" data-divider-theme="a">
+
+    <li class="navselected" data-icon="false">
+      <a href="index.php">Home</a>
+    </li>
+
+    <li class="notlast " data-icon="false">
+      <a href="supporters.php">Supporters</a>
+    </li>
+
+    <div data-role="collapsible" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right"
+          class="navgroup">
+      <h4>Conference</h4>
+      <ul data-role="listview" data-inset="false">
+         <li class="subnav " data-icon="false">
+           <a href="program.php">Program</a>
+        </li>
+         <li class="subnav " data-icon="false">
+           <a href="pc.php">Program Committee</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="posterprogram.php">Posters</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="demoprogram.php">Demos</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="src.php">ACM SRC</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="industrialdemoprogram.php">Industrial Demos</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="maintrackposterprogram.php">Posters/Demos from Main Track</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="preview.php">Topic Preview</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="mentoring.php">Mentoring</a>
+        </li>
+        <li class="subnav " data-icon="false">
+           <a href="socialevents.php">Social Events</a>
+        </li>
+      </ul>
+    </div>
+
+    <div data-role="collapsible" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right"
+          class="navgroup">
+      <h4>Workshops</h4>
+      <ul data-role="listview" data-inset="false">
+        <li class="subnav " data-icon="false">
+          <a href="gaia.php">GAIA</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="hotmiddlebox.php">HotMiddlebox</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="qoe.php">Internet-QoE</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="lancomm.php">LANCOMM</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="netpl.php">NetPL</a>
+        </li>
+       </ul>
+    </div>
+
+    <div data-role="collapsible" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right"
+          class="navgroup">
+      <h4>Tutorials</h4>
+      <ul data-role="listview" data-inset="false">
+        <li class="subnav " data-icon="false">
+          <a href="tutorial-wimobnet.php">Enabling Research in Future WiMobNet</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="tutorial-im.php">Internet Measurements</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="tutorial-iptv.php">IPTV and Over-the-Top Video</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="tutorial-p4.php">P4</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="tutorial-sdnnfv5g.php">SDN, NFV and Their Role in 5G</a>
+        </li>
+      </ul>
+    </div>
+
+    <li class="notlast " data-icon="false">
+      <a href="https://www.regonline.com/acmsigcomm2016" rel="external">Registration</a>
+    </li>
+
+    <div data-role="collapsible" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right"
+          class="navgroup">
+      <h4>Local Information</h4>
+      <ul data-role="listview" data-inset="false">
+        <li class="subnav " data-icon="false">
+          <a href="travel.php">Venue and Travel</a>
+        </li>
+
+        <li class="subnav " data-icon="false">
+          <a href="visa.php">Visa</a>
+        </li>
+
+        <li class="subnav " data-icon="false">
+          <a href="hotel.php">Accommodation</a>
+        </li>
+
+        <li class="subnav " data-icon="false">
+          <a href="roomshare.php">Room Share</a>
+        </li>
+
+        <li class="subnav " data-icon="false">
+          <a href="tourism.php">Tourism</a>
+        </li>
+
+        <li class="subnav " data-icon="false">
+          <a href="advisory.php">Advice for Travellers</a>
+        </li>
+      </ul>
+    </div>
+
+    <div data-role="collapsible" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right"
+          class="navgroup">
+      <h4>Organization</h4>
+      <ul data-role="listview" data-inset="false">
+        <li class="subnav " data-icon="false">
+          <a href="organization.php">Organization Committee</a>
+        </li>
+
+                <li class="subnav " data-icon="false">
+          <a href="policies.php">Policies</a>
+        </li>
+      </ul>
+    </div>
+
+    <div data-role="collapsible" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right"
+          class="navgroup listlast">
+      <h4>Calls</h4>
+      <ul data-role="listview" data-inset="false">
+        <li class="subnav " data-icon="false">
+          <a href="cfp.php">Call for Papers</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="submission.php">Paper Submission</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="postersdemos.php">Call for Posters &amp; Demos</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="industrialdemos.php">Call for Industrial Demos</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="cfwp.php">Call for Workshops</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="cft.php">Call for Tutorials</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="travelgrants.php">Travel Grants</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="n2women.php">N2Women Fellowship</a>
+        </li>
+        <li class="subnav " data-icon="false">
+          <a href="n2women-award.php">N2Women Travel Grant</a>
+        </li>
+      </ul>
+    </div>
+    
+  </ul>  
+
+  <div class="border ui-corner-all ui-shadow socialbuttons">
+    <iframe src="include/socialbtn.php" scrolling="no" height="21" width="100%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+  </div>
+
+</div>
+</div> <!-- content -->
+
+    
+    <div class="logobar" data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="c"></div>
+
+    
+</div> <!-- page -->
+
+    
+    <img src='images/sponsors/cisco.png' alt='cached' class='hidden'>
+    <img src='images/sponsors/huawei.png' alt='cached' class='hidden'>
+    <img src='images/sponsors/ericsson.png' alt='cached' class='hidden'>
+    <img src='images/sponsors/facebook.png' alt='cached' class='hidden'>
+    <img src='images/sponsors/google.png' alt='cached' class='hidden'>
+    <img src='images/sponsors/akamai.png' alt='cached' class='hidden'>
+    <img src='images/sponsors/hp.png' alt='cached' class='hidden'>
+    <img src='images/sponsors/netapp.jpeg' alt='cached' class='hidden'>
+    <img src='images/sponsors/telefonica.png' alt='cached' class='hidden'>
+    <img src='images/sponsors/vmware.jpg' alt='cached' class='hidden'>
+    <img src='images/sponsors/comcast.jpg' alt='cached' class='hidden'>
+    <img src="images/sponsors/cgi_br_nic_br.jpg" alt="cached" class='hidden'/>
+    <img src="images/sponsors/nsf.jpg" alt="cached" class='hidden'/>
+
+    <script type="text/javascript">
+      /* [priority, logo_filename, sponsor_website, sponsor_shortname, 0, real_height, real_width] */
+      sps = [
+        [300, "cisco.png", "http://www.cisco.com/", "cisco", 0, 200, 379],
+        [300, "nsf.jpg", "http://www.nsf.gov/", "cisco", 0, 298, 295],
+        [100, "huawei.png", "http://www.huawei.com/", "huawei", 0, 406, 406],
+        [100, "ericsson.png", "http://www.ericsson.com/", "ericsson", 0, 104, 116],
+        [100, "facebook.png", "http://research.facebook.com/", "facebook", 0, 713, 2026],
+        [100, "google.png", "http://www.google.com/", "google", 0, 329, 1000],
+        [100, "cgi_br_nic_br.jpg", "http://cgi.br/about/", "cgi.br", 0, 300, 900],
+        [50, "akamai.png", "http://www.akamai.com/", "akamai", 0, 195, 450],
+        [10, "hp.png", "http://www.hp.com/", "hp", 0, 400, 400],
+        [10, "telefonica.png", "http://www.tid.es/", "telefonica", 0, 152, 250],
+        [10, "vmware.jpg", "http://www.vmware.com/", "vmware", 0, 100, 420],
+        [10, "netapp.jpeg", "http://www.netapp.com/", "netapp", 0, 478, 1200],
+        [10, "comcast.jpg", "http://www.comcast.com/", "comcast", 0, 263, 594]
+    ];</script>
+    
+    
+<!-- SIGCOMM'16 script code for collecting visit statistics --> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30942101-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

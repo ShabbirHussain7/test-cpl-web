@@ -13,7 +13,9 @@ collaborators:
   - Michalis Kallitsis
   - Amir Houmansadr
   - Roya Ensafi
-pdf: "assets/tls_in_tls.pdf"
+pdf: "papers/sec24-xue.pdf"
+slides: slides/tls-usenix24-slides.pdf
+talk: https://www.youtube.com/watch?v=8GO_9HKTvb0
 bibtex: "@inproceedings {Xue2024TLS,
 	author = {Diwen Xue and Michalis Kallitsis and Amir Houmansadr and Roya Ensafi},
 	title = {{Fingerprinting Obfuscated Proxy Traffic with Encapsulated TLS Handshakes}},

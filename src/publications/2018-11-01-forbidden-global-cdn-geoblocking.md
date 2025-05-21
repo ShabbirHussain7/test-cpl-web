@@ -14,7 +14,7 @@ collaborators:
   - Nick Sullivan
   - J. Alex Halderman
   - Roya Ensafi
-pdf: "assets/403forbidden.pdf"
+pdf: "papers/403forbidden.pdf"
 bibtex: "@inproceedings{Allison2018403,<br>
   title={403 Forbidden: A Global View of CDN Geoblocking},<br>
   author={Allison McDonald and Matthew Bernhard and Luke Valenta and Benjamin VanderSloot and Will Scott and Nick Sullivan and J. Alex Halderman and Roya Ensafi},<br>

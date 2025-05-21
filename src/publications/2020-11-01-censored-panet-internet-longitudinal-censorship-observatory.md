@@ -12,9 +12,9 @@ collaborators:
   - Prerana Shenoy
   - Katharina Kohls
   - Roya Ensafi
-pdf: "assets/censoredplanet.pdf"
+pdf: "papers/censoredplanet.pdf"
 talk: "https://youtu.be/8dwZdNkJ508"
-slides: "assets/censoredplanet-slides.pdf"
+slides: "slides/censoredplanet-slides.pdf"
 press:
   - publisher: Censored Planet
     link: "https://censoredplanet.org/censoredplanet"

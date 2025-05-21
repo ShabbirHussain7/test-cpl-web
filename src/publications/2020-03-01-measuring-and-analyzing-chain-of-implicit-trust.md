@@ -10,7 +10,7 @@ collaborators:
   - Dali Kaafar
   - Noha Loizon
   - Roya Ensafi
-pdf: "assets/ik_wot_tops_2020.pdf"
+pdf: "papers/ik_wot_tops_2020.pdf"
 slides: ""
 bibtex: "@article{article,<br>
   author = {M. Ikram et al.},<br>

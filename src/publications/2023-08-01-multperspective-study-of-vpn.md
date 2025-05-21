@@ -1,14 +1,15 @@
 ---
 area: Securing VPN and Circumvention Tool Ecosystem
-date: 2023-08-1                            # ⚠️ needs date
+date: 2023-08-01                            # ⚠️ needs date
 publisher: USENIX Security Symposium 23
 name: "'All of them claim to be the best:' Multi‑perspective study of VPN users and VPN providers"
 collaborators:
   - Reethika Ramesh
   - Anjali Vyas
   - Roya Ensafi
-pdf: "assets/VPN-Survey-USENIX23.pdf"
-slides: "assets/sec23_slides_ramesh.pdf"
+pdf: "papers/VPN-Survey-USENIX23.pdf"
+slides: "slides/sec23_slides_ramesh.pdf"
+talk: https://www.youtube.com/watch?v=wiEweqtZuv4
 bibtex: "@inproceedings{Ramesh2023VPNUserStudy,<br>
   author = {R. Ramesh and A. Vyas and R. Ensafi},<br>
   title = {\"All of them claim to be the best\": Multi‑perspective study of VPN users and VPN providers},<br>

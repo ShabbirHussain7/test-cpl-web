@@ -34,7 +34,7 @@ press:
     link: "https://www.washingtonpost.com/business/technology/study-russias-web-censoring-tool-sets-pace-for-imitators/2019/11/06/f10dd964-00ea-11ea-8341-cc3dce52e7de_story.html"
   - publisher: University of Michigan News
     link: "https://news.umich.edu/how-russias-online-censorship-could-jeopardize-internet-freedom-worldwide/"
-pdf: "assets/russia.pdf"
+pdf: "papers/russia.pdf"
 bibtex: "@inproceedings{ndss20-russia,<br>
 title={Decentralized Control: A Case Study of Russia},<br>
 author={R. Ramesh, R. Sundara Raman, M. Bernhard, V. Ongkowijaya, L. Evdokimov, A. Edmundson, S. Sprecher, M. Ikram, R.Ensafi},<br>
@@ -42,7 +42,7 @@ booktitle={Proceedings of the Network and Distributed System Security Symposium,
 year={2020}<br>
 }"
 talk: "https://youtu.be/aKeMB-Owlug"
-slides: "https://www.reethika.info/papers/slides/ndss20-decentralized-slides-v1.pdf"
+slides: "slides/ndss20-decentralized-slides-v1.pdf"
 abstract:
   "Until now, censorship research has largely focused on highly centralized networks that rely on government-run technical choke-points, such as the Great Firewall of China. Although it was previously thought to be prohibitively difficult, large-scale censorship in decentralized networks are on the rise. Our in-depth investigation of the mechanisms underlying decentralized information control in Russia shows that such large-scale censorship can be achieved in decentralized networks through inexpensive commodity equipment. This new form of information control presents a host of problems for censorship measurement, including difficulty identifying censored content, requiring measurements from diverse perspectives, and variegated censorship mechanisms that require significant effort to identify in a robust manner.
 

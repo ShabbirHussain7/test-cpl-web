@@ -10,7 +10,7 @@ collaborators:
   - Jong Chun Park
   - Deepak Kapur
   - Jedidiah R Crandall
-pdf: "/assets/Ensafi2010a.pdf"
+pdf: "papers/Ensafi2010a.pdf"
 bibtex: "@inproceedings{Roya2010Idle,<br>
   title={Idle Port Scanning & Non-interference Analysis of Network Protocol Stacks Using Model Checking},<br>
   author={Roya Ensafi and Jong Chun Park and Deepak Kapur and Jedidiah R. Crandall},<br>

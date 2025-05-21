@@ -10,7 +10,7 @@ collaborators:
   - Ayush Mishra
   - Anonymous
   - Roya Ensafi
-pdf: "assets/congestion.pdf"
+pdf: "papers/congestion.pdf"
 slides: ""
 bibtex: "@inproceedings{Wang2025Congestion,<br>
   author = {W. Wang and D. Xue and P. Kumar and A. Mishra and Anonymous and R. Ensafi},<br>

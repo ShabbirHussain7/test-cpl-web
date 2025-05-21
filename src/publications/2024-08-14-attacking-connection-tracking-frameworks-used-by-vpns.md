@@ -11,7 +11,7 @@ collaborators:
   - Deepak Kapur
   - Jedidiah R. Crandall
   - Roya Ensafi
-pdf: "assets/pets24-ben.pdf"
+pdf: "papers/pets24-ben.pdf"
 slides: ""
 bibtex: "@inproceedings{MixonBaca2024,<br>
   author = {B. Mixon‑Baca and J. Knockel and D. Xue and T. Ayyagari and D. Kapur and J. R. Crandall and R. Ensafi},<br>

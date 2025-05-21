@@ -7,7 +7,7 @@ export default function PersonCard({ person }) {
             <div className="bg-white shadow-lg border border-black/10 text-center py-4 h-full flex flex-col justify-between">
                 <div className="mx-auto overflow-hidden">
                     <img
-                        src={"assets/" + person.avatar}
+                        src={person.avatar}
                         alt={`Portrait of ${person.name}`}
                         className="w-32 h-32 object-cover rounded mx-auto"
                     />

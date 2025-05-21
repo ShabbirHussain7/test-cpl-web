@@ -9,7 +9,7 @@ collaborators:
   - Armin Huremagic
   - Chad Sharp
   - Roya Ensafi
-pdf: "assets/investigating_the_vpn_rec_system.pdf"
+pdf: "papers/investigating_the_vpn_rec_system.pdf"
 slides: ""
 bibtex: "@inproceedings{Ramesh2022ConPro,<br>
   author = {R. Ramesh and A. Huremagic and C. Sharp and R. Ensafi},<br>

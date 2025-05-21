@@ -19,7 +19,7 @@ press:
     link: "https://censoredplanet.org/filtermap"
   - publisher: Michigan CSE
     link: "https://cse.engin.umich.edu/stories/real-time-monitor-tracks-the-growing-use-of-network-filters-for-censorship"
-pdf: "assets/filtermap.pdf"
+pdf: "papers/filtermap.pdf"
 bibtex: "@inproceedings{sundararaman2020measuring,<br>
   title={Measuring the Deployment of Network Censorship Filters at Global Scale},<br>
   author={Sundara Raman, Ram and Stoll, Adrian and Dalek, Jakub and Ramesh, Reethika and Scott, Will and Ensafi, Roya},<br>
@@ -27,7 +27,7 @@ bibtex: "@inproceedings{sundararaman2020measuring,<br>
   year={2020}<br>
   }"
 talk: "https://youtu.be/R8VlHOwakQk"
-slides: "assets/filtermap-slides.pdf"
+slides: "slides/filtermap-slides.pdf"
 
 abstract:
   "Content filtering technologies are often used for Internet censorship, but even as these technologies have become cheaper and easier to deploy, the censorship measurement community lacks a systematic approach to monitor their proliferation. Past research has focused on a handful of specific filtering technologies, each of which required cumbersome manual detective work to identify. Researchers and policymakers require a more comprehensive picture of the state and evolution of censorship based on content filtering in order to establish effective policies that protect Internet freedom.

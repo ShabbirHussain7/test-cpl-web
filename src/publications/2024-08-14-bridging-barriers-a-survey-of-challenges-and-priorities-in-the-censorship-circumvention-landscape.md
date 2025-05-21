@@ -3,10 +3,9 @@ area: Securing VPN and Circumvention Tool Ecosystem
 date: 2024-08-14
 publisher: USENIX Security
 name: "Bridging Barriers: A Survey of Challenges and Priorities in the Censorship Circumvention Landscape"
-tags:
-  - censorship
-  - circumvention
-  - survey
+slides: slides/survey-usenix24-slides.pdf
+talk: https://www.youtube.com/watch?v=jXXvsaYBYAA
+pdf: papers/bridging-barriers.pdf
 collaborators:
   - Diwen Xue
   - Anna Ablove

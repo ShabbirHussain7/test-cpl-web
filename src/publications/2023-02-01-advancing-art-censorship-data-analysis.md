@@ -14,7 +14,8 @@ collaborators:
   - Sarah Laplante
   - Vinicius Fortuna
   - Roya Ensafi
-pdf: "assets/censorship-data-analysis.pdf"
+pdf: "papers/censorship-data-analysis.pdf"
+slides: slides/censorship-data-analysis-slides.pdf
 bibtex: "@inproceedings{sundararaman2023advancing,<br>
   title = {Advancing the Art of Censorship Data Analysis},<br>
   author = {Sundara Raman, Ram and Virkud, Apurva and Laplante, Sarah and Fortuna, Vinicius and Ensafi, Roya},<br>

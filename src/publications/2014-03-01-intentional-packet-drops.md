@@ -10,7 +10,7 @@ collaborators:
   - Jeffrey Knockel
   - Geoffrey Alexander
   - Jedidiah R Crandall
-pdf: "/assets/Ensafi2014a.pdf"
+pdf: papers/Ensafi2014a.pdf
 bibtex: "@inproceedings{Roya2014Detecting,<br>
   title={Detecting intentional packet drops on the Internet via TCP/IP side channels},<br>
   author={Roya Ensafi, Jeffrey Knockel, Geoffrey Alexander, Jedidiah R Crandall},<br>

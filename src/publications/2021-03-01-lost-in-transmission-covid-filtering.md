@@ -14,9 +14,9 @@ collaborators:
   - Nick Ceccio
   - Philipp Lutscher
   - Roya Ensafi
-pdf: "assets/covid.pdf"
+pdf: "papers/covid.pdf"
 talk: "https://youtu.be/6_gzdp7zSaw"
-slides: "assets/covid-slides.pdf"
+slides: "slides/covid-slides.pdf"
 bibtex: "@inproceedings{vyas2021lost,<br>
   title = {Lost in Transmission: Investigating Filtering of COVID-19 Websites},<br>
   author = {Vyas, Anjali and Sundara Raman, Ram and Ceccio, Nick and Lutscher, Philipp and Ensafi, Roya},<br>

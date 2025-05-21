@@ -11,7 +11,7 @@ collaborators:
  - Nick Feamster
  - Vern Paxson
  - Nick Weaver
-pdf: "assets/Jones2015a.pdf"
+pdf: "papers/Jones2015a.pdf"
 bibtex: "@inproceedings{Ben2015Ethical,<br>
     title={Ethical Concerns for Censorship Measurement},<br>
     author={Ben Jones and Roya Ensafi and Nick Feamster and Vern Paxson and Nick Weaver},<br>
