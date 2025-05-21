@@ -29,7 +29,7 @@ export default function Home() {
             <div className="absolute inset-0">
 
             </div>
-            <img src="./hero-banner.jpeg" alt="Background" className="w-full h-full object-cover" />
+            <img src="./other/hero-banner.jpeg" alt="Background" className="w-full h-full object-cover" />
             {/* Call to Action */}
             <div className="relative z-10">
               <div className="absolute inset-0 flex items-center justify-center">
@@ -53,7 +53,7 @@ export default function Home() {
                       to="https://dashboard.censoredplanet.org"
                       className="bg-[#2D4D63] text-white  font-semibold  px-4 py-2 rounded hover:bg-[#223B4C] transition-shadow shadow-md hover:shadow-lg flex items-center space-x-2"
                     >
-                      <img src="./CPO.svg" alt="Censored Planet" className="h-6 w-6 filter contrast-200" />
+                      <img src="./icons/CPO.svg" alt="Censored Planet" className="h-6 w-6 filter contrast-200" />
                       <span>Observatory</span>
 
                     </Link>

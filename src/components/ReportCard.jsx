@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import LabLogo from '../../public/censoredplanetBlack.svg';
+import LabLogo from '../../public/icons/censoredplanetBlack.svg';
 
 export default function ReportCard({ report, idx }) {
   const isExternal = report.external || (report.permalink && report.permalink.startsWith('http'));
