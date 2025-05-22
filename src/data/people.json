@@ -6,52 +6,70 @@
     "link": "https://ensa.fi/"
   },
   "Team": [
-    {"name": "Armin Huremagic", "position": "Lead Engineer & Researcher (July 2021-Present)", "avatar": "people_imgs/armin.png", "active": true, "link": "https://www.linkedin.com/in/armin-huremagic/"},
-    {"name": "Diwen Xue", "position": "PhD Candidate (2020–present)", "avatar": "people_imgs/diwen-new.jpg", "active": true, "link": "https://diwenx.com"},
-    {"name": "Anna Ablove", "position": "PhD Student (2022–present)", "avatar": "people_imgs/anna.png", "active": true, "link": "https://www.ablove.dev"},
-    {"name": "Wayne Wang", "position": "PhD Student (Sept 2023–present)", "avatar": "people_imgs/wayne.jpg", "active": true, "link": "https://waynewang.me"},
-    {"name": "Aaron Ortwein", "position": "PhD Student (Sept 2023–present)", "avatar": "people_imgs/aaron.png", "active": true, "link": "https://aaron-ortwein.github.io"},
     {"name": "Piyush Kumar", "position": "Postdoctoral Researcher (2023–present)", "avatar": "people_imgs/piyush.jpg", "active": true, "link": "https://piyushs.in"},
-    {"name": "Shreyas Chandrashekaran", "position": "M.S. Student (2024–present); PhD student UM", "avatar": "people_imgs/male.png", "active": true},
-    {"name": "Robert Stanley", "position": "M.S. Student (2023–2025); PhD student at USC", "avatar": "people_imgs/rsta.jpg", "active": true},
-    {"name": "Benjamin Wolin", "position": "M.S. Student (2025–present)", "avatar": "people_imgs/male.png",  "active": true},
+    {"name": "Armin Huremagic", "position": "Lead Engineer & Researcher (July 2021-Present)", "avatar": "people_imgs/armin.png", "active": true, "link": "https://www.linkedin.com/in/armin-huremagic/"},
+    {"name": "Aaron Ortwein", "position": "PhD Student (Sept 2023–present)", "avatar": "people_imgs/aaron.png", "active": true, "link": "https://aaron-ortwein.github.io"},
+    {"name": "Wayne Wang", "position": "PhD Student (Sept 2023–present)", "avatar": "people_imgs/wayne.jpg", "active": true, "link": "https://waynewang.me"},
+    {"name": "Anna Ablove", "position": "PhD Student (2022–present)", "avatar": "people_imgs/anna.png", "active": true, "link": "https://www.ablove.dev"},
+    {"name": "Diwen Xue", "position": "PhD Candidate (2020–present)", "avatar": "people_imgs/diwen-new.jpg", "active": true, "link": "https://diwenx.com"},
     {"name": "Richa Priyanka", "position": "Incoming PhD Student (Sep 2025)", "avatar": "people_imgs/richa.jpg", "active": true},
     {"name": "Shabbir Hussain", "position": "Incoming PhD Student (Sep 2025)", "avatar": "people_imgs/shabbir.jpeg", "active": true},
-    {"name": "Jenna Efthyvoulidis", "position": "Undergraduate (Jan 2025–present)", "avatar": "people_imgs/jenna.png", "active": true},
-    {"name": "Allie Yuan", "position": "Undergraduate (Jan 2025–present)", "avatar": "people_imgs/female.png", "active": true},
-    {"name": "Brennen Daudlin", "position": "Undergraduate (Jan 2024–Aug 2024)", "avatar": "people_imgs/brennen.png", "active": true},
-    {"name": "Ram Sundara Raman", "position": "PhD (2018–2024)", "avatar": "people_imgs/ram.jpg", "active": false, "now at": "Tenure-track Assistant Professor, UC Santa Cruz", "link": "https://ramakrishnansr.com/"},
-    {"name": "Reethika Ramesh", "position": "PhD (2018–2023)", "avatar": "people_imgs/reethika.jpeg", "active": false, "now at": "Senior Staff Researcher at Palo Alto Networks", "link": "https://reethika.info/"},
+
+   
+    {"name": "Benjamin Wolin", "position": "M.S. Student (2025–present)", "avatar": "people_imgs/male.png",  "active": true},
+    {"name": "Shreyas Chandrashekaran", "position": "M.S. Student (2024–present); PhD student UM", "avatar": "people_imgs/male.png", "active": true},
+    
     {"name": "Hieu Le", "position": "Postdoctoral Researcher (2023–2024)", "avatar": "people_imgs/hieu.jpg", "active": false, "now at": "Senior Researcher at Federal Trade Commission (FTC)", "link": "https://levanhieu.com"},
     {"name": "Alexandra Dirksen", "position": "Visiting Researcher (2023–2024)", "avatar": "people_imgs/alexandra_dirksen.png", "active": false, "now at": "PhD Student, TU Braunschweig", "link": "https://www.opentech.fund/fellows/alexandra-dirksen/"},
-    {"name": "Victor Ongkowijaya", "position": "Undergraduate (2017–2019)", "avatar": "people_imgs/victor.png", "active": false, "now at": "M.S. Student at Princeton", "link": "https://victorwj.github.io/"},
-    {"name": "Adrian Stoll", "position": "Undergraduate (2017–2019)", "avatar": "people_imgs/adrian.png", "active": false, "now at": "Google", "link": "https://adrianstoll.com/"},
-    {"name": "Anjali Vyas", "position": "Undergraduate (2020–2021)", "avatar": "people_imgs/AnjaliVyas.png", "active": false, "now at": "M.S. Student at Cornell Tech", "link": "https://www.linkedin.com/in/anjali-vyas/"},
-    {"name": "Prerana Shenoy", "position": "Undergraduate (2020)", "avatar": "people_imgs/prerana.jpg", "active": false, "now at": "Atlassian", "link": "https://github.com/pbshenoy"},
-    {"name": "Apurva Virkud", "position": "Undergraduate (2019–2021)", "avatar": "people_imgs/apurva.png", "active": false, "now at": "PhD Student, UIUC", "link": "https://www.linkedin.com/in/apurva-virkud"},
-    {"name": "Elisa Tsai", "position": "M.S. Student (2020–2022)", "avatar": "people_imgs/elisa_tsai.png", "active": false, "now at": "PhD student at UM", "link": "https://github.com/eltsai"},
-    {"name": "Ben Mixon-Baca", "position": "Visiting PhD student from ASU (2022–2023)", "avatar": "people_imgs/ben.png", "active": false},
-    {"name": "Hammas Bin Tanveer", "position": "Visiting PhD student from Iowa (2022)", "avatar": "people_imgs/hammas.jpg", "active": false, "link": "https://hammas9.github.io/"},
-    {"name": "Rose Ceccio", "position": "Undergraduate (2020–2021)", "avatar": "people_imgs/rose_ceccio.png", "active": false, "now at": "PhD Student at UW Madison", "link": "https://ceccio247.github.io"},
-    {"name": "Renuka Kumar", "position": "PhD (2019–2022)", "avatar": "people_imgs/renuka_kumar.jpg", "active": false, "now at": "Senior Researcher at Cisco"},
-    {"name": "Muhammad Ikram", "position": "Postdoc (2018–2019)", "avatar": "people_imgs/ikram.jpg", "active": false, "now at": "Tenure-track faculty at Macquarie University"},
-    {"name": "Elio Qoshi", "avatar": "people_imgs/elio.png", "position": "Visual Designer", "now at": "Ura Design Founder", "active": false, "link": "https://elioqoshi.me/"},
-    {"name": "Leonid Evdokimov", "position": "Developer (Sep 2019 - May 2021)", "avatar": "people_imgs/leonid.png", "active": false, "link": "https://darkk.net.ru/"},
-    {"name": "Arham Jain", "position": "M.S. Student (2021)", "avatar": "people_imgs/arham.jpg", "now at": "Google", "active": false},   
-    {"name": "Joshua Hannah", "position": "Undergraduate (Sep 2023–Jan 2024)", "avatar": "people_imgs/male.png", "active": false},
+    {"name": "Renuka Kumar", "position": "PhD (2019–2022)", "avatar": "people_imgs/renuka.png", "active": false, "now at": "Engineering Technical Leader at Cisco"},
+    {"name": "Ram Sundara Raman", "position": "PhD (2018–2024)", "avatar": "people_imgs/ram.jpg", "active": false, "now at": "Tenure-track Assistant Professor, UC Santa Cruz", "link": "https://ramakrishnansr.com/"},
+    {"name": "Reethika Ramesh", "position": "PhD (2018–2023)", "avatar": "people_imgs/reethika.jpeg", "active": false, "now at": "Senior Staff Researcher at Palo Alto Networks", "link": "https://reethika.info/"},
+    
+    {"name": "Jenna Efthyvoulidis", "position": "Undergraduate (Jan 2025–present)", "avatar": "people_imgs/jenna.png", "active": true},
+    {"name": "Allie Yuan", "position": "Undergraduate (Jan 2025–present)", "avatar": "people_imgs/female.png", "active": true},    
+
+
+    {"name": "Brennen Daudlin", "position": "Undergraduate (Jan 2024–Aug 2024)", "avatar": "people_imgs/brennen.png", "active": false},
     {"name": "Therron Montgomery", "position": "Undergraduate (Jan 2024–May 2024)", "avatar": "people_imgs/therron.jpeg", "active": false},
+    
+    {"name": "Robert Stanley", "position": "M.S. Student (2023–2025); PhD student at USC", "avatar": "people_imgs/rsta.jpg", "active": true},
+    {"name": "Joshua Hannah", "position": "Undergraduate (Sep 2023–Jan 2024)", "avatar": "people_imgs/male.png", "active": false},
     {"name": "Kyle Astroth", "position": "Undergraduate (May 2023–Sep 2023)", "avatar": "people_imgs/male.png", "active": false},
     {"name": "Yusei Uehara", "position": "Undergraduate (Jan 2023–Sep 2023)", "avatar": "people_imgs/yusei.png", "now at": "fluct, inc.",  "active": false},
     {"name": "Kevin Wang", "position": "Undergraduate (Jan 2023–Sep 2023)", "avatar": "people_imgs/kevin_wang.png", "active": false},
     {"name": "Nadav Oren", "position": "Undergraduate (Jan 2023–May 2023)", "avatar": "people_imgs/nadav_oren.png", "active": false},
+    
+    {"name": "Ben Mixon-Baca", "position": "Visiting PhD student from ASU (2022–2023)", "avatar": "people_imgs/ben.png", "active": false},
+    {"name": "Hammas Bin Tanveer", "position": "Visiting PhD student from Iowa (2022)", "avatar": "people_imgs/hammas.jpg", "active": false, "link": "https://hammas9.github.io/"},
     {"name": "Gavin Li", "position": "Undergraduate (May 2022–Dec 2022)", "avatar": "people_imgs/male.png", "now at": "Stanford University", "active": false},
     {"name": "David Wang", "position": "Undergraduate (2022–Sep 2022)", "avatar": "people_imgs/david_wang.png", "now at": "Criteo" ,"active": false},
     {"name": "Daniel Liu", "position": "Undergraduate (May 2022–Sep 2022)", "avatar": "people_imgs/male.png", "active": false},
+        
+    {"name": "Arham Jain", "position": "M.S. Student (2021)", "avatar": "people_imgs/arham.jpg", "now at": "Google", "active": false},   
+
+
+    {"name": "Elisa Tsai", "position": "M.S. Student (2020–2022)", "avatar": "people_imgs/elisa_tsai.png", "active": false, "now at": "PhD student at UM", "link": "https://github.com/eltsai"},
+    {"name": "Anjali Vyas", "position": "Undergraduate (2020–2021)", "avatar": "people_imgs/AnjaliVyas.png", "active": false, "now at": "M.S. Student at Cornell Tech", "link": "https://www.linkedin.com/in/anjali-vyas/"},
+    {"name": "Prerana Shenoy", "position": "Undergraduate (2020)", "avatar": "people_imgs/prerana.jpg", "active": false, "now at": "Atlassian", "link": "https://github.com/pbshenoy"},
+    {"name": "Rose Ceccio", "position": "Undergraduate (2020–2021)", "avatar": "people_imgs/rose_ceccio.png", "active": false, "now at": "PhD Student at UW Madison", "link": "https://ceccio247.github.io"},
+    
     {"name": "Owen Webb", "position": "M.S. Research (Fall 2019–Winter 2020)", "avatar": "people_imgs/male.png", "active": false},
+    {"name": "Apurva Virkud", "position": "Undergraduate (2019–2021)", "avatar": "people_imgs/apurva.png", "active": false, "now at": "PhD Student, UIUC", "link": "https://www.linkedin.com/in/apurva-virkud"},
     {"name": "Alyssa Sopanarat", "position": "Undergrad Independent (Winter 2019)", "avatar": "people_imgs/female.png", "active": false},
     {"name": "Enya Chen", "position": "Undergrad Independent (Winter 2019)", "avatar": "people_imgs/female.png", "active": false},
     {"name": "Kayura Mendonza", "position": "Undergrad Independent (Winter 2019)", "avatar": "people_imgs/female.png", "active": false},
     {"name": "Micaela DeGenero", "position": "Undergrad Independent (Winter 2019)", "avatar": "people_imgs/female.png", "active": false},
-    {"name": "Steven Sprecher", "position": "M.S. Research (Summer 2018)", "avatar": "people_imgs/steven_sprecher.png", "active": false}
+    {"name": "Leonid Evdokimov", "position": "Developer (Sep 2019 - May 2021)", "avatar": "people_imgs/leonid.png", "active": false, "link": "https://darkk.net.ru/"},
+    {"name": "Elio Qoshi", "position": "Visual Designer (Jun 2019- Feb 2020)", "avatar": "people_imgs/elio.png", "now at": "Ura Design Founder", "active": false, "link": "https://elioqoshi.me/"},
+
+
+    {"name": "Muhammad Ikram", "position": "Postdoc (2018–2019)", "avatar": "people_imgs/ikram.jpg", "active": false, "now at": "Tenure-track faculty at Macquarie University"},
+    {"name": "Steven Sprecher", "position": "M.S. Research (Summer 2018)", "avatar": "people_imgs/steven_sprecher.png", "active": false},
+
+    {"name": "Victor Ongkowijaya", "position": "Undergraduate (2017–2019)", "avatar": "people_imgs/victor.png", "active": false, "now at": "M.S. Student at Princeton", "link": "https://victorwj.github.io/"},
+    {"name": "Adrian Stoll", "position": "Undergraduate (2017–2019)", "avatar": "people_imgs/adrian.png", "active": false, "now at": "Google", "link": "https://adrianstoll.com/"}
+    
+    
+   
   ]
 }
