@@ -1,7 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <base href="/test-cpl-web/">
+    <script>
+      // Check if the environment is production
+      const isProduction = window.location.hostname !== 'localhost' && !window.location.hostname.includes('127.0.0.1');
+      
+      if (isProduction) {
+        const baseTag = document.createElement('base');
+        baseTag.href = '/test-cpl-web/';
+        document.head.appendChild(baseTag);
+      }
+    </script>
     <meta name="robots" content="noindex">
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/icons/CPL_without_title.svg" />

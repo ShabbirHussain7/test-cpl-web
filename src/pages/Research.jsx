@@ -7,7 +7,6 @@ import { parsePublications } from '../utils/parsePublications';
 import DOMPurify from 'dompurify';
 const markdownFiles = import.meta.glob('../publications/*.md', { query: '?raw', import: 'default', eager: true });
 const publications = parsePublications(markdownFiles);
-console.log(publications);
 
 
 

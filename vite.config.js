@@ -4,13 +4,16 @@ import react from '@vitejs/plugin-react'
 import { nodePolyfills } from 'vite-plugin-node-polyfills'
 import svgr from "vite-plugin-svgr";
 
-export default defineConfig(({ mode }) => ({
-  base: '/test-cpl-web/',
-  assetsInclude: ['**/*.md'],
-  plugins: [
-    nodePolyfills(),
-    svgr(),
-    tailwindcss(),
-    react()
-  ],
-}))
+export default defineConfig(({ mode }) => {
+
+  return {
+    base: mode === 'development' ? '/' : '/test-cpl-web/',
+    assetsInclude: ['**/*.md'],
+    plugins: [
+      nodePolyfills(),
+      svgr(),
+      tailwindcss(),
+      react()
+    ],
+  };
+});

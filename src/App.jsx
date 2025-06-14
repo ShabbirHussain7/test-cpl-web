@@ -30,14 +30,18 @@ function ScrollToTop() {
 }
 
 export default function App() {
-
   return (
     <div className='App'>
     <HashRouter>
     <ScrollToTop />
       <Header />
       <Routes>
-      <Route path="/test-cpl-web" element={<Navigate replace to="/test-cpl-web/" />} />
+      {import.meta.env == "production" && (
+          <Route
+            path="/test-cpl-web"
+            element={<Navigate replace to="/test-cpl-web/" />}
+          />
+        )}
         <Route path="/" element={<Home />} />
         <Route path="/publications" element={<Publications />} />
         <Route path="/talks" element={<Talks />} />

@@ -18,7 +18,6 @@ export default function Home() {
   // get latest news from newsData from the date field
   const latestNews = newsData.sort((a, b) => new Date(b.date) - new Date(a.date))[0];
 
-  console.log("latestNews", latestNews);
   return (
     <div className="">
 
@@ -189,7 +188,7 @@ export default function Home() {
               <h2 className="heading-primary">Selected Publications</h2>
               <div className="space-y-4">
                 {Object.entries(selected_publications).sort((a, b) => b[0] - a[0]).map(([year, pubs]) => (
-                  <ul>
+                  <ul key={year}>
                     {pubs.map((pub, idx) => <PublicationItem key={idx} pub={pub} />)}
                   </ul>
                 ))}
@@ -229,7 +228,7 @@ export default function Home() {
                   .slice(0, 3)
                   .map((talk, idx) => {
                     return (
-                      <VideoCard video={talk} />
+                      <VideoCard video={talk} key={idx}  />
                     );
                   })}
               </div>
