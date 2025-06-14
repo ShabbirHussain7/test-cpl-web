@@ -1,151 +1,181 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import homeData from '../data/home.json';
+import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+import Logo from '../../public/icons/new-cp.svg';
+import home_data from '../data/home.json';
 
-const Header = () => {
-  const [isScrolled, setScrolled]   = useState(false);
-  const [mobileMenuOpen, setMMOpen] = useState(false);
-  const [openMobileSub, setOpenMobileSub] = useState(null);   // which submenu is expanded on mobile
-
-  /* ───────── Listen for scroll so we can shrink header ───────── */
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
-  /* ───────── Top‑level sections definition ───────── */
-  const sections = [
-    { name: 'Home',        link: '/' },
-    { name: 'People',       link: '/people' },
-    { name: 'Research',                    // ⬅ no link any more
-      sub: homeData.research.map((r, i) => ({
-        name: r.name,
-        link: `research/${r.url}`,
-      }))
-    },
-    { name: 'Blogs',       link: '/reports' },
-    { name: 'Publications',link: '/publications' },
-    { name: 'Talks',       link: '/talks' },
-    { name: 'Press',       link: '/news' },
-    { name: 'Updates',     link: '/updates' },
-    { name: 'Join Us',     link: '/join' },
+export default function Header() {
+  const navItems = [
+    { label: 'About', to: '/about' },
+    { label: 'Research', to: '/research', subItems: home_data.research.map(item => ({
+      label: item.name,
+      to: `/research/${item.url}`
+    })) },
+    { label: 'Blog', to: '/blog' },
+    { label: 'Publications', to: '/publications' },
+    { label: 'Tools', to: '/tools' },
+    { label: 'Media', to: '/media', subItems: [
+      { label: 'News', to: '/news' },
+      { label: 'Lab Updates', to: '/updates' },
+    ] },
   ];
 
-  /* ───────── Component ───────── */
-  return (
-    <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300
-                  ${isScrolled ? 'py-2' : 'py-4'} bg-[#2D4D63]`}>
-      <nav className="container mx-auto flex justify-between max-w-screen-xl px-6 md:px-16 items-center">
-        <Link to="/">
-          <img src="./icons/censoredplanet.svg" alt="Censored Planet Logo" className="h-10 md:h-12" />
-        </Link>
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeSubMenu, setActiveSubMenu] = useState(null); // Tracks active submenu for mobile
 
-          {/*  Desktop menu  */}
-        <div className="hidden md:flex gap-6">
-          {sections.map(({ name, link, sub }, index) => (
-            <div key={name} className="relative group flex items-center">
-              {/* ▼ inside the .map() of sections  */}
-              <Link to={link} className="text-white hover:text-gray-200 flex items-center">
-                {name}
-              </Link>
-        
-              {/* Display pipe symbol except for the last item
-              {index < sections.length - 1 && (
-                <span className="text-white mx-2">|</span>
-              )}
-         */}
-              {/* dropdown – only if there is a submenu */}
-              {sub && (
-                <div
-                  className="absolute top-full        /* ← no gap */
-                             w-72 bg-[#2D4D63] shadow-lg
-                             opacity-0 invisible
-                             group-hover:opacity-100 group-hover:visible
-                             group-focus-within:opacity-100 group-focus-within:visible
-                             transition-opacity"
-                >
-                  {sub.map(({ name: subName, link: subLink }) => (
-                    <Link
-                      key={subName}
-                      to={subLink}
-                      className="block px-4 py-4 text-sm text-white hover:bg-[#3A5E78]
-                                 whitespace-normal"
-                    >
-                      {subName}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
+  const toggleSubMenu = (index) => {
+    setActiveSubMenu(activeSubMenu === index ? null : index);
+  };
+
+  return (
+    <header className="bg-[rgba(253,253,253,0.4)] backdrop-filter backdrop-blur-none">
+      <div
+        className="
+          flex
+          items-center
+          justify-between
+          mx-auto
+          py-5
+          px-20
+        "
+      >
+        {/* Logo */}
+        <div className="flex items-center space-x-2">
+          <Link to="/">
+            <img src={Logo} alt="Censored Planet logo" />
+          </Link>
         </div>
 
-
-        {/*  Mobile menu toggle  */}
+        {/* Mobile menu button */}
         <button
-          className="md:hidden text-white"
-          onClick={() => setMMOpen(!mobileMenuOpen)}
+          className="md:hidden ml-auto focus:outline-none"
+          onClick={() => setIsOpen(!isOpen)}
         >
-          {mobileMenuOpen ? <X /> : <Menu />}
+          <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+            />
+          </svg>
         </button>
-      </nav>
 
-      {/*  Mobile menu panel  */}
-      {mobileMenuOpen && (
-        <div className="md:hidden bg-[#2D4D63] px-4 py-2 space-y-1">
-          {sections.map(({ name, link, sub }) => {
-            const hasSub = Boolean(sub);
-            const open   = openMobileSub === name;
-            return (
-              <div key={name}>
-                <div
-                  className="flex items-center justify-between py-2"
+        {/* Nav links + Join button */}
+        <nav>
+          <ul className="hidden md:flex items-center">
+            {navItems.map((item, index) => (
+              <li
+                key={item.label}
+                className={`group relative px-4 first:pl-0 last:pr-0`}
+              >
+                <Link
+                  to={item.to}
+                  className="text-[#121212] text-center font-inter"
                 >
-                  {link ? (
-                      <Link to={link} className="text-white flex-1" onClick={() => setMMOpen(false)}>
-                        {name}
-                      </Link>
-                    ) : (
-                      <span className="text-white flex-1">{name}</span>
-                    )}
-                  {hasSub && (
+                  {item.label}
+                </Link>
+                {/* Dropdown for subItems */}
+                {item.subItems && item.subItems.length > 0 && (
+                  <ul className="absolute left-0 top-full bg-white shadow-lg rounded-md z-10 w-40 hidden group-hover:block">
+                    {item.subItems.map((subItem) => (
+                      <li key={subItem.label} className="px-6 py-2 hover:bg-gray-100">
+                        <Link
+                          to={subItem.to}
+                          className="block text-sm text-gray-700"
+                        >
+                          {subItem.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+
+            {/* Join Us button */}
+            <li className="pl-4">
+              <Link
+                to="/join"
+                className="
+                  font-inter
+                 
+                  inline-block
+                  bg-black
+                  text-white
+                  text-sm
+                  py-2
+                  px-6
+                  hover:opacity-90
+                  transition-opacity
+                "
+              >
+                Join Us
+              </Link>
+            </li>
+          </ul>
+        </nav>
+
+        {/* Mobile nav */}
+        <div className={`${isOpen ? 'block' : 'hidden'} md:hidden my-2 px-4 pb-4`}>
+          <ul className="flex flex-col space-y-2">
+            {navItems.map((item, index) => (
+              <li key={item.label} className="relative">
+                <div className="flex justify-between items-center">
+                  <Link
+                    to={item.to}
+                    className="text-[#121212] text-[18px] font-medium leading-[120%] tracking-[var(--spacing-spacing-tight)] text-center font-[Inter] hover:text-gray-700"
+                  >
+                    {item.label}
+                  </Link>
+                  {item.subItems && item.subItems.length > 0 && (
                     <button
-                      onClick={() => setOpenMobileSub(open ? null : name)}
-                      className="text-white px-2"
+                      onClick={() => toggleSubMenu(index)}
+                      className="focus:outline-none"
                     >
-                      <ChevronDown
-                        className={`h-4 w-4 transition-transform
-                                    ${open ? 'rotate-180' : ''}`}
-                      />
+                      <svg
+                        className="h-5 w-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d={activeSubMenu === index ? "M6 18L18 6M6 6l12 12" : "M19 9l-7 7-7-7"}
+                        />
+                      </svg>
                     </button>
                   )}
                 </div>
-
-                {/* mobile submenu */}
-                {hasSub && open && (
-                  <div className="pl-4 space-y-1">
-                    {sub.map(({ name: subName, link: subLink }) => (
-                      <Link
-                        key={subName}
-                        to={subLink}
-                        className="block py-1 text-sm text-white/90"
-                        onClick={() => setMMOpen(false)}
-                      >
-                        {subName}
-                      </Link>
+                {/* Dropdown for subItems */}
+                {item.subItems && item.subItems.length > 0 && activeSubMenu === index && (
+                  <ul className="mt-2 space-y-2">
+                    {item.subItems.map((subItem) => (
+                      <li key={subItem.label} className="pl-6">
+                        <Link
+                          to={subItem.to}
+                          className="block text-sm hover:text-gray-700"
+                        >
+                          {subItem.label}
+                        </Link>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 )}
-              </div>
-            );
-          })}
+              </li>
+            ))}
+            <li>
+              <Link
+                to="/join"
+                className="block bg-black text-white text-sm py-2 px-4 mt-2 text-center hover:opacity-90 transition-opacity"
+              >
+                Join Us
+              </Link>
+            </li>
+          </ul>
         </div>
-      )}
+      </div>
     </header>
   );
-};
-
-export default Header;
+}

@@ -1,11 +1,11 @@
-
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Barlow', 'ui-sans-serif', 'system-ui'],
+        barlow: ['Barlow', 'ui-sans-serif', 'system-ui'],
+        inter: ['Inter', 'ui-sans-serif', 'system-ui'],
       },
     },
   },
@@ -13,4 +13,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};

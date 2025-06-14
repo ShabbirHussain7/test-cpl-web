@@ -22,7 +22,7 @@ export default function Home() {
     <div className="">
 
 
-      <main className="pt-[50px] pb-4">
+      <main>
         <section id="hero" className="relative text-white">
           <div className="relative">
             <div className="absolute inset-0">
@@ -76,9 +76,7 @@ export default function Home() {
               Explore our Work
             </Link>
           </div>
-          {/* Solid background strip for bottom of hero */}
-          <div className="relative bottom-0 w-full h-[115px] bg-[#2D4D63] z-0 hidden sm:block"></div>
-
+       
           <div className="bg-[#CC4E24] text-white text-sm overflow-hidden">
             <div className="page-container flex items-center justify-between py-1">
               <div className="flex-1 overflow-x-auto ">
