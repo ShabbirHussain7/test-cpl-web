@@ -48,7 +48,6 @@
     {"name": "Arham Jain", "position": "M.S. Student (2021)", "avatar": "people_imgs/arham.jpg", "now at": "Google", "active": false},   
 
 
-    {"name": "Elisa Tsai", "position": "M.S. Student (2020–2022)", "avatar": "people_imgs/elisa_tsai.png", "active": false, "now at": "PhD student at UM", "link": "https://github.com/eltsai"},
     {"name": "Anjali Vyas", "position": "Undergraduate (2020–2021)", "avatar": "people_imgs/AnjaliVyas.png", "active": false, "now at": "M.S. Student at Cornell Tech", "link": "https://www.linkedin.com/in/anjali-vyas/"},
     {"name": "Prerana Shenoy", "position": "Undergraduate (2020)", "avatar": "people_imgs/prerana.jpg", "active": false, "now at": "Atlassian", "link": "https://github.com/pbshenoy"},
     {"name": "Rose Ceccio", "position": "Undergraduate (2020–2021)", "avatar": "people_imgs/rose_ceccio.png", "active": false, "now at": "PhD Student at UW Madison", "link": "https://ceccio247.github.io"},
