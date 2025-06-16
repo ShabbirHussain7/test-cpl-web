@@ -32,12 +32,14 @@
     {
         "url": "censorship-detection",
         "name": "Monitoring Censorship at Global Scale",
+        "short-name": "Monitoring Censorship",
         "description": "We monitor network interference and disruptions globally to identify and understand censorship trends across countries.",
         "color": "#17827B"
     },
     {
         "url": "rapid-response",
         "name": "Exposing Emerging Threats",
+        "short-name": "Emerging Threats",
         "description": "We investigate new and evolving techniques used to suppress access to information and restrict online freedom.",
         "color": "#0083c5"
     
@@ -45,6 +47,7 @@
     {
         "url": "splintering-net",
         "name": "Characterizing Internet Splintering",
+        "short-name": "Internet Splintering",
         "description": "We study the fragmentation of the global Internet and how nation-level policies impact access and connectivity.",
         "color": "#9A042B"
     
@@ -52,18 +55,21 @@
     {
         "url": "dpis",
         "name": "Evaluating Middlebox Deployments",
+        "short-name": "Evaluating Middleboxes",
         "description": "We study the deployment and behavior of network middleboxes to assess their role in censorship and surveillance.",
         "color": "#5A4E3C"
     },
     {
         "url": "obfuscation",
         "name": "Advancing Traffic Obfuscation",
+        "short-name": "Traffic Obfuscation",
         "description": "We develop novel obfuscation methods to evade censorship and ensure secure, anonymous communication online.",
         "color": "#9a7400"
     },
     {
         "url": "securing-pets",
         "name": "Securing VPN and Circumvention Tools",
+        "short-name": "VPNs & Circumvention Tools",
         "description": "We assess VPNs and circumvention tools for reliability and security, and help improve their resistance to blocking.",
         "color": "#4D4DD1"
     }

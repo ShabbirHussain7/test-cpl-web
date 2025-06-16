@@ -7,7 +7,7 @@ export default function Header() {
   const navItems = [
     { label: 'About', to: '/about' },
     { label: 'Research', to: '/research', subItems: home_data.research.map(item => ({
-      label: item.name,
+      label: item['short-name'],
       to: `/research/${item.url}`
     })) },
     { label: 'Blog', to: '/blog' },
@@ -76,14 +76,18 @@ export default function Header() {
                 >
                   {item.label}
                 </Link>
-                {/* Dropdown for subItems */}
+                                {/* Dropdown for subItems */}
                 {item.subItems && item.subItems.length > 0 && (
-                  <ul className="absolute left-0 top-full bg-white shadow-lg rounded-md z-10 w-40 hidden group-hover:block">
+                  <ul
+                    className={`absolute top-full bg-white shadow-lg rounded-md z-10 ${
+                      item.subItems.length < 3 ? 'w-25' : 'w-45'
+                    } hidden group-hover:block`}
+                  >
                     {item.subItems.map((subItem) => (
                       <li key={subItem.label} className="px-6 py-2 hover:bg-gray-100">
                         <Link
                           to={subItem.to}
-                          className="block text-sm text-gray-700"
+                          className="block text-sm text-gray-700 py-1"
                         >
                           {subItem.label}
                         </Link>

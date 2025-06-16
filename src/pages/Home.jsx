@@ -105,7 +105,7 @@ export default function Home() {
                   to={currentNews.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#28A199] hover:underline "
+                  className="text-[#28A199] underline "
                 >
                   {currentNews.title}
                 </Link>
@@ -129,17 +129,27 @@ export default function Home() {
         <section id="what-we-do" className="lg:px-20 lg:py-25">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12">
             {/* About Us */}
-            <div className='w-[522px] '>
+            <div className='w-[540px] '>
               <h2 className="lg:text-[49px] text-[#121212] leading-[120%] font-merriweather">
                 What We Do
               </h2>
-              <div className="mt-4 font-inter lg:text-[16px] text-[#121212] leading-[150%] space-y-4">
+              <div className="mt-4 font-inter lg:text-[16px] text-[#121212] leading-[150%] space-y-6">
                 <p>
-                  Our research lies at the intersection of networking, security and privacy, and Internet measurement. We take a data-driven approach to detecting and defending against powerful network intermediaries, government threat actors, and technologies and practices that impact users’ freedom of expression online.
+                  Our research lies at the intersection of <strong>Networking</strong>, <strong>Security & Privacy</strong>, and <strong>Internet Measurements</strong>. We take a data-driven approach to detect and defend against powerful network intermediaries and government threat actors.
                 </p>
                 <p>
+                  Censored Planet has a track-record of perseverance, pragmatism, and broad collaboration—attributes that have helped us achieve positive impacts within the complex landscape of Internet Freedom research. 
+                  
+                </p>
+                <p>We have won honors like <strong>Internet Defense Prize</strong> and multiple <strong>IRTF research awards</strong>. 
+                  Additionaly, our collaboration with <span className='underline  text-[#28A199]'>
+                    <Link to="https://www.consumerreports.org/" target="_blank" rel="noopener noreferrer" >
+                    Consumer Reports
+                  </Link></span> has been cited by members of Congress in urging the <em>Federal Trade Commission (FTC)</em> to regulate the VPN ecosystem. 
+                </p>
+                {/* <p>
                   We design safe, scalable methods that don’t rely on in-country infrastructure, so our work can support journalists, researchers, and advocates working to hold those in power accountable.
-                </p>
+                </p> */}
               </div>
             </div>
 
