@@ -27,15 +27,17 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-[rgba(253,253,253,0.4)] backdrop-filter backdrop-blur-none">
+    <header className="fixed top-0 left-0 w-full bg-[rgba(253,253,253,0.4)] backdrop-blur-xs z-[9999]">
       <div
         className="
           flex
           items-center
           justify-between
           mx-auto
-          py-5
-          px-20
+          lg:py-5
+          py-3
+          lg:px-20
+          px-8
         "
       >
         {/* Logo */}
@@ -98,7 +100,6 @@ export default function Header() {
                 to="/join"
                 className="
                   font-inter
-                 
                   inline-block
                   bg-black
                   text-white
@@ -116,7 +117,7 @@ export default function Header() {
         </nav>
 
         {/* Mobile nav */}
-        <div className={`${isOpen ? 'block' : 'hidden'} md:hidden my-2 px-4 pb-4`}>
+        <div className={`${isOpen ? 'block' : 'hidden'} xl:hidden my-2 px-4 pb-4`}>
           <ul className="flex flex-col space-y-2">
             {navItems.map((item, index) => (
               <li key={item.label} className="relative">

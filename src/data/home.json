@@ -1,8 +1,32 @@
 {
   "mission": {
     "title": "Censored Planet Lab",
-    "description": "We are a team of researchers in the Computer Science and Engineering department at the University of Michigan working to build scalable systems and novel techniques to protect users’ Internet experiences from censorship, surveillance, and digital divide."
+    "description": "We are a research team at the University of Michigan building scalable systems and novel techniques to protect users from online censorship, surveillance, and digital divide."
   },
+
+  "metrics": [
+    {
+      "title": "Conducted",
+      "number": "68",
+      "unit": "billion",
+      "description": "measurements across over 220 countries since 2018, providing invaluable data for monitoring global internet censorship trends."
+    },
+    {
+      "title": "Supported",
+      "number": "100+",
+      "description": "advocacy organizations globally, equipping them with reliable datasets to advance human rights and digital freedom initiatives."
+    },
+    {
+      "title": "Featured in",
+      "number": "130+",
+      "description": "news articles and cited in Congressional reports, influencing policy discussions and advocating for regulatory action against censorship."
+    },
+    {
+      "title": "Resulted in",
+      "number": "60+",
+      "description": "security disclosures addressing critical threats, highlighting vulnerabilities and holding responsible entities accountable for online safety."
+    }
+  ],
 
   "research": [
     {

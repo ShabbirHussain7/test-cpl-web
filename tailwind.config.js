@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         barlow: ['Barlow', 'ui-sans-serif', 'system-ui'],
         inter: ['Inter', 'ui-sans-serif', 'system-ui'],
+        merriweather: ['Merriweather', 'serif'],
       },
     },
   },
