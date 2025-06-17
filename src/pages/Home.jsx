@@ -193,24 +193,28 @@ export default function Home() {
 
 
       <section id="research-themes" className="relative">
-        {/* Background SVG */}
+
         <div className='relative overflow-hidden z-0'>
-          <img
-            src={ResearchBg}
-            alt="Hero background"
-            className=" absolute right-[0px] h-[1095px] -top-[2px] transform  z-[-1]"
-          />
 
-          <img
-            src={ResearchBg1}
-            alt="Hero background"
-            className="shrink-0 absolute -bottom-[340px] left-[0px] h-[1095px]  z-[-1]"
-          />
+          {/* BACKGROUND IMGS */}
+          <div>
+            <img
+              src={ResearchBg}
+              alt="Hero background"
+              className=" absolute right-[0px] h-[1095px] -top-[2px] transform  z-[-1]"
+            />
+
+            <img
+              src={ResearchBg1}
+              alt="Hero background"
+              className="shrink-0 absolute -bottom-[340px] left-[0px] h-[1095px]  z-[-1]"
+            />
+          </div>
 
 
-          <div className='lg:px-20 lg:py-25 relative z-10'  style={{
-    background: 'linear-gradient(180deg, #FDFDFD 0%, rgba(253, 253, 253, 0.00) 51.92%, var(--Background, #FDFDFD) 100%)',
-  }}>
+          <div className='lg:px-20 lg:py-15 relative z-10' style={{
+            background: 'linear-gradient(180deg, #FDFDFD 0%, rgba(253, 253, 253, 0.00) 51.92%, var(--Background, #FDFDFD) 100%)',
+          }}>
             {/* Research Themes Subsection */}
             <h2 className="new-section-heading">
               What We're Investigating
@@ -237,11 +241,48 @@ export default function Home() {
 
       </section>
 
+      <section id="open-source ">
+        <div className="lg:px-20 lg:py-15 ">
+          {/* Research Themes Subsection */}
+          <h2 className="new-section-heading">
+            Tools We've Built
+          </h2>
+          <p className="mt-2 text-[16px] w-[530px] font-inter leading-[150%] text-[#121212]">
+            We build and share the tools we use to investigate internet censorship so others can replicate, extend, and build on our work.
+          </p>
+          <div
+            className={`mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5`}
+          >
+            {/* map each research area to researcharea component */}
+            {homeData.tools.slice(0, 3).map((tool, idx) => (
+              <ToolCard
+                key={idx}
+                url={`https://github.com/CensoredPlanet/${tool.repo}`}
+                name={tool.name}
+                description={tool.tagline}
+              />
+            ))}
+          </div>
+
+          <div className='mt-6 text-right'>
+          <Link
+                to="/tools"
+                className="border border-black text-black text-[16px] font-medium  font-[Inter] py-2 px-6"
+              >
+                See All Tools
+              </Link>
+          </div>
+
+        </div>
+      </section>
+
 
       <section id="selected-publications">
-        <div className='page-container pt-6 pb-10' >
-          <h2 className="heading-primary">Selected Publications</h2>
-          <div className="space-y-4">
+        <div className='lg:px-20 lg:py-15 0' >
+          <h2 className="new-section-heading">
+            Our Published Research
+          </h2>
+          <div className="mt-6">
             {Object.entries(selected_publications).sort((a, b) => b[0] - a[0]).map(([year, pubs]) => (
               <ul key={year}>
                 {pubs.map((pub, idx) => <PublicationItem key={idx} pub={pub} />)}
@@ -254,25 +295,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="open-source ">
-        <div className="page-container pt-6 pb-10 ">
-          <h2 className="heading-primary">Open-Source Projects</h2>
-          <div
-            className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8`}
-          >
-            {/* map each research area to researcharea component */}
-            {homeData.tools.map((tool, idx) => (
-              <ToolCard
-                key={idx}
-                url={`https://github.com/CensoredPlanet/${tool.repo}`}
-                name={tool.name}
-                description={tool.tagline}
-              />
-            ))}
-          </div>
 
-        </div>
-      </section>
 
       <section id="talks">
         <div className="page-container pt-6 pb-10">
