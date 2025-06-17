@@ -153,19 +153,18 @@ export default function Home() {
               <p>
                 Our research lies at the intersection of <strong>Networking</strong>, <strong>Security & Privacy</strong>, and <strong>Internet Measurements</strong>. We take a data-driven approach to detect and defend against powerful network intermediaries and government threat actors.
               </p>
-              <p>
-                Censored Planet has a track-record of perseverance, pragmatism, and broad collaboration—attributes that have helped us achieve positive impacts within the complex landscape of Internet Freedom research.
-
-              </p>
-              <p>We have won honors like <strong>Internet Defense Prize</strong> and multiple <strong>IRTF research awards</strong>.
+              <p>We have won honors the <strong>Internet Defense Prize</strong> and multiple <strong>IRTF research awards</strong>.
                 Additionaly, our collaboration with <span className='underline  text-[#28A199]'>
                   <Link to="https://www.consumerreports.org/" target="_blank" rel="noopener noreferrer" >
                     Consumer Reports
                   </Link></span> has been cited by members of Congress in urging the <em>Federal Trade Commission (FTC)</em> to regulate the VPN ecosystem.
               </p>
-              {/* <p>
-                  We design safe, scalable methods that don’t rely on in-country infrastructure, so our work can support journalists, researchers, and advocates working to hold those in power accountable.
-                </p> */}
+              <p>
+                Censored Planet has a track-record of perseverance, pragmatism, and broad collaboration—attributes that have helped us achieve positive impacts within the complex landscape of Internet Freedom research.
+
+              </p>
+             
+              
             </div>
           </div>
 
@@ -288,33 +287,23 @@ export default function Home() {
                 {pubs.map((pub, idx) => <PublicationItem key={idx} pub={pub} />)}
               </ul>
             ))}
-            <div className="text-center">
-              <Link to="/publications" className="text-[#2D4D63] hover:underline font-medium">View All Publications</Link>
-            </div>
+            
+
+          <div className='mt-6 text-right'>
+          <Link
+                to="/publications"
+                className="border border-black text-black text-[16px] font-medium  font-[Inter] py-2 px-6"
+              >
+                See All Publications
+              </Link>
+          </div>
           </div>
         </div>
       </section>
 
 
 
-      <section id="talks">
-        <div className="page-container pt-6 pb-10">
-          <h2 className="heading-primary">Recent Talks</h2>
-          <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6 mb-4">
-            {homeData.talks
-              .filter(talk => talk.link)
-              .slice(0, 3)
-              .map((talk, idx) => {
-                return (
-                  <VideoCard video={talk} key={idx} />
-                );
-              })}
-          </div>
-          <div className="text-center">
-            <Link to="/talks" className="text-[#2D4D63] hover:underline font-medium ">View All Talks</Link>
-          </div>
-        </div>
-      </section>
+      
 
     </main>
 
