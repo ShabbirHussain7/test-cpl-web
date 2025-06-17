@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-merriweather: "Merriweather", "sans-serif"; 
-  --font-inter: "Inter", "sans-serif"; 
+  --font-merriweather: "Merriweather", "sans-serif";
+  --font-inter: "Inter", "sans-serif";
   --font-ibm: "IBM Plex Serif", "sans-serif";
 
 }
@@ -24,9 +24,96 @@ section:not(.hero) {
 }
 
 
+.publication-card-internal-link {
+  color: var(--teal-teal-500, #17827B);
+
+  /* body/small/medium */
+  font-family: var(--Body, Inter);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  /* 19.5px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.publication-title {
+  color: var(--Text, #121212);
+  /* H6/regular */
+  font-family: var(--Header, Merriweather);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 24px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+}
+
+.publication-author-names {
+
+  color: var(--Text-dark-grey, #595959);
+  font-family: var(--Body, Inter);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 19.5px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+
+}
+
+.publication-award-badge {
+  color: var(--Yellow, #A06C28);
+  text-align: center;
+
+}
+
+.publication-tag {
+  display: flex;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background: var(--tertiary, #E4F7F6);
+}
+.small-text {
+  font-family: var(--Body, Inter);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 19.5px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+}
+
+.publication-conference-name {
+  color: var(--Text, #121212);
+
+/* body/small */
+font-family: var(--Body, Inter);
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 19.5px */
+letter-spacing: var(--spacing-spacing-non, 0px);
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+}
+
+
 .page-container {
   @apply max-w-screen-xl mx-auto px-8 sm:px-16;
 }
+
 .heading-primary {
   @apply text-3xl font-semibold mb-6 relative after:content-[''] after:block after:w-24 after:border-b-2 after:border-gray-600 after:mt-2;
 }
@@ -40,7 +127,7 @@ section:not(.hero) {
 }
 
 .heading-secondary {
-  @apply text-2xl font-semibold mb-2 relative ;
+  @apply text-2xl font-semibold mb-2 relative;
 }
 
 
@@ -51,6 +138,8 @@ section:not(.hero) {
 
 input:focus {
   /* use bright blue color for outline */
-  outline: 1px solid #3B82F6; /* Replace with your desired color */
-  border: none; /* Replace with your desired color */
+  outline: 1px solid #3B82F6;
+  /* Replace with your desired color */
+  border: none;
+  /* Replace with your desired color */
 }

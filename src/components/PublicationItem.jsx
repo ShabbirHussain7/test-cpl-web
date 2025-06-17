@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import TrophyIcon from '../../public/icons/trophy.svg';
 
 
 const abbreviateAuthors = (authorStr) => {
@@ -46,53 +47,61 @@ const PublicationItem = ({ pub, isAlternate }) => {
 
   return (
     // Two‑column grid: left = details, right = side‑column (awards top, toggles bottom)
-    <div className="grid md:grid-cols-[4fr_auto] gap-x-4 gap-y-2">
+    <div className="grid md:grid-cols-[4fr_auto]  my-2">
       {/* ───────── Left column ───────── */}
       <div className="">
         {/* Title */}
-       <p className="text-base font-semibold">{pub.name}</p>
-       
+        <p className="publication-title ">{pub.name}</p>
+
 
         {/* Authors + venue */}
-        <p className="text-sm text-gray-700">
-          {abbreviateAuthors(pub.authors)} |{" "}
-          <span className="underline">{pub.venue}</span>
+        <p className="mt-1">
+          <span className='publication-author-names '>
+            {abbreviateAuthors(pub.authors)}
+          </span>
         </p>
+
+        <div className="mt-1 flex flex-wrap items-center gap-4">
+        <span className='publication-tag text-[#595959] small-text '>{pub.area}</span>
+        <span className="publication-conference-name">{pub.venue}</span>
+        
+
+        </div>
 
         {/* Media row (Talk / Slides / Press) */}
         {(
-          <div className="flex flex-wrap items-center gap-1 text-sm">
+          <div className="mt-1 flex flex-wrap items-center gap-2 text-sm">
             {pub.pdf && (
               <>
-              <Link
-                to={`/${pub.pdf}`}
-                className="text-blue-700 underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                PDF
-              </Link>
-              {pub.talk || pub.slides || pub.press ? <span>|</span> : null}
+                <Link
+                  to={`/${pub.pdf}`}
+                  className="publication-card-internal-link "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  PDF
+                </Link>
+                {pub.talk || pub.slides || pub.press ? (<div className="w-[1px] h-[20px] bg-[#28A199]"></div>) : null}
               </>
             )}
             {pub.talk && (
               <>
                 <Link
                   to={pub.talk}
-                  className="text-blue-700 underline"
+                  className="publication-card-internal-link "
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Talk
                 </Link>
-                {pub.slides && (<span>|</span>)}
+                {pub.slides && (<div className="w-[1px] h-[20px] bg-[#28A199]"></div>)}
               </>
             )}
             {pub.slides && (
               <>
                 <Link
                   to={`/${pub.slides}`}
-                  className="text-blue-700 underline"
+                  className="publication-card-internal-link "
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -101,15 +110,15 @@ const PublicationItem = ({ pub, isAlternate }) => {
               </>
             )}
             {pub.press && pub.press.length > 0 && (
-              <div className="flex flex-wrap items-center gap-1">
-                {pub.talk || pub.slides ? <span>|</span> : null}
-                <span className="font-semibold underline">Press:</span>
+              <div className="flex flex-wrap items-center gap-3">
+                {pub.talk || pub.slides ? (<div className="w-[1px] h-[20px] bg-[#28A199]"></div>) : null}
+                <span className="small-text text-[#595959] ">Press:</span>
                 {(showAllPress ? pub.press : pub.press.slice(0, MAX_VISIBLE_PRESS)).map(
                   (press_item, index) => (
                     <Link
                       key={index}
                       to={press_item.link}
-                      className="px-2 py-0.5 bg-gray-200 text-xs text-black rounded hover:bg-gray-300"
+                      className='small-text text-[#595959] underline'
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -117,7 +126,7 @@ const PublicationItem = ({ pub, isAlternate }) => {
                     </Link>
                   )
                 )}
-       
+
                 {pub.press.length > MAX_VISIBLE_PRESS && !showAllPress && (
                   <button
                     className="ml-2 text-sm text-blue-700 underline"
@@ -140,21 +149,27 @@ const PublicationItem = ({ pub, isAlternate }) => {
         )}
       </div>
 
+
+
       {/* ───────── Right column ───────── */}
       <div className="min-w-[220px] flex flex-col text-right">
         {/* Awards (top of the column) */}
         {pub.awards && pub.awards.length > 0 && (
           <div className="">
             {pub.awards.map((award, index) => (
-              <div key={index} className="text-yellow-700 font-semibold text-sm">
-                🏆 {award}
+              <div key={index} className='flex gap-2 justify-end' >
+                <img
+                  src={TrophyIcon}
+                  alt="Trophy background"
+
+                /> <span className='text-[#A06C28] small-text'>{award}</span>
               </div>
             ))}
           </div>
         )}
 
         {/* Abstract / BibTeX toggles (bottom of the column) */}
-        <div className="flex gap-1 text-sm mt-auto justify-end">
+        <div className="flex gap-1 small-text text-[#595959] text-sm mt-auto justify-end">
           <button onClick={() => toggleSection("abstract")} className="hover:underline">
             Abstract
           </button>
