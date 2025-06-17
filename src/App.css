@@ -7,6 +7,10 @@
 
 }
 
+.new-section-heading {
+  @apply lg:text-[49px] text-[#121212] leading-[120%] font-merriweather
+}
+
 .App {
   min-height: 100vh;
   display: flex;
@@ -14,13 +18,12 @@
   @apply bg-gray-50 text-gray-900 font-sans;
 }
 
-section:nth-of-type(odd) {
-  @apply bg-gray-50; /* bg-gray-50 */
+section:not(.hero) {
+  border-bottom: 1px solid var(--divider, #888);
+  background: var(--Background, #FDFDFD);
 }
 
-section:nth-of-type(even) {
-  @apply bg-gray-200/60; /* bg-white */
-}
+
 .page-container {
   @apply max-w-screen-xl mx-auto px-8 sm:px-16;
 }

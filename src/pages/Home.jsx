@@ -6,14 +6,35 @@ import ResearchArea from '../components/ResearchArea';
 import VideoCard from '../components/VideoCard';
 import ToolCard from '../components/ToolCard';
 import homeData from "../data/home.json";
+// Import icons for research areas (
+
+import GlobeIcon from '../../public/icons/research/GlobeIcon.svg';
+import ShieldIcon from '../../public/icons/research/ShieldIcon.svg';
+import NetworkIcon from '../../public/icons/research/NetworkIcon.svg';
+import DatabaseIcon from '../../public/icons/research/DatabaseIcon.svg';
+import FingerprintIcon from '../../public/icons/research/FingerprintIcon.svg';
+import LockIcon from '../../public/icons/research/LockIcon.svg';
+
+
+
 import { ChevronLeft } from 'lucide-react';
 import { ChevronRight } from 'lucide-react';
 import newsData from "../data/press_mentions.json";
 import HeroBg from '../../public/background/hero-bg.svg';
+import ResearchBg from '../../public/background/research-theme-bg.svg';
+import ResearchBg1 from '../../public/background/research-theme-bg1.svg';
 
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const iconMap = {
+    GlobeIcon,
+    ShieldIcon,
+    NetworkIcon,
+    DatabaseIcon,
+    FingerprintIcon,
+    LockIcon
+  };
 
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
@@ -46,22 +67,22 @@ export default function Home() {
 
 
     <main className=''>
-      <section id="hero" className='h-[689px]' >
+
+      {/* HERO SECTION */}
+      <section id="hero" className='hero relative'>
 
         {/* BACKGROUND IMAGE */}
-        <div className='justify-end flex'>
+        <div className='justify-end flex block -z-10'>
           <img
             src={HeroBg}
             alt="Hero background"
             className="w-[70%]"
-          
           />
-
         </div>
 
         {/* Hero Text & Buttons */}
         <div className="absolute lg:top-[206px] top-[70px] lg:px-20 px-10 lg:w-[815px] sm:top-[30px]">
-       
+
           <div className="flex flex-col lg:gap-6 gap-3">
             <h1 className="lg:text-[61px] text-[20px] font-bold font-merriweather leading-[120%] text-[#121212] ">
               Censored Planet
@@ -87,10 +108,10 @@ export default function Home() {
         </div>
 
         {/* NEWS BAR */}
-        <div className="w-full bg-[#F2FAFB]">
+        <div className="-mt-[2px] w-full bg-[#E4F7F6] border border-[#888] text-black relative z-20">
           <div
             className="flex items-center justify-between mx-auto px-20 py-2">
-            <Link to='/news' className="text-[#28A199] text-[14px] font-medium whitespace-nowrap pr-4 hover:underline">
+            <Link to='/news' className="text-[#17827b] text-[14px] font-medium whitespace-nowrap pr-4 hover:underline">
               Latest News
             </Link>
 
@@ -105,7 +126,7 @@ export default function Home() {
                   to={currentNews.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#28A199] underline "
+                  className=" underline "
                 >
                   {currentNews.title}
                 </Link>
@@ -121,132 +142,157 @@ export default function Home() {
 
       </section>
 
-      <div id="" >
+      {/* WHAT WE DO */}
+      <section id="what-we-do" className="lg:px-20 lg:py-25">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12">
+          <div className='w-[540px] '>
+            <h2 className="new-section-heading">
+              What We Do
+            </h2>
+            <div className="mt-4 font-inter lg:text-[16px] text-[#121212] leading-[150%] space-y-6">
+              <p>
+                Our research lies at the intersection of <strong>Networking</strong>, <strong>Security & Privacy</strong>, and <strong>Internet Measurements</strong>. We take a data-driven approach to detect and defend against powerful network intermediaries and government threat actors.
+              </p>
+              <p>
+                Censored Planet has a track-record of perseverance, pragmatism, and broad collaboration—attributes that have helped us achieve positive impacts within the complex landscape of Internet Freedom research.
 
-        {/* Insert just above <section id="us-and-updates"> */}
-
-        {/* About Us and Latest at the Lab side-by-side section */}
-        <section id="what-we-do" className="lg:px-20 lg:py-25">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12">
-            {/* About Us */}
-            <div className='w-[540px] '>
-              <h2 className="lg:text-[49px] text-[#121212] leading-[120%] font-merriweather">
-                What We Do
-              </h2>
-              <div className="mt-4 font-inter lg:text-[16px] text-[#121212] leading-[150%] space-y-6">
-                <p>
-                  Our research lies at the intersection of <strong>Networking</strong>, <strong>Security & Privacy</strong>, and <strong>Internet Measurements</strong>. We take a data-driven approach to detect and defend against powerful network intermediaries and government threat actors.
-                </p>
-                <p>
-                  Censored Planet has a track-record of perseverance, pragmatism, and broad collaboration—attributes that have helped us achieve positive impacts within the complex landscape of Internet Freedom research. 
-                  
-                </p>
-                <p>We have won honors like <strong>Internet Defense Prize</strong> and multiple <strong>IRTF research awards</strong>. 
-                  Additionaly, our collaboration with <span className='underline  text-[#28A199]'>
-                    <Link to="https://www.consumerreports.org/" target="_blank" rel="noopener noreferrer" >
+              </p>
+              <p>We have won honors like <strong>Internet Defense Prize</strong> and multiple <strong>IRTF research awards</strong>.
+                Additionaly, our collaboration with <span className='underline  text-[#28A199]'>
+                  <Link to="https://www.consumerreports.org/" target="_blank" rel="noopener noreferrer" >
                     Consumer Reports
-                  </Link></span> has been cited by members of Congress in urging the <em>Federal Trade Commission (FTC)</em> to regulate the VPN ecosystem. 
-                </p>
-                {/* <p>
+                  </Link></span> has been cited by members of Congress in urging the <em>Federal Trade Commission (FTC)</em> to regulate the VPN ecosystem.
+              </p>
+              {/* <p>
                   We design safe, scalable methods that don’t rely on in-country infrastructure, so our work can support journalists, researchers, and advocates working to hold those in power accountable.
                 </p> */}
-              </div>
-            </div>
-
-            {/* Metrics Grid */}
-            <div className="w-[630px] grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">{
-              
-              homeData.metrics.map((metric, idx) => (
-                <div key={idx} className="flex flex-col items-start">
-                  <h3 className="font-ibm text-[16px] text-[#121212]">
-                    {metric.title}
-                  </h3>
-                  <div className="flex items-baseline">
-                    <span className="text-[49px] font-merriweather leading-[120%]">{metric.number}</span>
-                    { metric.unit && <span className="text-[23px] font-merriweather ml-1 leading-[120%]">{metric.unit}</span>}
-                  </div>
-                  <p className="font-inter text-[16px] leading-[150%]">
-                    {metric.description}
-                  </p>
-                </div>
-              ))}
-    
             </div>
           </div>
-        </section>
+
+          {/* Metrics Grid */}
+          <div className="w-[630px] grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">{
+
+            homeData.metrics.map((metric, idx) => (
+              <div key={idx} className="flex flex-col items-start">
+                <h3 className="font-ibm text-[16px] text-[#121212]">
+                  {metric.title}
+                </h3>
+                <div className="flex items-baseline">
+                  <span className="text-[49px] font-merriweather leading-[120%]">{metric.number}</span>
+                  {metric.unit && <span className="text-[23px] font-merriweather ml-1 leading-[120%]">{metric.unit}</span>}
+                </div>
+                <p className="font-inter text-[16px] leading-[150%]">
+                  {metric.description}
+                </p>
+              </div>
+            ))}
+
+          </div>
+        </div>
+      </section>
 
 
-        <section id="research-themes" className="">
-          <div className='page-container pt-6 pb-10'>
+      <section id="research-themes" className="relative">
+        {/* Background SVG */}
+        <div className='relative overflow-hidden z-0'>
+          <img
+            src={ResearchBg}
+            alt="Hero background"
+            className=" absolute right-[0px] h-[1095px] -top-[2px] transform  z-[-1]"
+          />
+
+          <img
+            src={ResearchBg1}
+            alt="Hero background"
+            className="shrink-0 absolute -bottom-[340px] left-[0px] h-[1095px]  z-[-1]"
+          />
+
+
+          <div className='lg:px-20 lg:py-25 relative z-10'  style={{
+    background: 'linear-gradient(180deg, #FDFDFD 0%, rgba(253, 253, 253, 0.00) 51.92%, var(--Background, #FDFDFD) 100%)',
+  }}>
             {/* Research Themes Subsection */}
-
-            <h2 className="heading-primary">Research Areas</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-8 ">
+            <h2 className="new-section-heading">
+              What We're Investigating
+            </h2>
+            <p className="mt-2 text-[16px] w-[530px] font-inter leading-[150%] text-[#121212]">
+              The internet is changing fast. We're investigating censorship systems to shed light on how they operate and who they affect
+            </p>
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
               {/* map each research area to researcharea component */}
               {homeData.research.map((area, idx) => (
-                <ResearchArea key={idx} url={`research/${area.url}`} name={area.name} description={area.description} color={area.color} />
-              ))}
-            </div>
-          </div>
-
-        </section>
-
-
-        <section id="selected-publications">
-          <div className='page-container pt-6 pb-10' >
-            <h2 className="heading-primary">Selected Publications</h2>
-            <div className="space-y-4">
-              {Object.entries(selected_publications).sort((a, b) => b[0] - a[0]).map(([year, pubs]) => (
-                <ul key={year}>
-                  {pubs.map((pub, idx) => <PublicationItem key={idx} pub={pub} />)}
-                </ul>
-              ))}
-              <div className="text-center">
-                <Link to="/publications" className="text-[#2D4D63] hover:underline font-medium">View All Publications</Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="open-source ">
-          <div className="page-container pt-6 pb-10 ">
-            <h2 className="heading-primary">Open-Source Projects</h2>
-            <div
-              className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8`}
-            >
-              {/* map each research area to researcharea component */}
-              {homeData.tools.map((tool, idx) => (
-                <ToolCard
+                <ResearchArea
                   key={idx}
-                  url={`https://github.com/CensoredPlanet/${tool.repo}`}
-                  name={tool.name}
-                  description={tool.tagline}
+                  url={`research/${area.url}`}
+                  icon={iconMap[area.icon]}
+                  label={area.label}
+                  name={area.name}
+                  description={area.description}
+
                 />
               ))}
             </div>
-
           </div>
-        </section>
+        </div>
 
-        <section id="talks">
-          <div className="page-container pt-6 pb-10">
-            <h2 className="heading-primary">Recent Talks</h2>
-            <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6 mb-4">
-              {homeData.talks
-                .filter(talk => talk.link)
-                .slice(0, 3)
-                .map((talk, idx) => {
-                  return (
-                    <VideoCard video={talk} key={idx} />
-                  );
-                })}
-            </div>
+      </section>
+
+
+      <section id="selected-publications">
+        <div className='page-container pt-6 pb-10' >
+          <h2 className="heading-primary">Selected Publications</h2>
+          <div className="space-y-4">
+            {Object.entries(selected_publications).sort((a, b) => b[0] - a[0]).map(([year, pubs]) => (
+              <ul key={year}>
+                {pubs.map((pub, idx) => <PublicationItem key={idx} pub={pub} />)}
+              </ul>
+            ))}
             <div className="text-center">
-              <Link to="/talks" className="text-[#2D4D63] hover:underline font-medium ">View All Talks</Link>
+              <Link to="/publications" className="text-[#2D4D63] hover:underline font-medium">View All Publications</Link>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      <section id="open-source ">
+        <div className="page-container pt-6 pb-10 ">
+          <h2 className="heading-primary">Open-Source Projects</h2>
+          <div
+            className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8`}
+          >
+            {/* map each research area to researcharea component */}
+            {homeData.tools.map((tool, idx) => (
+              <ToolCard
+                key={idx}
+                url={`https://github.com/CensoredPlanet/${tool.repo}`}
+                name={tool.name}
+                description={tool.tagline}
+              />
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      <section id="talks">
+        <div className="page-container pt-6 pb-10">
+          <h2 className="heading-primary">Recent Talks</h2>
+          <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6 mb-4">
+            {homeData.talks
+              .filter(talk => talk.link)
+              .slice(0, 3)
+              .map((talk, idx) => {
+                return (
+                  <VideoCard video={talk} key={idx} />
+                );
+              })}
+          </div>
+          <div className="text-center">
+            <Link to="/talks" className="text-[#2D4D63] hover:underline font-medium ">View All Talks</Link>
+          </div>
+        </div>
+      </section>
+
     </main>
 
   );

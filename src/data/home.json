@@ -33,45 +33,50 @@
         "url": "censorship-detection",
         "name": "Monitoring Censorship at Global Scale",
         "short-name": "Monitoring Censorship",
-        "description": "We monitor network interference and disruptions globally to identify and understand censorship trends across countries.",
-        "color": "#17827B"
+        "icon": "GlobeIcon",
+        "description": "Developing scalable and remote measurement techniques to monitor network interference and understand censorship trends across countries.",
+        "label": "Censorsed Planet Observatory"
     },
     {
         "url": "rapid-response",
         "name": "Exposing Emerging Threats",
         "short-name": "Emerging Threats",
-        "description": "We investigate new and evolving techniques used to suppress access to information and restrict online freedom.",
-        "color": "#0083c5"
-    
+        "icon": "ShieldIcon",
+        "description": "Investigating new and evolving techniques used to suppress access to information, restrict online freedom, and other security and privacy threats."
+       
     },
     {
         "url": "splintering-net",
         "name": "Characterizing Internet Splintering",
         "short-name": "Internet Splintering",
-        "description": "We study the fragmentation of the global Internet and how nation-level policies impact access and connectivity.",
-        "color": "#9A042B"
-    
+        "icon": "NetworkIcon",
+        "description": "Studying the fragmentation of the Internet and how the features of a users connection affect their experience onlie, what is causing this differentiation, and what can be done about it.",
+        "label": "Splintering.Net"
     },
     {
         "url": "dpis",
         "name": "Evaluating Middlebox Deployments",
         "short-name": "Evaluating Middleboxes",
-        "description": "We study the deployment and behavior of network middleboxes to assess their role in censorship and surveillance.",
-        "color": "#5A4E3C"
+        "icon": "DatabaseIcon",
+        "description": "Assessing the deployment and behavior of network middleboxes to understand their role in censorship and surveillance."
+       
     },
     {
         "url": "obfuscation",
         "name": "Advancing Traffic Obfuscation",
         "short-name": "Traffic Obfuscation",
-        "description": "We develop novel obfuscation methods to evade censorship and ensure secure, anonymous communication online.",
-        "color": "#9a7400"
+        "icon": "FingerprintIcon",
+        "description": "Exposing vulnerabilities in exisitng obfuscation methods and developing novel techniques to evade censorship and ensure secure, anonymous communication online."
+        
     },
     {
         "url": "securing-pets",
         "name": "Securing VPN and Circumvention Tools",
         "short-name": "VPNs & Circumvention Tools",
-        "description": "We assess VPNs and circumvention tools for reliability and security, and help improve their resistance to blocking.",
-        "color": "#4D4DD1"
+        "icon": "LockIcon",
+        "description": "Investigating security of VPNs and circumvention tools, revealing systemic flaws and user misconceptions while guiding resilient design approaches.",
+        "label": "VPNalyzer"
+       
     }
   ],
   

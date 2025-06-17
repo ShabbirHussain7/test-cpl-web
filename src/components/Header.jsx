@@ -15,6 +15,7 @@ export default function Header() {
     { label: 'Tools', to: '/tools' },
     { label: 'Media', to: '/media', subItems: [
       { label: 'News', to: '/news' },
+      { label: 'Talks', to: '/talks' },
       { label: 'Lab Updates', to: '/updates' },
     ] },
   ];
@@ -76,12 +77,12 @@ export default function Header() {
                 >
                   {item.label}
                 </Link>
-                                {/* Dropdown for subItems */}
+              {/* Dropdown for subItems */}
                 {item.subItems && item.subItems.length > 0 && (
                   <ul
-                    className={`absolute top-full bg-white shadow-lg rounded-md z-10 ${
-                      item.subItems.length < 3 ? 'w-25' : 'w-45'
-                    } hidden group-hover:block`}
+                    className={`absolute top-full bg-white shadow-lg z-10 ${
+                      item.subItems.length <= 3 ? 'w-35' : 'w-70'
+                    }  hidden group-hover:block`}
                   >
                     {item.subItems.map((subItem) => (
                       <li key={subItem.label} className="px-6 py-2 hover:bg-gray-100">
