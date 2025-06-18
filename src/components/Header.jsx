@@ -73,7 +73,7 @@ export default function Header() {
               >
                 <Link
                   to={item.to}
-                  className="text-[#121212] text-center font-inter"
+                  className="header-button"
                 >
                   {item.label}
                 </Link>
@@ -104,13 +104,7 @@ export default function Header() {
               <Link
                 to="/join"
                 className="
-                  font-inter
-                  inline-block
-                  bg-black
-                  text-white
-                  text-sm
-                  py-2
-                  px-6
+                  primary-button 
                   hover:opacity-90
                   transition-opacity
                 "

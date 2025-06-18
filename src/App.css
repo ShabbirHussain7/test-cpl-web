@@ -23,6 +23,64 @@ section:not(.hero) {
   background: var(--Background, #FDFDFD);
 }
 
+.primary-button {
+  display: flex;
+  height: 40px;
+  padding: 8px 24px;
+  align-items: center;
+  gap: 8px;
+}
+
+.primary-button {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  
+  line-height: 150%; /* 24px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+  color: #fdfdfd; /* Text color */
+  background-color: #121212; /* Background color */
+  padding: 8px 24px; /* 8px vertical, 24px horizontal */
+  display: inline-block; /* Prevents full-width behavior */
+}
+
+
+.secondary-button {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  
+  line-height: 150%; /* 24px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+  color: #121212; /* Text color */
+  background-color: #fdfdfd; /* Background color */
+  padding: 8px 24px; /* 8px vertical, 24px horizontal */
+  display: inline-block; /* Prevents full-width behavior */
+  border: 1px solid #888; /* Added border */
+}
+
+.header-button {
+  color: var(--Text, #121212);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+ 
+  line-height: 120%; /* 21.6px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+  padding: 0px 8px;
+}
+
+.header-submenu-button {
+  color: var(--Text, #121212);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  
+  line-height: 150%; /* 21.6px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+  
+}
 
 .publication-card-internal-link {
   color: var(--teal-teal-500, #17827B);

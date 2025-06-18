@@ -23,6 +23,7 @@ import newsData from "../data/press_mentions.json";
 import HeroBg from '../../public/background/hero-bg.svg';
 import ResearchBg from '../../public/background/research-theme-bg.svg';
 import ResearchBg1 from '../../public/background/research-theme-bg1.svg';
+import HomeEnd from '../../public/background/home-end.svg';
 
 
 export default function Home() {
@@ -93,13 +94,13 @@ export default function Home() {
             <div className="flex space-x-4">
               <Link
                 to="/publications"
-                className="bg-black text-white text-[16px] font-medium  font-[Inter] h-[40px] px-6 flex items-center justify-center"
+                className="primary-button"
               >
                 Publications
               </Link>
               <Link
                 to="/people"
-                className="border border-black text-black text-[16px] font-medium  font-[Inter] h-[40px] px-6 flex items-center justify-center"
+                className="secondary-button "
               >
                 About
               </Link>
@@ -163,8 +164,8 @@ export default function Home() {
                 Censored Planet has a track-record of perseverance, pragmatism, and broad collaboration—attributes that have helped us achieve positive impacts within the complex landscape of Internet Freedom research.
 
               </p>
-             
-              
+
+
             </div>
           </div>
 
@@ -264,17 +265,17 @@ export default function Home() {
           </div>
 
           <div className='mt-6 text-right'>
-          <Link
-                to="/tools"
-                className="border border-black text-black text-[16px] font-medium  font-[Inter] py-2 px-6"
-              >
-                See All Tools
-              </Link>
+            <Link
+              to="/tools"
+              className="border border-black text-black text-[16px] font-medium  font-[Inter] py-2 px-6"
+            >
+              See All Tools
+            </Link>
           </div>
 
         </div>
       </section>
-{/* 
+      {/* 
 
       <table className="w-full border-gray-400">
           <thead className="text-[#2D4D63]">
@@ -314,7 +315,7 @@ export default function Home() {
             Our Distinguished Publications
           </h2>
           <div className="mt-6 ">
-                        <table className="w-full">
+            <table className="w-full">
               <tbody>
                 {Object.entries(selected_publications)
                   .sort((a, b) => b[0] - a[0])
@@ -332,23 +333,62 @@ export default function Home() {
                   )}
               </tbody>
             </table>
-            
 
-          <div className='mt-6 text-right'>
-          <Link
+
+            <div className='mt-6 text-right'>
+              <Link
                 to="/publications"
                 className="border border-black text-black text-[16px] font-medium  font-[Inter] py-2 px-6"
               >
                 See All Publications
               </Link>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section id="research-themes" className="relative">
+
+        <div
+          className='relative overflow-hidden z-0'
+          
+        >
+
+          {/* BACKGROUND IMGS */}
+          <div>
+            <img
+              src={HomeEnd}
+              alt="Home end background"
+              className=" absolute right-[0px] -top-[2px] transform  z-[-1]"
+            />
+
+          </div>
+
+          <div className='lg:px-20 lg:pt-15 lg:pb-40 ' style={{
+            background: 'linear-gradient(180deg, var(--Background, #FDFDFD) 0%, rgba(253, 253, 253, 0.00) 57.28%)',
+          }}>
+            <h2 className="new-section-heading">
+              Join Our Team
+            </h2>
+            <p className="mt-2 text-[16px] w-[530px] font-inter leading-[150%] text-[#121212]">
+              We’re always looking for curious, motivated people to work with us.
+              Whether you’re a student, researcher, developer, or just interested in the space, we’d love to hear from you.
+            </p>
+            <div className='mt-4 text-left'>
+              <Link
+                to="/join"
+                className="primary-button"
+              >
+                Contact
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
 
 
-      
+
 
     </main>
 
