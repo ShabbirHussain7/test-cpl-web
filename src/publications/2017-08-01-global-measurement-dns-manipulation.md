@@ -1,5 +1,5 @@
 ---
-area: ""
+area: "Monitoring Censorship at Global Scale"
 date: 2017-08-01
 publisher: "USENIX Security"
 name: Global Measurement of DNS Manipulation

@@ -1,5 +1,5 @@
 ---
-area: ""
+area: "Other"
 date: 2019-05-01                            # ⚠️ needs date
 publisher: WWW 2019
 name: "The Chain of Implicit Trust: An Analysis of the Web Third‑party Resources Loading"
