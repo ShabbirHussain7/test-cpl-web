@@ -4,6 +4,8 @@ import { useState } from 'react';
 import GithubIcon from "../../public/icons/github.svg?react";
 import TwitterIcon from "../../public/icons/x.svg?react";
 import { Link } from "react-router-dom";
+import Logo from '../../public/icons/new-cp-white.svg';
+
 
 const Footer = () => {
   const [copied, setCopied] = useState(false);
@@ -14,75 +16,65 @@ const Footer = () => {
     setTimeout(() => setCopied(false), 1500);
   };
   return (
-    <footer className="bg-[#2D4D63] text-white pt-10 mt-auto sm:pb-4">
-      <div className="max-w-screen-xl sm:px-16 px-8 mx-auto ">
-        {/* Top Section */}
-        <div className="flex items-start">
-          {/* Left Side */}
-          <div className="sm:w-[26%] w-[50%] sm:pr-6 text-left">
-            <p className="mb-2 text-lg">
-              Questions?{" "}
-              <button
-                onClick={handleCopy}
-                className="underline hover:text-gray-200 focus:outline-none"
-              >
-                {copied ? 'Email Copied!' : 'Email Us'}
-              </button>
-
-            </p>
-
-            {/* Address */}
-            <div className="text text-gray-300 mb-4 leading-5">
-              <p>4908 Bob and Betty Beyster Building</p>
-              <p>2260 Hayward St.,</p>
-              <p>Ann Arbor, MI 48109</p>
-            </div>
-
-            {/* Social Icons */}
-
-            <div className="flex justify-start space-x-4 mt-2 text-white">
-              <Link href="https://github.com/censoredplanet" target="_blank" rel="noopener noreferrer">
-                <GithubIcon className="w-6 h-6 " />
-
-              </Link>
-              <Link href="https://x.com/CensoredPlanet" target="_blank" rel="noopener noreferrer">
-                <TwitterIcon className="w-6 h-6" />
-              </Link>
-            </div>
+    <footer className="bg-[#121212] mt-auto text-[#FDFDFD] lg:px-20 lg:py-15">
+       <Link to="/">
+            <img src={Logo} alt="Censored Planet logo" className="h-[68px] " />
+          </Link>
+      <div className="mt-4 flex flex-col lg:flex-row justify-between gap-8 font-inter">
+        <div className="flex flex-col items-start gap-4">
+         
+          <div>
+            <h2 className="text-[24px] font-semibold">Do you have a question?</h2>
+            <p className="text-[20px] font-semibold">Get in touch</p>
           </div>
-
-          {/* Divider — FIXED with self-stretch */}
-          <div className="self-stretch w-[1px] bg-gray-400 mx-2 hidden sm:block" />
-
-          {/* Right Side */}
-          <div className="flex-1 pl-6 text-left  font-display">
-            <h2 className="text-2xl font-semibold">Censored Planet Observatory</h2>
-            <h2 className="text-xl mb-2">Legacy Dashboard</h2>
-            {/* <p className="text-md font-semibold mt-1 mb-2">Legacy Dashboard</p> */}
-            <p className="text-gray-300 text">
-              We developed this dashboard, in collaboration with{" "}
-              <span className="font-semibold text-white">Google Jigsaw</span>, for exploring processed Censored Planet data.
-            </p>
-            <div className="flex space-x-2 mt-4">
-              <button className="bg-[#A8EDE9] text-[#2D4D63] text-sm px-3 py-1 rounded hover:bg-[#a0dede]">
-                Dashboard
-              </button>
-              <button className="bg-[#A8EDE9] text-[#2D4D63] text-sm px-3 py-1 rounded hover:bg-[#a0dede]">
-                Documentation
-              </button>
-            </div>
+          <address className="not-italic text-[16px]">
+            4908 Bob and Betty Beyster Building<br />
+            2260 Hayward St.,<br />
+            Ann Arbor, MI 48109
+          </address>
+          <button onClick={handleCopy} className="underline text-[16px]">
+            {copied ? "Copied!" : "censoredplanet@umich.edu"}
+          </button>
+        </div>
+        <div className="grid grid-cols-2 gap-8">
+          <div className="flex flex-col gap-2">
+          
+            <Link to="/about" className="hover:underline">About</Link>
+            <Link to="/blog" className="hover:underline">Blog</Link>
+            <Link to="/publications" className="hover:underline">Publications</Link>
+            <Link to="/tools" className="hover:underline">Tools</Link>
+            <Link to="/news" className="hover:underline">Press</Link>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3 className="font-semibold">Observatory</h3>
+            
+            <Link to="/dashboard" className="pl-4 hover:underline">Dashboard</Link>
+            <Link to="/data" className="pl-4 hover:underline">Data</Link>
+            <Link to="/docs" className="pl-4 hover:underline">Documentations</Link>
+            
           </div>
         </div>
-
-        {/* Bottom Row */}
-        <div className="mt-10 border-t border-gray-500 pt-4 text-sm text-gray-300 flex justify-between">
-          <p>&copy; {new Date().getFullYear()} Censored Planet. All rights reserved.</p>
-          <Link to="/terms" className="hover:underline">
-            Terms of Service
-          </Link>
+        <div className="flex flex-col items-start gap-4">
+          <h3 className="font-semibold text-[18px]">Social media</h3>
+          <div className="flex gap-4">
+            <a href="https://twitter.com/CensoredPlanet" target="_blank" rel="noopener noreferrer">
+              <TwitterIcon className="w-6 h-6" />
+            </a>
+            <a href="https://github.com/CensoredPlanet" target="_blank" rel="noopener noreferrer">
+              <GithubIcon className="w-6 h-6" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="mt-8 border-t border-gray-700 pt-4">
+        <div className="max-w-7xl mx-auto flex justify-center items-center gap-4 text-[14px]">
+          <span>© 2025 Censored Planet</span>
+          <span className="inline-block border-l border-gray-700 h-4"></span>
+          <Link to="/terms" className="hover:underline">Terms of Service</Link>
         </div>
       </div>
     </footer>
+
   );
 };
 
