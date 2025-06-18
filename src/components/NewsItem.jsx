@@ -19,11 +19,11 @@ const NewsArticleRow = ({ article }) => {
   });
 
   return (
-    <div className="w-full py-1 border-b border-gray-200">
+    <div className="w-full py-1 border-b border-[#888] p-1">
       {/* Top row: Date and Language */}
-      <div className="flex justify-between text-xs text-gray-400">
+      <div className="flex small-text justify-between text-xs text-gray-400">
         <span>{displayDate}</span>
-        <span>{trimmedArticle.language}</span>
+        <span className='bg-[#E4F7F6] px-2 py-[2px]'>{trimmedArticle.language}</span>
       </div>
 
       {/* Bottom row: Title and Source */}
@@ -32,11 +32,11 @@ const NewsArticleRow = ({ article }) => {
           to={trimmedArticle.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm font-medium text-blue-900 hover:underline"
+          className="news-title hover:text-white text-[#121212]"
         >
           {trimmedArticle.title}
         </Link>
-        <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">
+        <span className="text-[#121212] small-text font-semibold">
           {trimmedArticle.source}
         </span>
       </div>

@@ -19,7 +19,8 @@ export default function Publications() {
         .filter(category => category !== 'Other') // Exclude "Other" initially
     ),
     'Other' // Append "Other" at the end
-  ]; const allYears = ['All', ...new Set(Object.keys(publications).sort((a, b) => b - a))];
+  ]; 
+  const allYears = ['All', ...new Set(Object.keys(publications).sort((a, b) => b - a))];
 
   return (
 
@@ -34,7 +35,7 @@ export default function Publications() {
       <div className='text-[#121212]'>
         <div className="mt-6 flex items-center space-x-4">
           <div className="flex items-center">
-            <label className="mr-2 font-medium">Filter by theme:</label>
+            <label className="mr-5 font-medium">Filter by theme:</label>
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
@@ -45,7 +46,7 @@ export default function Publications() {
             </select>
           </div>
           <div className="flex items-center">
-            <label className="mr-2 font-medium">Filter by year:</label>
+            <label className="mr-5 font-medium">Filter by year:</label>
             <select
               value={selectedYear}
               onChange={(e) => setSelectedYear(e.target.value)}

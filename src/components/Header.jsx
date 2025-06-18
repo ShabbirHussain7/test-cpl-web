@@ -10,7 +10,7 @@ export default function Header() {
       label: item['short-name'],
       to: `/research/${item.url}`
     })) },
-    { label: 'Blog', to: '/blog' },
+    { label: 'Blogs', to: '/blogs' },
     { label: 'Publications', to: '/publications' },
     { label: 'Tools', to: '/tools' },
     { label: 'Media', to: '/media', subItems: [

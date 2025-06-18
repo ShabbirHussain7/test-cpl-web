@@ -48,6 +48,7 @@ const PublicationItem = ({ pub, isAlternate }) => {
   return (
     // Two‑column grid: left = details, right = side‑column (awards top, toggles bottom)
     <div className="grid md:grid-cols-[4fr_auto] my-2 pl-3">
+      
       {/* ───────── Left column ───────── */}
       <div className="">
         {/* Title */}
@@ -152,7 +153,7 @@ const PublicationItem = ({ pub, isAlternate }) => {
 
 
       {/* ───────── Right column ───────── */}
-      <div className="min-w-[220px] flex flex-col text-right">
+      <div className="flex flex-col text-right">
         {/* Awards (top of the column) */}
         {pub.awards && pub.awards.length > 0 && (
           <div className="">
@@ -180,14 +181,17 @@ const PublicationItem = ({ pub, isAlternate }) => {
         </div>
       </div>
 
+     
+
       {/* ───────── Collapsible sections (span both columns) ───────── */}
+      
       {openSection === "abstract" && (
-        <p className="bg-gray-100 text-sm text-gray-800 p-2 border border-gray-300 rounded md:col-span-2">
+        <p className="mt-1 bg-gray-100 text-sm text-[#595959] p-2 border border-gray-300 rounded md:col-span-2">
           {pub.abstract}
         </p>
       )}
       {openSection === "bibtex" && (
-        <div className="relative bg-gray-100 text-xs border border-gray-300 rounded md:col-span-2">
+        <div className="mt-1 relative bg-gray-100 text-xs border border-gray-300 rounded md:col-span-2">
           <div className="absolute top-2 right-2 z-10">
             <button
               onClick={() => {
@@ -213,12 +217,13 @@ const PublicationItem = ({ pub, isAlternate }) => {
             </button>
           </div>
           <div className="overflow-auto max-h-64 p-2 pr-8">
-            <pre id={`bibtex-block-${pub.name}`} className="whitespace-pre-wrap">
+            <pre id={`bibtex-block-${pub.name}`} className="text-[#595959] whitespace-pre-wrap">
               <code>{formatBibtex(pub.bibtex)}</code>
             </pre>
           </div>
         </div>
       )}
+      
     </div>
   );
 }

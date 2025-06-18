@@ -930,4 +930,194 @@
     "title": "Online censorship in Saudi Arabia soared after Jamal Khashoggi\u2019s murder",
     "link": "https://www.technologyreview.com/s/612448/online-censorship-saudi-arabia-khashoggi/"
   }
+  ,
+  {
+    "language": "English",
+    "date": "08-Jul-24",
+    "source": "Internet Society Pulse",
+    "link": "https://pulse.internetsociety.org/blog/half-of-top-10-most-popular-vpns-are-vulnerable-to-port-shadow-interception-attack",
+    "title": "Half of Top 10 Most Popular VPNs Are Vulnerable to Port Shadow Interception Attack"
+  },
+  {
+    "language": "English",
+    "date": "16-Jul-24",
+    "source": "CSO Online",
+    "link": "https://www.csoonline.com/article/3476176/port-shadow-a-new-vpn-weakness.html",
+    "title": "Port Shadow: A New VPN Weakness"
+  },
+  {
+    "language": "English",
+    "date": "17-Jul-24",
+    "source": "PCMag",
+    "link": "https://www.pcmag.com/news/port-shadow-flaw-can-exploit-some-vpns-to-attack-users",
+    "title": "Port Shadow Flaw Can Exploit Some VPNs to Attack Users"
+  },
+  {
+    "language": "English",
+    "date": "07-Jul-24",
+    "source": "TorGuard Blog",
+    "link": "https://blog.torguard.net/unpacking-the-port-shadow-vpn-vulnerability/",
+    "title": "Unpacking the Port Shadow VPN Vulnerability"
+  },
+  {
+    "language": "English",
+    "date": "10-Jul-24",
+    "source": "hide.me Blog",
+    "link": "https://hide.me/en/blog/port-shadow-breaks-every-vpn-users-privacy/",
+    "title": "Port Shadow Breaks Every VPN User’s Privacy"
+  },
+  {
+    "language": "English",
+    "date": "12-Jul-24",
+    "source": "Stack Diary",
+    "link": "https://stackdiary.com/vpn-users-worldwide-vulnerable-to-port-shadow-attack/",
+    "title": "VPN Users Worldwide Vulnerable to Port Shadow Attack"
+  },
+  {
+    "language": "English",
+    "date": "15-Jul-24",
+    "source": "SecurityWeek",
+    "link": "https://www.securityweek.com/port-shadow-attack-allows-vpn-traffic-interception-redirection/",
+    "title": "Port Shadow Attack Allows VPN Traffic Interception & Redirection"
+  },
+  {
+    "language": "English",
+    "date": "18-Jul-24",
+    "source": "Cyber Insider",
+    "link": "https://cyberinsider.com/port-shadow-attack-still-impacts-multiple-popular-vpn-products-on-linux/",
+    "title": "Port Shadow Attack Still Impacts Multiple Popular VPN Products on Linux"
+  },
+  {
+    "language": "English",
+    "date": "22-Jun-24",
+    "source": "Mullvad VPN GitHub",
+    "link": "https://github.com/mullvad/mullvadvpn-app/issues/6482",
+    "title": "Issue #6482: Port Shadow exploitation discussion"
+  },
+  {
+    "language": "English",
+    "date": "20-Jul-24",
+    "source": "CyberPress",
+    "link": "https://cyberpress.org/new-vpn-port-shadow-vulnerabilities/",
+    "title": "New VPN Port Shadow Vulnerabilities"
+  },
+  {
+    "language": "English",
+    "date": "21-Jul-24",
+    "source": "SC World",
+    "link": "https://www.scworld.com/news/researchers-find-port-shadow-flaws-in-vpn-platforms",
+    "title": "Researchers Find Port Shadow Flaws in VPN Platforms"
+  },
+  {
+    "language": "English",
+    "date": "19-Jul-24",
+    "source": "Yahoo Tech",
+    "link": "https://tech.yahoo.com/vpn/articles/port-shadow-vpn-attacks-whos-134916748.html",
+    "title": "Port Shadow VPN Attacks: Who’s Vulnerable?"
+  },
+  {
+    "language": "English",
+    "date": "15-Jul-24",
+    "source": "SOS-VO",
+    "link": "https://www.sos-vo.org/news/port-shadow-attack-allows-vpn-traffic-interception-redirection",
+    "title": "Port Shadow Attack Allows VPN Traffic Interception & Redirection"
+  },
+  {
+    "language": "English",
+    "date": "05-Jul-24",
+    "source": "Reddit",
+    "link": "https://www.reddit.com/r/ProtonVPN/comments/1e5s43p/attacking_connection_tracking_frameworks_as_used/",
+    "title": "Attacking Connection Tracking Frameworks as Used by VPN"
+  },
+  {
+    "language": "English",
+    "date": "08-Jul-24",
+    "source": "LinkedIn",
+    "link": "https://www.linkedin.com/posts/sean-eyre-477460192_port-shadow-attack-allows-vpn-traffic-interception-activity-7221992403468001280-XyNT/",
+    "title": "Port Shadow Attack Allows VPN Traffic Interception & Redirection"
+  },
+  {
+    "language": "English",
+    "date": "09-Jul-24",
+    "source": "Security Online",
+    "link": "https://securityonline.info/new-research-exposes-vpn-vulnerability-port-shadow-attacks-undermine-user-privacy/",
+    "title": "New Research Exposes VPN Vulnerability: Port Shadow Attacks Undermine User Privacy"
+  },
+  {
+    "language": "English",
+    "date": "11-Jul-24",
+    "source": "AirVPN Forums",
+    "link": "https://airvpn.org/forums/topic/60593-port-shadow-attacks-fail-against-airvpn/",
+    "title": "Port Shadow Attacks Fail Against AirVPN"
+  },
+  {
+    "language": "English",
+    "date": "10-Jul-24",
+    "source": "LinkedIn",
+    "link": "https://www.linkedin.com/posts/freddymacho_connection-tracking-frameworks-activity-7223692502015315968-boiA/",
+    "title": "Connection Tracking Frameworks Vulnerabilities Highlighted"
+  },
+  {
+    "language": "English",
+    "date": "07-Jul-24",
+    "source": "X (formerly Twitter)",
+    "link": "https://x.com/Dinosn/status/1813770754120355940",
+    "title": "Port Shadow Attack Demonstration"
+  },
+  {
+    "language": "English",
+    "date": "14-Jul-24",
+    "source": "Cybersecurity News",
+    "link": "https://cybersecuritynews.com/vpn-port-shadow-traffic-interception/",
+    "title": "VPN Port Shadow Traffic Interception"
+  },
+  {
+    "language": "English",
+    "date": "21-Jul-24",
+    "source": "Malware.news",
+    "link": "https://malware.news/t/researchers-find-port-shadow-flaws-in-vpn-platforms/84322",
+    "title": "Researchers Find Port Shadow Flaws in VPN Platforms"
+  },
+  {
+    "language": "English",
+    "date": "13-Jul-24",
+    "source": "DesdeLinux Blog",
+    "link": "https://blog.desdelinux.net/en/port-shadow-an-attack-that-allows-intercepting-or-redirecting-encrypted-traffic-on-VPN-servers/",
+    "title": "Port Shadow: An Attack That Allows Intercepting or Redirecting Encrypted Traffic on VPN Servers"
+  },
+  {
+    "language": "English",
+    "date": "01-Jun-19",
+    "source": "GitHub",
+    "link": "https://github.com/d0rb/CVE-2021-3773",
+    "title": "CVE-2021-3773 Discussion Repository"
+  },
+  {
+    "language": "English",
+    "date": "17-Jul-24",
+    "source": "X (formerly Twitter)",
+    "link": "https://x.com/PCMag/status/1813721610152509700",
+    "title": "PCMag Highlights Port Shadow VPN Vulnerability"
+  },
+  {
+    "language": "English",
+    "date": "10-Jul-24",
+    "source": "X (formerly Twitter)",
+    "link": "https://x.com/citizenlab/status/1813304525496950786",
+    "title": "CitizenLab: New Findings on Port Shadow VPN Vulnerability"
+  },
+  {
+    "language": "English",
+    "date": "12-Jul-24",
+    "source": "TechNadu",
+    "link": "https://www.technadu.com/port-shadow-vpn-flaw-allows-hackers-to-spy-redirect-user-traffic/540473/",
+    "title": "Port Shadow VPN Flaw Allows Hackers to Spy & Redirect User Traffic"
+  },
+  {
+    "language": "Dutch",
+    "date": "14-Jul-24",
+    "source": "Security.nl",
+    "link": "https://www.security.nl/posting/850144/Vpn-gebruikers+wereldwijd+kwetsbaar+voor+port+shadow-aanval",
+    "title": "VPN-gebruikers wereldwijd kwetsbaar voor port shadow aanval"
+  }
 ]

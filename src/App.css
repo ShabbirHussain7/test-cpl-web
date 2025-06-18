@@ -185,6 +185,21 @@ text-underline-offset: auto;
 text-underline-position: from-font;
 }
 
+.news-title {
+  color: var(--Text, #121212);
+
+  /* H6/regular */
+  font-family: var(--Header, Merriweather);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+}
+.news-title:hover {
+  color: #28a199; /* Change text color on hover */
+}
+
 .small-text {
   font-family: var(--Body, Inter);
   font-size: 13px;

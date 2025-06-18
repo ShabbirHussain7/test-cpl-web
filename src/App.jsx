@@ -47,8 +47,8 @@ export default function App() {
         <Route path="/talks" element={<Talks />} />
         <Route path="/people" element={<People />} />
         <Route path="/research/:area" element={<Research />} />
-        <Route path="/reports" element={<AllReports />} />
-        <Route path="/reports/:report" element={<Report />} />
+        <Route path="/blogs" element={<AllReports />} />
+        <Route path="/blogs/:report" element={<Report />} />
         <Route path="/updates" element={<Updates />} />
         <Route path="/join" element={<JoinUs />} />
         <Route path="/terms" element={<Terms />} />
