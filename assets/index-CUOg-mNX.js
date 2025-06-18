@@ -639,7 +639,7 @@ abstract: "An increasing number of countries are passing laws that facilitate th
 pdf: https://dl.acm.org/doi/pdf/10.1145/2934872.2959081
 
 ---`,__vite_glob_0_13=`---
-area: ""
+area: "Other"
 date: 2017-03-01
 publisher: "ACM Internet Measurement Conference (IMC)"
 name: "A Look at Router Geolocation in Public and Commercial Databases"
@@ -691,7 +691,7 @@ abstract:
     "Anecdotes, news reports, and policy briefings collectively suggest that Internet censorship practices are pervasive. The scale and diversity of Internet censorship practices makes it difficult to precisely monitor where, when, and how censorship occurs, as well as what is censored. The potential risks in performing the measurements make this problem even more challenging. As a result, many accounts of censorship begin-and end-with anecdotes or short-term studies from only a handful of vantage points. We seek to instead continuously monitor information about Internet reachability, to capture the onset or termination of censorship across regions and ISPs. To achieve this goal, we introduce Augur, a method and accompanying system that utilizes TCP/IP side channels to measure reachability between two Internet locations without directly controlling a measurement vantage point at either location. Using these side channels, coupled with techniques to ensure safety by not implicating individual users, we develop scalable, statistically robust methods to infer network-layer filtering, and implement a corresponding system capable of performing continuous monitoring of global censorship. We validate our measurements of Internet-wide disruption in nearly 180 countries over 17 days against sites known to be frequently blocked, we also identify the countries where connectivity disruption is most prevalent."
 ---
 `,__vite_glob_0_15=`---
-area: ""
+area: "Monitoring Censorship at Global Scale"
 date: 2017-08-01
 publisher: "USENIX Security"
 name: Global Measurement of DNS Manipulation
@@ -832,7 +832,7 @@ abstract:
   We find that geoblocking occurs across a broad set of countries and sites. We observe geoblocking in nearly all countries we study, with Iran, Syria, Sudan, Cuba, and Russia experiencing the highest rates. These countries experience particularly high rates of geoblocking for finance and banking sites, likely as a result of U.S. economic sanctions. We also verify our measurements with data provided by Cloudflare, and find our observations to be accurate."
 ---
 `,__vite_glob_0_20=`---
-area: ""
+area: "Other"
 date: 2019-05-01                            # ⚠️ needs date
 publisher: WWW 2019
 name: "The Chain of Implicit Trust: An Analysis of the Web Third‑party Resources Loading"
@@ -973,7 +973,7 @@ abstract:
     "Transnational Internet performance is an important indication of a country's level of infrastructure investment, globalization, and openness. We conduct a large-scale measurement study of transnational Internet performance in and out of 29 countries and regions, and find six countries that have surprisingly low performance. Five of them are African countries and the last is mainland China, a significant outlier with major discrepancies between downstream and upstream performance. We then conduct a comprehensive investigation of the unusual transnational Internet performance of mainland China, which we refer to as the \\"Great Bottleneck of China\\". Our results show that this bottleneck is widespread, affecting 79% of the receiver--sender pairs we measured. More than 70% of the pairs suffer from extremely slow speed (less than 1~Mbps) for more than 5 hours every day. In most tests the bottleneck appeared to be located deep inside China, suggesting poor network infrastructure to handle transnational traffic. The phenomenon has far-reaching implications for Chinese users' browsing habits as well as for the ability of foreign Internet services to reach Chinese customers."
 pdf: papers/sigmetrics20_slowdown.pdf
 ---`,__vite_glob_0_24=`---
-area: ""
+area: "Other"
 date: 2020-03-01                            # ⚠️ needs date
 publisher: ACM Transactions on Privacy and Security (TOPS 2020)
 name: "Measuring and Analysing the Chain of Implicit Trust: A Study of Third‑party Resources Loading"
