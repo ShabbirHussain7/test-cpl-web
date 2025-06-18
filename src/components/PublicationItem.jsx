@@ -74,7 +74,7 @@ const PublicationItem = ({ pub, isAlternate }) => {
             {pub.pdf && (
               <>
                 <a
-                  href={`/${pub.pdf}`}
+                  href={`${process.env.NODE_ENV === 'production' ? `${window.location.origin}/test-cpl-web/` : `${window.location.origin}/`}${pub.pdf}`}
                   className="publication-card-internal-link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -100,8 +100,8 @@ const PublicationItem = ({ pub, isAlternate }) => {
             {pub.slides && (
               <>
                 <a
-                  href={`/${pub.slides}`}
-                  className="publication-card-internal-link"
+                  href={`${process.env.NODE_ENV === 'production' ? `${window.location.origin}/test-cpl-web/` : `${window.location.origin}/`}${pub.slides}`}
+                  className="publication-card-internal-link "
                   target="_blank"
                   rel="noopener noreferrer"
                 >
