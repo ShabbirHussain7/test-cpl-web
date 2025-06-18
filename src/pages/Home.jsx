@@ -320,8 +320,8 @@ export default function Home() {
                   .sort((a, b) => b[0] - a[0])
                   .map(([year, pubs]) =>
                     pubs.map((pub, idx) => (
-                      <tr key={`${year}-${idx}`} className="border-b border-gray-300">
-                        <td className="text-[#595959] font-[Inter] text-[16px] font-normal leading-[1.5] tracking-[0px] pt-1 w-[92px] text-center border-r border-gray-300">
+                      <tr key={`${year}-${idx}`} className="border-b border-[#888]">
+                        <td className="text-[#595959] font-[Inter] text-[16px] font-normal leading-[1.5] tracking-[0px] w-[92px] text-center border-r border-[#888] align-top pt-2">
                           {pub.year}
                         </td>
                         <td className="pl-4">
