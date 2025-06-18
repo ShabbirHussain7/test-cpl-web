@@ -3,7 +3,6 @@ import PublicationItem from '../components/PublicationItem';
 import { Link } from 'react-router-dom';
 import { parsePublications } from '../utils/parsePublications';
 import ResearchArea from '../components/ResearchArea';
-import VideoCard from '../components/VideoCard';
 import ToolCard from '../components/ToolCard';
 import homeData from "../data/home.json";
 // Import icons for research areas (
@@ -275,40 +274,7 @@ export default function Home() {
 
         </div>
       </section>
-      {/* 
-
-      <table className="w-full border-gray-400">
-          <thead className="text-[#2D4D63]">
-            <tr>
-              <th className="text-center px-2 py-1 border-r border-gray-300">Year</th>
-              <th className="text-left px-2 py-1">Publication Detail</th>
-            </tr>
-          </thead>
-          <tbody>
-            {Object.entries(publications)
-              .sort((a, b) => b[0] - a[0])
-              .map(([year, pubs]) => {
-                if (selectedYear !== 'All' && year !== selectedYear) return null;
-
-                const filteredPubs = pubs.filter(
-                  (pub) => selectedCategory === 'All' || pub.area === selectedCategory
-                );
-                if (filteredPubs.length === 0) return null;
-
-                return filteredPubs.map((pub, idx) => (
-                  <tr key={`${year}-${idx}`} className="border-t border-gray-300">
-                    <td className="border-r border-gray-300">
-                      {pub.year}
-                    </td>
-                    <td className="align-top px-2 py-2">
-                      <PublicationItem pub={pub} />
-                    </td>
-                  </tr>
-                ));
-              })}
-          </tbody>
-        </table> */}
-
+     
       <section id="selected-publications">
         <div className='lg:px-20 lg:py-15 0' >
           <h2 className="new-section-heading">

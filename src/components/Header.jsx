@@ -6,14 +6,14 @@ import home_data from '../data/home.json';
 export default function Header() {
   const navItems = [
     { label: 'About', to: '/about' },
-    { label: 'Research', to: '/research', subItems: home_data.research.map(item => ({
+    { label: 'Research', subItems: home_data.research.map(item => ({
       label: item['short-name'],
       to: `/research/${item.url}`
     })) },
     { label: 'Blogs', to: '/blogs' },
     { label: 'Publications', to: '/publications' },
     { label: 'Tools', to: '/tools' },
-    { label: 'Media', to: '/media', subItems: [
+    { label: 'Media', subItems: [
       { label: 'News', to: '/news' },
       { label: 'Talks', to: '/talks' },
       { label: 'Lab Updates', to: '/updates' },

@@ -9,7 +9,15 @@
 }
 
 .new-section-heading {
-  @apply lg:text-[49px] text-[#121212] leading-[120%] font-merriweather
+  color: var(--Text, #121212);
+
+/* H2 */
+font-family: var(--Header, Merriweather);
+font-size: 49px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 58.8px */
+letter-spacing: var(--spacing-spacing-non, 0px);
 }
 
 .App {
@@ -200,6 +208,33 @@ text-underline-position: from-font;
   color: #28a199; /* Change text color on hover */
 }
 
+h4 {
+font-family: var(--Header, Merriweather);
+font-size: 31px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 37.2px */
+letter-spacing: var(--spacing-spacing-non, 0px);
+}
+
+h5 {
+  font-family: var(--Header, Merriweather);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 30px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+}
+
+.body {
+
+  font-family: var(--Body, Inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+}
 .small-text {
   font-family: var(--Body, Inter);
   font-size: 13px;
