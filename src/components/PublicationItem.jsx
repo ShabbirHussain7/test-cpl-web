@@ -62,9 +62,9 @@ const PublicationItem = ({ pub, isAlternate }) => {
         </p>
 
         <div className="mt-1 flex flex-wrap items-center gap-4">
-        <span className='publication-tag text-[#595959] small-text '>{pub.area}</span>
-        <span className="publication-conference-name">{pub.venue}</span>
-        
+          <span className='publication-tag text-[#595959] small-text '>{pub.area}</span>
+          <span className="publication-conference-name">{pub.venue}</span>
+
 
         </div>
 
@@ -73,14 +73,14 @@ const PublicationItem = ({ pub, isAlternate }) => {
           <div className="mt-1 flex flex-wrap items-center gap-2 text-sm">
             {pub.pdf && (
               <>
-                <Link
-                  to={`/${pub.pdf}`}
-                  className="publication-card-internal-link "
+                <a
+                  href={`/${pub.pdf}`}
+                  className="publication-card-internal-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   PDF
-                </Link>
+                </a>
                 {pub.talk || pub.slides || pub.press ? (<div className="w-[1px] h-[20px] bg-[#28A199]"></div>) : null}
               </>
             )}
@@ -99,14 +99,14 @@ const PublicationItem = ({ pub, isAlternate }) => {
             )}
             {pub.slides && (
               <>
-                <Link
-                  to={`/${pub.slides}`}
-                  className="publication-card-internal-link "
+                <a
+                  href={`/${pub.slides}`}
+                  className="publication-card-internal-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Slides
-                </Link>
+                </a>
               </>
             )}
             {pub.press && pub.press.length > 0 && (
