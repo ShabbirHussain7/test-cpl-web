@@ -16,6 +16,7 @@ export default function JoinUs() {
     },
     {
       title: 'Visiting Students',
+      subtitle: '(Especially from Political science, Journalism, and related fields)',
       content: 'We occasionally host visitors at our lab. If you would like to visit, please email us in advance. If you have a recommendation from someone Dr. Roya knows, kindly include their name in your email as well.'
         
     }];
@@ -53,7 +54,7 @@ export default function JoinUs() {
             className={`mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5`}
           >
         {joinUsData.map((item, index) => (
-          <JoinUsCard key={index} title={item.title} content= {item.content} />
+          <JoinUsCard key={index} title={item.title} content= {item.content} subtitle={item.subtitle} />
           
         ))}
         </div>
