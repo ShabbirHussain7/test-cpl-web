@@ -20,14 +20,14 @@ const Footer = () => {
        <Link to="/">
             <img src={Logo} alt="Censored Planet logo" className="h-[68px] " />
           </Link>
-      <div className="mt-4 flex flex-col lg:flex-row justify-between gap-8 font-inter">
+      <div className="mt-6 flex flex-col lg:flex-row justify-between gap-8 font-inter">
         <div className="flex flex-col items-start gap-4">
          
           <div>
             <h2 className="text-[24px] font-semibold">Do you have a question?</h2>
-            <p className="text-[20px] font-semibold">Get in touch</p>
+            <p className="text-[24px] font-semibold">Get in touch</p>
           </div>
-          <address className="not-italic text-[16px]">
+          <address className="not-italic text-[16px] leading-[120%]">
             4908 Bob and Betty Beyster Building<br />
             2260 Hayward St.,<br />
             Ann Arbor, MI 48109
@@ -36,7 +36,7 @@ const Footer = () => {
             {copied ? "Copied!" : "censoredplanet@umich.edu"}
           </button>
         </div>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 gap-8 text-[16px]">
           <div className="flex flex-col gap-2">
           
             <Link to="/about" className="hover:underline">About</Link>
@@ -48,9 +48,9 @@ const Footer = () => {
           <div className="flex flex-col gap-2">
             <h3 className="font-semibold">Observatory</h3>
             
-            <Link to="/dashboard" className="pl-4 hover:underline">Dashboard</Link>
-            <Link to="/data" className="pl-4 hover:underline">Data</Link>
-            <Link to="/docs" className="pl-4 hover:underline">Documentations</Link>
+            <Link to="https://dashboard.censoredplanet.org/" target="_blank" rel="noopener noreferrer" className="pl-4 hover:underline">Dashboard</Link>
+            <Link to="https://censoredplanet.org/data/raw" target="_blank" rel="noopener noreferrer" className="pl-4 hover:underline">Raw Data</Link>
+            <Link to="https://docs.censoredplanet.org/" target="_blank" rel="noopener noreferrer" className="pl-4 hover:underline">Documentations</Link>
             
           </div>
         </div>
@@ -66,10 +66,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-8 border-t border-gray-700 pt-4">
-        <div className="max-w-7xl mx-auto flex justify-center items-center gap-4 text-[14px]">
+      <div className="mt-20 ">
+        <div className="flex items-center gap-6 text-[14px]">
           <span>© 2025 Censored Planet</span>
-          <span className="inline-block border-l border-gray-700 h-4"></span>
+          <span className="inline-block border-l border-[#FDFDFD] h-4"></span>
           <Link to="/terms" className="hover:underline">Terms of Service</Link>
         </div>
       </div>
