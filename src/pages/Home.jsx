@@ -322,10 +322,10 @@ export default function Home() {
                   .map(([year, pubs]) =>
                     pubs.map((pub, idx) => (
                       <tr key={`${year}-${idx}`} className="border-b border-[#888]">
-                        <td className="text-[#595959] font-[Inter] text-[16px] font-normal leading-[1.5] tracking-[0px] w-[92px] text-center border-r border-[#888] align-top pt-2">
+                        <td className="publication-year w-[92px] text-center border-r border-[#888] align-top pt-2">
                           {pub.year}
                         </td>
-                        <td className="pl-4">
+                        <td>
                           <PublicationItem key={idx} pub={pub} />
                         </td>
                       </tr>

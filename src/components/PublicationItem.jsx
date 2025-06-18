@@ -47,7 +47,7 @@ const PublicationItem = ({ pub, isAlternate }) => {
 
   return (
     // Two‑column grid: left = details, right = side‑column (awards top, toggles bottom)
-    <div className="grid md:grid-cols-[4fr_auto]  my-2">
+    <div className="grid md:grid-cols-[4fr_auto] my-2 pl-3">
       {/* ───────── Left column ───────── */}
       <div className="">
         {/* Title */}
@@ -55,7 +55,7 @@ const PublicationItem = ({ pub, isAlternate }) => {
 
 
         {/* Authors + venue */}
-        <p className="mt-1">
+        <p className="">
           <span className='publication-author-names '>
             {abbreviateAuthors(pub.authors)}
           </span>
