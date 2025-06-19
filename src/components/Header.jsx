@@ -16,7 +16,7 @@ export default function Header() {
     { label: 'Media', subItems: [
       { label: 'News', to: '/news' },
       { label: 'Talks', to: '/talks' },
-      { label: 'Lab Updates', to: '/updates' },
+      // { label: 'Lab Updates', to: '/updates' },
     ] },
   ];
 

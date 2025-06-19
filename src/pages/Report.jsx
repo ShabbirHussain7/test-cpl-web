@@ -40,7 +40,7 @@ export default function Report() {
   }
 
   if (!markdownContent) {
-    return <div className="section-container py-24 text-center">Report not found.</div>;
+    return <div className="section-container py-24 text-center">Page not found.</div>;
   }
 
   const metaFields = [

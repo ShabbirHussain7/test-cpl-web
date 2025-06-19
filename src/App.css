@@ -28,7 +28,7 @@ letter-spacing: var(--spacing-spacing-non, 0px);
 }
 
 section:not(.hero) {
-  border-bottom: 1px solid var(--divider, #888);
+  /* border-bottom: 1px solid var(--divider, #888); */
   background: var(--Background, #FDFDFD);
 }
 

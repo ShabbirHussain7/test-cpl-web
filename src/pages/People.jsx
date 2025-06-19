@@ -2,63 +2,83 @@ import React from 'react';
 import peopleData from '../data/people.json';
 import { Link } from 'react-router-dom';
 import PersonCard from '../components/PersonCard';
+import DirectorCard from '../components/DirectorCard';
 
 export default function People() {
   return (
-    <main className="pt-24 ">
+    <main className="lg:px-20 lg:py-25 bg-[#fdfdfd]">
       <div>
-
-
         <section className="">
-          <div className='page-container'> 
-          <h1 className="heading-primary"> Our Team </h1>
-          <div className='grid grid-cols-1 md:grid-cols-[2fr_1fr] mb-4 '>
 
+          <div className='grid grid-cols-1 md:grid-cols-[1fr_3fr]'>
 
-            <div className='w-full text-justify'>
-
-              <h2 className="heading-secondary">Meet the Director</h2>
-              <blockquote className="italic text-orange-800 border-l-4 border-orange-600 pl-4 mb-2">
-                "We are a team of people from various backgrounds, including students, vulnerable users, journalists, activists, researchers and organizations from the technology industry and censorship research."
-              </blockquote>
-              <p>
-                Dr. Roya Ensafi is an Associate Professor at the University of Michigan and the founder of the <strong>Censored Planet Lab</strong>. Her research focuses on network security, internet measurement, and digital rights. She is the founder of <strong>Censored Planet Observatory</strong>, the world’s first fully remote global censorship observatory, which has uncovered previously hidden censorship practices in countries like <strong>Russia</strong> and <strong>Kazakhstan</strong>. Her innovative research has challenged conventional assumptions about detecting censorship, enabling researchers to uncover previously hidden practices by authoritarian regimes.
-              </p>
-              <p className='py-2'>
-                Dr. Ensafi’s contributions have been recognized with numerous prestigious awards, including the <strong>Alfred P. Sloan Research Fellowship</strong>, the <strong>NSF CAREER Award</strong>, and multiple <strong>IRTF Applied Networking Research Prizes</strong>. Her research has been featured in prominent publications such as <em>The New York Times</em>, <em>Wired</em>, and <em>Ars Technica</em>.
-              </p>
-              <div >
-                <Link to="https://ensa.fi/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">View Profile</Link>
+          <DirectorCard />
+            <div className=''>
+              <h2 className="new-section-heading">Meet the Director</h2>
+              <div className="body mt-6">
+                <p >
+                  Roya Ensafi is a
+                  {' '}
+                  <Link to={'https://cse.engin.umich.edu/people/honors-and-awards/faculty-honors-and-awards/morris-wellman-faculty-development-professorships/'}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='underline text-[#28A199]'>
+                    Morris Wellman
+                  </Link> <strong>Associate Professor</strong> of <em>Computer Science and Engineering</em> at the
+                  {' '}
+                  <strong>University of Michigan</strong>
+                  ,
+                  where her research focuses on <em>Internet Security</em> and <em>Privacy</em>, with the goal of creating techniques and systems to better protect users online. She is particularly passionate about <em>online censorship</em>, <em>geo-discrimination</em>, <em>surveillance</em>, and related threats to <em>Internet freedom</em>.
+                </p>
+                <br />
+                <p>
+                  Prof. Ensafi is the founder of <em>Censored Planet</em>, a global censorship observatory. She has studied Russia’s throttling of Twitter, HTTPS interception in Kazakhstan, and China’s Great Cannon attack, among many other instances of network interference. She is a recipient of the
+                  <Link to="https://cse.engin.umich.edu/stories/roya-ensafi-selected-for-sloan-fellowship" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: '#28A199' }}>
+                    {' '}Sloan Research Fellowship
+                  </Link>,{' '}
+                  <Link to="https://cse.engin.umich.edu/stories/roya-ensafi-receives-nsf-career-award-for-efforts-to-combat-censorship-worldwide" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: '#28A199' }}>
+                    NSF CAREER
+                  </Link>,{' '}
+                  <Link to="https://cse.engin.umich.edu/stories/three-cse-faculty-selected-for-google-faculty-research-awards" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: '#28A199' }}>
+                    Google Faculty Research Award
+                  </Link>,{' '}
+                  multiple{' '}
+                  <Link to="https://www.irtf.org/anrp/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: '#28A199' }}>
+                    IRTF Applied Networking Research Prizes
+                  </Link>,{' '}
+                  and the{' '}
+                  <Link to="https://cse.engin.umich.edu/stories/roya-ensafi-named-inaugural-consumer-reports-digital-lab-fellow" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: '#28A199' }}>
+                    Consumer Reports Digital Lab Fellowship
+                  </Link>
+                  .{' '}
+                  Her work has been cited in popular publications such as
+                  {' '}<em>The New York Times</em>, <em>Newsweek</em>, <em>Business Insider</em>, <em>Wired</em>, and <em>Ars Technica</em>.
+                </p>
+                
               </div>
-
             </div>
-
-            <div className='w-full flex justify-center md:justify-end '>
-              <img
-                src={"assets/" + peopleData.Director.avatar}
-                alt="Portrait of Roya Ensafi"
-                className="w-80 h-96 border border-white border-20 rounded shadow-lg object-cover object-right md:self-start"
-              />
-            </div>
-
-
-          </div>
+    
+            
+  
+           
           </div>
 
         </section>
 
-        <section>
-        <div className='page-container py-4'> 
-          <h2 className="heading-secondary">Lab Members</h2>
+        
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-stretch">
+        <section>
+
+          <h2 className="new-section-heading">Lab Members</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-5 items-stretch">
             {/* call personcard for each member */}
             {peopleData.Team.map((member, idx) => (
               PersonCard({ person: member, key: idx })
             ))}
 
           </div>
-          </div>
+
 
 
         </section>
