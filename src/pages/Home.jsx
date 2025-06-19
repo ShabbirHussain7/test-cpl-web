@@ -276,7 +276,7 @@ export default function Home() {
       </section>
      
       <section id="selected-publications">
-        <div className='lg:px-20 lg:py-15 0' >
+        <div className='lg:px-20 lg:py-15' >
           <h2 className="new-section-heading">
             Our Distinguished Publications
           </h2>

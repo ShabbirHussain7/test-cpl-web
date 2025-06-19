@@ -6,9 +6,9 @@ import DirectorCard from '../components/DirectorCard';
 
 export default function People() {
   return (
-    <main className="lg:px-20 lg:py-25 bg-[#fdfdfd]">
+    <main className="pt-10">
       <div>
-        <section className="">
+        <section className="lg:px-20 lg:py-15 bg-[#fdfdfd] ">
 
           <div className='grid grid-cols-1 md:grid-cols-[1fr_3fr]'>
 
@@ -67,11 +67,11 @@ export default function People() {
 
         
 
-        <section>
+        <section className="lg:px-20 lg:pt-15 lg:pb-25 !bg-[#E4F7F6]" >
 
-          <h2 className="new-section-heading">Lab Members</h2>
+          <h2 className="new-section-heading">Our Team</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-5 items-stretch">
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-5 gap-5 items-stretch">
             {/* call personcard for each member */}
             {peopleData.Team.map((member, idx) => (
               PersonCard({ person: member, key: idx })
