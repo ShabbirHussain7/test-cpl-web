@@ -5,6 +5,7 @@ import { parsePublications } from '../utils/parsePublications';
 import ResearchArea from '../components/ResearchArea';
 import ToolCard from '../components/ToolCard';
 import homeData from "../data/home.json";
+import toolData from "../data/tools.json";
 // Import icons for research areas (
 
 import GlobeIcon from '../../public/icons/research/GlobeIcon.svg';
@@ -252,12 +253,12 @@ export default function Home() {
             className={`mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5`}
           >
             {/* map each research area to researcharea component */}
-            {homeData.tools.slice(0, 3).map((tool, idx) => (
+            {toolData.slice(0, 3).map((tool, idx) => (
               <ToolCard
                 key={idx}
                 url={`https://github.com/CensoredPlanet/${tool.repo}`}
                 name={tool.name}
-                description={tool.tagline}
+                description={tool.description}
               />
             ))}
           </div>

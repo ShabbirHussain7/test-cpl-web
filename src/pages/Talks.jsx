@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import VideoCard from '../components/VideoCard';
-import homeData from "../data/home.json";
+import talkData from "../data/talks.json";
 
 export default function Talks() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -10,13 +10,13 @@ export default function Talks() {
 
 //   get last four characters from date as year using regex
   const years = Array.from(
-    new Set(homeData.talks.map(talk => {
+    new Set(talkData.map(talk => {
       const match = talk.date.match(/(\d{4})$/);
       return match ? match[1] : null;
     }).filter(Boolean))
   ).sort((a, b) => b - a);
 
-  const filteredTalks = homeData.talks
+  const filteredTalks = talkData
     .filter(talk => talk.link)
     .filter(talk => 
       (

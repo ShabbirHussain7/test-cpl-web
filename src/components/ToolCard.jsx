@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 export default function ToolCard({ url, name, description }) {
   return (
     <Link
-      to={`/${url}`}
+      to={url}
       className="
         relative
         flex flex-col items-start
-        w-[413px]
+        lg:min-h-[166px]
         px-6
         py-4
         gap-2
@@ -19,6 +19,8 @@ export default function ToolCard({ url, name, description }) {
         transition-transform
         duration-300
       "
+      target="_blank"
+      rel="noopener noreferrer"
       style={{
         border: `1px solid var(--divider, #888)`,
         background: `var(--Background, #FDFDFD)`,

@@ -1,0 +1,152 @@
+[
+    {
+        "title": "The Discriminative Power of Cross-layer RTTs in Fingerprinting Proxy Traffic",
+        "date": "February 24, 2025",
+        "presented_at": "Network and Distributed System Security Symposium (NDSS) 2025",
+        "link": null
+    },
+    {
+        "title": "Is Custom Congestion Control a Bad Idea for Circumvention Tools?",
+        "date": "August 7, 2023",
+        "presented_at": "Free and Open Communications on the Internet (FOCI) 2023",
+        "link": null
+    },
+    {
+        "title": "Fingerprinting Obfuscated Proxy Traffic with Encapsulated TLS Handshakes",
+        "date": "August 14, 2024",
+        "presented_at": "USENIX Security Symposium 2024",
+        "link": "https://www.youtube.com/watch?v=8GO_9HKTvb0"
+    },
+    {
+        "title": "Digital Discrimination of Users in Sanctioned States: The Case of the Cuba Embargo",
+        "date": "August 14, 2024",
+        "presented_at": "USENIX Security Symposium 2024",
+        "link": "https://www.youtube.com/watch?v=LsCtJx5T1nw"
+    },
+    {
+        "title": "CalcuLatency: Leveraging Cross-Layer Network Latency Measurements to Detect Proxy-Enabled Abuse",
+        "date": "August 14, 2024",
+        "presented_at": "USENIX Security Symposium 2024",
+        "link": "https://www.youtube.com/watch?v=cYyIKaLhkrk"
+    },
+    {
+        "title": "Bridging Barriers: A Survey of Challenges and Priorities in the Censorship Circumvention Landscape",
+        "date": "August 14, 2024",
+        "presented_at": "USENIX Security Symposium 2024",
+        "link": "https://www.youtube.com/watch?v=jXXvsaYBYAA"
+    },
+    {
+        "title": "MADWeb 2023 Keynote",
+        "date": "March 3, 2023",
+        "presented_at": "Workshop on Measurements, Attacks, and Defenses for the Web (MADWeb) 2023",
+        "link": "https://youtu.be/a91A4zQfDe0"
+    },
+    {
+        "title": "Introduction to Censored Planet",
+        "date": "December 27, 2018",
+        "presented_at": "35th Chaos Communication Congress (35C3)",
+        "link": "https://youtu.be/ljZJrM9A2Pw"
+    },
+    {
+        "title": "Network Responses to Russia's Invasion of Ukraine in 2022: A Cautionary Tale for Internet Freedom",
+        "date": "August 9, 2023",
+        "presented_at": "USENIX Security Symposium 2023",
+        "link": "https://www.youtube.com/watch?v=kBK3N3dYZq4"
+    },
+    {
+        "title": "The Use of Push Notification in Censorship Circumvention",
+        "date": "August 7, 2023",
+        "presented_at": "Free and Open Communications on the Internet (FOCI) 2023",
+        "link": null
+    },
+    {
+        "title": "CERTainty: Detecting DNS Manipulation using TLS Certificates",
+        "date": "July 2023",
+        "presented_at": "Privacy Enhancing Technologies Symposium (PETS) 2023",
+        "link": null
+    },
+    {
+        "title": "Advancing the Art of Censorship Data Analysis",
+        "date": "August 7, 2023",
+        "presented_at": "Free and Open Communications on the Internet (FOCI) 2023",
+        "link": null
+    },
+    {
+        "title": "Sloan-Supported Digital Lab Fellow Talk on VPNalzyer",
+        "date": "December 2022",
+        "presented_at": "Consumer Reports Digital Lab Fellowship",
+        "link": "https://youtu.be/aAQGNPJwZKY"
+    },
+    {
+        "title": "Network measurement methods for locating and examining censorship devices",
+        "date": "December 2022",
+        "presented_at": "ACM CoNEXT 2022",
+        "link": "https://www.youtube.com/live/4O1NsdOeXgU?t=4470s"
+    },
+    {
+        "title": "TSPU: Russia’s Decentralized Censorship System",
+        "date": "October 2022",
+        "presented_at": "ACM Internet Measurement Conference (IMC) 2022",
+        "link": "https://www.youtube.com/watch?v=LWoBhWwAY8A"
+    },
+    {
+        "title": "OpenVPN is Open to VPN Fingerprinting",
+        "date": "August 2022",
+        "presented_at": "USENIX Security Symposium 2022",
+        "link": "https://www.youtube.com/watch?v=ZNVff1rH-vA"
+    },
+    {
+        "title": "Censored Planet Webinar",
+        "date": "October 4, 2021",
+        "presented_at": "Censored Planet Community Webinar 2021",
+        "link": "https://youtu.be/v5G_nUUzVv8"
+    },
+    {
+        "title": "Summit for Democracy",
+        "date": "December 9, 2021",
+        "presented_at": "Summit for Democracy 2021",
+        "link": "https://youtu.be/psLtgFYENU8"
+    },
+    {
+        "title": "Throttling Twitter: An Emerging Censorship Technique in Russia",
+        "date": "August 2021",
+        "presented_at": "USENIX Security Symposium 2021",
+        "link": "https://www.youtube.com/watch?v=GenCBx5jWxo"
+    },
+    {
+        "title": "Lost in Transmission: Investigating Filtering of COVID-19 Websites",
+        "date": "August 2021",
+        "presented_at": "USENIX Security Symposium 2021",
+        "link": "https://www.youtube.com/watch?v=6_gzdp7zSaw"
+    },
+    {
+        "title": "Censored Planet: An Internet-wide, Longitudinal Censorship Observatory",
+        "date": "October 2020",
+        "presented_at": "ACM Internet Measurement Conference (IMC) 2020",
+        "link": "https://www.youtube.com/watch?v=8dwZdNkJ508"
+    },
+    {
+        "title": "Investigating Large Scale HTTPS Interception in Kazakhstan",
+        "date": "August 2020",
+        "presented_at": "USENIX Security Symposium 2020",
+        "link": "https://www.youtube.com/watch?v=RoYWsfNOCr4"
+    },
+    {
+        "title": "Measuring the Deployment of Network Censorship Filters at Global Scale",
+        "date": "August 2020",
+        "presented_at": "USENIX Security Symposium 2020",
+        "link": "https://www.youtube.com/watch?v=R8VlHOwakQk"
+    },
+    {
+        "title": "Decentralized Control: A Case Study of Russia",
+        "date": "August 2020",
+        "presented_at": "USENIX Security Symposium 2020",
+        "link": "https://www.youtube.com/watch?v=aKeMB-Owlug"
+    },
+    {
+        "title": "403 Forbidden: A Global View of CDN Geoblocking",
+        "date": "October 2018",
+        "presented_at": "ACM Internet Measurement Conference (IMC) 2018",
+        "link": null
+    }
+]

@@ -1,5 +1,5 @@
 import React from "react";
-import homeData from "../data/home.json";
+import updateData from "../data/lab_updates.json";
 import { Link } from "react-router-dom";
 
 export default function Updates() {
@@ -10,7 +10,7 @@ export default function Updates() {
                 <h1 className="heading-primary">Updates</h1>
 
                 <div className="">
-                    {homeData.lab_updates.map((update, idx) => (
+                    {updateData.map((update, idx) => (
                         <div key={idx} className={idx % 2 === 0 ? "" : "bg-gray-100"} >
                             <div className="border-b border-gray-200 py-1 w-full">
                                 {/* leading-none reduces line height to minimum. Don't know why the extra spacing was appearing after date */}

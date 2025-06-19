@@ -8,6 +8,7 @@ import People from './pages/People';
 import Research from './pages/Research';
 import JoinUs from './pages/JoinUs';
 import AllReports from './pages/AllReports';
+import Tools from './pages/Tools';
 import Report from './pages/Report';
 import Terms from './pages/Terms';
 import Updates from './pages/Updates';
@@ -49,6 +50,7 @@ export default function App() {
         <Route path="/research/:area" element={<Research />} />
         <Route path="/blogs" element={<AllReports />} />
         <Route path="/blogs/:report" element={<Report />} />
+        <Route path="/tools" element={<Tools />} />
         <Route path="/updates" element={<Updates />} />
         <Route path="/join" element={<JoinUs />} />
         <Route path="/terms" element={<Terms />} />
