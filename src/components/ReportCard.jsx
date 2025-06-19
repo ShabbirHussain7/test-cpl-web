@@ -2,38 +2,39 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import LabLogo from '../../public/icons/censoredplanetBlack.svg';
+import Logo from '../../public/icons/new-cp.svg';
 
 export default function ReportCard({ report, idx }) {
   const isExternal = report.external || (report.permalink && report.permalink.startsWith('http'));
 
   const cardBody = () => (
-    <>
-      <img
-        src={LabLogo}
+    <div className='text-[#121212] '>
+           <img
+        src={report.logo || Logo}
         alt="Lab Logo"
-        className="absolute top-0 left-0 m-5 w-35 pointer-events-none"
+        className="absolute top-0 left-0 m-5 pointer-events-none"
+        style={{ height: '21px', width: 'auto' }}
       />
       {/* Top Section */}
       <div className="relative z-10 flex flex-col flex-grow overflow-hidden">
         <div className="mb-2 ">
           <div className="flex justify-end">
-            <div className="bg-[#D6E2EB] text-[#2D4D63] text-xs rounded-sm font-semibold px-3 py-1 mb-4 inline-block">
+            <div className="publication-tag text-[#595959] small-text">
               {report.date}
             </div>
           </div>
-          <h2 className="text-lg font-bold mb-2 overflow-hidden text-ellipsis line-clamp-2">
+          <h5 className="mt-4 overflow-hidden line-clamp-2">
             {report.title}
-          </h2>
+          </h5>
         </div>
 
-        <div className="overflow-hidden flex-grow">
+        <div className="mt-2 overflow-hidden flex-grow">
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{
               p: (props) => (
                 <p
-                  className="text-gray-700 text-base leading-relaxed overflow-hidden text-ellipsis line-clamp-[6]"
+                  className="body text-ellipsis line-clamp-3"
                   {...props}
                 />
               ),
@@ -46,8 +47,16 @@ export default function ReportCard({ report, idx }) {
           </ReactMarkdown>
         </div>
       </div>
-    </>
+    </div>
   );
+
+  const baseClassName =
+    "max-w-[1080px] relative flex flex-col bg-white border border-[#888] shadow transition transform hover:scale-102 hover:shadow-md p-5 overflow-hidden";
+
+  const productionBaseUrl = `${window.location.origin}/test-cpl-web/`;
+  const developmentBaseUrl = `${window.location.origin}/`;
+  const reportLink =
+    process.env.NODE_ENV === 'production' ? productionBaseUrl : developmentBaseUrl;
 
   if (isExternal) {
     return (
@@ -56,7 +65,7 @@ export default function ReportCard({ report, idx }) {
         href={report.permalink}
         target="_blank"
         rel="noopener noreferrer"
-        className="relative flex flex-col bg-white rounded-sm border border-[#CBD5E1] shadow transition transform hover:scale-[1.02] hover:shadow-md p-5 overflow-hidden"
+        className={baseClassName}
       >
         {cardBody()}
       </a>
@@ -66,8 +75,8 @@ export default function ReportCard({ report, idx }) {
   return (
     <Link
       key={idx}
-      to={`/reports/${report.permalink}`}
-      className="relative flex flex-col bg-white rounded-sm border border-[#CBD5E1] shadow transition transform hover:scale-[1.02] hover:shadow-md p-5 overflow-hidden"
+      to={`${reportLink}${report.permalink}`}
+      className={baseClassName}
     >
       {cardBody()}
     </Link>

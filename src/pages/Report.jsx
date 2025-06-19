@@ -6,7 +6,9 @@ import matter from 'gray-matter';
 import rehypeRaw from 'rehype-raw';
 
 export default function Report() {
+  
   const { report } = useParams();
+  console.log(`Fetching report: ${report}`);
   const [frontMatter, setFrontMatter] = useState({});
   const [markdownContent, setMarkdownContent] = useState('');
   const [loading, setLoading] = useState(true);
@@ -14,6 +16,7 @@ export default function Report() {
   useEffect(() => {
     async function fetchMarkdown() {
       try {
+        
         const mdModule = await import(`../reports/${report}.md`);
         const response = await fetch(mdModule.default);
         let rawText = await response.text();
