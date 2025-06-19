@@ -69,19 +69,18 @@ export default function Home() {
     <main className=''>
 
       {/* HERO SECTION */}
-      <section id="hero" className='hero relative'>
-
+      <section id="hero" className="hero relative overflow-hidden z-0">
+        
         {/* BACKGROUND IMAGE */}
-        <div className='justify-end flex block -z-10'>
-          <img
-            src={HeroBg}
-            alt="Hero background"
-            className="w-[70%]"
-          />
-        </div>
+        <img
+              src={HeroBg}
+              alt="Hero background"
+              className=" relative ml-auto  z-[-1]"
+            />
+
 
         {/* Hero Text & Buttons */}
-        <div className="absolute lg:top-[206px] top-[70px] lg:px-20 px-10 lg:w-[815px] sm:top-[30px]">
+        <div className="absolute lg:top-[206px] top-[70px] lg:px-20 px-10 lg:w-[815px] sm:top-[30px] z-10">
 
           <div className="flex flex-col lg:gap-6 gap-3">
             <h1 className="lg:text-[61px] text-[20px] font-bold font-merriweather leading-[120%] text-[#121212] ">
