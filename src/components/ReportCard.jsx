@@ -53,11 +53,6 @@ export default function ReportCard({ report, idx }) {
   const baseClassName =
     "max-w-[1080px] relative flex flex-col bg-white border border-[#888] shadow transition transform hover:scale-102 hover:shadow-md p-5 overflow-hidden";
 
-  const productionBaseUrl = `${window.location.origin}/test-cpl-web/`;
-  const developmentBaseUrl = `${window.location.origin}/`;
-  const reportLink =
-    process.env.NODE_ENV === 'production' ? productionBaseUrl : developmentBaseUrl;
-
   if (isExternal) {
     return (
       <a
@@ -75,7 +70,7 @@ export default function ReportCard({ report, idx }) {
   return (
     <Link
       key={idx}
-      to={`${reportLink}${report.permalink}`}
+      to={`${window.location.origin}/${report.permalink}`}
       className={baseClassName}
     >
       {cardBody()}
