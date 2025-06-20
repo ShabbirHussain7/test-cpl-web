@@ -255,6 +255,21 @@ letter-spacing: var(--spacing-spacing-non, 0px);
   letter-spacing: var(--spacing-spacing-non, 0px);
 }
 
+select {
+  -webkit-appearance: none; /* Removes default Safari styling */
+  padding: 4px 8px;
+  min-width: 70px; /* Minimum width for the select box */
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>'); /* Custom chevron icon */
+  background-repeat: no-repeat; /* Prevent repeating the icon */
+  background-position: right 0.5rem center; /* Position the chevron */
+  background-size: 1rem; /* Size of the chevron */
+}
+
+select:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #555; /* Add a custom focus border color */
+}
+
 
 .page-container {
   @apply max-w-screen-xl mx-auto px-8 sm:px-16;
