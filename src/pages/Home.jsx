@@ -69,6 +69,8 @@ export default function Home() {
 
     <main className=''>
 
+
+<div>
       {/* HERO SECTION */}
       <section id="hero" className="hero relative overflow-hidden z-0">
         
@@ -107,8 +109,14 @@ export default function Home() {
           </div>
         </div>
 
-        {/* NEWS BAR */}
-        <div className="-mt-[2px] w-full bg-[#E4F7F6] border border-[#888] text-black relative z-20">
+       
+
+
+      </section>
+
+      <div id="" className="z-0">
+           {/* NEWS BAR */}
+        <div className="-mt-[2px] w-full bg-[#E4F7F6] border-t border-b border-[#888] text-black relative z-20">
           <div
             className="flex items-center justify-between mx-auto px-20 py-2">
             <Link to='/news' className="text-[#17827b] text-[14px] font-medium whitespace-nowrap pr-4 hover:underline">
@@ -138,10 +146,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-
-      </section>
-
+      </div>
+      </div>
       {/* WHAT WE DO */}
       <section id="what-we-do" className="lg:px-20 lg:py-25">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12">
@@ -313,7 +319,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="research-themes" className="relative">
+      <section id="join-us" className="relative">
 
         <div
           className='relative overflow-hidden z-0'

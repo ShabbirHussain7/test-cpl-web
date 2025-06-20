@@ -21,8 +21,8 @@ const NewsArticleRow = ({ article }) => {
   return (
     <div className="w-full py-1 border-b border-[#888]">
       {/* Top row: Date and Language */}
-      <div className="flex small-text justify-between text-xs text-gray-400">
-        <span>{displayDate}</span>
+      <div className="flex small-text justify-between text-[#595959] mb-1">
+        <span className='font-normal'>{displayDate}</span>
         <span className='bg-[#E4F7F6] px-2 py-[2px]'>{trimmedArticle.language}</span>
       </div>
 
