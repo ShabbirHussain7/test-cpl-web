@@ -11,25 +11,27 @@ export default function DirectorCard() {
                     src="assets/roya-ppl-pg.jpg"
                     alt="Portrait of Roya Ensafi"
                     className="mr-auto"
-                    style={{ height: "75%", width: "auto", objectFit: "cover", }}
+                    style={{
+                        maxHeight: "280px", // Use viewport height for responsiveness
+                        width: "auto",
+                        objectFit: "cover",
+                    }}
                 />
                 {/* Row of icons */}
                 <div className="flex space-x-2 mt-4">
                 <a href="https://ensa.fi" target="_blank" rel="noopener noreferrer">
                         <WebIcon />
                     </a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://x.com/royaensafi" target="_blank" rel="noopener noreferrer">
                         <TwitterIcon />
                     </a>
-                    <a href="https://www.linkedin.com/in/roya-ensafi-954b71309&ved=2ahUKEwjcwtOag_6NAxUMgf0HHZIPI1sQFnoECAkQAQ&usg=AOvVaw373sFrIBnhjczB3Q9dk9X1" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/roya-ensafi-954b71309" target="_blank" rel="noopener noreferrer">
                         <LinkedInIcon />
                     </a>
                     
                 </div>
             </div>
-            <div className="px-4">
-
-            </div>
+           
         </div>
     );
 }

@@ -14,13 +14,19 @@ export default function PersonCard({ person }) {
                 </div>
                 <div>
                     <p className="font-medium text-base">{person.name}</p>
-                    <p className="text-sm text-gray-600">
+                    <div className="small-text text-[#595959]">
+                    <p >
                         {person.position}
-                        
                     </p>
-                    <p>{!person.active && person["now at"] && (
-                            <span className="text-xs text-gray-600 italic"> Next Role: {person["now at"]}</span>
+                    <p >
+                        {person.timeline}
+                    </p>
+                    <p className="font-normal">{person["now at"] && (
+                            <span className="italic underline text-xs"> Next Role: {person["now at"]}</span>
                         )}</p>
+                    </div>
+                   
+                  
                 </div>
 
             </div>
