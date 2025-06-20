@@ -47,17 +47,7 @@ export default function Talks() {
               />
             </div>
           </div>
-          {/* <div className="flex items-center">
-            <label className="mr-5 font-medium">Filter by year:</label>
-            <select
-              value={selectedYear}
-              onChange={(e) => setSelectedYear(e.target.value)}
-              className="border border-[#888] px-2 py-1 text-[#595959]">
-              {allYears.map((year, idx) => (
-                <option key={idx} value={year}>{year}</option>
-              ))}
-            </select>
-          </div> */}
+       
           <select
             className="border !border-[#888] px-2 !py-2 !text-[#595959] !min-w-[100px]"
             value={selectedYear}

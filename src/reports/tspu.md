@@ -21,9 +21,9 @@ research: "TSPU: Russia’s Decentralized Censorship System"
 link: "assets/tspu-imc22.pdf"
 writers: "Diwen Xue, Benjamin Mixon-Baca, ValdikSS, Anna Ablove, Beau Kujath, Jedidiah R. Crandall, Roya Ensafi"
 appearing: "Internet Measurement Conference 2022 (IMC'22)"
----
+video: "https://www.youtube-nocookie.com/embed/LWoBhWwAY8A"
 
-<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/LWoBhWwAY8A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+---
 
 This post highlights findings also discussed in our [IMC 2022](https://conferences.sigcomm.org/imc/2022/) paper [TSPU: Russia’s Decentralized Censorship System](/assets/tspu-imc22.pdf). 
 
