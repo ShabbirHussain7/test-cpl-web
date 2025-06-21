@@ -22,6 +22,7 @@ link: "assets/tspu-imc22.pdf"
 writers: "Diwen Xue, Benjamin Mixon-Baca, ValdikSS, Anna Ablove, Beau Kujath, Jedidiah R. Crandall, Roya Ensafi"
 appearing: "Internet Measurement Conference 2022 (IMC'22)"
 video: "https://www.youtube-nocookie.com/embed/LWoBhWwAY8A"
+videoId: "LWoBhWwAY8A"
 
 ---
 

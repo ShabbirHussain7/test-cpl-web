@@ -37,13 +37,13 @@ export default function Research() {
     DOMPurify.sanitize(data.overview, { ALLOWED_TAGS: ['b', 'i', 'u', 'a', 'em', 'strong'] })
 
     return (
-        <main className="pt-20">
+        <main className="lg:px-20 lg:py-25 bg-[#fdfdfd]">
             <div
-                className='hero-section py-8'
-                style={{ backgroundColor: data.backgroundColor }}
+                className=''
+               
             >
-                <div className='page-container'>
-                    <h1 className="heading-primary">{data.title}</h1>
+                <div className=''>
+                    <h1 className="new-section-heading">{data.title}</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-x-6">
 
 
@@ -77,7 +77,7 @@ export default function Research() {
             </div>
 
             <section >
-                <div className='page-container pt-6 pb-10'>
+                <div className=''>
                     <h2 className="heading-secondary">Research Direction</h2>
                     <p className="paragraph"
                         dangerouslySetInnerHTML={{
@@ -88,7 +88,7 @@ export default function Research() {
             </section>
 
             <section>
-                <div className='page-container pt-6 pb-10'>
+                <div className=''>
                     <h2 className="heading-secondary">Key Findings</h2>
                     {data.findings.map((finding, index) => (
                         <div key={index} className="mb-6">
@@ -105,7 +105,7 @@ export default function Research() {
                 </div>
             </section>
             <section>
-                <div className="page-container pt-6 pb-10">
+                <div className="">
                     <h2 className="heading-secondary">Relevant Publications</h2>
                     {Object.entries(publications)
                         .sort((a, b) => b[0] - a[0])

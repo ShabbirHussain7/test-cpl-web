@@ -53,54 +53,71 @@ export default function Report() {
 
   return (
     <main className="body ">
-      <section className='lg:px-20 lg:pt-25 lg:pb-15 !bg-[#E4F7F6]' >
+      <section className='lg:px-20 lg:pt-25 lg:pb-4 !bg-[#fdfdfd]' >
         <div className="">
-          <h1 className="heading-primary font-merriweather">{frontMatter.title}</h1>
-          <div className='lg:flex lg:flex-row relative'>
-            <div className='pr-10'>
+          <h1 className="new-section-heading">{frontMatter.title}</h1>
+          <div className='mt-6 lg:flex lg:flex-row relative  '>
+            <div className='max-w-[1060px]'>
               {frontMatter.date && <p className="small-text text-[#595959]">{frontMatter.date}</p>}
               {frontMatter.excerpt && (
-                <p className="mt-2 text-lg text-gray-700">{frontMatter.excerpt}</p>
+                <p className="body">{frontMatter.excerpt}</p>
               )}
               {metaFields.map(({ label, value }) =>
                 value ? (
-                  <p key={label} className="mt-1 text-gray-600 text-sm">
-                    <strong>{label}:</strong> {value}
+                  <p key={label} className="body">
+                    <span className='body-medium'>{label}:</span> {value}
                   </p>
                 ) : null
               )}
+              <div className='flex flex-row space-x-2 mt-2 text-[#28A199]'>
               {frontMatter.link && (
-                <p className="mt-2">
+                <p >
                   <a
                     href={frontMatter.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#28A199] underline"
+                    className="text-[#17827B] underline"
                   >
-                    Download PDF
+                    Download Full Paper
                   </a>
                 </p>
               )}
+
+              <span> | </span>
+
+              {frontMatter.video && (
+                <p >
+                  <a
+                    href={frontMatter.video}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#17827B] underline"
+                  >
+                    Watch Video
+                  </a>
+                </p>
+              )}
+              </div>
             </div>
 
-            {frontMatter.video && (
-              <div className="flex justify-center ">
-                <div className="relative">
+            {/* {frontMatter.video && (
+              <div className="bg-[#121212] p-2 flex justify ml-auto">
+                <div >
                   <iframe
-                    src={frontMatter.video}
+                    src={frontMatter.video+"?rel=0&amp;controls=1&amp&amp;showinfo=0&amp;modestbranding=0"}
                     title="Embedded video"
 
                     allowFullScreen
-                    className="w-90 h-52 mr-auto"
+                    className="w-80 h-45 "
                   />
                 </div>
               </div>
-            )}
+            )} */}
           </div>
         </div>
 
       </section>
-      <section className="lg:px-20 lg:pt-10 lg:pb-25 !bg-[#fdfdfd]">
+      <section className="lg:px-20 lg:pt-11 lg:pb-25 !bg-[#E4F7F6]">
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           rehypePlugins={[rehypeRaw]}
@@ -114,12 +131,12 @@ export default function Report() {
             p: (props) => <p className="my-2 text-gray-700" {...props} />,
             li: (props) => <li className="list-disc ml-6" {...props} />,
             a: (props) => <a className="text-blue-500 underline" {...props} />,
-            img: (props) => <img className="my-4" {...props} />,
+            img: (props) => <img className="my-4 mx-auto" {...props} />,
           }}
         >
           {markdownContent}
         </ReactMarkdown>
-      </section>
+      </section> 
     </main>
   );
 }

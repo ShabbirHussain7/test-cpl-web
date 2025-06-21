@@ -30,7 +30,7 @@
     ]
   },
   "censorship-detection": {
-    "title": "Remote Censorship Measurement Dashboard",
+    "title": "Monitoring Censorship at Global Scale",
     "overview": "Internet censorship is pervasive and evolving, yet our ability to detect and understand it remains limited. Traditional measurement approaches often depend on in-country volunteers or ad hoc infrastructure, which raises ethical concerns and lacks coverage and continuity. This makes it difficult to monitor censorship at scale, respond to policy changes, or understand long-term trends. As censorship tactics grow more sophisticated, the need for scalable, resilient, and ethical measurement frameworks becomes increasingly urgent.",
     "image": "censorship.gif",
     "backgroundColor": "#e0fbf8",
