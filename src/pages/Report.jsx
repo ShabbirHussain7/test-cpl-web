@@ -100,19 +100,7 @@ export default function Report() {
               </div>
             </div>
 
-            {/* {frontMatter.video && (
-              <div className="bg-[#121212] p-2 flex justify ml-auto">
-                <div >
-                  <iframe
-                    src={frontMatter.video+"?rel=0&amp;controls=1&amp&amp;showinfo=0&amp;modestbranding=0"}
-                    title="Embedded video"
-
-                    allowFullScreen
-                    className="w-80 h-45 "
-                  />
-                </div>
-              </div>
-            )} */}
+          
           </div>
         </div>
 
