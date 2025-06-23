@@ -78,7 +78,7 @@ export default function Research() {
                 </div>
             </section>
 
-            <section className='lg:px-20 lg:py-15 mt-16 !bg-[#E4F7F6]' >
+            <section className='lg:px-20 lg:py-15 mt-16 border border-t-[#888]  !bg-[#E4F7F6]' >
                 <div className=''>
                     <h4 className="">Research Direction</h4>
                     <p className="body mt-4 max-w-[1000px]"

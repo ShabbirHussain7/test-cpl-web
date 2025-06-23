@@ -96,7 +96,7 @@ export default function People() {
 
         </section>
 
-        <section className="lg:px-20 lg:pt-10 lg:pb-25 !bg-[#E4F7F6]" >
+        <section className="lg:px-20 lg:pt-10 lg:pb-25 border border-t-[#888] !bg-[#E4F7F6]" >
           <h2 className="new-section-heading">Our Team</h2>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-5 gap-5 items-stretch">
 
