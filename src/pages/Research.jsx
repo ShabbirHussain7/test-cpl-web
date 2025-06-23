@@ -121,7 +121,7 @@ export default function Research() {
                             <h4 className="">VPNalyzer</h4>
                             <p className='pt-4 max-w-[900px]'>A research project evaluating the safety and effectiveness of VPNs and other circumvention tools. It combines technical testing with real-world user insights.</p>
 
-                            <Link 
+                            <Link
                                 to={'https://vpnalyzer.org/release'}
                                 target='_blank'
                                 rel='noopener noreferrer'
@@ -129,7 +129,7 @@ export default function Research() {
                                 <img src="icons/VPNalyzer.svg" alt="icon" className="w-6 h-6 flex-shrink-0" />
                                 <span>Download VPNalyzer</span>
                             </Link>
-                            
+
                         </div>
                     </section>
                 )
@@ -162,9 +162,12 @@ export default function Research() {
                 </div>
             </section>
 
-            <section className='lg:px-20 '>
+
+            <section className='lg:px-20 mt-10'>
                 <div className="">
-                    <h4 className="heading-secondary">Relevant Publications</h4>
+                    <h4 className="">Relevant Publications</h4>
+                    <div className='mt-6'>
+                   
                     {Object.entries(publications)
                         .sort((a, b) => b[0] - a[0])
                         .map(([year, pubs]) => {
@@ -172,18 +175,27 @@ export default function Research() {
                             if (filteredPubs.length === 0) return null;
 
                             return (
-                                <div key={year}>
-                                    {/* <h3 className="text-lg font-semibold text-gray-700">{year}</h3> */}
-                                    <ul >
+                                <table className=' w-full'>
+
                                         {filteredPubs.map((pub, idx) => (
-                                            <li key={`${year}-${idx}`} className="border-b border-gray-300 pb-2">
+                                             <tr key={`${year}-${idx}`} className="border-b border-[#888]">
+                                             <td className="publication-year w-[92px] text-center border-r border-[#888] align-top pt-2">
+                                                 {pub.year}
+                                             </td>
+                                            <td>
                                                 <PublicationItem pub={pub} />
-                                            </li>
+                                            </td>
+                                            </tr>
                                         ))}
-                                    </ul>
-                                </div>
+                                       
+
+                                  
+
+                                </table>
+
                             );
                         })}
+                         </div>
                 </div>
             </section>
         </main>
