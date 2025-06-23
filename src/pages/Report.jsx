@@ -83,10 +83,11 @@ export default function Report() {
                 </p>
               )}
 
-              <span> | </span>
+             
 
               {frontMatter.video && (
                 <p >
+                   <span> | </span>
                   <a
                     href={frontMatter.video}
                     target="_blank"

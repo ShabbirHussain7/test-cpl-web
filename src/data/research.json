@@ -4,7 +4,7 @@
     "image": "obfuscation.jpeg",
     "backgroundColor": "#fdf6e3",
     "imgBorderColor": " #9a7400",
-    "overview": "Targeted network interference—such as censorship, bandwidth throttling, and selective traffic blocking—fundamentally depends on an adversary’s ability to accurately identify and classify specific types of traffic, a process known as <u><em>traffic fingerprinting</em></u>. To counteract fingerprinting techniques, <u><em>traffic obfuscation</em></u> protocols aim to disguise sensitive traffic, making it indistinguishable from benign, everyday network flows.",
+    "overview": "Targeted network interference—such as censorship, bandwidth throttling, and selective traffic blocking—fundamentally depends on an adversary’s ability to accurately identify and classify specific types of traffic, a process known as <strong><em>traffic fingerprinting</em></strong>. To counteract fingerprinting techniques, <strong><em>traffic obfuscation</em></strong> protocols aim to disguise sensitive traffic, making it indistinguishable from benign, everyday network flows.",
     "research": "Our research rigorously evaluates state-of-the-art obfuscation protocols by empirically analyzing their resilience against realistic fingerprinting attacks. By exposing vulnerabilities within widely deployed obfuscation methods, we reveal critical gaps that adversaries can exploit—such as nested protocol structures, timing discrepancies, and anomalous congestion control behaviors. Our goal is to guide the design of next-generation obfuscation protocols, ensuring that future solutions provide robust and lasting defenses against traffic fingerprinting.",
     "findings": [
       {
@@ -84,7 +84,7 @@
     ]
   },
   "rapid-response": {
-    "title": "Exposing Emerging Censorship Threats",
+    "title": "Exposing Emerging Threats",
     "image": "rapid-response.png",
     "backgroundColor": "#edfaff",
     "imgBorderColor": "#0083c5",
@@ -144,7 +144,7 @@
     ]
   },
   "securing-pets": {
-    "title": "Securing VPN and Circumvention Tool Ecosystem",
+    "title": "Securing VPN and Circumvention Tools",
     "image": "securing-pets.jpeg",
     "backgroundColor": "#e8ecff",
     "imgBorderColor": "#4D4DD1",
@@ -156,9 +156,10 @@
         "description": "We reveal alarming misalignments between the perspectives of VPN users and providers, including users’ reliance on profit-driven VPN review sites and flawed mental models about VPNs’ security guarantees and data collection practices. While effective user education remains a key challenge, VPN providers point to dark patterns in the industry—such as exploiting users' lack of knowledge and overselling services—as a major concern."
       },
       {
-        "title": "Bridging Barriers: A Survey of Challenges and Priorities in the Censorship Circumvention Landscape <a href='https://ensa.fi/papers/bridging-barriers.pdf'>(<u>USENIX'24</u>)</a>",
-        "description": "In the first multi-perspective survey of circumvention tool (CT) providers and users, we highlight disruptions from censors, funding constraints, CT discoverability, misconceptions about the threats that CTs can mitigate, and distrust of CT providers as key issues plaguing the circumvention tool ecosystem. Our findings suggest that improving user education, strengthening local and regional engagement, and enabling short-term funding for rapid response could help address these persistent issues."
+        "title": "The Use of Push Notification in Censorship Circumvention <a href=\"papers/foci23-push.pdf\">(<u>FOCI'23</u>)</a>",
+        "description": "We find that push notifications are a promising candidate for tunneling mid-bandwidth circumvention traffic. Push notifications offer blocking resistance because they do not require direct connection between a client and application server, and they carry high collateral as a widely integrated feature in both mobile and desktop applications."
       },
+     
       {
         "title": "CenPush: Blocking-Resistant Communication Using Push Notifications <a href=\"papers/congestion.pdf\">(<u>PETS'25</u>)</a>",
         "description": "We demonstrate the utility of push notification services as an efficient and sustainable control channel for circumvention tool maintainers to automatically update client configurations during periods of increased censorship without the need for clients to initiate a query themselves. Further, we develop a general-purpose design for integrating push notifications as a signaling channel in circumvention tools."
@@ -168,9 +169,11 @@
         "description": "In collaboration with the ASU team, we present a novel exploit called the port shadow, which arises from shared, limited resources within the connection tracking frameworks of popular operating systems. The port shadow enables severe attacks against VPNs, including intercepting and redirecting encrypted traffic, as well as de-anonymizing or port scanning peers. We show that enforcing per-process isolation of networking resources effectively mitigates port shadow-based attacks."
       },
       {
-        "title": "The Use of Push Notification in Censorship Circumvention <a href=\"papers/foci23-push.pdf\">(<u>FOCI'23</u>)</a>",
-        "description": "We find that push notifications are a promising candidate for tunneling mid-bandwidth circumvention traffic. Push notifications offer blocking resistance because they do not require direct connection between a client and application server, and they carry high collateral as a widely integrated feature in both mobile and desktop applications."
+        "title": "Bridging Barriers: A Survey of Challenges and Priorities in the Censorship Circumvention Landscape <a href='https://ensa.fi/papers/bridging-barriers.pdf'>(<u>USENIX'24</u>)</a>",
+        "description": "In the first multi-perspective survey of circumvention tool (CT) providers and users, we highlight disruptions from censors, funding constraints, CT discoverability, misconceptions about the threats that CTs can mitigate, and distrust of CT providers as key issues plaguing the circumvention tool ecosystem. Our findings suggest that improving user education, strengthening local and regional engagement, and enabling short-term funding for rapid response could help address these persistent issues."
       },
+
+
       {
         "title": "VPNalyzer: Systematic Investigation of the VPN Ecosystem <a href=\"papers/vpnalyzer.pdf\">(<u>NDSS'22</u>)</a>",
         "description": "Our public VPN investigation tool, VPNalyzer, highlights several implementation shortcomings in popular desktop VPNs, including DNS and traffic leaks during tunnel failure, lack of IPv6 support leading to IPv6 traffic leaks, colocated VPN server infrastructure, and use of third-party DNS services, among others. More broadly, we demonstrate the importance of empowering users with actionable insights about their security choices, as Consumer Reports used VPNalyzer to create data-driven VPN rankings and policy recommendations through the CSAW ‘22 VPNalyzer challenge."

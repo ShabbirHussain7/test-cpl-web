@@ -114,8 +114,10 @@ export default function Home() {
 
       </section>
 
+
+      {/* NEWS BAR */}
       <div id="" className="z-0">
-           {/* NEWS BAR */}
+           
         <div className="-mt-[2px] w-full bg-[#E4F7F6] border-t border-b border-[#888] text-black relative z-20">
           <div
             className="flex items-center justify-between mx-auto px-20 py-2">
@@ -148,6 +150,8 @@ export default function Home() {
         </div>
       </div>
       </div>
+
+      
       {/* WHAT WE DO */}
       <section id="what-we-do" className="lg:px-20 lg:py-25">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12">
