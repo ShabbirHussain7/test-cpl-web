@@ -1464,6 +1464,7 @@ collaborators:
   - Sam Korman
   - Roya Ensafi
 pdf: "papers/calculatency.pdf"
+slides: "slides/calculatency-slides.pdf"
 bibtex: "@article{rameshcalculatency,
   title={CalcuLatency: Leveraging Cross-Layer Network Latency Measurements to Detect Proxy-Enabled Abuse},
   author={Ramesh, Reethika and Winter, Philipp and Korman, Sam and Ensafi, Roya}
