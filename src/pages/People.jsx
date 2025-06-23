@@ -6,9 +6,9 @@ import DirectorCard from '../components/DirectorCard';
 
 export default function People() {
   return (
-    <main className="pt-10">
-      <div>
-        <section className="lg:px-20 lg:pt-15 bg-[#fdfdfd] ">
+  
+      <div className=''>
+        <section className="internal-container lg:pt-25 bg-[#fdfdfd] ">
 
           <div className='grid grid-cols-1 md:grid-cols-[5fr_2fr] gap-0'>
 
@@ -39,7 +39,7 @@ export default function People() {
           </div>
 
         </section>
-        <section className="lg:px-20 lg:py-10 bg-[#fdfdfd] ">
+        <section className="internal-container lg:py-10 bg-[#fdfdfd] ">
 
           <div className='grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-[35px]'>
 
@@ -96,7 +96,8 @@ export default function People() {
 
         </section>
 
-        <section className="lg:px-20 lg:pt-10 lg:pb-25 border-t border-t-[#888] !bg-[#E4F7F6]" >
+        <section className="lg:pt-10 lg:pb-25 border-t border-t-[#888] !bg-[#E4F7F6]" >
+          <div className='internal-container'>
           <h2 className="new-section-heading">Our Team</h2>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-5 gap-5 items-stretch">
 
@@ -105,10 +106,11 @@ export default function People() {
             ))}
 
           </div>
+          </div>
         </section>
 
 
       </div>
-    </main>
+ 
   );
 }

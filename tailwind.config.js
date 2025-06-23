@@ -8,6 +8,7 @@ module.exports = {
         inter: ['Inter', 'ui-sans-serif', 'system-ui'],
         merriweather: ['Merriweather', 'serif'],
       },
+     
     },
   },
   variants: {

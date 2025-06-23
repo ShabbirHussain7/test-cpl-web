@@ -24,7 +24,7 @@ export default function Publications() {
 
   return (
 
-    <main className="lg:px-20 lg:py-25">
+    <main className="internal-container lg:py-25">
 
       <h1 className="new-section-heading">Publications</h1>
 

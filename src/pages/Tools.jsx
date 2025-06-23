@@ -6,7 +6,7 @@ export default function Tools() {
     const [isSvgLoaded, setIsSvgLoaded] = useState(false); // State to track SVG loading
 
     return (
-        <section className="text-[#121212] overflow-hidden z-0">
+        <section className="internal-container text-[#121212] overflow-hidden z-0">
             {/* BACKGROUND IMAGE */}
             <img
                 src={isSvgLoaded ? 'background/tools-pg-bg.svg' : "background/tools-pg-bg.png"}

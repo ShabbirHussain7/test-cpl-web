@@ -77,96 +77,91 @@ export default function Home() {
     <main className=''>
 
 
-      <div>
-        {/* HERO SECTION */}
-        <section id="hero" className="hero relative overflow-hidden z-0">
 
-          {/* BACKGROUND IMAGE */}
-          <img
-            src={isSvgLoaded ? HeroBg : "background/hero-bg.png"}
-            alt="Hero background"
-            className="relative ml-auto z-[-1]"
-          />
+      {/* HERO SECTION */}
+      <section id="hero" className="hero relative overflow-hidden z-0">
 
-
-          {/* Hero Text & Buttons */}
-          <div className="absolute lg:top-[206px] top-[70px] lg:px-20 px-10 lg:w-[815px] sm:top-[30px] z-10">
-
-            <div className="flex flex-col lg:gap-6 gap-3">
-              <h1 className="lg:text-[61px] text-[20px] font-bold font-merriweather leading-[120%] text-[#121212] ">
-                Censored Planet
-              </h1>
-              <p className="lg:text-[16px] text-[12px] lg:w-[590px] w-[250px] font-inter font-normal leading-[150%] text-[#121212] ">
-                {homeData.mission.description}
-              </p>
-              <div className="flex space-x-4">
-                <Link
-                  to="/publications"
-                  className="primary-button"
-                >
-                  Publications
-                </Link>
-                <Link
-                  to="/people"
-                  className="secondary-button "
-                >
-                  About
-                </Link>
-              </div>
-            </div>
-          </div>
+        {/* BACKGROUND IMAGE */}
+        <img
+          src={isSvgLoaded ? HeroBg : "background/hero-bg.png"}
+          alt="Hero background"
+          className="relative w-[57%] ml-auto transform z-[-1]"
+        />
 
 
+        {/* Hero Text & Buttons */}
+        <div className="internal-container  absolute lg:top-[140px] top-[70px] lg:w-[815px] sm:top-[30px] z-10">
 
-
-        </section>
-
-
-        {/* NEWS BAR */}
-        <div id="" className="z-0">
-
-          <div className="-mt-[2px] w-full bg-[#E4F7F6] border-t border-b border-[#888] text-black relative z-20">
-            <div
-              className="flex items-center justify-between mx-auto px-20 py-2">
-              <Link to='/news' className="text-[#17827b] text-[14px] font-medium whitespace-nowrap pr-4 hover:underline">
-                Latest News
+          <div className="flex flex-col lg:gap-6 gap-3">
+            <h1 className="lg:text-[61px] text-[20px] font-bold font-merriweather leading-[120%] text-[#121212] ">
+              Censored Planet
+            </h1>
+            <p className="lg:text-[16px] text-[12px] lg:w-[590px] w-[250px] font-inter font-normal leading-[150%] text-[#121212] ">
+              {homeData.mission.description}
+            </p>
+            <div className="flex space-x-4">
+              <Link
+                to="/publications"
+                className="primary-button"
+              >
+                Publications
               </Link>
-
-              <div className="px-10 cursor-pointer" onClick={handlePrevious}>
-                <ChevronLeft className="text-xs text-[#5E5E5E]" />
-              </div>
-
-              <div className="flex-1 mx-4 overflow-hidden">
-                <div className="truncate text-[14px] text-black text-center font-inter">
-                  <span className="font-bold">{currentNews.date}</span> –{" "}
-                  <Link
-                    to={currentNews.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className=" underline "
-                  >
-                    {currentNews.title}
-                  </Link>
-                  , <em>{currentNews.source}</em>
-                </div>
-              </div>
-              <div className="cursor-pointer" onClick={handleNext}>
-                <ChevronRight className="text-[#5E5E5E]" />
-              </div>
+              <Link
+                to="/people"
+                className="secondary-button "
+              >
+                About
+              </Link>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+
+      {/* NEWS BAR */}
+      <section id="" className="z-0">
+
+        <div className="-mt-[2px] bg-[#E4F7F6] border-t border-b border-[#888] text-black relative z-20">
+          <div
+            className="internal-container flex items-center justify-between py-2">
+            <Link to='/news' className="text-[#17827b] text-[14px] font-medium whitespace-nowrap pr-4 hover:underline">
+              Latest News
+            </Link>
+
+            <div className="px-10 cursor-pointer" onClick={handlePrevious}>
+              <ChevronLeft className="text-xs text-[#5E5E5E]" />
+            </div>
+
+            <div className="flex-1 mx-4 overflow-hidden">
+              <div className="truncate text-[14px] text-black text-center font-inter">
+                <span className="font-bold">{currentNews.date}</span> –{" "}
+                <Link
+                  to={currentNews.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" underline "
+                >
+                  {currentNews.title}
+                </Link>
+                , <em>{currentNews.source}</em>
+              </div>
+            </div>
+            <div className="cursor-pointer" onClick={handleNext}>
+              <ChevronRight className="text-[#5E5E5E]" />
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       {/* WHAT WE DO */}
-      <section id="what-we-do" className="lg:px-20 lg:py-25">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12">
-          <div className='w-[540px] '>
+      <section id="what-we-do" className="lg:py-25">
+        <div className="internal-container grid grid-cols-1 md:grid-cols-2 gap-y-12">
+          <div className=''>
             <h2 className="new-section-heading">
               What We Do
             </h2>
-            <div className="mt-4 font-inter lg:text-[16px] text-[#121212] leading-[150%] space-y-6">
+            <div className="mt-4 max-w-[540px] font-inter lg:text-[16px] text-[#121212] leading-[150%] space-y-6">
               <p>
                 Our research lies at the intersection of <strong>Networking</strong>, <strong>Security & Privacy</strong>, and <strong>Internet Measurements</strong>. We take a data-driven approach to detect and defend against powerful network intermediaries and government threat actors.
               </p>
@@ -186,7 +181,7 @@ export default function Home() {
           </div>
 
           {/* Metrics Grid */}
-          <div className="w-[630px] grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">{
+          <div className="max-w-[630px] grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">{
 
             homeData.metrics.map((metric, idx) => (
               <div key={idx} className="flex flex-col items-start">
@@ -228,9 +223,10 @@ export default function Home() {
           </div>
 
 
-          <div className='lg:px-20 lg:py-15 relative z-10' style={{
+          <div className='lg:py-15 relative z-10' style={{
             background: 'linear-gradient(180deg, #FDFDFD 0%, rgba(253, 253, 253, 0.00) 51.92%, var(--Background, #FDFDFD) 100%)',
           }}>
+            <div className='internal-container'>
             {/* Research Themes Subsection */}
             <h2 className="new-section-heading">
               What We're Investigating
@@ -252,13 +248,14 @@ export default function Home() {
                 />
               ))}
             </div>
+            </div>
           </div>
         </div>
 
       </section>
 
       <section id="open-source ">
-        <div className="lg:px-20 lg:py-15 ">
+        <div className="internal-container  lg:py-15 ">
           {/* Research Themes Subsection */}
           <h2 className="new-section-heading">
             Tools We've Built
@@ -293,7 +290,7 @@ export default function Home() {
       </section>
 
       <section id="selected-publications">
-        <div className='lg:px-20 lg:py-15' >
+        <div className='internal-container lg:py-15' >
           <h2 className="new-section-heading">
             Our Distinguished Publications
           </h2>
@@ -350,6 +347,7 @@ export default function Home() {
           <div className='lg:px-20 lg:pt-15 lg:pb-40 ' style={{
             background: 'linear-gradient(180deg, var(--Background, #FDFDFD) 0%, rgba(253, 253, 253, 0.00) 57.28%)',
           }}>
+            <div className='internal-container '>
             <h2 className="new-section-heading">
               Join Our Team
             </h2>
@@ -364,6 +362,7 @@ export default function Home() {
               >
                 Contact
               </Link>
+            </div>
             </div>
           </div>
         </div>

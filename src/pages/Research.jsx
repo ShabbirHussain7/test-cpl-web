@@ -38,7 +38,7 @@ export default function Research() {
         }
 
         if (area) {
-            
+
             setSvg(`background/research/${area}.svg`);
         }
     }, [area]);
@@ -64,13 +64,14 @@ export default function Research() {
                                 }}
                             />
                         </div>
-                                                <div className='flex justify-end'>
+                        <div className='flex justify-end'>
                             {svg && (
                                 <img
-                                    src={isSvgLoaded ?  `background/research/${area}.svg` : `background/research-png/${area}.png`}
+                                    // src={isSvgLoaded ?  `background/research/${area}.svg` : `background/research-png/${area}.png`}
+                                    src={`background/research/${area}.svg`}
                                     alt=""
                                     className={`absolute top-4 max-h-[600px] z-0 pointer-events-none`}
-                                    onLoad={() => setIsSvgLoaded(true)} // Set SVG as loaded when it finishes loading
+                                // onLoad={() => setIsSvgLoaded(true)} // Set SVG as loaded when it finishes loading
                                 />
                             )}
                         </div>
@@ -120,7 +121,7 @@ export default function Research() {
                 </div>
             </section>
 
-            
+
 
             <section id='middle' className='relative lg:px-20 lg:py-15 mt-20 border-t border-t-[#888] z-[10] !bg-[#E4F7F6]' >
                 <div className=''>
@@ -149,39 +150,39 @@ export default function Research() {
             </section>
 
 
-            <section id= 'bottom' className='lg:px-20 lg:pb-25 mt-10'>
+            <section id='bottom' className='lg:px-20 lg:pb-25 mt-10'>
                 <div className="">
                     <h4 className="">Relevant Publications</h4>
                     <div className='mt-6'>
-                   
-                    {Object.entries(publications)
-                        .sort((a, b) => b[0] - a[0])
-                        .map(([year, pubs]) => {
-                            const filteredPubs = pubs.filter((pub) => pub.area === areaMapping[area]);
-                            if (filteredPubs.length === 0) return null;
 
-                            return (
-                                <table className=' w-full'>
+                        {Object.entries(publications)
+                            .sort((a, b) => b[0] - a[0])
+                            .map(([year, pubs]) => {
+                                const filteredPubs = pubs.filter((pub) => pub.area === areaMapping[area]);
+                                if (filteredPubs.length === 0) return null;
+
+                                return (
+                                    <table className=' w-full'>
 
                                         {filteredPubs.map((pub, idx) => (
-                                             <tr key={`${year}-${idx}`} className="border-b border-[#888]">
-                                             <td className="publication-year w-[92px] text-center border-r border-[#888] align-top pt-2">
-                                                 {pub.year}
-                                             </td>
-                                            <td>
-                                                <PublicationItem pub={pub} />
-                                            </td>
+                                            <tr key={`${year}-${idx}`} className="border-b border-[#888]">
+                                                <td className="publication-year w-[92px] text-center border-r border-[#888] align-top pt-2">
+                                                    {pub.year}
+                                                </td>
+                                                <td>
+                                                    <PublicationItem pub={pub} />
+                                                </td>
                                             </tr>
                                         ))}
-                                       
 
-                                  
 
-                                </table>
 
-                            );
-                        })}
-                         </div>
+
+                                    </table>
+
+                                );
+                            })}
+                    </div>
                 </div>
             </section>
         </main>

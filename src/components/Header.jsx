@@ -35,10 +35,11 @@ export default function Header() {
           items-center
           justify-between
           mx-auto
-          lg:py-5
+          lg:py-6
           py-3
           lg:px-20
           px-8
+          
         "
       >
         {/* Logo */}

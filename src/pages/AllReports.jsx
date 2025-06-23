@@ -28,8 +28,9 @@ export default function AllReports() {
   const [search, setSearch] = useState('');
 
   return (
-    <main className="text-[#121212] relative overflow-hidden z-0">
-        <div className='lg:px-20 lg:py-25 px-10 z-10'>
+    <section className="text-[#121212] relative overflow-hidden z-0">
+        
+        <div className='internal-container lg:py-25 px-10 z-10'>
         <div className="">
           <h1 className="new-section-heading">Research Blogs — Quick Insights from Our Work</h1>
           <p className="body mt-6"> Our deep-dive studies, distilled into overviews for a wider audience</p>
@@ -66,6 +67,6 @@ export default function AllReports() {
               alt="Hero background"
               className=" absolute bottom-0 right-0  z-[-1]"
             />
-    </main>
+    </section>
   );
 }
