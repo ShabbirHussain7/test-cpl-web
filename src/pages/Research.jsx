@@ -41,7 +41,7 @@ export default function Research() {
         if (area) {
             const basePath = process.env.NODE_ENV === 'development'
                 ? '../../public/'
-                : '/';
+                : '';
             // Serve SVG from public folder as static asset
             setSvg(`${basePath}background/research/${area}.svg`);
         }
