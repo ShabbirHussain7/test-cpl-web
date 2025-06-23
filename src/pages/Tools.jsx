@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import ToolCard from "../components/ToolCard";
 import ToolData from "../data/tools.json";
-import ToolsBg from '../../public/background/tools-pg-bg.svg';
 
 export default function Tools() {
+    const [isSvgLoaded, setIsSvgLoaded] = useState(false); // State to track SVG loading
 
     return (
         <section className="text-[#121212] overflow-hidden z-0">
             {/* BACKGROUND IMAGE */}
             <img
-                src={ToolsBg}
+                src={isSvgLoaded ? 'background/tools-pg-bg.svg' : "background/tools-pg-bg.png"}
                 alt="Hero background"
                 className="absolute z-[-1]"
                 style={{
@@ -18,6 +18,7 @@ export default function Tools() {
                     top: 0,
                     right: 0,
                 }}
+                onLoad={() => setIsSvgLoaded(true)} // Set SVG as loaded when it finishes loading
             />
             <div className="lg:px-20 lg:py-25  z-10">
                 <h1 className="new-section-heading">Tools</h1>

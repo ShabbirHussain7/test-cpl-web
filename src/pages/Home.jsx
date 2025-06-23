@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PublicationItem from '../components/PublicationItem';
 import { Link } from 'react-router-dom';
 import { parsePublications } from '../utils/parsePublications';
@@ -27,6 +27,13 @@ import HomeEnd from '../../public/background/home-end.svg';
 
 
 export default function Home() {
+  const [isSvgLoaded, setIsSvgLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = HeroBg;
+    img.onload = () => setIsSvgLoaded(true);
+  }, []);
   const [currentIndex, setCurrentIndex] = useState(0);
   const iconMap = {
     GlobeIcon,
@@ -76,10 +83,10 @@ export default function Home() {
         
         {/* BACKGROUND IMAGE */}
         <img
-              src={HeroBg}
-              alt="Hero background"
-              className=" relative ml-auto  z-[-1]"
-            />
+      src={isSvgLoaded ? HeroBg : "background/hero-bg.png"}
+      alt="Hero background"
+      className="relative ml-auto z-[-1]"
+    />
 
 
         {/* Hero Text & Buttons */}
