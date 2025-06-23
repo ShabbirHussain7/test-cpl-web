@@ -20,7 +20,11 @@ line-height: 120%; /* 58.8px */
 letter-spacing: var(--spacing-spacing-non, 0px);
 }
 
+.page-container {
+  
+}
 .App {
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,6 +33,7 @@ letter-spacing: var(--spacing-spacing-non, 0px);
 
 section:not(.hero) {
   /* border-bottom: 1px solid var(--divider, #888); */
+  
   background: var(--Background, #FDFDFD);
 }
 

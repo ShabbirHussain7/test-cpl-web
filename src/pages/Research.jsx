@@ -55,7 +55,7 @@ export default function Research() {
                 <div className=''>
                     <h1 className="new-section-heading">{data.title}</h1>
                     <div className="mt-10 grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-x-6">
-                        <div className="">
+                        <div>
                             <h4 className="">Overview</h4>
                             <p
                                 className="body mt-4 max-w-[740px]"
@@ -64,12 +64,12 @@ export default function Research() {
                                 }}
                             />
                         </div>
-                        <div className='flex justify-end'>
+                                                <div className='flex justify-end'>
                             {svg && (
                                 <img
-                                    src={isSvgLoaded ? svg : `background/research-png/${area}.png`}
+                                    src={isSvgLoaded ?  `background/research/${area}.svg` : `background/research-png/${area}.png`}
                                     alt=""
-                                    className="absolute top-4 max-h-[590px] z-0 pointer-events-none"
+                                    className={`absolute top-4 max-h-[600px] z-0 pointer-events-none`}
                                     onLoad={() => setIsSvgLoaded(true)} // Set SVG as loaded when it finishes loading
                                 />
                             )}

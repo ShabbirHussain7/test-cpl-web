@@ -1,24 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
 import peopleData from '../data/people.json';
 import { Link } from 'react-router-dom';
 import PersonCard from '../components/PersonCard';
 import DirectorCard from '../components/DirectorCard';
 
 export default function People() {
-  const [isSvgLoaded, setIsSvgLoaded] = useState(false); // State to track SVG loading
-
   return (
     <main className="pt-10">
       <div>
         <section className="lg:px-20 lg:pt-15 bg-[#fdfdfd] ">
+
           <div className='grid grid-cols-1 md:grid-cols-[5fr_2fr] gap-0'>
+
+
             <div className=''>
               <h2 className="new-section-heading">About Us</h2>
               <div className="body mt-6">
-                <p>
+                <p >
                   Censored Planet is a research lab that investigates how internet access is being shaped and restricted around the world. As censorship tactics become more complex and harder to detect, we develop new ways to study these systems and understand who they affect. We focus on internet measurement, network security, and privacy to produce research and tools that support journalists, civil society, and the broader internet freedom community.
+
                 </p>
                 <br />
+
                 <p>
                   Our approach to research has been defined by a combination of perseverance, choosing pragmatic problems, and enthusiastically leading collaborations within academia and beyond. Perseverance has
                   enabled us to take research efforts all the way from novel concepts to operating production platforms with global reach. Choosing pragmatic problems has ensured that our work is not only academically novel but also serves the needs
@@ -28,14 +31,14 @@ export default function People() {
             </div>
 
             <img
-              src={isSvgLoaded ? "background/about-us-bg.svg" : "background/about-us-bg.png"}
+              src="background/about-us-bg.svg"
               alt="TSPU Image"
               className='object-cover h-full w-full'
-              onLoad={() => setIsSvgLoaded(true)} // Set SVG as loaded when it finishes loading
+
             />
           </div>
-        </section>
 
+        </section>
         <section className="lg:px-20 lg:py-10 bg-[#fdfdfd] ">
 
           <div className='grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-[35px]'>

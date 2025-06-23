@@ -77,88 +77,88 @@ export default function Home() {
     <main className=''>
 
 
-<div>
-      {/* HERO SECTION */}
-      <section id="hero" className="hero relative overflow-hidden z-0">
-        
-        {/* BACKGROUND IMAGE */}
-        <img
-      src={isSvgLoaded ? HeroBg : "background/hero-bg.png"}
-      alt="Hero background"
-      className="relative ml-auto z-[-1]"
-    />
+      <div>
+        {/* HERO SECTION */}
+        <section id="hero" className="hero relative overflow-hidden z-0">
+
+          {/* BACKGROUND IMAGE */}
+          <img
+            src={isSvgLoaded ? HeroBg : "background/hero-bg.png"}
+            alt="Hero background"
+            className="relative ml-auto z-[-1]"
+          />
 
 
-        {/* Hero Text & Buttons */}
-        <div className="absolute lg:top-[206px] top-[70px] lg:px-20 px-10 lg:w-[815px] sm:top-[30px] z-10">
+          {/* Hero Text & Buttons */}
+          <div className="absolute lg:top-[206px] top-[70px] lg:px-20 px-10 lg:w-[815px] sm:top-[30px] z-10">
 
-          <div className="flex flex-col lg:gap-6 gap-3">
-            <h1 className="lg:text-[61px] text-[20px] font-bold font-merriweather leading-[120%] text-[#121212] ">
-              Censored Planet
-            </h1>
-            <p className="lg:text-[16px] text-[12px] lg:w-[590px] w-[250px] font-inter font-normal leading-[150%] text-[#121212] ">
-              {homeData.mission.description}
-            </p>
-            <div className="flex space-x-4">
-              <Link
-                to="/publications"
-                className="primary-button"
-              >
-                Publications
-              </Link>
-              <Link
-                to="/people"
-                className="secondary-button "
-              >
-                About
-              </Link>
-            </div>
-          </div>
-        </div>
-
-       
-
-
-      </section>
-
-
-      {/* NEWS BAR */}
-      <div id="" className="z-0">
-           
-        <div className="-mt-[2px] w-full bg-[#E4F7F6] border-t border-b border-[#888] text-black relative z-20">
-          <div
-            className="flex items-center justify-between mx-auto px-20 py-2">
-            <Link to='/news' className="text-[#17827b] text-[14px] font-medium whitespace-nowrap pr-4 hover:underline">
-              Latest News
-            </Link>
-
-            <div className="px-10 cursor-pointer" onClick={handlePrevious}>
-              <ChevronLeft className="text-xs text-[#5E5E5E]" />
-            </div>
-
-            <div className="flex-1 mx-4 overflow-hidden">
-              <div className="truncate text-[14px] text-black text-center font-inter">
-                <span className="font-bold">{currentNews.date}</span> –{" "}
+            <div className="flex flex-col lg:gap-6 gap-3">
+              <h1 className="lg:text-[61px] text-[20px] font-bold font-merriweather leading-[120%] text-[#121212] ">
+                Censored Planet
+              </h1>
+              <p className="lg:text-[16px] text-[12px] lg:w-[590px] w-[250px] font-inter font-normal leading-[150%] text-[#121212] ">
+                {homeData.mission.description}
+              </p>
+              <div className="flex space-x-4">
                 <Link
-                  to={currentNews.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=" underline "
+                  to="/publications"
+                  className="primary-button"
                 >
-                  {currentNews.title}
+                  Publications
                 </Link>
-                , <em>{currentNews.source}</em>
+                <Link
+                  to="/people"
+                  className="secondary-button "
+                >
+                  About
+                </Link>
               </div>
             </div>
-            <div className="cursor-pointer" onClick={handleNext}>
-              <ChevronRight className="text-[#5E5E5E]" />
+          </div>
+
+
+
+
+        </section>
+
+
+        {/* NEWS BAR */}
+        <div id="" className="z-0">
+
+          <div className="-mt-[2px] w-full bg-[#E4F7F6] border-t border-b border-[#888] text-black relative z-20">
+            <div
+              className="flex items-center justify-between mx-auto px-20 py-2">
+              <Link to='/news' className="text-[#17827b] text-[14px] font-medium whitespace-nowrap pr-4 hover:underline">
+                Latest News
+              </Link>
+
+              <div className="px-10 cursor-pointer" onClick={handlePrevious}>
+                <ChevronLeft className="text-xs text-[#5E5E5E]" />
+              </div>
+
+              <div className="flex-1 mx-4 overflow-hidden">
+                <div className="truncate text-[14px] text-black text-center font-inter">
+                  <span className="font-bold">{currentNews.date}</span> –{" "}
+                  <Link
+                    to={currentNews.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" underline "
+                  >
+                    {currentNews.title}
+                  </Link>
+                  , <em>{currentNews.source}</em>
+                </div>
+              </div>
+              <div className="cursor-pointer" onClick={handleNext}>
+                <ChevronRight className="text-[#5E5E5E]" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
 
-      
+
       {/* WHAT WE DO */}
       <section id="what-we-do" className="lg:px-20 lg:py-25">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12">
@@ -291,7 +291,7 @@ export default function Home() {
 
         </div>
       </section>
-     
+
       <section id="selected-publications">
         <div className='lg:px-20 lg:py-15' >
           <h2 className="new-section-heading">
@@ -334,7 +334,7 @@ export default function Home() {
 
         <div
           className='relative overflow-hidden z-0'
-          
+
         >
 
           {/* BACKGROUND IMGS */}
