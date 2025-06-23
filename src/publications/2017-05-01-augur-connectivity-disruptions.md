@@ -12,7 +12,7 @@ collaborators:
  - Frank Li
  - Nick Feamster
  - Vern Paxson
-pdf: "papers/Pearce2017a.pdf"
+pdf: "papers/Augur-Oakland17.pdf"
 bibtex: "@inproceedings{Paul2017Augur:,<br>
     title={Augur: Internet-Wide Detection of Connectivity Disruptions},<br>
     author={Paul Pearce and Roya Ensafi and Frank Li and Nick Feamster and Vern Paxson},<br>

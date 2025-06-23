@@ -66,19 +66,19 @@
         "description": "Iris is a scalable and ethical system for detecting DNS manipulation worldwide, showing that DNS interference varies greatly across resolvers and countries, and highlighting how this method fills key gaps in understanding Internet censorship."
       },
       {
-        "title": "IEEE Magazine ’18 (Towards Continual Measurement of Global Network-Level Censorship)",
+        "title": "Towards Continual Measurement of Global Network-Level Censorship <a href=\"papers/Pearce2018a.pdf\">(<u>IEEE'18</u>)</a>",
         "description": "We outline the rationale and design of Augur, which enables safe, large-scale, and continuous censorship monitoring by measuring TCP/IP disruptions via side channels—overcoming the geographic and temporal limitations of traditional volunteer-based methods."
       },
       {
-        "title": "PAM’14 (Spooky Scan)",
+        "title": "Detecting Intentional Packet Drops on the Internet via TCP/IP Side Channels  <a href=\"papers/SpookyScan.pdf\">(<u>PAM'14</u>)</a>",
         "description": "Detecting Intentional Packet Drops on the Internet via TCP/IP Side Channels: We introduce a noise-resilient, hybrid idle scanning method to remotely detect and characterize directional packet drops (e.g., censorship) between two hosts without controlling either, validating the method through global measurements showing China as the primary censor of Tor directory access."
       },
       {
-        "title": "USENIX’14",
+        "title": "Global Network Interference Detection over the RIPE Atlas Network <a href=\"papers/SpookyScan.pdf\">(<u>USENIX'14</u>)</a>",
         "description": "Global Censorship Detection over the RIPE Atlas Network: We demonstrate how the RIPE Atlas platform can be repurposed for censorship detection, revealing nuanced interference events in Turkey and Russia, including coordinated DNS tampering, IP blocking, and rerouting, through ethically cautious, cost-effective global measurements."
       },
       {
-        "title": "USENIX’10",
+        "title": "Idle Port Scanning & Non-interference Analysis of Network Protocol Stacks Using Model Checking <a href=\"papers/SpookyScan.pdf\">(<u>USENIX'10</u>)</a>",
         "description": "Idle Port Scanning and Non-interference Analysis of Network Protocol Stacks Using Model Checking: Using formal model checking, we uncover two novel idle scan techniques that bypass firewalls by exploiting TCP RST rate limiting and SYN cache behavior, and propose architectural mitigations via resource separation and non-interference enforcement in protocol stack design."
       }
     ]

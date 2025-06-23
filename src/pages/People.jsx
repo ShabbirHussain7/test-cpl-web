@@ -32,7 +32,7 @@ export default function People() {
 
             <img
               src="background/about-us-bg.svg"
-              alt="Portrait of Roya Ensafi"
+              alt="TSPU Image"
               className='object-cover h-full w-full'
 
             />

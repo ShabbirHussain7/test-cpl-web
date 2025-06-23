@@ -54,12 +54,9 @@ export default function Research() {
     DOMPurify.sanitize(data.overview, { ALLOWED_TAGS: ['b', 'i', 'u', 'a', 'em', 'strong'] })
 
     return (
-        <main className="lg:py-25 bg-[#fdfdfd]">
+        <main className="bg-[#fdfdfd]">
 
-            <section
-                className='lg:px-20 text-[#121212] overflow-hidden'
-
-            >
+            <section id='top' className='lg:px-20 lg:pt-25 text-[#121212] relative overflow-visible'>
 
                 <div className=''>
                     <h1 className="new-section-heading">{data.title}</h1>
@@ -77,7 +74,7 @@ export default function Research() {
                             />
                         </div>
                         <div className='flex justify-end'>
-                            {svg && <img src={svg} alt={``} className="absolute top-0 max-h-[570px]" />}
+                            {svg && <img src={svg} alt={``} className="absolute top-0 max-h-[570px] z-0 pointer-events-none" />}
 
 
                         </div>
@@ -90,8 +87,8 @@ export default function Research() {
                     <section className='lg:px-20 mt-20 !bg-[#FDFDFD]' >
                         <div className=''>
                             <h4 className="">Censored Planet Observatory</h4>
-                            <p className='pt-4'>The core projects behind our efforts to understand, measure, and expose online censorship.</p>
-                            <p>  Each one explores a different aspect of the problem: censorship detection, tool evaluation , and access barriers.</p>
+                            <p className='pt-4 max-w-[700px]'>The flagship project behind our efforts to understand, measure, and expose online censorship. Censored Planet Observatory is a measurement platform that collects data using multiple remote measurement techniques in more than <strong>200 countries</strong>.</p>
+                      
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 {observatoryData.map((link, index) => (
                                     <Link
@@ -119,7 +116,9 @@ export default function Research() {
                     <section className='lg:px-20 mt-20 !bg-[#FDFDFD]' >
                         <div className=''>
                             <h4 className="">VPNalyzer</h4>
-                            <p className='pt-4 max-w-[900px]'>A research project evaluating the safety and effectiveness of VPNs and other circumvention tools. It combines technical testing with real-world user insights.</p>
+                            <p className='pt-4 max-w-[700px]'> Is your VPN provider delivering on its promise of privacy and security? We can help you find out!</p> 
+                            <p className='max-w-[700px]'> Download the VPNalyzer app below and receive immediate results showing whether any threats were identified.</p>
+
 
                             <Link
                                 to={'https://vpnalyzer.org/release'}
@@ -136,7 +135,7 @@ export default function Research() {
             }
 
 
-            <section className='lg:px-20 lg:py-15 mt-20 border-t border-t-[#888]  !bg-[#E4F7F6]' >
+            <section id='middle' className='relative lg:px-20 lg:py-15 mt-20 border-t border-t-[#888] z-[10] !bg-[#E4F7F6]' >
                 <div className=''>
                     <h4 className="">Research Direction</h4>
                     <p className="body mt-4 max-w-[1000px]"
@@ -163,7 +162,7 @@ export default function Research() {
             </section>
 
 
-            <section className='lg:px-20 mt-10'>
+            <section id= 'bottom' className='lg:px-20 lg:pb-25 mt-10'>
                 <div className="">
                     <h4 className="">Relevant Publications</h4>
                     <div className='mt-6'>

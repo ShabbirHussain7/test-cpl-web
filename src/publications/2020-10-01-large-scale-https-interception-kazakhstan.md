@@ -15,7 +15,7 @@ collaborators:
   - Eric Wustrow
   - J. Alex Halderman
   - Roya Ensafi
-pdf: "papers/Kazakhstan.pdf"
+pdf: "papers/HTTPSKaz.pdf"
 talk: "https://youtu.be/RoYWsfNOCr4"
 slides: "slides/kazakhstan_long_slides.pdf"
 press:

@@ -12,7 +12,7 @@ collaborators:
   - Prerana Shenoy
   - Katharina Kohls
   - Roya Ensafi
-pdf: "papers/censoredplanet.pdf"
+pdf: "papers/CCS20censoredplanet.pdf"
 talk: "https://youtu.be/8dwZdNkJ508"
 slides: "slides/censoredplanet-slides.pdf"
 press:

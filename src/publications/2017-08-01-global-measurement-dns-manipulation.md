@@ -14,7 +14,7 @@ collaborators:
  - Nick Feamster
  - Nick Weaver
  - Vern Paxson
-pdf: "papers/Pearce2017b.pdf"
+pdf: "papers/sec17-dns.pdf"
 slides: slides/usenixsecurity17_slides_pearce.pdf
 talk: https://www.youtube.com/watch?v=W_rBPdaTojQ
 bibtex: "@inproceedings{Paul2017Global,<br>

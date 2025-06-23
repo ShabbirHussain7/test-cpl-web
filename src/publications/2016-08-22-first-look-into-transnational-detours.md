@@ -28,6 +28,6 @@ bibtex:
     series = {SIGCOMM ’16}
     }"
 abstract: "An increasing number of countries are passing laws that facilitate the mass surveillance of their citizens. In response, governments and citizens are increasingly paying attention to the countries that their Internet traffic traverses. In some cases, countries are taking extreme steps, such as building new IXPs and encouraging local interconnection to keep local traffic local. We find that although many of these efforts are extensive, they are often futile, due to the inherent lack of hosting and route diversity for many popular sites. We investigate how the use of overlay network relays and the DNS open resolver infrastructure can prevent traffic from traversing certain jurisdictions."
-pdf: https://dl.acm.org/doi/pdf/10.1145/2934872.2959081
+pdf: papers/transnational-detours.pdf
 
 ---

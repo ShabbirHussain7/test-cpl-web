@@ -12,7 +12,7 @@ collaborators:
   - J. Alex Halderman
   - Will Scott
   - Roya Ensafi
-pdf: "papers/VanderSloot2018.pdf"
+pdf: "papers/quack_sec18.pdf"
 bibtex: "@inproceedings{Ben2018Quack:,<br>
   title={Quack: Scalable Remote Measurement of Application-Layer Censorship},<br>
   author={Ben VanderSloot and Allison McDonald and Will Scott and J. Alex Halderman and Roya Ensafi},<br>

@@ -12,7 +12,7 @@ collaborators:
  - Han Zhang
  - Roya Ensafi
  - Christos Papadopoulos
-pdf: "papers/Ensafi2017a.pdf"
+pdf: "papers/geolocation_imc17.pdf"
 bibtex: "@inproceedings{Manaf2017A,<br>
     title={A Look at Router Geolocation in Public and Commercial Databases},<br>
     author={Manaf Gharaibeh and Anant Shah and Bradley Huffaker and Han Zhang and Roya Ensafi and Christos Papadopoulos},<br>
