@@ -4,6 +4,8 @@ import researchData from '../data/research.json';
 import PublicationItem from '../components/PublicationItem';
 import { parsePublications } from '../utils/parsePublications';
 import FindingsCard from '../components/FindingsCard';
+import ObservatoryCard from '../components/ObservatoryCard';
+import { Link } from 'react-router-dom';
 // This will clean the HTML and remove anything dangerous (e.g., <script> tags or onerror attributes).
 import DOMPurify from 'dompurify';
 const markdownFiles = import.meta.glob('../publications/*.md', { query: '?raw', import: 'default', eager: true });
@@ -25,6 +27,11 @@ export default function Research() {
         "splintering-net": "Characterizing Internet Splintering"
 
     };
+    const observatoryData = [
+        { label: 'Dashboard', url: 'https://dashboard.censoredplanet.org/', icon: 'icons/observatory/dashboard.svg', subtitle: 'Explore insights and analytics' },
+        { label: 'Data Access', url: 'https://data.censoredplanet.org/raw', icon: 'icons/observatory/data.svg', subtitle: 'Access unprocessed data' },
+        { label: 'Documentation', url: 'https://docs.censoredplanet.org/', icon: 'icons/observatory/documentation.svg', subtitle: 'Find detailed guides and resources' }
+    ]
 
     useEffect(() => {
         if (researchData[area]) {
@@ -32,8 +39,8 @@ export default function Research() {
         }
 
         if (area) {
-            const basePath = process.env.NODE_ENV === 'development' 
-                ? '../../public/' 
+            const basePath = process.env.NODE_ENV === 'development'
+                ? '../../public/'
                 : '/';
             // Serve SVG from public folder as static asset
             setSvg(`${basePath}background/research/${area}.svg`);
@@ -48,12 +55,12 @@ export default function Research() {
 
     return (
         <main className="lg:py-25 bg-[#fdfdfd]">
-            
+
             <section
                 className='lg:px-20 text-[#121212] overflow-hidden'
-               
+
             >
-                
+
                 <div className=''>
                     <h1 className="new-section-heading">{data.title}</h1>
                     <div className="mt-10 grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-x-6">
@@ -70,15 +77,66 @@ export default function Research() {
                             />
                         </div>
                         <div className='flex justify-end'>
-                        {svg && <img src={svg} alt={``} className="absolute top-0 max-h-[570px]" />}
+                            {svg && <img src={svg} alt={``} className="absolute top-0 max-h-[570px]" />}
 
-                           
+
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className='lg:px-20 lg:py-15 mt-16 border border-t-[#888]  !bg-[#E4F7F6]' >
+            {
+                area == 'censorship-detection' && (
+                    <section className='lg:px-20 mt-20 !bg-[#FDFDFD]' >
+                        <div className=''>
+                            <h4 className="">Censored Planet Observatory</h4>
+                            <p className='pt-4'>The core projects behind our efforts to understand, measure, and expose online censorship.</p>
+                            <p>  Each one explores a different aspect of the problem: censorship detection, tool evaluation , and access barriers.</p>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                {observatoryData.map((link, index) => (
+                                    <Link
+                                        key={index}
+                                        to={link.url}
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                    >
+                                        <ObservatoryCard
+                                            title={link.label}
+                                            subtitle={link.subtitle}
+                                            icon={link.icon}
+                                            className="mt-6"
+                                        />
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+                )
+            }
+
+            {
+                area == 'securing-pets' && (
+                    <section className='lg:px-20 mt-20 !bg-[#FDFDFD]' >
+                        <div className=''>
+                            <h4 className="">VPNalyzer</h4>
+                            <p className='pt-4 max-w-[900px]'>A research project evaluating the safety and effectiveness of VPNs and other circumvention tools. It combines technical testing with real-world user insights.</p>
+
+                            <Link 
+                                to={'https://vpnalyzer.org/release'}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='mt-4 !inline-flex items-center gap-2 secondary-button'>
+                                <img src="icons/VPNalyzer.svg" alt="icon" className="w-6 h-6 flex-shrink-0" />
+                                <span>Download VPNalyzer</span>
+                            </Link>
+                            
+                        </div>
+                    </section>
+                )
+            }
+
+
+            <section className='lg:px-20 lg:py-15 mt-20 border-t border-t-[#888]  !bg-[#E4F7F6]' >
                 <div className=''>
                     <h4 className="">Research Direction</h4>
                     <p className="body mt-4 max-w-[1000px]"
@@ -91,22 +149,19 @@ export default function Research() {
                 <div className='mt-20'>
                     <h4 className="">Key Findings</h4>
                     <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                      {data.findings.map((finding, index) => (
-                        <FindingsCard
-                          key={index}
-                          title={finding.title}
-                          citation={finding.citation}
-                          link={finding.link}
-                          description={finding.description}
-                        />
-                      ))}
+                        {data.findings.map((finding, index) => (
+                            <FindingsCard
+                                key={index}
+                                title={finding.title}
+                                citation={finding.citation}
+                                link={finding.link}
+                                description={finding.description}
+                            />
+                        ))}
                     </div>
                 </div>
             </section>
 
-            <section>
-                
-            </section>
             <section className='lg:px-20 '>
                 <div className="">
                     <h4 className="heading-secondary">Relevant Publications</h4>

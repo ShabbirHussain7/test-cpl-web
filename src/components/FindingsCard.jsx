@@ -11,7 +11,7 @@ export default function FindingsCard({
     description,
   }) {
     return (
-      <div className="w-[413px] p-6 flex flex-col gap-4 border border-[#888888] bg-[#FDFDFD]">
+      <div className="max-w-[413px] p-6 flex flex-col gap-4 border border-[#888888] bg-[#FDFDFD]">
         <h6 className="text-[#28A199] font-serif text-[20px] font-normal leading-[24px] tracking-normal"
         dangerouslySetInnerHTML={{
             __html: DOMPurify.sanitize(title) }}

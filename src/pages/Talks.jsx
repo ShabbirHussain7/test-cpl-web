@@ -61,7 +61,7 @@ export default function Talks() {
         </div>
       </section>
 
-      <section className="lg:px-20 lg:pt-10 lg:pb-25 border border-t-[#888] !bg-[#E4F7F6]" >
+      <section className="lg:px-20 lg:pt-10 lg:pb-25 border-t border-t-[#888] !bg-[#E4F7F6]" >
         <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-5 items-stretch">
           {filteredTalks.map((talk, idx) => (
             <VideoCard key={idx} video={talk} />

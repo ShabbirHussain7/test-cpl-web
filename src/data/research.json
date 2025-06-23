@@ -8,7 +8,7 @@
     "research": "Our research rigorously evaluates state-of-the-art obfuscation protocols by empirically analyzing their resilience against realistic fingerprinting attacks. By exposing vulnerabilities within widely deployed obfuscation methods, we reveal critical gaps that adversaries can exploit—such as nested protocol structures, timing discrepancies, and anomalous congestion control behaviors. Our goal is to guide the design of next-generation obfuscation protocols, ensuring that future solutions provide robust and lasting defenses against traffic fingerprinting.",
     "findings": [
       {
-        "title": "The Discriminative Power of Cross-layer RTTs in Fingerprinting Proxy Traffic <a href= 'https://ensa.fi/papers/rtt-fingerprinting.pdf'>(<u>NDSS'25</u>)</a>",
+        "title": "The Discriminative Power of Cross-layer Round-Trip Times in Fingerprinting Proxy Traffic <a href= 'https://ensa.fi/papers/rtt-fingerprinting.pdf'>(<u>NDSS'25</u>)</a>",
         "description": "We discover that proxy traffic inherently creates detectable timing discrepancies between application-layer and transport-layer round-trip times (RTTs). Exploiting these subtle yet consistent timing differences, our method reliably fingerprints a wide range of popular obfuscated proxy protocols—even in realistic network conditions—with low false positives."
       },
       {
