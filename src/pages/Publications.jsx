@@ -24,7 +24,7 @@ export default function Publications() {
 
   return (
 
-    <main className="internal-container lg:py-25">
+    <main className="internal-container lg:py-25 py-20">
 
       <h1 className="new-section-heading">Publications</h1>
 
@@ -33,9 +33,9 @@ export default function Publications() {
       </div> */}
 
       <div className='text-[#121212]'>
-        <div className="mt-6 flex items-center space-x-4">
-          <div className="flex items-center">
-            <label className="mr-5 font-medium">Filter by theme:</label>
+        <div className="mt-6 flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4 ">
+          <div className="flex items-center md:max-w-none max-w-[350px]">
+            <label className="md:mr-5 font-medium ">Filter by theme:</label>
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
@@ -46,7 +46,7 @@ export default function Publications() {
             </select>
           </div>
           <div className="flex items-center">
-            <label className="mr-5 font-medium">Filter by year:</label>
+            <label className="md:mr-5 mr-2 font-medium">Filter by year:</label>
             <select
               value={selectedYear}
               onChange={(e) => setSelectedYear(e.target.value)}
@@ -81,7 +81,7 @@ export default function Publications() {
 
               return filteredPubs.map((pub, idx) => (
                 <tr key={`${year}-${idx}`} className="border-t border-gray-300">
-                  <td className="publication-year w-[92px] text-center border-r border-[#888] align-top pt-2">
+                  <td className="publication-year w-[45px] md:w-[90px]  text-center border-r border-[#888] align-top pt-2">
                     {pub.year}
                   </td>
                   <td>

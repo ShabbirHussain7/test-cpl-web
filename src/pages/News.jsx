@@ -20,7 +20,7 @@ export default function News() {
         : newsByYear[selectedYear] || [];
 
     return (
-        <main className="internal-container lg:py-25">
+        <main className="internal-container lg:py-25 py-20">
             <h1 className="new-section-heading">News</h1>
             <div className="mt-4 flex items-center">
                 <label className="mr-5 font-medium">Filter by year:</label>

@@ -53,7 +53,7 @@ export default function Report() {
 
   return (
     <main className="body ">
-      <section className='internal-container  lg:pt-25 lg:pb-4 !bg-[#fdfdfd]' >
+      <section className='internal-container  lg:pt-25 pt-20 lg:pb-4 !bg-[#fdfdfd]' >
         <div className="">
           <h1 className="new-section-heading">{frontMatter.title}</h1>
           <div className='mt-6 lg:flex lg:flex-row relative  '>
@@ -106,7 +106,7 @@ export default function Report() {
         </div>
 
       </section>
-      <section className="lg:pt-11 lg:pb-25 !bg-[#E4F7F6]">
+      <section className="lg:pt-11 lg:pb-25 pb-20 !bg-[#E4F7F6]">
         <div className='internal-container'>
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}

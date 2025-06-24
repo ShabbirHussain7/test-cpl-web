@@ -8,7 +8,7 @@ export default function People() {
   return (
   
       <div className=''>
-        <section className="internal-container lg:pt-25 bg-[#fdfdfd] ">
+        <section className="internal-container pt-20 lg:pt-25 bg-[#fdfdfd] ">
 
           <div className='grid grid-cols-1 md:grid-cols-[5fr_2fr] gap-0'>
 
@@ -41,7 +41,7 @@ export default function People() {
         </section>
         <section className="internal-container lg:py-10 bg-[#fdfdfd] ">
 
-          <div className='grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-[35px]'>
+          <div className='grid grid-cols-1 md:grid-cols-[1fr_4fr] lg:gap-[35px]'>
 
             <DirectorCard />
             <div className=''>
@@ -96,10 +96,10 @@ export default function People() {
 
         </section>
 
-        <section className="lg:pt-10 lg:pb-25 border-t border-t-[#888] !bg-[#E4F7F6]" >
+        <section className="lg:pt-10 lg:pb-25 pb-20 border-t border-t-[#888] !bg-[#E4F7F6]" >
           <div className='internal-container'>
           <h2 className="new-section-heading">Our Team</h2>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-5 gap-5 items-stretch">
+          <div className="mt-6 grid grid-cols-2 md:grid-cols-5 gap-5 items-stretch">
 
             {peopleData.Team.map((member, idx) => (
               PersonCard({ person: member, key: idx })

@@ -28,7 +28,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-[rgba(253,253,253,0.4)] backdrop-blur-xs z-[9999]">
+    <header className="fixed top-0 left-0 w-full bg-[rgba(253,253,253,0.4)]  backdrop-blur-xs z-[9999]">
       <div
         className="
           flex
@@ -38,7 +38,7 @@ export default function Header() {
           lg:py-6
           py-3
           lg:px-20
-          px-8
+          px-5
           
         "
       >
@@ -59,7 +59,7 @@ export default function Header() {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
         </button>
@@ -124,6 +124,7 @@ export default function Header() {
                 <div className="flex justify-between items-center">
                   <Link
                     to={item.to}
+                    onClick={() => setIsOpen(false)}
                     className="text-[#121212] text-[18px] font-medium leading-[120%] tracking-[var(--spacing-spacing-tight)] text-center font-[Inter] hover:text-gray-700"
                   >
                     {item.label}
@@ -156,6 +157,7 @@ export default function Header() {
                       <li key={subItem.label} className="pl-6">
                         <Link
                           to={subItem.to}
+                          onClick={() => setIsOpen(false)}
                           className="block text-sm hover:text-gray-700"
                         >
                           {subItem.label}
@@ -169,6 +171,7 @@ export default function Header() {
             <li>
               <Link
                 to="/join"
+                onClick={() => setIsOpen(false)}
                 className="block bg-black text-white text-sm py-2 px-4 mt-2 text-center hover:opacity-90 transition-opacity"
               >
                 Join Us

@@ -79,27 +79,27 @@ export default function Home() {
 
 
       {/* HERO SECTION */}
-      <section id="hero" className="hero relative overflow-hidden z-0">
+      <section id="hero" className="hero relative overflow-hidden min-h-[350px] z-0">
 
         {/* BACKGROUND IMAGE */}
         <img
           src={isSvgLoaded ? HeroBg : "background/hero-bg.png"}
           alt="Hero background"
-          className="relative w-[57%] ml-auto transform z-[-1]"
+          className="absolute left-0 w-full min-h-[350px] object-cover md:opacity-100 opacity-60 z-[-1] md:relative md:top-0 md:w-auto md:h-auto md:max-h-[520px] md:ml-auto md:transform md:z-[-1]"
         />
 
 
         {/* Hero Text & Buttons */}
-        <div className="internal-container  absolute lg:top-[140px] top-[70px] lg:w-[815px] sm:top-[30px] z-10">
+        <div className="internal-container  absolute md:top-[140px] top-[75px] lg:w-[815px]  z-10"> {/* header is 64px so added 11px to top to make it top-75px */}
 
           <div className="flex flex-col lg:gap-6 gap-3">
-            <h1 className="lg:text-[61px] text-[20px] font-bold font-merriweather leading-[120%] text-[#121212] ">
+            <h1 className="md:text-[61px] text-[35px] font-bold font-merriweather leading-[120%] text-[#121212] ">
               Censored Planet
             </h1>
-            <p className="lg:text-[16px] text-[12px] lg:w-[590px] w-[250px] font-inter font-normal leading-[150%] text-[#121212] ">
+            <p className="md:text-[16px] text-[14px] md:w-[590px] font-inter font-normal leading-[150%] text-[#121212] ">
               {homeData.mission.description}
             </p>
-            <div className="flex space-x-4">
+            <div className="flex flex-col space-y-3 w-full text-center md:flex-row md:space-x-4 md:space-y-0 md:w-auto">
               <Link
                 to="/publications"
                 className="primary-button"
@@ -124,7 +124,7 @@ export default function Home() {
         <div className="-mt-[2px] bg-[#E4F7F6] border-t border-b border-[#888] text-black relative z-20">
           <div
             className="internal-container flex items-center justify-between py-2">
-            <Link to='/news' className="text-[#17827b] text-[14px] font-medium whitespace-nowrap pr-4 hover:underline">
+            <Link to='/news' className="text-[#17827b] text-[16px] font-medium whitespace-nowrap pr-4 hover:underline">
               Latest News
             </Link>
 
@@ -133,7 +133,7 @@ export default function Home() {
             </div>
 
             <div className="flex-1 mx-4 overflow-hidden">
-              <div className="truncate text-[14px] text-black text-center font-inter">
+              <div className="truncate text-[16px] text-black text-center font-inter">
                 <span className="font-bold">{currentNews.date}</span> –{" "}
                 <Link
                   to={currentNews.link}
@@ -155,8 +155,8 @@ export default function Home() {
 
 
       {/* WHAT WE DO */}
-      <section id="what-we-do" className="lg:py-25">
-        <div className="internal-container grid grid-cols-1 md:grid-cols-2 gap-y-12">
+      <section id="what-we-do" className="md:py-25 py-5">
+        <div className="internal-container grid grid-cols-1 md:grid-cols-2 md:gap-y-12 gap-y-8">
           <div className=''>
             <h2 className="new-section-heading">
               What We Do
@@ -181,7 +181,7 @@ export default function Home() {
           </div>
 
           {/* Metrics Grid */}
-          <div className="max-w-[630px] grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">{
+          <div className="max-w-[630px] grid grid-cols-2 gap-x-8 md:gap-y-12 gap-y-8">{
 
             homeData.metrics.map((metric, idx) => (
               <div key={idx} className="flex flex-col items-start">
@@ -223,7 +223,7 @@ export default function Home() {
           </div>
 
 
-          <div className='lg:py-15 relative z-10' style={{
+          <div className='md:py-15 py-5 relative z-10' style={{
             background: 'linear-gradient(180deg, #FDFDFD 0%, rgba(253, 253, 253, 0.00) 51.92%, var(--Background, #FDFDFD) 100%)',
           }}>
             <div className='internal-container'>
@@ -231,10 +231,10 @@ export default function Home() {
             <h2 className="new-section-heading">
               What We're Investigating
             </h2>
-            <p className="mt-2 text-[16px] w-[530px] font-inter leading-[150%] text-[#121212]">
+            <p className="mt-2 text-[16px] max-w-[34rem] font-inter leading-[150%] text-[#121212]">
               The internet is changing fast. We're investigating censorship systems to shed light on how they operate and who they affect
             </p>
-            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {/* map each research area to researcharea component */}
               {homeData.research.map((area, idx) => (
                 <ResearchArea
@@ -255,12 +255,12 @@ export default function Home() {
       </section>
 
       <section id="open-source ">
-        <div className="internal-container  lg:py-15 ">
+        <div className="internal-container  md:py-15 py-5  ">
           {/* Research Themes Subsection */}
           <h2 className="new-section-heading">
             Tools We've Built
           </h2>
-          <p className="mt-2 text-[16px] w-[530px] font-inter leading-[150%] text-[#121212]">
+          <p className="mt-2 text-[16px] max-w-[530px] font-inter leading-[150%] text-[#121212]">
             We build and share the tools we use to investigate internet censorship so others can replicate, extend, and build on our work.
           </p>
           <div
@@ -290,7 +290,7 @@ export default function Home() {
       </section>
 
       <section id="selected-publications">
-        <div className='internal-container lg:py-15' >
+        <div className='internal-container md:py-15 py-5 ' >
           <h2 className="new-section-heading">
             Our Distinguished Publications
           </h2>
@@ -302,7 +302,7 @@ export default function Home() {
                   .map(([year, pubs]) =>
                     pubs.map((pub, idx) => (
                       <tr key={`${year}-${idx}`} className="border-b border-[#888]">
-                        <td className="publication-year w-[92px] text-center border-r border-[#888] align-top pt-2">
+                        <td className="publication-year  w-[45px] md:w-[90px] text-center border-r border-[#888] align-top pt-2">
                           {pub.year}
                         </td>
                         <td>
@@ -344,14 +344,14 @@ export default function Home() {
 
           </div>
 
-          <div className='lg:px-20 lg:pt-15 lg:pb-40 ' style={{
+          <div className='md:pt-15 pt-5 pb-10 lg:pb-40 ' style={{
             background: 'linear-gradient(180deg, var(--Background, #FDFDFD) 0%, rgba(253, 253, 253, 0.00) 57.28%)',
           }}>
             <div className='internal-container '>
             <h2 className="new-section-heading">
               Join Our Team
             </h2>
-            <p className="mt-2 text-[16px] w-[530px] font-inter leading-[150%] text-[#121212]">
+            <p className="mt-2 text-[16px] max-w-[530px] font-inter leading-[150%] text-[#121212]">
               We’re always looking for curious, motivated people to work with us.
               Whether you’re a student, researcher, developer, or just interested in the space, we’d love to hear from you.
             </p>

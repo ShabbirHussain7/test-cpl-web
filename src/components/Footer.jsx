@@ -16,7 +16,7 @@ const Footer = () => {
     setTimeout(() => setCopied(false), 1500);
   };
   return (
-    <footer className="bg-[#121212] mt-auto text-[#FDFDFD] lg:px-20 lg:py-15">
+    <footer className="bg-[#121212] mt-auto text-[#FDFDFD] md:px-20 px-5 py-5 md:py-15">
        <Link to="/">
             <img src={Logo} alt="Censored Planet logo" className="h-[68px] " />
           </Link>

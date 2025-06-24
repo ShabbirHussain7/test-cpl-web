@@ -20,7 +20,7 @@ export default function Tools() {
                 }}
                 onLoad={() => setIsSvgLoaded(true)} // Set SVG as loaded when it finishes loading
             />
-            <div className="lg:px-20 lg:py-25  z-10">
+            <div className="md:py-25 py-20  z-10">
                 <h1 className="new-section-heading">Tools</h1>
                 <p className="body mt-6 max-w-[620px]">
                     Censored Planet develops and maintains a suite of open source tools for investigating internet censorship and network interference.

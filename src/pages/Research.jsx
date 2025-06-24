@@ -51,7 +51,7 @@ export default function Research() {
 
     return (
         <main className="bg-[#fdfdfd]">
-            <section id='top' className='lg:px-20 lg:pt-25 text-[#121212] relative overflow-visible'>
+            <section id='top' className='md:px-20 px-5  md:pt-25 pt-20 text-[#121212] relative overflow-visible'>
                 <div className=''>
                     <h1 className="new-section-heading">{data.title}</h1>
                     <div className="mt-10 grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-x-6">
@@ -70,7 +70,7 @@ export default function Research() {
                                     // src={isSvgLoaded ?  `background/research/${area}.svg` : `background/research-png/${area}.png`}
                                     src={`background/research/${area}.svg`}
                                     alt=""
-                                    className={`absolute top-4 max-h-[600px] z-0 pointer-events-none`}
+                                    className="hidden md:block absolute top-4 max-h-[600px] z-0 pointer-events-none"
                                 // onLoad={() => setIsSvgLoaded(true)} // Set SVG as loaded when it finishes loading
                                 />
                             )}
@@ -123,7 +123,7 @@ export default function Research() {
 
 
 
-            <section id='middle' className='relative lg:px-20 lg:py-15 mt-20 border-t border-t-[#888] z-[10] !bg-[#E4F7F6]' >
+            <section id='middle' className='relative md:px-20 px-5  py-15 mt-20 border-t border-t-[#888] z-[10] !bg-[#E4F7F6]' >
                 <div className=''>
                     <h4 className="">Research Direction</h4>
                     <p className="body mt-4 max-w-[1000px]"
@@ -150,7 +150,7 @@ export default function Research() {
             </section>
 
 
-            <section id='bottom' className='lg:px-20 lg:pb-25 mt-10'>
+            <section id='bottom' className='md:px-20 px-5 md:pb-25 pb-20 mt-10'>
                 <div className="">
                     <h4 className="">Relevant Publications</h4>
                     <div className='mt-6'>
@@ -166,7 +166,7 @@ export default function Research() {
 
                                         {filteredPubs.map((pub, idx) => (
                                             <tr key={`${year}-${idx}`} className="border-b border-[#888]">
-                                                <td className="publication-year w-[92px] text-center border-r border-[#888] align-top pt-2">
+                                                <td className="publication-year w-[45px] md:w-[90px] text-center border-r border-[#888] align-top pt-2">
                                                     {pub.year}
                                                 </td>
                                                 <td>

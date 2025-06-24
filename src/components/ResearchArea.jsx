@@ -9,7 +9,7 @@ export default function ResearchArea({ url, icon, label, name, description }) {
       className="
         relative
         flex flex-col items-start
-        w-[413px]
+        max-w-[413px] w-full
         p-8
         gap-4
         hover:shadow-lg
@@ -25,13 +25,13 @@ export default function ResearchArea({ url, icon, label, name, description }) {
        
       }}
     >
-      <div className="flex justify-center items-center w-[52.5px] h-[46.7px]">
+      <div className="flex justify-center items-center max-w-[3.2rem] max-h-[2.919rem]">
         {icon && <img src={icon} alt="icon" />}
       </div>
 
       {label && (
-        // <span className="absolute right-8 top-8 px-4 py-2 font-medium text-[14px] text-[#121212] bg-[#E4F7F6] gap-1">
-        <span className="absolute right-8 top-8 px-4 py-1 font-medium text-[14px] text-white bg-[#28A199] gap-1">
+      
+        <span className="absolute sm:max-w-[10rem] xl:max-w-none right-8 top-8 px-4 py-1 font-medium text-[14px] text-white bg-[#28A199] gap-1">
           {label}
         </span>
       )}

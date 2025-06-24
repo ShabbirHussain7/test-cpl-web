@@ -30,7 +30,7 @@ export default function Talks() {
 
   return (
     <main className="pt-10 bg-[#fdfdfd]">
-      <section className="internal-container  lg:pt-15 ">
+      <section className="internal-container  md:pt-15 pt-10 ">
         <h1 className="new-section-heading">Talks</h1>
         <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 ">
@@ -61,7 +61,7 @@ export default function Talks() {
         </div>
       </section>
 
-      <section className="lg:pt-10 lg:pb-25 border-t border-t-[#888] !bg-[#E4F7F6]" >
+      <section className="md:pt-10 pb-15 md:pb-25 border-t border-t-[#888] !bg-[#E4F7F6]" >
         <div className="internal-container mt-6 grid grid-cols-1 md:grid-cols-3 gap-5 items-stretch">
           {filteredTalks.map((talk, idx) => (
             <VideoCard key={idx} video={talk} />

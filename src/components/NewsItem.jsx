@@ -32,7 +32,7 @@ const NewsArticleRow = ({ article }) => {
           to={trimmedArticle.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="news-title hover:text-white text-[#121212]"
+          className="news-title  hover:text-white text-[#121212]"
         >
           {trimmedArticle.title}
         </Link>

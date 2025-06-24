@@ -22,7 +22,7 @@ export default function JoinUs() {
     }];
   return (
 
-    <section className='internal-container lg:py-25 text-[#121212]'>
+    <section className='internal-container lg:py-25 py-20 text-[#121212]'>
       <h1 className="new-section-heading">Join Our Team</h1>
       <p className="mt-6">
         Interested in working with us? We welcome passionate students, researchers, and collaborators who want to make a difference in internet freedom and digital rights. You can reach out to us at: <span className='text-blue-700 underline'>ensafi@umich.edu

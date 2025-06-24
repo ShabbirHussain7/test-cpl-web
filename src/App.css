@@ -8,9 +8,12 @@
 
 }
 
+
+
+
 .new-section-heading {
   color: var(--Text, #121212);
-
+ 
 /* H2 */
 font-family: var(--Header, Merriweather);
 font-size: 49px;
@@ -31,7 +34,7 @@ letter-spacing: var(--spacing-spacing-non, 0px);
 
 
 .internal-container {
-  @apply max-w-screen-2xl mx-auto lg:px-20 px-10;
+  @apply max-w-screen-2xl mx-auto lg:px-20 px-5;
   /* border-bottom: 1px solid var(--divider, #888); */
  
 }
