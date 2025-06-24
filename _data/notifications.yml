@@ -1,5 +1,0 @@
-- notification:
-  display: "yes"
-  text: "Read our new paper on detecting obfuscated proxies"
-  button-text: "Paper"
-  button-url: "/assets/tls_in_tls.pdf"
