@@ -33,13 +33,13 @@ export default function People() {
             <img
               src="background/about-us-bg.svg"
               alt="TSPU Image"
-              className='object-cover h-full w-full'
+              className='hidden md:block object-cover h-full w-full'
 
             />
           </div>
 
         </section>
-        <section className="internal-container lg:py-10 bg-[#fdfdfd] ">
+        <section className="internal-container py-10 bg-[#fdfdfd] ">
 
           <div className='grid grid-cols-1 md:grid-cols-[1fr_4fr] lg:gap-[35px]'>
 
