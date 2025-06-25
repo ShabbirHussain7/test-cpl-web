@@ -1542,7 +1542,7 @@ collaborators:
   - Piyush Kumar Sharma
   - Roya Ensafi
 pdf: "papers/rtt-fingerprinting.pdf"
-slides: ""
+slides: "slides/rtt-fp-slides.pdf"
 talk: https://www.youtube.com/watch?v=i_yBhIYsMBw
 bibtex: "@inproceedings{Xue2025Timing,
   author = {Diwen Xue and Robert Stanley and Piyush Kumar and Roya Ensafi},
