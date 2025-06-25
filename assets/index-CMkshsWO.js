@@ -1572,9 +1572,9 @@ name: "CenPush: Blocking-Resistant Communication Using Push Notifications"
 collaborators:
   - Piyush Kumar Sharma
   - Diwen Xue
-  - Alexander Ortwein
-  - Connor Bocovich
-  - Harry Senger
+  - Aaron Ortwein
+  - Cecylia Bocovich
+  - Harry
   - Roya Ensafi
 pdf: ""
 slides: ""
