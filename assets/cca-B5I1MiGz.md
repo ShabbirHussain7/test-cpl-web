@@ -17,8 +17,6 @@ appearing: "Free and Open Communications on the Internet (FOCI'25), February 20.
 
 _This post highlights findings discussed in the [FOCI 2025](https://foci.community) paper [Is Custom Congestion Control a Bad Idea for Circumvention Tools?](https://www.petsymposium.org/foci/2025/foci-2025-0001.php)._
 
-# Should Circumvention Tools Use Custom Congestion Control?
-
 ## Introduction
 
 Circumvention tools are lifelines for users in censored regions, enabling access to the open web by tunneling traffic through proxies outside restrictive borders. However, these tools often operate in adverse conditions—bandwidth-constrained, lossy networks where traditional protocols struggle to maintain usability. In response, some tools now incorporate custom congestion control algorithms (CCAs) designed to aggressively sustain high throughput despite severe packet loss.
