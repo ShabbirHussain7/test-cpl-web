@@ -20,7 +20,7 @@ In this post, we describe our investigation into the global proliferation of con
 
 In the study, FilterMap was able to identify **censorship filter deployments associated with 90 vendors and actors and observe filtering in 103 countries**. We detected the use of commercial filtering technologies for censorship in 36 out of 48 countries labeled as ‘Not Free' or ‘Partly Free' by the Freedom House [''Freedom on the Net'' report](https://freedomhouse.org/report/freedom-net/freedom-net-2018). The unrestricted transfer of content filtering technologies have led to high availability, low cost, and highly effective filtering techniques becoming easier to deploy and harder to circumvent. 
 
-The data collected using Hyperquack and Quack is available at [https://censoredplanet.org/observatory/raw](https://censoredplanet.org/observatory/raw) and OONI data is publicly available at [https://ooni.org/data/](https://ooni.org/data/) 
+The data collected using Hyperquack and Quack is available at [https://data.censoredplanet.org/](https://data.censoredplanet.org/) and OONI data is publicly available at [https://ooni.org/data/](https://ooni.org/data/) 
 
 ## High Level Takeaways:
 *   “Dual-use” technologies, such as DPI-based network management and filtering, are on the rise. Our novel framework, FilterMap, scalably and longitudinally detects censorship filter deployments by collecting and clustering blockpages from measurement data. 
