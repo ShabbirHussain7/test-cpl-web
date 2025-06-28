@@ -1,0 +1,30 @@
+---
+area: Advancing Traffic Obfuscation
+date: 2024-08-14
+publisher: USENIX Security
+name: "CalcuLatency: Leveraging Cross-Layer Network Latency Measurements to Detect Proxy-Enabled Abuse"
+tags:
+  - network 
+  - measurement
+  - vpn
+  - proxy
+collaborators:
+  - Reethika Ramesh
+  - Philipp Winter
+  - Sam Korman
+  - Roya Ensafi
+pdf: "papers/calculatency.pdf"
+slides: "slides/calculatency-slides.pdf"
+bibtex: "@inproceedings{Ramesh2024Calculatency,
+  title={CalcuLatency: Leveraging Cross-Layer Network Latency Measurements to Detect Proxy-Enabled Abuse},
+  author={Ramesh, Reethika and Winter, Philipp and Korman, Sam and Ensafi, Roya},
+  booktitle = {33rd USENIX Security Symposium (USENIX Security 24)},
+  year = {2024},
+  address = {Philadelphia, PA},
+  publisher = {USENIX Association}
+}"
+abstract:
+  "Efforts from emerging technology companies aim to democratize the ad delivery ecosystem and build systems that are privacy-centric and even share ad revenue benefits with their users. Other providers offer remuneration for users on their platform for interacting with and making use of services. But these efforts may suffer from coordinated abuse efforts aiming to defraud them. Attackers can use VPNs and proxies to fabricate their geolocation and earn disproportionate rewards. Balancing proxy-enabled abuse-prevention techniques with a privacy-focused business model is a hard challenge. Can service providers use minimal connection features to infer proxy use without jeopardizing user privacy?
+  In this paper, we build and evaluate a solution, CalcuLatency, that incorporates various network latency measurement techniques and leverage the application-layer and network-layer differences in roundtrip-times when a user connects to the service using a proxy. We evaluate our four measurement techniques individually, and as an integrated system using a two-pronged evaluation. CalcuLatency is an easy-to-deploy, open-source solution that can serve as an inexpensive firststep to label proxies."
+
+---

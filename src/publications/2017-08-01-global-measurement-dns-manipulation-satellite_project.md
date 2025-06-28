@@ -1,0 +1,28 @@
+---
+area: "Monitoring Censorship at Global Scale"
+date: 2017-08-01
+publisher: "USENIX Security"
+name: Global Measurement of DNS Manipulation
+tags:
+ - censorship
+ - satellite
+collaborators:
+ - Paul Pearce
+ - Ben Jones
+ - Frank Li
+ - Roya Ensafi
+ - Nick Feamster
+ - Nick Weaver
+ - Vern Paxson
+pdf: "papers/sec17-dns.pdf"
+slides: slides/usenixsecurity17_slides_pearce.pdf
+talk: https://www.youtube.com/watch?v=W_rBPdaTojQ
+bibtex: "@inproceedings{Paul2017Global,
+    title={Global Measurement of DNS Manipulation},
+    author={Paul Pearce and Ben Jones and Frank Li and Roya Ensafi and Nick Feamster and Nick Weaver and Vern Paxson},
+    booktitle={USENIX Security},
+    year={2017}
+    }"
+abstract:
+    "Despite the pervasive nature of Internet censorship and the continuous evolution of how and where censorship is applied, measurements of censorship remain comparatively sparse. Understanding the scope, scale, and evolution of Internet censorship requires global measurements, performed at regular intervals. Unfortunately, the state of the art relies on techniques that, by and large, require users to directly participate in gathering these measurements, drastically limiting their coverage and inhibiting regular data collection. To facilitate large-scale measurements that can fill this gap in understanding, we develop Iris, a scalable, accurate, and ethical method to measure global manipulation of DNS resolutions. Iris reveals widespread DNS manipulation of many domain names; our findings both confirm anecdotal or limited results from previous work and reveal new patterns in DNS manipulation."
+---

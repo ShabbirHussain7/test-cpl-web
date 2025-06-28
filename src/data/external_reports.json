@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Vulnerabilities in VPNs: Paper presented at the Privacy Enhancing Technologies Symposium 2024",
+    "excerpt": "The “port shadow” exploit in connection‑tracking frameworks is outlined, showing how attackers can hijack VPN traffic and deanonymize users, along with mitigation advice for providers and users.",
+    "permalink": "https://citizenlab.ca/2024/07/vulnerabilities-in-vpns-paper-presented-at-the-privacy-enhancing-technologies-symposium-2024/",
+    "logo": "icons/blog-icons/citizen-lab.svg",
+    "date": "16 July 2024",
+    "external": true
+  },
+  {
+    "title": "New VPN Port Shadow Vulnerabilities Expose Encrypted Traffic to Attackers",
+    "excerpt": "Details of four attacks enabled by the newly identified port‑shadow vulnerability across OpenVPN, OpenConnect, and WireGuard are presented, demonstrating how encrypted traffic can be intercepted and users de‑anonymized.",
+    "permalink": "https://cyberpress.org/new-vpn-port-shadow-vulnerabilities/",
+    "logo": "icons/blog-icons/cp-2.png",
+    "date": "18 July 2024",
+    "external": true
+  },
+  {
+    "title": "Unpacking the \"Port Shadow\" VPN Vulnerability",
+    "excerpt": "The mechanics of port‑shadow attacks are explained, along with configurations that can prevent traffic hijacking, DNS redirection, and port scanning.",
+    "permalink": "https://blog.torguard.net/unpacking-the-port-shadow-vpn-vulnerability/",
+    "logo": "icons/blog-icons/torguard-logo.svg",
+    "date": "19 July 2024",
+    "external": true
+  },
+  {
+    "title": "How Geoblocking Limits Digital Access in Sanctioned States",
+    "excerpt": "An examination of how online platforms, wary of sanctions compliance, voluntarily block users in embargoed countries, shrinking the open internet for millions in places like Iran, Syria, and Russia.",
+    "permalink": "https://www.lawfaremedia.org/article/how-geoblocking-limits-digital-access-in-sanctioned-states",
+    "logo": "icons/blog-icons/lawfare-logo.png",
+    "date": "18 November 2024",
+    "external": true
+  },
+  {
+    "title": "The web really isn’t worldwide – every country has different access",
+    "excerpt": "An exploration of how websites and services curate access by country, combining government censorship with corporate geoblocking to create vastly different online experiences for global users.",
+    "permalink": "https://theconversation.com/the-web-really-isnt-worldwide-every-country-has-different-access-106739",
+    "logo": "icons/blog-icons/the-conversation-logo.svg",
+    "date": "07 December 2018",
+    "external": true
+  },
+  {
+    "title": "The same app can pose a bigger security and privacy threat depending on the country where you download it, study finds",
+    "excerpt": "Findings reveal that Android versions of the same apps differ by region, with higher tracker counts and more dangerous permissions in some countries, raising privacy and security concerns.",
+    "permalink": "https://theconversation.com/the-same-app-can-pose-a-bigger-security-and-privacy-threat-depending-on-the-country-where-you-download-it-study-finds-189099",
+    "logo": "icons/blog-icons/the-conversation-logo.svg",
+    "date": "27 September 2022",
+    "external": true
+  },
+  {
+    "title": "Shining a light in the dark: Measuring global internet shutdowns",
+    "excerpt": "A BigQuery‑powered pipeline is described, surfacing verified data on internet shutdowns in 35 countries across 2022.",
+    "permalink": "https://cloud.google.com/blog/products/identity-security/shining-a-light-in-the-dark-measuring-global-internet-shutdowns",
+    "logo": "icons/blog-icons/google-cloud.svg",
+    "date": "26 October 2023",
+    "external": true
+  },
+  {
+    "title": "Cloud and consequences: Internet censorship data enters the transformation age",
+    "excerpt": "Collaboration efforts to process 80 TB of global censorship measurements are detailed, turning raw data into actionable insights for researchers and activists.",
+    "permalink": "https://cloud.google.com/transform/cloud-and-consequences-internet-censorship-data-enters-the-transformation-age",
+    "logo": "icons/blog-icons/google-cloud.svg",
+    "date": "26 October 2023",
+    "external": true
+  },
+  {
+    "title": "Making Censorship Data More User Friendly",
+    "excerpt": "An open‑source pipeline is outlined, designed to clean, enrich, and fingerprint censorship measurements, producing ready‑to‑use dashboards for policymakers and journalists.",
+    "permalink": "https://pulse.internetsociety.org/blog/making-censorship-data-more-user-friendly",
+    "logo": "icons/blog-icons/internet-society-logo.svg",
+    "date": "04 May 2023",
+    "external": true
+  },
+  {
+    "title": "Profiling Internet Censors: Methods to Measure and Locate Censorship Devices",
+    "excerpt": "Techniques for fingerprinting middleboxes, mapping their autonomous‑system locations, and tracking evolving censorship infrastructure worldwide are presented.",
+    "permalink": "https://www.opentech.fund/news/profiling-internet-censors-methods-to-measure-and-locate-censorship-devices/",
+    "logo": "icons/blog-icons/otf-logo.svg",
+    "date": "05 December 2022",
+    "external": true
+  },
+  {
+    "title": "An analysis of a large-scale HTTPS interception",
+    "excerpt": "Kazakhstan’s nationwide HTTPS interception campaigns are dissected, detailing certificate deployment tactics and recommending mitigations against future man‑in‑the‑middle attacks.",
+    "permalink": "https://blog.apnic.net/2021/02/15/an-analysis-of-a-large-scale-https-interception/",
+    "logo": "icons/blog-icons/apnic-logo.svg",
+    "date": "15 February 2021",
+    "external": true
+  }
+]

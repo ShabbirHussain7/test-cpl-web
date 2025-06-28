@@ -1,0 +1,26 @@
+---
+area: Monitoring Censorship at Global Scale
+date: 2017-05-01
+publisher: "IEEE Security and Privacy (S&P)"
+name: "Augur: Internet-Wide Detection of Connectivity Disruptions"
+tags:
+ - censorship
+ - augur
+collaborators:
+ - Paul Pearce
+ - Roya Ensafi
+ - Frank Li
+ - Nick Feamster
+ - Vern Paxson
+pdf: "papers/Augur-Oakland17.pdf"
+bibtex: "@inproceedings{Paul2017Augur:,
+    title={Augur: Internet-Wide Detection of Connectivity Disruptions},
+    author={Paul Pearce and Roya Ensafi and Frank Li and Nick Feamster and Vern Paxson},
+    booktitle={IEEE Security and Privacy},
+    year={2017}
+    }"
+talk: "https://www.youtube.com/watch?v=_rlPKcvzGx4"
+slides: ""
+abstract:
+    "Anecdotes, news reports, and policy briefings collectively suggest that Internet censorship practices are pervasive. The scale and diversity of Internet censorship practices makes it difficult to precisely monitor where, when, and how censorship occurs, as well as what is censored. The potential risks in performing the measurements make this problem even more challenging. As a result, many accounts of censorship begin-and end-with anecdotes or short-term studies from only a handful of vantage points. We seek to instead continuously monitor information about Internet reachability, to capture the onset or termination of censorship across regions and ISPs. To achieve this goal, we introduce Augur, a method and accompanying system that utilizes TCP/IP side channels to measure reachability between two Internet locations without directly controlling a measurement vantage point at either location. Using these side channels, coupled with techniques to ensure safety by not implicating individual users, we develop scalable, statistically robust methods to infer network-layer filtering, and implement a corresponding system capable of performing continuous monitoring of global censorship. We validate our measurements of Internet-wide disruption in nearly 180 countries over 17 days against sites known to be frequently blocked, we also identify the countries where connectivity disruption is most prevalent."
+---

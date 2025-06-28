@@ -1,0 +1,308 @@
+@import "tailwindcss";
+
+@theme {
+  --font-merriweather: "Merriweather", "sans-serif";
+  --font-inter: "Inter", "sans-serif";
+  --font-ibm: "IBM Plex Serif", "sans-serif";
+  --font-barlow: "Barlow", "sans-serif";
+
+}
+
+
+
+.new-section-heading {
+  color: var(--Text, #121212);
+ 
+/* H2 */
+font-family: var(--Header, Merriweather);
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 58.8px */
+letter-spacing: var(--spacing-spacing-non, 0px);
+@apply md:text-[49px]  text-[30px];
+
+}
+
+
+.App {
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fdfdfd;
+}
+
+
+.internal-container {
+  @apply max-w-screen-2xl mx-auto lg:px-20 px-5;
+  /* border-bottom: 1px solid var(--divider, #888); */
+ 
+}
+
+
+
+.primary-button {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  
+  line-height: 150%; /* 24px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+  color: #fdfdfd; /* Text color */
+  background-color: #121212; /* Background color */
+  padding: 8px 24px; /* 8px vertical, 24px horizontal */
+  display: inline-block; /* Prevents full-width behavior */
+}
+
+
+.secondary-button {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  
+  line-height: 150%; /* 24px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+  color: #121212; /* Text color */
+  background-color: #fdfdfd; /* Background color */
+  padding: 8px 24px; /* 8px vertical, 24px horizontal */
+  display: inline-block; /* Prevents full-width behavior */
+  border: 1px solid #888; /* Added border */
+}
+
+.header-button {
+  color: var(--Text, #121212);
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  
+  line-height: 120%; /* 21.6px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+  padding: 0px 8px;
+}
+
+.header-submenu-button {
+  color: var(--Text, #121212);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  
+  line-height: 150%; /* 21.6px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+  
+}
+
+.publication-card-internal-link {
+  color: var(--teal-teal-500, #17827B);
+
+  /* body/small/medium */
+  font-family: var(--Body, Inter);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  /* 19.5px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.publication-title {
+  color: var(--Text, #121212);
+  /* H6/regular */
+  font-family: var(--Header, Merriweather);
+  @apply md:text-[20px] text-[18px];
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 24px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+}
+
+.publication-author-names {
+
+  color: var(--Text-dark-grey, #595959);
+  font-family: var(--Body, Inter);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 19.5px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+
+}
+
+.publication-award-badge {
+  color: var(--Yellow, #A06C28);
+  text-align: center;
+
+}
+
+.publication-tag {
+  display: flex;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background: var(--tertiary, #E4F7F6);
+}
+
+.publication-detail-heading {
+  color: var(--divider, #888);
+
+  /* body/medium */
+  font-family: var(--Body, Inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+}
+
+.publication-year {
+  color: var(--Text-dark-grey, #595959);
+
+  /* body */
+  font-family: var(--Body, Inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+}
+
+
+.publication-conference-name {
+  color: var(--Text, #121212);
+
+/* body/small */
+font-family: var(--Body, Inter);
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 19.5px */
+letter-spacing: var(--spacing-spacing-non, 0px);
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+}
+
+.news-title {
+  color: var(--Text, #121212);
+
+  /* H6/regular */
+  font-family: var(--Header, Merriweather);
+  @apply md:text-[20px] text-[18px];
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+}
+.news-title:hover {
+  color: #28a199; /* Change text color on hover */
+}
+
+h4 {
+font-family: var(--Header, Merriweather);
+@apply md:text-[30px] text-[25px];
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 37.2px */
+letter-spacing: var(--spacing-spacing-non, 0px);
+}
+
+h5 {
+  font-family: var(--Header, Merriweather);
+  @apply md:text-[25px] text-[20px];
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 30px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+}
+
+.body {
+  font-family: var(--Body, Inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+}
+
+.body-medium {
+
+
+/* body/medium */
+font-family: var(--Body, Inter);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 24px */
+letter-spacing: var(--spacing-spacing-non, 0px);
+}
+.small-text {
+  font-family: var(--Body, Inter);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 19.5px */
+  letter-spacing: var(--spacing-spacing-non, 0px);
+}
+
+select {
+  -webkit-appearance: none; /* Removes default Safari styling */
+  padding: 4px 8px;
+  min-width: 70px; /* Minimum width for the select box */
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>'); /* Custom chevron icon */
+  background-repeat: no-repeat; /* Prevent repeating the icon */
+  background-position: right 0.5rem center; /* Position the chevron */
+  background-size: 1rem; /* Size of the chevron */
+}
+
+select:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #555; /* Add a custom focus border color */
+}
+
+
+.page-container {
+  @apply max-w-screen-xl mx-auto px-8 sm:px-16;
+}
+
+.heading-primary {
+  @apply text-3xl font-semibold mb-6 relative after:content-[''] after:block after:w-24 after:border-b-2 after:border-gray-600 after:mt-2;
+}
+
+.heading-section {
+  @apply text-2xl font-semibold mb-6 relative after:content-[''] after:block after:w-24 after:border-b-2 after:border-gray-600 after:mt-2;
+}
+
+.paragraph {
+  @apply text-lg text-gray-700 w-full text-justify;
+}
+
+.heading-secondary {
+  @apply text-2xl font-semibold mb-2 relative;
+}
+
+
+.heading-nav {
+  @apply text-2xl font-semibold mb-4 relative after:content-[''] after:block after:w-20 after:border-b-4 after:border-[#CC4E24] after:mt-2;
+}
+
+
+input:focus {
+  /* use bright blue color for outline */
+  outline: 1px solid #3B82F6;
+  /* Replace with your desired color */
+  border: none;
+  /* Replace with your desired color */
+}

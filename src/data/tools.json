@@ -1,0 +1,44 @@
+[
+  {
+    "repo": "geoinspector",
+    "name": "GeoInspector",
+    "description": "Measurement tool for detecting geoblocking and server-side blocking across DNS, TCP, TLS, and HTTP protocols."
+  },
+ 
+    {
+      "repo": "CenFuzz",
+      "name": "CenFuzz",
+      "description": "Tool for fuzzing HTTP/HTTPS requests to uncover censorship rules and trigger conditions."
+    },
+    {
+      "repo": "CenTrace",
+      "name": "CenTrace",
+      "description": "Application-layer censorship traceroute tool using TTL-limited HTTP and TLS packets to locate censorship infrastructure."
+    },
+    {
+      "repo": "CenProbe",
+      "name": "CenProbe",
+      "description": "Set of scripts for actively probing and collecting data about particular network devices, including those that perform censorship."
+    },
+   
+    {
+      "repo": "zerotrace-code",
+      "name": "ZeroTrace",
+      "description": "Go package implementing the 0trace technique to estimate network-layer RTT using TTL-limited segments in existing TCP connections."
+    },
+    {
+      "repo": "censoredplanet-analysis",
+      "name": "CenAnalysis",
+      "description": "Pipeline for transforming raw Censored Planet Observatory data into structured BigQuery tables."
+    },
+    {
+      "repo": "geodiff-app",
+      "name": "AppMap",
+      "description": "Scripts for collecting Google Play metadata, APKs, and associated privacy policies."
+    },
+    {
+      "repo": "dns_blockpage_fingerprint",
+      "name": "DNSBlockpage",
+      "description": "Tools for generating DNS blockpage fingerprints and analyzing Satellite v2 censorship data."
+    }
+]
