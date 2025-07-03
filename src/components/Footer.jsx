@@ -11,12 +11,13 @@ const Footer = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('censoredplanet@umich.edu');
+    navigator.clipboard.writeText('ensafi@umich.edu');
     setCopied(true);
     setTimeout(() => setCopied(false), 1500);
   };
   return (
-    <footer className="bg-[#121212] mt-auto text-[#FDFDFD] md:px-20 px-5 py-5 md:py-15">
+    <footer className="bg-[#121212] mt-auto text-[#FDFDFD]  py-5 md:py-15 z-10">
+      <div className="internal-container">
        <Link to="/">
             <img src={Logo} alt="Censored Planet logo" className="h-[68px] " />
           </Link>
@@ -33,7 +34,7 @@ const Footer = () => {
             Ann Arbor, MI 48109
           </address>
           <button onClick={handleCopy} className="underline text-[16px]">
-            {copied ? "Copied!" : "censoredplanet@umich.edu"}
+            {copied ? "Copied!" : "ensafi@umich.edu"}
           </button>
         </div>
         <div className="grid grid-cols-2 gap-8 text-[16px]">
@@ -57,7 +58,7 @@ const Footer = () => {
         <div className="flex flex-col items-start gap-4">
           <h3 className="font-semibold text-[18px]">Social media</h3>
           <div className="flex gap-4">
-            <a href="https://twitter.com/CensoredPlanet" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/royaensafi" target="_blank" rel="noopener noreferrer">
               <TwitterIcon className="w-6 h-6" />
             </a>
             <a href="https://github.com/CensoredPlanet" target="_blank" rel="noopener noreferrer">
@@ -72,6 +73,7 @@ const Footer = () => {
           <span className="inline-block border-l border-[#FDFDFD] h-4"></span>
           <Link to="/terms" className="hover:underline">Terms of Service</Link>
         </div>
+      </div>
       </div>
     </footer>
 

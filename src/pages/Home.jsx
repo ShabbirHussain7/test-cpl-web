@@ -158,11 +158,11 @@ export default function Home() {
       {/* WHAT WE DO */}
       <section id="what-we-do" className="md:py-25 py-5">
         <div className="internal-container grid grid-cols-1 md:grid-cols-2 md:gap-y-12 gap-y-8">
-          <div className=''>
+          <div className='max-w-[540px] xl:pr-0 md:pr-16'>
             <h2 className="new-section-heading">
               What We Do
             </h2>
-            <div className="mt-4 max-w-[540px] font-inter lg:text-[16px] text-[#121212] leading-[150%] space-y-6">
+            <div className="mt-4  font-inter lg:text-[16px] text-[#121212] leading-[150%] space-y-6">
               <p>
                 Our research lies at the intersection of <strong>Networking</strong>, <strong>Security & Privacy</strong>, and <strong>Internet Measurements</strong>. We take a data-driven approach to detect and defend against powerful network intermediaries and government threat actors.
               </p>

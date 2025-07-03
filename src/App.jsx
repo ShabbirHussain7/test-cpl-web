@@ -16,7 +16,7 @@ import News from './pages/News';
 import Talks from './pages/Talks';
 import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
-import { Navigate } from 'react-router-dom';
+import Ensafi from './pages/Ensafi';
 import './App.css';
 
 import { useEffect } from 'react';
@@ -53,6 +53,7 @@ export default function App() {
         <Route path="/join" element={<JoinUs />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/news" element={<News />} />
+        <Route path="/director/ensafi" element={<Ensafi />} />
         <Route path="*" element={<NotFound />} />
        
       </Routes>

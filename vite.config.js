@@ -5,8 +5,7 @@ import { nodePolyfills } from 'vite-plugin-node-polyfills'
 import svgr from "vite-plugin-svgr";
 
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), '');
-  const outputDir = env.VITE_BUILD_OUTDIR || 'dist';
+  const outputDir = 'docs';
 
   return {
     assetsInclude: ['**/*.md'],

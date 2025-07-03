@@ -50,8 +50,8 @@ export default function Research() {
     DOMPurify.sanitize(data.overview, { ALLOWED_TAGS: ['b', 'i', 'u', 'a', 'em', 'strong'] });
 
     return (
-        <main className="bg-[#fdfdfd]">
-            <section id='top' className='md:px-20 px-5  md:pt-25 pt-20 text-[#121212] relative overflow-visible'>
+        <main className="bg-[#fdfdfd] internal-container">
+            <section id='top' className=' md:pt-25 pt-20 text-[#121212] relative overflow-visible'>
                 <div className=''>
                     <h1 className="new-section-heading">{data.title}</h1>
                     <div className="mt-10 grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-x-6">

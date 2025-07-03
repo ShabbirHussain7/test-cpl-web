@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/pam_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" --> 
+<title>PAM 2016 - Welcome</title>
+<!-- InstanceEndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="photos/files/prototype.js"></script>
+<script type="text/javascript" src="photos/files/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="photos/files/lightbox.js"></script>
+<link rel="stylesheet" href="photos/files/lightbox.css" type="text/css" media="screen" />
+<link href="_styles/pam_styles.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	height: 100%;
+	background-color: #fff;
+	text-align: center;
+
+}
+.style6 {
+	color: #556A80;
+	font-weight: bold;
+	font-size: 18px;
+}
+.style7 {
+	font-size: 0.8em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+.style9 {font-size: 1.1em}
+-->
+</style>
+</head>
+<body>
+<div class="menu">
+    <ul>
+   	  <li><a href="index.html">PAM2016</a></li>
+          <li><a href="organizers.html">ORGANIZERS</a></li>
+          <li><a href="call-papers.html">CALL FOR PAPERS</a></li>
+          <li><a href="venue-acc.html">LOCAL INFORMATION</a></li>
+          <li><a href="program.html">PROGRAM</a></li>
+          <!--<li><a href="../registration.html">REGISTRATION</a></li> -->
+          <li><a href="submission.html">PAPER SUBMISSION</a></li>
+      </ul>
+      </div>
+<div class="container">
+
+  <div class="mainContent">
+     <!--<div class="header"></div> -->
+     <div class="headerTitle">
+     <div class="logo"><a href="index.html"><img src="_images/pam2016.png" alt="PAM 2016" border="0"></a></div>
+     <div class="logoR"><img src="_images/full-title.png" alt=""></div>
+     </div> 
+    <div class="mainPhoto"></div>
+    
+    <div class="contenTitle"><!-- InstanceBeginEditable name="Title" -->Welcome<!-- InstanceEndEditable --></div>
+	<div class="content"><!-- InstanceBeginEditable name="Content" -->
+	  <div class="leftcolumn">
+        <div class="orgTitle">Proceedings</div>
+        <div class="organizers">Proceedings will be published by SPRINGER within the Lecture Notes in Computer Science series.</div>
+        <div class="organizers"><a href="http://www.springer.com/computer/lncs" target="_blank"><img src="_images/springer.png" alt="Springer" border="0"></a></div>
+        <div class="orgTitle">Sponsors</div>
+        <div class="organizers" style="margin-top:15px;"><a href="http://research.microsoft.com/en-us/" target="_blank"><img src="_images/Microsoft_Research_logo.jpg" alt="Microsoft Research" border="0"></a></div>
+      </div>
+      
+      <p>PAM seeks to bring together both the network research and operations communities to consider network
+	    measurement and analysis techniques, particularly those in the earlier stages of research.</p>
+	  <p>PAM has in the past focused on research and practical applications of network measurement at Layer-3.
+	    However, over the last years PAM broadened its scope to encompass measurements of networked applications,
+	    content distribution networks, online social networks, overlay networks, and more. Measurement technology is
+	    needed at all layers of the stack: for power profiling of hardware components; at the MAC/network/transport
+	    layers; as well as up the stack for application profiling and even to collect user feedback. Measurement
+	    technologies are being designed for the digital home, residential access networks, wireless and mobile access,
+	    enterprise, ISP and data center networks.</p>
+	  <p>PAM encourages a broad range of submissions across these topics. We aim to understand the role that
+	    measurement techniques can play in networked environments and applications, across different layers, and how
+	    they can serve as building blocks for broader measurement needs. At the same time, PAM also continues with
+	    its original goal, to expand the techniques, tools and practical uses of network measurement technology.</p>
+        
+	  <h2>Important dates:</h2>
+	  <ul>
+        
+        <li>Paper Registration: <strong>9th October 2015</strong>, 19:59:59 BST (UTC+1)</li>
+        <li>Paper Submission: <strong>16th October 2015</strong>, 19:59:59 BST (UTC+1)</li>
+        <li>Notification: <strong>18th December 2015</strong></li>
+        <li>Camera-ready Due: <strong>15th January 2016</strong></li>
+        </ul>
+        
+	<!-- InstanceEndEditable -->
+    
+    <div class="footer">
+  <p><strong>©</strong> 2015 Foundation for Research and Technology -   Hellas</p>
+  </div>
+  </div>
+<!--<div class="bottomLinks"> <a href="../index.html" title="Go Home"><img src="../_images/home.gif" alt="Go Home" width="15" height="13" border="0"></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:bilas@ics.forth.gr"><img src="../_images/contact.gif" alt="Contact e-mail" width="15" height="13" border="0"></a></div> -->
+</div>
+
+
+
+</div>
+</body>
+<!-- InstanceEnd --></html>

@@ -32,7 +32,7 @@ export default function Terms() {
         <p className="mb-8 text-gray-700">You are responsible for safeguarding any credentials associated with your account. Use a strong password unique to our Services.</p>
 
         <h2 className="text-2xl font-bold mb-2 text-[#2D4D63]">Copyright Infringement</h2>
-        <p className="mb-8 text-gray-700">If you believe that content on our site violates your copyright, please notify us at <a href="mailto:censoredplanet@umich.edu" className="text-blue-600 underline">censoredplanet@umich.edu</a>.</p>
+        <p className="mb-8 text-gray-700">If you believe that content on our site violates your copyright, please notify us at <a href="mailto:ensafi@umich.edu" className="text-blue-600 underline">ensafi@umich.edu</a>.</p>
 
         <h2 className="text-2xl font-bold mb-2 text-[#2D4D63]">Information We Collect</h2>
         <p className="mb-8 text-gray-700">We may monitor use of the Services to provide, protect, and improve them. We may share anonymized data publicly. When you contact us, we may retain communications to address issues and improve services.</p>
@@ -47,7 +47,7 @@ export default function Terms() {
         <p className="mb-8 text-gray-700">We may modify these terms at any time. Continued use of Services after modifications constitutes agreement to the new terms.</p>
 
         <h2 className="text-2xl font-bold mb-2 text-[#2D4D63]">Contact Us</h2>
-        <p className="mb-8 text-gray-700">Please contact us at <a href="mailto:censoredplanet@umich.edu" className="text-blue-600 underline">censoredplanet@umich.edu</a> with any questions or concerns about these terms.</p>
+        <p className="mb-8 text-gray-700">Please contact us at <a href="mailto:ensafi@umich.edu" className="text-blue-600 underline">ensafi@umich.edu</a> with any questions or concerns about these terms.</p>
       </section>
     </div>
   );

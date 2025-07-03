@@ -47,6 +47,7 @@ export default function Report() {
   const metaFields = [
     { label: 'Affiliations', value: frontMatter.affiliations },
     { label: 'Authors', value: frontMatter.authors?.join(', ') },
+    { label: 'Writers', value: frontMatter.writers },
 
     { label: 'Appearing in', value: frontMatter.appearing },
     { label: 'Research', value: frontMatter.research },
